@@ -7,7 +7,7 @@
         <Configuration>
           <Format>cobertura</Format>
           <!-- [Assembly-Filter]Type-Filter -->
-          <Exclude>[xunit.*]*,[BouncyCastle.*]*</Exclude>
+          <Exclude>[xunit.*]*,[BouncyCastle.*]*,[Moq]*</Exclude>
           <!-- Include coverage of the test assembly. -->
           <IncludeTestAssembly>true</IncludeTestAssembly>
           <!-- Specifies whether to limit code coverage hit reporting to a single hit for each location.-->

@@ -37,7 +37,7 @@ def get_coverage_report():
 
 def main():
     get_coverage_report()
-    check_coverage()
+    # check_coverage()
     print_overall_coverage_rate('line-rate')
     print_overall_coverage_rate('branch-rate')
 
