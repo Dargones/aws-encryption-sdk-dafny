@@ -11,7 +11,7 @@ Also please note that the tool will periodically kill all z3 processes on your m
 Finally, if you want to run the tests after generating them, you will have to comment out the tests/lines that are also commented out in this repository (`git diff` can help).
 
 To execute all the tests in the `test` directory, run `make test`. 
-Running the standard tests that are officially part of the SDK (not the auto-generated ones) will require you to perform certain steps that are outlined [here]((aws-encryption-sdk-net)). 
+Running the standard tests that are officially part of the SDK (not the auto-generated ones) will require you to perform certain steps that are outlined [here](https://github.com/aws/aws-encryption-sdk-dafny/blob/mainline/aws-encryption-sdk-net/README.md). 
 To exclude certain tests from the coverage report generated at the end, simply move these tests out of the `test` directory. 
 Note that I set the value of `DYLD_LIBRARY_PATH` in the `runTests.sh` - you might have to modify this if you have openssl installed at a different location.
 
