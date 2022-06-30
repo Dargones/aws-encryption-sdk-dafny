@@ -5,7 +5,7 @@ build :
 	mv -n z3-4.8.5-x64-osx-10.14.2 dafny/Binaries/z3
 	rm z3-4.8.5-x64-osx-10.14.2.zip
 	rm -rf z3-4.8.5-x64-osx-10.14.2
-	export PATH="$PWD/dafny:$PATH"
+	export PATH=$PWD/dafny:$PATH
 
 generate : build
 	./generateTests.sh
