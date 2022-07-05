@@ -2,11 +2,11 @@ include "../../src//AwsCryptographicMaterialProviders/Keyrings/AwsKms/Constants.
 module ConstantsUnitTests {
 import Constants
 import UTF8
-import AwsKmsArnParsing
 import StandardLibrary
 import StandardLibrary.UInt
-import Seq
 import Wrappers
+import AwsKmsArnParsing
+import Seq
 import Math
 import Aws
 import Aws.Crypto

@@ -3,10 +3,10 @@ module AwsKmsMrkMatchForDecryptUnitTests {
 import AwsKmsMrkMatchForDecrypt
 import StandardLibrary
 import StandardLibrary.UInt
-import Seq
-import AwsKmsArnParsing
 import Wrappers
+import Seq
 import Math
+import AwsKmsArnParsing
 import UTF8
 method {:test} test0() {
 var d0 : AwsKmsArnParsing.AwsResource := AwsKmsArnParsing.AwsResource.AwsResource(resourceType:=['k', 'e', 'y'],value:=['a']);

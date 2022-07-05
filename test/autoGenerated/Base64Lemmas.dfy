@@ -3,7 +3,7 @@ module Base64LemmasUnitTests {
 import Base64Lemmas
 import StandardLibrary
 import StandardLibrary.UInt
-import Base64
 import Wrappers
+import Base64
 
 }

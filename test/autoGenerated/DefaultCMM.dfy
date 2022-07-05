@@ -2,13 +2,13 @@ include "../../src//AwsCryptographicMaterialProviders/CMMs/DefaultCMM.dfy"
 module DefaultCMMUnitTests {
 import StandardLibrary
 import StandardLibrary.UInt
-import Base64
-import Defaults
-import UTF8
 import Wrappers
+import Base64
+import UTF8
 import HMAC
 import Signature
 import AESEncryption
+import Defaults
 import MaterialProviders
 import MaterialProviders.DefaultCMM
 import MaterialProviders.Materials

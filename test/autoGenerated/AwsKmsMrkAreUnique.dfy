@@ -3,10 +3,10 @@ module AwsKmsMrkAreUniqueUnitTests {
 import AwsKmsMrkAreUnique
 import StandardLibrary
 import StandardLibrary.UInt
-import Seq
-import AwsKmsArnParsing
 import Wrappers
+import Seq
 import Math
+import AwsKmsArnParsing
 import UTF8
 method {:test} test0() {
 var d0 : AwsKmsArnParsing.AwsResource := AwsKmsArnParsing.AwsResource.AwsResource(resourceType:=['k', 'e', 'y'],value:=['a']);
@@ -15,7 +15,7 @@ var d2 : AwsKmsArnParsing.AwsKmsIdentifier := AwsKmsArnParsing.AwsKmsIdentifier.
 var r0 := AwsKmsMrkAreUnique.GetKeyId(d2);
 }
 method {:test} test1() {
-var d0 : AwsKmsArnParsing.AwsKmsResource := AwsKmsArnParsing.AwsKmsResource.AwsResource(['k', 'e', 'y'],['a']);
+var d0 : AwsKmsArnParsing.AwsKmsResource := AwsKmsArnParsing.AwsKmsResource.AwsResource(resourceType:=['k', 'e', 'y'],value:=['a']);
 var d1 : AwsKmsArnParsing.AwsKmsIdentifier := AwsKmsArnParsing.AwsKmsIdentifier.AwsKmsRawResourceIdentifier(r:=d0);
 var r0 := AwsKmsMrkAreUnique.GetKeyId(d1);
 }

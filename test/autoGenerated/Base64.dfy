@@ -8,40 +8,41 @@ method {:test} test0() {
 var r0 := Base64.Encode([251, 239, 190]);
 }
 method {:test} test1() {
-var r0 := Base64.Encode([251, 237]);
+var r0 := Base64.Encode([251, 239, 190, 251, 239, 190, 251, 237]);
 }
 method {:test} test2() {
-var r0 := Base64.Encode([249]);
-}
-method {:test} test3() {
 var r0 := Base64.Decode(['a']);
 }
-method {:test} test4() {
+method {:test} test3() {
 var r0 := Base64.Decode([]);
 }
-method {:test} test5() {
+method {:test} test4() {
 var r0 := Base64.DecodeValid([]);
 }
+method {:test} test5() {
+var r0 := Base64.DecodeValid(['+', '+', '+', '+', '+', '+', '+', '+', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '+', '+', '+', 'a']);
+}
 method {:test} test6() {
-var r0 := Base64.DecodeValid(['+', '+', '+', '+']);
+var r0 := Base64.DecodeValid(['+', '+', '+', '+', '+', 'Q', '=', '=']);
 }
 method {:test} test7() {
-var r0 := Base64.DecodeValid(['+', 'A', '=', '=']);
+var r0 := Base64.DecodeValid(['+', '+', '+', '+', '+', '+', '8', '=']);
 }
-method {:test} test8() {
-var r0 := Base64.DecodeValid(['+', '+', '4', '=']);
-}
+/*method {:test} test8() {
+var r0 := Base64.IsBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '', 'a', 'a', '
+']);
+}*/
 method {:test} test9() {
-var r0 := Base64.IsBase64String(['%', '', 'a', '']);
-}
-method {:test} test10() {
 var r0 := Base64.IsBase64String(['a']);
 }
+method {:test} test10() {
+var r0 := Base64.IsBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']);
+}
 method {:test} test11() {
-var r0 := Base64.IsBase64String(['a', 'a', 'a', 'a']);
+var r0 := Base64.IsBase64String(['a', '!', 'a', 'a', 'a', '!', 'a', 'a', 'a', '&', 'a', 'a']);
 }
 method {:test} test12() {
-var r0 := Base64.IsBase64String(['+', '+', '8', '=']);
+var r0 := Base64.IsBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '+', '+', '4', '=']);
 }
 method {:test} test13() {
 var r0 := Base64.Encode2Padding([249]);
@@ -95,28 +96,28 @@ method {:test} test29() {
 var r0 := Base64.EncodeUnpadded([196, 0, 0]);
 }
 method {:test} test30() {
-var r0 := Base64.DecodeUnpadded(['a', 'a', 'a', 'a']);
+var r0 := Base64.DecodeUnpadded(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']);
 }
 method {:test} test31() {
 var r0 := Base64.FromIndicesToChars([0]);
 }
 method {:test} test33() {
-var r0 := Base64.FromIndicesToChars([0, 0, 0, 0, 62]);
+var r0 := Base64.FromIndicesToChars([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62]);
 }
 method {:test} test35() {
 var r0 := Base64.FromCharsToIndices(['a']);
 }
 method {:test} test37() {
-var r0 := Base64.FromCharsToIndices(['a', 'a', 'a', '7']);
+var r0 := Base64.FromCharsToIndices(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '7']);
 }
 method {:test} test39() {
-var r0 := Base64.EncodeRecursively([144, 0, 0]);
+var r0 := Base64.EncodeRecursively([144, 0, 0, 80, 0, 0]);
 }
 method {:test} test40() {
 var r0 := Base64.EncodeRecursively([]);
 }
 method {:test} test41() {
-var r0 := Base64.DecodeRecursively([17, 0, 0, 0]);
+var r0 := Base64.DecodeRecursively([13, 0, 0, 0, 63, 0, 0, 0]);
 }
 method {:test} test42() {
 var r0 := Base64.DecodeRecursively([]);
@@ -131,13 +132,13 @@ method {:test} test45() {
 var r0 := Base64.IndexSeqToUInt24([0, 0, 0, 38]);
 }
 method {:test} test46() {
-var r0 := Base64.UInt24ToIndexSeq(16232448);
+var r0 := Base64.UInt24ToIndexSeq((16232448 as Base64.uint24));
 }
 method {:test} test47() {
 var r0 := Base64.SeqToUInt24([0, 0, 38]);
 }
 method {:test} test48() {
-var r0 := Base64.UInt24ToSeq(3313152);
+var r0 := Base64.UInt24ToSeq((3313152 as Base64.uint24));
 }
 method {:test} test49() {
 var r0 := Base64.CharToIndex('+');
@@ -155,28 +156,28 @@ method {:test} test53() {
 var r0 := Base64.CharToIndex('/');
 }
 method {:test} test54() {
-var r0 := Base64.IndexToChar(62);
+var r0 := Base64.IndexToChar((62 as Base64.index));
 }
 method {:test} test55() {
-var r0 := Base64.IndexToChar(25);
+var r0 := Base64.IndexToChar((25 as Base64.index));
 }
 method {:test} test56() {
-var r0 := Base64.IndexToChar(38);
+var r0 := Base64.IndexToChar((38 as Base64.index));
 }
 method {:test} test57() {
-var r0 := Base64.IndexToChar(52);
+var r0 := Base64.IndexToChar((52 as Base64.index));
 }
 method {:test} test58() {
-var r0 := Base64.IndexToChar(63);
+var r0 := Base64.IndexToChar((63 as Base64.index));
 }
 method {:test} test59() {
-var r0 := Base64.IsUnpaddedBase64String(['+', 'a', 'a', 'a']);
+var r0 := Base64.IsUnpaddedBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '+', 'a', 'a', 'a']);
 }
 method {:test} test60() {
 var r0 := Base64.IsUnpaddedBase64String(['a']);
 }
 method {:test} test61() {
-var r0 := Base64.IsUnpaddedBase64String(['a', 'a', 'a', 'a']);
+var r0 := Base64.IsUnpaddedBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']);
 }
 method {:test} test62() {
 var r0 := Base64.IsBase64Char('{');

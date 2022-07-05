@@ -1,17 +1,17 @@
 include "../../src//AwsCryptographicMaterialProviders/Keyrings/RawAESKeyring.dfy"
 module RawAESKeyringUnitTests {
 import StandardLibrary
-import StandardLibrary.String
 import StandardLibrary.UInt
-import Random
-import ExternRandom
-import AESEncryption
+import StandardLibrary.String
+import Wrappers
 import UTF8
-import Streams
-import Seq
 import HMAC
 import Signature
-import Wrappers
+import AESEncryption
+import Random
+import ExternRandom
+import Streams
+import Seq
 import Math
 import MaterialProviders
 import MaterialProviders.RawAESKeyring
@@ -24,4 +24,6 @@ import Com
 import Com.Amazonaws
 import Com.Amazonaws.Kms
 
+
+method {:synthesize} getFreshMaterialProvidersRawAESKeyringRawAESKeyring() returns (o:MaterialProviders.RawAESKeyring.RawAESKeyring) ensures fresh(o)
 }

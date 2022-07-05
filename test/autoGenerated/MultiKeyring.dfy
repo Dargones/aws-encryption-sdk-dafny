@@ -2,13 +2,13 @@ include "../../src//AwsCryptographicMaterialProviders/Keyrings/MultiKeyring.dfy"
 module MultiKeyringUnitTests {
 import StandardLibrary
 import StandardLibrary.UInt
-import Seq
 import Wrappers
 import UTF8
-import Math
 import HMAC
 import Signature
 import AESEncryption
+import Seq
+import Math
 import MaterialProviders
 import MaterialProviders.MultiKeyring
 import MaterialProviders.Keyring

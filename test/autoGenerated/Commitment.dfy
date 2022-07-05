@@ -1,8 +1,8 @@
 include "../../src//AwsCryptographicMaterialProviders/Commitment.dfy"
 module CommitmentUnitTests {
+import UTF8
 import StandardLibrary
 import StandardLibrary.UInt
-import UTF8
 import Wrappers
 import HMAC
 import Signature

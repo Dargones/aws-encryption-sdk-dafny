@@ -1,23 +1,23 @@
 include "../../src//AwsCryptographicMaterialProviders/Client.dfy"
 module ClientUnitTests {
 import AESEncryption
-import RSAEncryption
+import Wrappers
 import StandardLibrary
 import StandardLibrary.UInt
 import StandardLibrary.String
-import Seq
+import RSAEncryption
 import UTF8
-import AwsKmsArnParsing
-import AwsKmsMrkAreUnique
-import AwsKmsUtils
-import Wrappers
+import Seq
 import Math
 import HMAC
 import Signature
 import Base64
 import Defaults
+import AwsKmsArnParsing
 import Actions
 import Constants
+import AwsKmsUtils
+import AwsKmsMrkAreUnique
 import AwsKmsMrkMatchForDecrypt
 import Random
 import ExternRandom
@@ -27,17 +27,17 @@ import MaterialProviders.Client
 import MaterialProviders.AlgorithmSuites
 import MaterialProviders.DefaultClientSupplier
 import MaterialProviders.DefaultCMM
+import MaterialProviders.Materials
+import MaterialProviders.CMM
+import MaterialProviders.Commitment
 import MaterialProviders.AwsKmsDiscoveryKeyring
+import MaterialProviders.Keyring
 import MaterialProviders.AwsKmsMrkKeyring
 import MaterialProviders.AwsKmsMrkDiscoveryKeyring
 import MaterialProviders.AwsKmsKeyring
 import MaterialProviders.MultiKeyring
 import MaterialProviders.RawAESKeyring
 import MaterialProviders.RawRSAKeyring
-import MaterialProviders.Materials
-import MaterialProviders.CMM
-import MaterialProviders.Commitment
-import MaterialProviders.Keyring
 import Aws
 import Aws.Crypto
 import Com
@@ -55,5 +55,4 @@ var r0 := v0.CreateDefaultClientSupplier(d0);
 
 
 method {:synthesize} getFreshClientAwsCryptographicMaterialProviders() returns (o:Client.AwsCryptographicMaterialProviders) ensures fresh(o)
-//method {:synthesize} getFreshSystemstring() returns (o:_System.string) ensures fresh(o)
 }

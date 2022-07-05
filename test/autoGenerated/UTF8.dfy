@@ -5,34 +5,34 @@ import StandardLibrary
 import StandardLibrary.UInt
 import Wrappers
 method {:test} test0() {
-var r0 := UTF8.ValidUTF8Seq([198, 162, 213, 171]);
+var r0 := UTF8.ValidUTF8Seq([198, 162, 213, 171, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
 }
 method {:test} test1() {
-var r0 := UTF8.ValidUTF8Range([0, 38, 214, 137, 250], 1, 5);
+var r0 := UTF8.ValidUTF8Range([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 82, 217, 172, 198, 141], (51 as nat), (56 as nat));
 }
 method {:test} test2() {
-var r0 := UTF8.ValidUTF8Range([0, 128, 0, 0, 0], 1, 5);
+var r0 := UTF8.ValidUTF8Range([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0, 0, 0], (39 as nat), (43 as nat));
 }
 method {:test} test3() {
-var r0 := UTF8.ValidUTF8Range([240, 154, 168, 170, 210], 0, 5);
+var r0 := UTF8.ValidUTF8Range([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 240, 153, 166, 134, 196, 168, 207, 148], (58 as nat), (66 as nat));
 }
 method {:test} test4() {
-var r0 := UTF8.ValidUTF8Range([0, 128, 0, 0], 1, 4);
+var r0 := UTF8.ValidUTF8Range([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0, 0], (93 as nat), (96 as nat));
 }
 method {:test} test5() {
-var r0 := UTF8.ValidUTF8Range([0, 224, 185, 152, 137], 1, 5);
+var r0 := UTF8.ValidUTF8Range([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 224, 173, 171, 212, 142, 218, 167], (22 as nat), (29 as nat));
 }
 method {:test} test6() {
-var r0 := UTF8.ValidUTF8Range([0, 0, 128, 0], 2, 4);
+var r0 := UTF8.ValidUTF8Range([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0], (71 as nat), (73 as nat));
 }
 method {:test} test7() {
-var r0 := UTF8.ValidUTF8Range([0, 218, 173, 162], 1, 4);
+var r0 := UTF8.ValidUTF8Range([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 213, 171, 203, 137, 212, 134], (26 as nat), (32 as nat));
 }
 method {:test} test8() {
-var r0 := UTF8.ValidUTF8Range([0, 0, 0, 128], 3, 4);
+var r0 := UTF8.ValidUTF8Range([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128], (53 as nat), (54 as nat));
 }
 method {:test} test9() {
-var r0 := UTF8.ValidUTF8Range([0], 0, 0);
+var r0 := UTF8.ValidUTF8Range([0], (0 as nat), (0 as nat));
 }
 method {:test} test10() {
 var r0 := UTF8.Uses4Bytes([240, 182, 167, 192]);
