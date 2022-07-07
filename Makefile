@@ -10,5 +10,5 @@ build :
 generate : build
 	./generateTests.sh
 
-test : build
+coverage : build
 	./runTests.sh
