@@ -20,7 +20,7 @@ method {:test} test4() {
 var r0 := Base64.DecodeValid([]);
 }
 method {:test} test5() {
-var r0 := Base64.DecodeValid(['+', '+', '+', '+', '+', '+', '+', '+', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '+', '+', '+', 'a']);
+var r0 := Base64.DecodeValid(['+', '+', '+', '+', '+', '+', '+', '+', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '+', '+', '+', 'a']);
 }
 method {:test} test6() {
 var r0 := Base64.DecodeValid(['+', '+', '+', '+', '+', 'Q', '=', '=']);
@@ -29,20 +29,20 @@ method {:test} test7() {
 var r0 := Base64.DecodeValid(['+', '+', '+', '+', '+', '+', '8', '=']);
 }
 /*method {:test} test8() {
-var r0 := Base64.IsBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '', 'a', 'a', '
+var r0 := Base64.IsBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '', 'a', 'a', '
 ']);
 }*/
 method {:test} test9() {
 var r0 := Base64.IsBase64String(['a']);
 }
 method {:test} test10() {
-var r0 := Base64.IsBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']);
+var r0 := Base64.IsBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']);
 }
 method {:test} test11() {
 var r0 := Base64.IsBase64String(['a', '!', 'a', 'a', 'a', '!', 'a', 'a', 'a', '&', 'a', 'a']);
 }
 method {:test} test12() {
-var r0 := Base64.IsBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '+', '+', '4', '=']);
+var r0 := Base64.IsBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '+', '+', '0', '=']);
 }
 method {:test} test13() {
 var r0 := Base64.Encode2Padding([249]);
@@ -96,7 +96,7 @@ method {:test} test29() {
 var r0 := Base64.EncodeUnpadded([196, 0, 0]);
 }
 method {:test} test30() {
-var r0 := Base64.DecodeUnpadded(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']);
+var r0 := Base64.DecodeUnpadded(['a', 'a', 'a', 'a']);
 }
 method {:test} test31() {
 var r0 := Base64.FromIndicesToChars([0]);
@@ -108,7 +108,7 @@ method {:test} test35() {
 var r0 := Base64.FromCharsToIndices(['a']);
 }
 method {:test} test37() {
-var r0 := Base64.FromCharsToIndices(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '7']);
+var r0 := Base64.FromCharsToIndices(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '7']);
 }
 method {:test} test39() {
 var r0 := Base64.EncodeRecursively([144, 0, 0, 80, 0, 0]);
@@ -171,13 +171,13 @@ method {:test} test58() {
 var r0 := Base64.IndexToChar((63 as Base64.index));
 }
 method {:test} test59() {
-var r0 := Base64.IsUnpaddedBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '+', 'a', 'a', 'a']);
+var r0 := Base64.IsUnpaddedBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', '+', 'a', 'a', 'a']);
 }
 method {:test} test60() {
 var r0 := Base64.IsUnpaddedBase64String(['a']);
 }
 method {:test} test61() {
-var r0 := Base64.IsUnpaddedBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']);
+var r0 := Base64.IsUnpaddedBase64String(['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']);
 }
 method {:test} test62() {
 var r0 := Base64.IsBase64Char('{');

@@ -7,6 +7,7 @@ test/**/Output/*
 /package-lock.json
 /node_modules
 *.config
+*.bpl
 
 # Duvet output
 specification_compliance_report.html

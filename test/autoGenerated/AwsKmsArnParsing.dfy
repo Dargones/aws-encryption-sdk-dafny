@@ -43,9 +43,13 @@ var d1 : AwsKmsArnParsing.AwsArn := AwsKmsArnParsing.AwsArn.AwsArn(account:=['a'
 var r0 := AwsKmsArnParsing.IsMultiRegionAwsKmsArn(d1);
 }
 method {:test} test7() {
-var r0 := AwsKmsArnParsing.ParseAwsKmsIdentifier(['a', 'a', 'a', ':', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', ':', 'a']);
+var r0 := AwsKmsArnParsing.ParseAwsKmsIdentifier(['a', 'a', 'a', ':', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', ':', 'a']);
 }
-
+method {:test} test8() {
+var d0 : AwsKmsArnParsing.AwsResource := AwsKmsArnParsing.AwsResource.AwsResource(resourceType:=[],value:=[]);
+var d1 : AwsKmsArnParsing.AwsArn := AwsKmsArnParsing.AwsArn.AwsArn(account:=[],arnLiteral:=['a', 'a', 'a', 'a'],partition:=[],region:=[],resource:=d0,service:=[]);
+var r0 := AwsKmsArnParsing.ValidAwsKmsArn(d1);
+}
 method {:test} test9() {
 var d0 : AwsKmsArnParsing.AwsResource := AwsKmsArnParsing.AwsResource.AwsResource(resourceType:=['a', 'a', 'a', 'a', 'a', 'a'],value:=['a']);
 var d1 : AwsKmsArnParsing.AwsArn := AwsKmsArnParsing.AwsArn.AwsArn(account:=['a'],arnLiteral:=['a', 'r', 'n'],partition:=['a'],region:=['a'],resource:=d0,service:=['k', 'm', 's']);
@@ -94,6 +98,31 @@ var r0 := d1.ToString();
 method {:test} test18() {
 var d0 : AwsKmsArnParsing.AwsResource := AwsKmsArnParsing.AwsResource.AwsResource(resourceType:=[],value:=[]);
 var d1 : AwsKmsArnParsing.AwsArn := AwsKmsArnParsing.AwsArn.AwsArn(account:=['a'],arnLiteral:=['a', 'r', 'n'],partition:=['a'],region:=['a'],resource:=d0,service:=['a']);
+var r0 := d1.Valid();
+}
+method {:test} test19() {
+var d0 : AwsKmsArnParsing.AwsResource := AwsKmsArnParsing.AwsResource.AwsResource(resourceType:=[],value:=[]);
+var d1 : AwsKmsArnParsing.AwsArn := AwsKmsArnParsing.AwsArn.AwsArn(account:=[],arnLiteral:=['a', 'r', 'n'],partition:=['a'],region:=['a'],resource:=d0,service:=['a']);
+var r0 := d1.Valid();
+}
+method {:test} test20() {
+var d0 : AwsKmsArnParsing.AwsResource := AwsKmsArnParsing.AwsResource.AwsResource(resourceType:=[],value:=[]);
+var d1 : AwsKmsArnParsing.AwsArn := AwsKmsArnParsing.AwsArn.AwsArn(account:=[],arnLiteral:=['a', 'r', 'n'],partition:=['a'],region:=[],resource:=d0,service:=['a']);
+var r0 := d1.Valid();
+}
+method {:test} test21() {
+var d0 : AwsKmsArnParsing.AwsResource := AwsKmsArnParsing.AwsResource.AwsResource(resourceType:=[],value:=[]);
+var d1 : AwsKmsArnParsing.AwsArn := AwsKmsArnParsing.AwsArn.AwsArn(account:=[],arnLiteral:=['a', 'r', 'n'],partition:=['a'],region:=[],resource:=d0,service:=[]);
+var r0 := d1.Valid();
+}
+method {:test} test22() {
+var d0 : AwsKmsArnParsing.AwsResource := AwsKmsArnParsing.AwsResource.AwsResource(resourceType:=[],value:=[]);
+var d1 : AwsKmsArnParsing.AwsArn := AwsKmsArnParsing.AwsArn.AwsArn(account:=[],arnLiteral:=['a', 'r', 'n'],partition:=[],region:=[],resource:=d0,service:=[]);
+var r0 := d1.Valid();
+}
+method {:test} test23() {
+var d0 : AwsKmsArnParsing.AwsResource := AwsKmsArnParsing.AwsResource.AwsResource(resourceType:=[],value:=[]);
+var d1 : AwsKmsArnParsing.AwsArn := AwsKmsArnParsing.AwsArn.AwsArn(account:=[],arnLiteral:=['a', 'a', 'a', 'a'],partition:=[],region:=[],resource:=d0,service:=[]);
 var r0 := d1.Valid();
 }
 method {:test} test24() {

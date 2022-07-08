@@ -69,7 +69,13 @@ var d1 : Wrappers.Option<StandardLibrary.UInt.posInt64> := Wrappers.Option<Stand
 var d2 : Aws.Esdk.AwsEncryptionSdkConfig := Aws.Esdk.AwsEncryptionSdkConfig.AwsEncryptionSdkConfig(commitmentPolicy:=d0,maxEncryptedDataKeys:=d1);
 var r0 := v0.CreateAwsEncryptionSdk(d2);
 }*/
-
+method {:test} test1() {
+var v0 := getFreshAwsEncryptionSdkFactoryAwsEncryptionSdkFactory();
+var d0 : Wrappers.Option<Crypto.CommitmentPolicy> := Wrappers.Option<Crypto.CommitmentPolicy>.None;
+var d1 : Wrappers.Option<StandardLibrary.UInt.int64> := Wrappers.Option<StandardLibrary.UInt.int64>.None;
+var d2 : Aws.Esdk.AwsEncryptionSdkConfig := Aws.Esdk.AwsEncryptionSdkConfig.AwsEncryptionSdkConfig(commitmentPolicy:=d0,maxEncryptedDataKeys:=d1);
+var r0 := v0.CreateAwsEncryptionSdk(d2);
+}
 method {:test} test2() {
 var v0 := getFreshAwsEncryptionSdkFactoryAwsEncryptionSdkFactory();
 var r0 := v0.CreateDefaultAwsEncryptionSdk();

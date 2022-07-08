@@ -32,7 +32,7 @@ method {:test} test3() {
 var v0 := getFreshStreamsByteWriter();
 var v1 := getFreshStreamsSeqWriterStandardLibraryUIntuint();
 v1.Repr := {v1};
-v1.data := [0, 0, 0, 0, 0, 0, 0];
+v1.data := [0, 0, 0, 0, 0, 0, 0, 0, 0];
 v0.Repr := {v0, v1};
 var r0 := v0.WriteUInt16((56724 as StandardLibrary.UInt.uint16));
 }
@@ -77,7 +77,7 @@ var r0 := v0.IsDoneReading();
 method {:test} test9() {
 var v0 := getFreshStreamsByteReader();
 var v1 := getFreshStreamsSeqReaderStandardLibraryUIntuint();
-v1.pos := 1;
+v1.pos := 9;
 v1.Repr := {v1};
 v0.Repr := {v0, v1};
 var r0 := v0.ReadUInt64();
@@ -85,7 +85,7 @@ var r0 := v0.ReadUInt64();
 method {:test} test10() {
 var v0 := getFreshStreamsByteReader();
 var v1 := getFreshStreamsSeqReaderStandardLibraryUIntuint();
-v1.pos := 5;
+v1.pos := 3;
 v1.Repr := {v1};
 v0.Repr := {v0, v1};
 var r0 := v0.ReadUInt32();
@@ -93,7 +93,7 @@ var r0 := v0.ReadUInt32();
 method {:test} test11() {
 var v0 := getFreshStreamsByteReader();
 var v1 := getFreshStreamsSeqReaderStandardLibraryUIntuint();
-v1.pos := 7;
+v1.pos := 9;
 v1.Repr := {v1};
 v0.Repr := {v0, v1};
 var r0 := v0.ReadUInt16();
@@ -101,7 +101,7 @@ var r0 := v0.ReadUInt16();
 method {:test} test12() {
 var v0 := getFreshStreamsByteReader();
 var v1 := getFreshStreamsSeqReaderStandardLibraryUIntuint();
-v1.pos := 8;
+v1.pos := 6;
 v1.Repr := {v1};
 v0.Repr := {v0, v1};
 var r0 := v0.ReadBytes((1 as nat));
@@ -109,20 +109,20 @@ var r0 := v0.ReadBytes((1 as nat));
 method {:test} test13() {
 var v0 := getFreshStreamsByteReader();
 var v1 := getFreshStreamsSeqReaderStandardLibraryUIntuint();
-v1.pos := 8;
+v1.pos := 6;
 v1.Repr := {v1};
 v0.Repr := {v0, v1};
 var r0 := v0.ReadByte();
 }*/
 method {:test} test14() {
 var v0 := getFreshStreamsSeqReaderint();
-v0.pos := 7;
+v0.pos := 6;
 v0.Repr := {v0};
 var r0 := v0.ReadExact((1 as nat));
 }
 /*method {:test} test15() {
 var v0 := getFreshStreamsSeqReaderint();
-v0.pos := 9;
+v0.pos := 2;
 v0.Repr := {v0};
 var r0 := v0.ReadElements((1 as nat));
 }*/

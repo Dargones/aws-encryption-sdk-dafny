@@ -53,6 +53,40 @@ var d0 : Crypto.CreateDefaultClientSupplierInput := Crypto.CreateDefaultClientSu
 var r0 := v0.CreateDefaultClientSupplier(d0);
 }
 
+/*method {:test} test3() {
+var v0 := getFreshClientAwsCryptographicMaterialProviders();
+var d0 : Wrappers.Option<Crypto.IClientSupplier> := Wrappers.Option<Crypto.IClientSupplier>.None;
+var d1 : Wrappers.Option<Crypto.DiscoveryFilter> := Wrappers.Option<Crypto.DiscoveryFilter>.None;
+var d2 : Wrappers.Option<Crypto.IClientSupplier> := Wrappers.Option<Crypto.IClientSupplier>.None;
+var d3 : Crypto.CreateAwsKmsDiscoveryMultiKeyringInput := Crypto.CreateAwsKmsDiscoveryMultiKeyringInput.CreateAwsKmsDiscoveryMultiKeyringInput(clientSupplier:=d0,discoveryFilter:=d1,grantTokens:=d2,regions:=[]);
+var r0 := v0.CreateAwsKmsDiscoveryMultiKeyring(d3);
+}
+method {:test} test6() {
+var v0 := getFreshClientAwsCryptographicMaterialProviders();
+var d0 : Wrappers.Option<Crypto.IClientSupplier> := Wrappers.Option<Crypto.IClientSupplier>.None;
+var d1 : Wrappers.Option<seq<char>> := Wrappers.Option<seq<char>>.None;
+var d2 : Wrappers.Option<Crypto.IClientSupplier> := Wrappers.Option<Crypto.IClientSupplier>.None;
+var d3 : Wrappers.Option<seq<seq<char>>> := Wrappers.Option<seq<seq<char>>>.None;
+var d4 : Crypto.CreateAwsKmsMultiKeyringInput := Crypto.CreateAwsKmsMultiKeyringInput.CreateAwsKmsMultiKeyringInput(clientSupplier:=d0,generator:=d1,grantTokens:=d2,kmsKeyIds:=d3);
+var r0 := v0.CreateAwsKmsMultiKeyring(d4);
+}
+method {:test} test8() {
+var v0 := getFreshClientAwsCryptographicMaterialProviders();
+var d0 : Wrappers.Option<Crypto.IClientSupplier> := Wrappers.Option<Crypto.IClientSupplier>.None;
+var d1 : Wrappers.Option<Crypto.DiscoveryFilter> := Wrappers.Option<Crypto.DiscoveryFilter>.None;
+var d2 : Wrappers.Option<Crypto.IClientSupplier> := Wrappers.Option<Crypto.IClientSupplier>.None;
+var d3 : Crypto.CreateAwsKmsMrkDiscoveryMultiKeyringInput := Crypto.CreateAwsKmsMrkDiscoveryMultiKeyringInput.CreateAwsKmsMrkDiscoveryMultiKeyringInput(clientSupplier:=d0,discoveryFilter:=d1,grantTokens:=d2,regions:=[]);
+var r0 := v0.CreateAwsKmsMrkDiscoveryMultiKeyring(d3);
+}
+method {:test} test11() {
+var v0 := getFreshClientAwsCryptographicMaterialProviders();
+var d0 : Wrappers.Option<Crypto.IClientSupplier> := Wrappers.Option<Crypto.IClientSupplier>.None;
+var d1 : Wrappers.Option<seq<char>> := Wrappers.Option<seq<char>>.None;
+var d2 : Wrappers.Option<Crypto.IClientSupplier> := Wrappers.Option<Crypto.IClientSupplier>.None;
+var d3 : Wrappers.Option<seq<seq<char>>> := Wrappers.Option<seq<seq<char>>>.None;
+var d4 : Crypto.CreateAwsKmsMrkMultiKeyringInput := Crypto.CreateAwsKmsMrkMultiKeyringInput.CreateAwsKmsMrkMultiKeyringInput(clientSupplier:=d0,generator:=d1,grantTokens:=d2,kmsKeyIds:=d3);
+var r0 := v0.CreateAwsKmsMrkMultiKeyring(d4);
+}*/
 
 method {:synthesize} getFreshClientAwsCryptographicMaterialProviders() returns (o:Client.AwsCryptographicMaterialProviders) ensures fresh(o)
 }

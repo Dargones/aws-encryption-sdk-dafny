@@ -24,6 +24,4 @@ import Com
 import Com.Amazonaws
 import Com.Amazonaws.Kms
 
-
-method {:synthesize} getFreshMaterialProvidersRawAESKeyringRawAESKeyring() returns (o:MaterialProviders.RawAESKeyring.RawAESKeyring) ensures fresh(o)
 }

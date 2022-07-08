@@ -54,11 +54,11 @@ var d0 : HeaderTypes.ContentType := HeaderTypes.ContentType.NonFramed;
 var r0 := SharedHeaderFunctions.WriteContentType(d0);
 }
 method {:test} test1() {
-var d0 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=[0, 0, 0, 0, 0, 0],start:=5);
+var d0 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=[0, 0, 0, 0, 0, 0, 0],start:=6);
 var r0 := SharedHeaderFunctions.ReadMessageIdV2(d0);
 }
 method {:test} test2() {
-var d0 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=[0, 0, 0, 0, 0, 0],start:=5);
+var d0 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=[0, 0, 0, 0, 0, 0, 0],start:=6);
 var r0 := SharedHeaderFunctions.ReadMessageIdV1(d0);
 }
 method {:test} test3() {
