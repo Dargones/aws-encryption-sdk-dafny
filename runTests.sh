@@ -14,6 +14,6 @@ python3 MoveCoverage.py
 dotnet new tool-manifest --force
 dotnet tool install dotnet-reportgenerator-globaltool
 cd Source/
-dotnet reportgenerator "-classfilters:+*_Compile*" "-reports:../Test/TestResults/coverage.cobertura.xml" "-targetdir:../Test/TestResults" -reporttypes:TextSummary
+dotnet reportgenerator "-classfilters:-*UnitTests_Compile*;+*_Compile*" "-reports:../Test/TestResults/coverage.cobertura.xml" "-targetdir:../Test/TestResults" -reporttypes:TextSummary
 cd ..
 python3 GetCodeCoverage.py
