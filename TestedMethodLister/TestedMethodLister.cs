@@ -1,6 +1,7 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Newtonsoft.Json;
 
 namespace TestedMethodLister;
 
@@ -57,14 +58,14 @@ public class TestedMethodLister {
         TestedMethodWalker walker = new TestedMethodWalker(model, typeSet, compilation);
         walker.Visit(root);
 
-        foreach (var method in walker.TestedMethodNames)
-            System.Console.WriteLine(method);
+        String json = JsonConvert.SerializeObject(walker.TestedMethodNames, Newtonsoft.Json.Formatting.Indented);
+        System.Console.WriteLine(json);
     }
 }
 
 class TestedMethodWalker : CSharpSyntaxWalker {
 
-    public HashSet<string> TestedMethodNames { get; }
+    public Dictionary<string, int> TestedMethodNames { get; }
     private SemanticModel model;
     private HashSet<INamedTypeSymbol> typeSet;
     private Compilation comp;
@@ -147,6 +148,14 @@ class TestedMethodWalker : CSharpSyntaxWalker {
         return true;
     }
 
+    public void AddToTestedMethodNames(string methodName) {
+        if (TestedMethodNames.ContainsKey(methodName)) {
+            TestedMethodNames[methodName]++;
+        } else {
+            TestedMethodNames.Add(methodName, 1);
+        }
+    }
+
     public override void VisitInvocationExpression(InvocationExpressionSyntax node)
     {
         var callExpr = node.Expression;
@@ -158,7 +167,7 @@ class TestedMethodWalker : CSharpSyntaxWalker {
             if (Lhs is MemberAccessExpressionSyntax l) {
                 var modifiedType = RemoveTypeArguments(l.ToString());
                 var modifiedCall = RemoveTypeArguments(ma.Name.ToString());
-                TestedMethodNames.Add(modifiedType + "::" + modifiedCall);
+                AddToTestedMethodNames(modifiedType + "::" + modifiedCall);
             } else if (Lhs is ParenthesizedExpressionSyntax p) {
                 var simpleName = PullSimpleNameFromParenExpr(p);
                 if (simpleName != null) {
@@ -171,14 +180,14 @@ class TestedMethodWalker : CSharpSyntaxWalker {
                                 if (!result.IsThrow && result.IsExplicit) {
                                     var modifiedType = RemoveTypeArguments(derivedType.ToString());
                                     var modifiedCall = RemoveTypeArguments(ma.Name.ToString());
-                                    TestedMethodNames.Add(modifiedType + "::" + modifiedCall);
+                                    AddToTestedMethodNames(modifiedType + "::" + modifiedCall);
                                 }
-                            }  
+                            }
                         } else {
                             var modifiedType = RemoveTypeArguments(type.ToString());
                             var modifiedCall = RemoveTypeArguments(ma.Name.ToString());
-                            TestedMethodNames.Add(modifiedType + "::" + modifiedCall);
-                        }                   
+                            AddToTestedMethodNames(modifiedType + "::" + modifiedCall);
+                        }
                     }
                 }
             }

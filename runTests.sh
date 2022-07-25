@@ -16,4 +16,7 @@ dotnet tool install dotnet-reportgenerator-globaltool
 cd Source/
 dotnet reportgenerator "-classfilters:-*UnitTests_Compile*;+*_Compile*" "-reports:../Test/TestResults/coverage.cobertura.xml" "-targetdir:../Test/TestResults" -reporttypes:TextSummary
 cd ..
+echo "Finding tested methods..."
+dotnet build ../TestedMethodLister/TestedMethodLister.sln
+dotnet ../TestedMethodLister/bin/Debug/net6.0/TestedMethodLister.dll Test/obj/Debug/netcoreapp3.1/GeneratedFromDafny.cs > ../TestedMethodLister/TestedMethods.json
 python3 GetCodeCoverage.py
