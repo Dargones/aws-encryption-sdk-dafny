@@ -8,6 +8,9 @@ test/**/Output/*
 /node_modules
 *.config
 *.bpl
+TestedMethodLister/bin
+TestedMethodLister/obj
+TestedMethodLister/.vscode
 
 # Duvet output
 specification_compliance_report.html
