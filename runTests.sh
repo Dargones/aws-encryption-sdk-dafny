@@ -19,4 +19,7 @@ cd ..
 echo "Finding tested methods..."
 dotnet build ../TestedMethodLister/TestedMethodLister.sln
 dotnet ../TestedMethodLister/bin/Debug/net6.0/TestedMethodLister.dll Test/obj/Debug/netcoreapp3.1/GeneratedFromDafny.cs > ../TestedMethodLister/TestedMethods.json
+ALL_METHODS=$(grep -oPR "method (\{.*\}\s)?[a-zA-Z0-9_]+\s*\??(<|\()" src | wc -l)
+TESTED_METHODS=$(grep -oP "\"[a-zA-Z0-9_]+" TestedMethodLister/TestedMethods.json | wc -l)
+echo "Selected "$TESTED_METHODS" out of "$ALL_METHODS" methods/function methods"
 python3 GetCodeCoverage.py
