@@ -9,11 +9,10 @@ public class TestedMethodLister {
 
     public static void Main(string[] args) {
 
-
         var allTests = CSharpSyntaxTree.ParseText(File.ReadAllText(args[0]));
         CompilationUnitSyntax root = allTests.GetCompilationUnitRoot();
 
-        var compilation = CSharpCompilation.Create("AllTests")
+        var compilation = CSharpCompilation.Create("AllSource")
             .AddReferences(MetadataReference.CreateFromFile(
         typeof(object).Assembly.Location))
             .AddSyntaxTrees(allTests);
@@ -69,6 +68,9 @@ class TestedMethodWalker : CSharpSyntaxWalker {
     private SemanticModel model;
     private HashSet<INamedTypeSymbol> typeSet;
     private Compilation comp;
+    private string[] MethodsToIgnore = new string[] { "DowncastClone", "TypeDescriptor", "ToString", "Equals", "GetHashCode", "_TypeDescriptor", "__ctor", "Default", "IntegerRange", "create"};
+    private string[] MethodPatternsToIgnore = new string[] { "create_"};
+    private string[] NamespacesToIgnore = new string[] { "DafnyAssembly", "Dafny", "@_System", "_System"};
 
     public TestedMethodWalker(SemanticModel model, HashSet<INamedTypeSymbol> typeSet, Compilation comp) {
         TestedMethodNames = new();
@@ -151,9 +153,54 @@ class TestedMethodWalker : CSharpSyntaxWalker {
     public void AddToTestedMethodNames(string methodName) {
         if (TestedMethodNames.ContainsKey(methodName)) {
             TestedMethodNames[methodName]++;
-        } else {
-            TestedMethodNames.Add(methodName, 1);
         }
+    }
+
+    public bool IsInTargetNamespace(SyntaxNode startNode) {
+        foreach (var node in startNode.Ancestors()) {
+            if (node is InterfaceDeclarationSyntax id) {
+                return false;
+            }
+            if (node is NamespaceDeclarationSyntax ns) {
+                if (ns.Name is NameSyntax ident) {
+                    if (NamespacesToIgnore.Contains(ident.GetText().ToString().Trim())) 
+                        return false;
+                    else return true;
+                }
+            }
+        }        
+        return false;
+    }
+
+    public string GetFullyQualifiedName(MethodDeclarationSyntax startNode) {
+        var name = startNode.Identifier.ToString();
+        foreach (var node in startNode.Ancestors()) {
+            if (node is TypeDeclarationSyntax td)
+                name = td.Identifier.ToString() + '.' + name;
+            else if (node is NamespaceDeclarationSyntax ns)
+                name = ns.Name.ToString() + '.' + name;
+        }
+        return name;
+    }
+
+    public bool CheckIgnoreMethodPatterns(MethodDeclarationSyntax node) {
+        foreach (var pattern in MethodPatternsToIgnore) {
+            if (node.Identifier.ToString().Contains(pattern))
+                return false;
+        }
+        return true;
+    }
+
+    public override void VisitMethodDeclaration(MethodDeclarationSyntax node) {
+        if (!CheckIfInUnitTestsDecl(node) && IsInTargetNamespace(node) &&
+            !MethodsToIgnore.Contains(node.Identifier.ToString()) &&
+            CheckIgnoreMethodPatterns(node)) {
+            var fullMethod = GetFullyQualifiedName(node);
+            if (TestedMethodNames.ContainsKey(fullMethod))
+                throw new Exception("Visited same method decl twice, which shouldn't be possible");
+            TestedMethodNames.Add(fullMethod, 0);
+        }
+        base.VisitMethodDeclaration(node);
     }
 
     public override void VisitInvocationExpression(InvocationExpressionSyntax node)
@@ -167,7 +214,9 @@ class TestedMethodWalker : CSharpSyntaxWalker {
             if (Lhs is MemberAccessExpressionSyntax l) {
                 var modifiedType = RemoveTypeArguments(l.ToString());
                 var modifiedCall = RemoveTypeArguments(ma.Name.ToString());
-                AddToTestedMethodNames(modifiedType + "::" + modifiedCall);
+                if (MethodsToIgnore.Contains(modifiedCall))
+                    return;
+                AddToTestedMethodNames(modifiedType + "." + modifiedCall);
             } else if (Lhs is ParenthesizedExpressionSyntax p) {
                 var simpleName = PullSimpleNameFromParenExpr(p);
                 if (simpleName != null) {
@@ -180,18 +229,21 @@ class TestedMethodWalker : CSharpSyntaxWalker {
                                 if (!result.IsThrow && result.IsExplicit) {
                                     var modifiedType = RemoveTypeArguments(derivedType.ToString());
                                     var modifiedCall = RemoveTypeArguments(ma.Name.ToString());
-                                    AddToTestedMethodNames(modifiedType + "::" + modifiedCall);
+                                    if (MethodsToIgnore.Contains(modifiedCall))
+                                        return;
+                                    AddToTestedMethodNames(modifiedType + "." + modifiedCall);
                                 }
                             }
                         } else {
                             var modifiedType = RemoveTypeArguments(type.ToString());
                             var modifiedCall = RemoveTypeArguments(ma.Name.ToString());
-                            AddToTestedMethodNames(modifiedType + "::" + modifiedCall);
+                            if (MethodsToIgnore.Contains(modifiedCall))
+                                return;
+                            AddToTestedMethodNames(modifiedType + "." + modifiedCall);
                         }
                     }
                 }
             }
         }
-        //base.VisitInvocationExpression(node);
     }
 }
