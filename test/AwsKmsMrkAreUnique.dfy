@@ -1,20 +1,3 @@
-// Warning: Values of type StandardLibrary.UInt.uint8 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint16 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint64 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int64 will be assigned a default value of type int, which may or may not match the associated condition
-// Values of type StandardLibrary.UInt.posInt64 will be assigned the default value of 1
-// Warning: Values of type StandardLibrary.UInt.seq16 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq16 will be assigned a default value of type seq16<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq32 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq32 will be assigned a default value of type seq32<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq64 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq64 will be assigned a default value of type seq64<uint8>, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsArn will be assigned a default value of type AwsArn, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsResource will be assigned a default value of type AwsResource, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned a default value of type string, which may or may not match the associated condition
-// Values of type UTF8.ValidUTF8Bytes will be assigned the default value of []
 include "../src//AwsCryptographicMaterialProviders/Keyrings/AwsKms/AwsKmsMrkAreUnique.dfy"
 module AwsKmsMrkAreUniqueUnitTests {
 import AwsKmsMrkAreUnique
@@ -25,50 +8,6 @@ import Seq
 import Math
 import AwsKmsArnParsing
 import UTF8
-// Warning: Values of type StandardLibrary.UInt.uint8 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint16 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint64 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int64 will be assigned a default value of type int, which may or may not match the associated condition
-// Values of type StandardLibrary.UInt.posInt64 will be assigned the default value of 1
-// Warning: Values of type StandardLibrary.UInt.seq16 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq16 will be assigned a default value of type seq16<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq32 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq32 will be assigned a default value of type seq32<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq64 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq64 will be assigned a default value of type seq64<uint8>, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsArn will be assigned a default value of type AwsArn, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsResource will be assigned a default value of type AwsResource, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned a default value of type string, which may or may not match the associated condition
-// Values of type UTF8.ValidUTF8Bytes will be assigned the default value of []
-// Warning: Values of type StandardLibrary.UInt.uint8 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint16 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint64 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int64 will be assigned a default value of type int, which may or may not match the associated condition
-// Values of type StandardLibrary.UInt.posInt64 will be assigned the default value of 1
-// Warning: Values of type StandardLibrary.UInt.seq16 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq16 will be assigned a default value of type seq16<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq32 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq32 will be assigned a default value of type seq32<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq64 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq64 will be assigned a default value of type seq64<uint8>, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsArn will be assigned a default value of type AwsArn, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsResource will be assigned a default value of type AwsResource, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned a default value of type string, which may or may not match the associated condition
-// Values of type UTF8.ValidUTF8Bytes will be assigned the default value of []
-// Merging boogie files...
-// Converting function calls to method calls...
-// Adding Impl$$ methods to support inlining...
-// Removing assertions...
-// Annotating blocks...
-// Generating modifications...
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657950) covers block 657923
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657950) covers block 657924
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657950) covers block 657950
-// Extracting the test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657950) from the counterexample...
 method {:test} test0() {
 var d0 : string := "";
 var d1 : string := "";
@@ -83,17 +22,6 @@ var d9 : AwsKmsArnParsing.AwsKmsIdentifier := AwsKmsArnParsing.AwsKmsIdentifier.
 var d10 : seq<AwsKmsArnParsing.AwsKmsIdentifier> := [d9];
 var r0 := AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(d10);
 }
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) covers block 657923
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) covers block 657925
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) covers block 657927
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) covers block 657928
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) covers block 657929
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) covers block 657932
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) covers block 657935
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) covers block 657941
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) covers block 657947
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) covers block 657949
-// Extracting the test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657949) from the counterexample...
 method {:test} test1() {
 var d0 : string := "";
 var d1 : string := "";
@@ -208,17 +136,6 @@ var d109 : AwsKmsArnParsing.AwsKmsIdentifier := AwsKmsArnParsing.AwsKmsIdentifie
 var d110 : seq<AwsKmsArnParsing.AwsKmsIdentifier> := [d9, d19, d29, d39, d49, d59, d69, d79, d89, d99, d109];
 var r0 := AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(d110);
 }
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) covers block 657923
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) covers block 657925
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) covers block 657927
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) covers block 657928
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) covers block 657929
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) covers block 657932
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) covers block 657935
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) covers block 657941
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) covers block 657947
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) covers block 657948
-// Extracting the test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657948) from the counterexample...
 method {:test} test2() {
 var d0 : string := "";
 var d1 : string := "";
@@ -423,18 +340,6 @@ var d199 : AwsKmsArnParsing.AwsKmsIdentifier := AwsKmsArnParsing.AwsKmsIdentifie
 var d200 : seq<AwsKmsArnParsing.AwsKmsIdentifier> := [d9, d19, d29, d39, d49, d59, d69, d79, d89, d99, d109, d119, d129, d139, d149, d159, d169, d179, d189, d199];
 var r0 := AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(d200);
 }
-// No test can be generated for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657945) because the verifier suceeded.
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) covers block 657923
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) covers block 657925
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) covers block 657927
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) covers block 657928
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) covers block 657929
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) covers block 657932
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) covers block 657935
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) covers block 657941
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) covers block 657942
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) covers block 657944
-// Extracting the test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944) from the counterexample...
 method {:test} test3() {
 var d0 : string := "";
 var d1 : string := "";
@@ -459,40 +364,6 @@ var d19 : AwsKmsArnParsing.AwsKmsIdentifier := AwsKmsArnParsing.AwsKmsIdentifier
 var d20 : seq<AwsKmsArnParsing.AwsKmsIdentifier> := [d9, d19];
 var r0 := AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(d20);
 }
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) covers block 657923
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) covers block 657925
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) covers block 657927
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) covers block 657928
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) covers block 657929
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) covers block 657932
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) covers block 657935
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) covers block 657941
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) covers block 657942
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) covers block 657943
-// Extracting the test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) from the counterexample...
-// Test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657943) matches a test previously generated for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944).
-// No test can be generated for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657939) because the verifier suceeded.
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) covers block 657923
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) covers block 657925
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) covers block 657927
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) covers block 657928
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) covers block 657929
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) covers block 657932
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) covers block 657935
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) covers block 657936
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) covers block 657938
-// Extracting the test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) from the counterexample...
-// Test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657938) matches a test previously generated for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944).
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657937) covers block 657923
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657937) covers block 657925
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657937) covers block 657927
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657937) covers block 657928
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657937) covers block 657929
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657937) covers block 657932
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657937) covers block 657935
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657937) covers block 657936
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657937) covers block 657937
-// Extracting the test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657937) from the counterexample...
 method {:test} test6() {
 var d0 : string := "";
 var d1 : string := "";
@@ -597,29 +468,6 @@ var d99 : AwsKmsArnParsing.AwsKmsIdentifier := AwsKmsArnParsing.AwsKmsIdentifier
 var d100 : seq<AwsKmsArnParsing.AwsKmsIdentifier> := [d9, d19, d29, d39, d49, d59, d69, d79, d89, d99];
 var r0 := AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(d100);
 }
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657934) covers block 657923
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657934) covers block 657925
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657934) covers block 657927
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657934) covers block 657934
-// Extracting the test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657934) from the counterexample...
-// Test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657934) matches a test previously generated for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944).
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657933) covers block 657923
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657933) covers block 657925
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657933) covers block 657927
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657933) covers block 657928
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657933) covers block 657930
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657933) covers block 657933
-// Extracting the test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657933) from the counterexample...
-// Test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657933) matches a test previously generated for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657944).
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657926) covers block 657923
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657926) covers block 657925
-// Test AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657926) covers block 657926
-// Extracting the test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657926) from the counterexample...
-// Test for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657926) matches a test previously generated for AwsKmsMrkAreUnique.AwsKmsMrkAreUnique(block#657950).
-// Test AwsKmsMrkAreUnique.GetKeyId(block#658982) covers block 658977
-// Test AwsKmsMrkAreUnique.GetKeyId(block#658982) covers block 658978
-// Test AwsKmsMrkAreUnique.GetKeyId(block#658982) covers block 658982
-// Extracting the test for AwsKmsMrkAreUnique.GetKeyId(block#658982) from the counterexample...
 method {:test} test10() {
 var d0 : string := "arn";
 var d1 : string := "a";
@@ -633,11 +481,6 @@ var d8 : AwsKmsArnParsing.AwsKmsArn := AwsKmsArnParsing.AwsArn.AwsArn(arnLiteral
 var d9 : AwsKmsArnParsing.AwsKmsIdentifier := AwsKmsArnParsing.AwsKmsIdentifier.AwsKmsArnIdentifier(a:=d8);
 var r0 := AwsKmsMrkAreUnique.GetKeyId(d9);
 }
-// No test can be generated for AwsKmsMrkAreUnique.GetKeyId(block#658981) because the verifier suceeded.
-// Test AwsKmsMrkAreUnique.GetKeyId(block#658980) covers block 658977
-// Test AwsKmsMrkAreUnique.GetKeyId(block#658980) covers block 658979
-// Test AwsKmsMrkAreUnique.GetKeyId(block#658980) covers block 658980
-// Extracting the test for AwsKmsMrkAreUnique.GetKeyId(block#658980) from the counterexample...
 method {:test} test11() {
 var d0 : string := "key";
 var d1 : string := "a";
@@ -645,7 +488,5 @@ var d2 : AwsKmsArnParsing.AwsKmsResource := AwsKmsArnParsing.AwsResource.AwsReso
 var d3 : AwsKmsArnParsing.AwsKmsIdentifier := AwsKmsArnParsing.AwsKmsIdentifier.AwsKmsRawResourceIdentifier(r:=d2);
 var r0 := AwsKmsMrkAreUnique.GetKeyId(d3);
 }
-// Procedure Impl$$AwsKmsMrkAreUnique.__default.AwsKmsMrkAreUnique (28 blocks) is not fully covered by 5 (failed to extract 0) tests generated using 12 SMT queries (failed 2 queries)
-// Procedure Impl$$AwsKmsMrkAreUnique.__default.GetKeyId (6 blocks) is not fully covered by 2 (failed to extract 0) tests generated using 3 SMT queries (failed 1 queries)
 
 }

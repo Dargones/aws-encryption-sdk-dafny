@@ -1,109 +1,3 @@
-// Warning: Values of type Frames.FramedHeader will be assigned a default value of type Header.Header, which may or may not match the associated condition
-// Warning: Values of type Frames.NonFramedHeader will be assigned a default value of type Header.Header, which may or may not match the associated condition
-// Warning: Values of type Frames.RegularFrame will be assigned a default value of type Frame, which may or may not match the associated condition
-// Warning: Values of type Frames.FinalFrame will be assigned a default value of type Frame, which may or may not match the associated condition
-// Warning: Values of type Frames.NonFramed will be assigned a default value of type Frame, which may or may not match the associated condition
-// Values of type UTF8.ValidUTF8Bytes will be assigned the default value of []
-// Warning: Values of type StandardLibrary.UInt.uint8 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint16 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint64 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int64 will be assigned a default value of type int, which may or may not match the associated condition
-// Values of type StandardLibrary.UInt.posInt64 will be assigned the default value of 1
-// Warning: Values of type StandardLibrary.UInt.seq16 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq16 will be assigned a default value of type seq16<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq32 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq32 will be assigned a default value of type seq32<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq64 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq64 will be assigned a default value of type seq64<uint8>, which may or may not match the associated condition
-// Values of type AESEncryption.KeyLength will be assigned the default value of 32
-// Values of type AESEncryption.TagLength will be assigned the default value of 16
-// Values of type AESEncryption.IVLength will be assigned the default value of 12
-// Values of type RSAEncryption.StrengthBits will be assigned the default value of 81
-// Warning: Values of type Base64.index will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type Base64.uint24 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsArn will be assigned a default value of type AwsArn, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsResource will be assigned a default value of type AwsResource, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Constants.AwsKmsEncryptedDataKey will be assigned a default value of type Crypto.EncryptedDataKey, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ShortUTF8Seq will be assigned a default value of type ValidUTF8Bytes, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.Linear will be assigned a default value of type seq<Pair<K, V>>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptedDataKey will be assigned a default value of type EncryptedDataKey, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptedDataKeys will be assigned a default value of type seq16<ESDKEncryptedDataKey>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptionContext will be assigned a default value of type Crypto.EncryptionContext, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKAlgorithmSuiteId will be assigned a default value of type uint16, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.MoreNeeded will be assigned a default value of type ReadProblems, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.ReadResult will be assigned a default value of type Result<SuccessfulRead<T>, E>, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.ReadCorrect will be assigned a default value of type ReadResult<T, ReadProblems>, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.ReadBinaryCorrect will be assigned a default value of type ReadResult<T, MoreNeeded>, which may or may not match the associated condition
-// Warning: Values of type Header.Header will be assigned a default value of type HeaderInfo, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKEncryptionContextPair will be assigned a default value of type Pair<UTF8.ValidUTF8Bytes, UTF8.ValidUTF8Bytes>, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKCanonicalEncryptionContext will be assigned a default value of type seq<ESDKEncryptionContextPair>, which may or may not match the associated condition
-// Warning: Values of type V1HeaderBody.V1HeaderBody will be assigned a default value of type HeaderTypes.HeaderBody, which may or may not match the associated condition
-// Values of type V1HeaderBody.ReservedBytes will be assigned the default value of RESERVED_BYTES
-// Warning: Values of type HeaderTypes.MessageId will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type V2HeaderBody.V2HeaderBody will be assigned a default value of type HeaderTypes.HeaderBody, which may or may not match the associated condition
-// Warning: Values of type HeaderAuth.AESMac will be assigned a default value of type HeaderTypes.HeaderAuth, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.KmsKeyId will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.KmsKeyIdList will be assigned a default value of type seq<KmsKeyId>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.GrantToken will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.GrantTokenList will be assigned a default value of type seq<GrantToken>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.Region will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.RegionList will be assigned a default value of type seq<Region>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.AccountId will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.AccountIdList will be assigned a default value of type seq<AccountId>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.EncryptionContext will be assigned a default value of type map<ValidUTF8Bytes, ValidUTF8Bytes>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.EncryptedDataKeyList will be assigned a default value of type seq<EncryptedDataKey>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AliasList will be assigned a default value of type seq<AliasListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AliasNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.ArnType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AWSAccountIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.BooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CiphertextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CloudHsmClusterIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoresList will be assigned a default value of type seq<CustomKeyStoresListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.DescriptionType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionAlgorithmSpecList will be assigned a default value of type seq<EncryptionAlgorithmSpec>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionContextKey will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionContextType will be assigned a default value of type map<EncryptionContextKey, EncryptionContextValue>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionContextValue will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.ErrorMessageType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantList will be assigned a default value of type seq<GrantListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantOperationList will be assigned a default value of type seq<GrantOperation>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenList will be assigned a default value of type seq<GrantTokenType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyList will be assigned a default value of type seq<KeyListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyStorePasswordType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.LimitType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.MarkerType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.MultiRegionKeyList will be assigned a default value of type seq<MultiRegionKey>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.NullableBooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.NumberOfBytesType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PendingWindowInDaysType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PlaintextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyNameList will be assigned a default value of type seq<PolicyNameType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PrincipalIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PublicKeyType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.RegionType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.SigningAlgorithmSpecList will be assigned a default value of type seq<SigningAlgorithmSpec>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagKeyList will be assigned a default value of type seq<TagKeyType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagKeyType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagList will be assigned a default value of type seq<Tag>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagValueType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TrustAnchorCertificateType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.KeyDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.CommitmentDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.AlgorithmSuite will be assigned a default value of type AlgorithmSuiteInfo, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.DecryptionMaterialsPendingPlaintextDataKey will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.SealedDecryptionMaterials will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
 include "../src//SDK/Serialize/Frames.dfy"
 module FramesUnitTests {
 import Frames
@@ -161,226 +55,6 @@ import MaterialProviders.AwsKmsKeyring
 import MaterialProviders.MultiKeyring
 import MaterialProviders.RawAESKeyring
 import MaterialProviders.RawRSAKeyring
-// Warning: Values of type Frames.FramedHeader will be assigned a default value of type Header.Header, which may or may not match the associated condition
-// Warning: Values of type Frames.NonFramedHeader will be assigned a default value of type Header.Header, which may or may not match the associated condition
-// Warning: Values of type Frames.RegularFrame will be assigned a default value of type Frame, which may or may not match the associated condition
-// Warning: Values of type Frames.FinalFrame will be assigned a default value of type Frame, which may or may not match the associated condition
-// Warning: Values of type Frames.NonFramed will be assigned a default value of type Frame, which may or may not match the associated condition
-// Values of type UTF8.ValidUTF8Bytes will be assigned the default value of []
-// Warning: Values of type StandardLibrary.UInt.uint8 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint16 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint64 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int64 will be assigned a default value of type int, which may or may not match the associated condition
-// Values of type StandardLibrary.UInt.posInt64 will be assigned the default value of 1
-// Warning: Values of type StandardLibrary.UInt.seq16 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq16 will be assigned a default value of type seq16<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq32 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq32 will be assigned a default value of type seq32<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq64 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq64 will be assigned a default value of type seq64<uint8>, which may or may not match the associated condition
-// Values of type AESEncryption.KeyLength will be assigned the default value of 32
-// Values of type AESEncryption.TagLength will be assigned the default value of 16
-// Values of type AESEncryption.IVLength will be assigned the default value of 12
-// Values of type RSAEncryption.StrengthBits will be assigned the default value of 81
-// Warning: Values of type Base64.index will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type Base64.uint24 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsArn will be assigned a default value of type AwsArn, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsResource will be assigned a default value of type AwsResource, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Constants.AwsKmsEncryptedDataKey will be assigned a default value of type Crypto.EncryptedDataKey, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ShortUTF8Seq will be assigned a default value of type ValidUTF8Bytes, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.Linear will be assigned a default value of type seq<Pair<K, V>>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptedDataKey will be assigned a default value of type EncryptedDataKey, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptedDataKeys will be assigned a default value of type seq16<ESDKEncryptedDataKey>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptionContext will be assigned a default value of type Crypto.EncryptionContext, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKAlgorithmSuiteId will be assigned a default value of type uint16, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.MoreNeeded will be assigned a default value of type ReadProblems, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.ReadResult will be assigned a default value of type Result<SuccessfulRead<T>, E>, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.ReadCorrect will be assigned a default value of type ReadResult<T, ReadProblems>, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.ReadBinaryCorrect will be assigned a default value of type ReadResult<T, MoreNeeded>, which may or may not match the associated condition
-// Warning: Values of type Header.Header will be assigned a default value of type HeaderInfo, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKEncryptionContextPair will be assigned a default value of type Pair<UTF8.ValidUTF8Bytes, UTF8.ValidUTF8Bytes>, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKCanonicalEncryptionContext will be assigned a default value of type seq<ESDKEncryptionContextPair>, which may or may not match the associated condition
-// Warning: Values of type V1HeaderBody.V1HeaderBody will be assigned a default value of type HeaderTypes.HeaderBody, which may or may not match the associated condition
-// Values of type V1HeaderBody.ReservedBytes will be assigned the default value of RESERVED_BYTES
-// Warning: Values of type HeaderTypes.MessageId will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type V2HeaderBody.V2HeaderBody will be assigned a default value of type HeaderTypes.HeaderBody, which may or may not match the associated condition
-// Warning: Values of type HeaderAuth.AESMac will be assigned a default value of type HeaderTypes.HeaderAuth, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.KmsKeyId will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.KmsKeyIdList will be assigned a default value of type seq<KmsKeyId>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.GrantToken will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.GrantTokenList will be assigned a default value of type seq<GrantToken>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.Region will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.RegionList will be assigned a default value of type seq<Region>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.AccountId will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.AccountIdList will be assigned a default value of type seq<AccountId>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.EncryptionContext will be assigned a default value of type map<ValidUTF8Bytes, ValidUTF8Bytes>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.EncryptedDataKeyList will be assigned a default value of type seq<EncryptedDataKey>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AliasList will be assigned a default value of type seq<AliasListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AliasNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.ArnType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AWSAccountIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.BooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CiphertextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CloudHsmClusterIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoresList will be assigned a default value of type seq<CustomKeyStoresListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.DescriptionType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionAlgorithmSpecList will be assigned a default value of type seq<EncryptionAlgorithmSpec>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionContextKey will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionContextType will be assigned a default value of type map<EncryptionContextKey, EncryptionContextValue>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionContextValue will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.ErrorMessageType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantList will be assigned a default value of type seq<GrantListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantOperationList will be assigned a default value of type seq<GrantOperation>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenList will be assigned a default value of type seq<GrantTokenType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyList will be assigned a default value of type seq<KeyListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyStorePasswordType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.LimitType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.MarkerType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.MultiRegionKeyList will be assigned a default value of type seq<MultiRegionKey>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.NullableBooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.NumberOfBytesType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PendingWindowInDaysType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PlaintextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyNameList will be assigned a default value of type seq<PolicyNameType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PrincipalIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PublicKeyType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.RegionType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.SigningAlgorithmSpecList will be assigned a default value of type seq<SigningAlgorithmSpec>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagKeyList will be assigned a default value of type seq<TagKeyType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagKeyType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagList will be assigned a default value of type seq<Tag>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagValueType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TrustAnchorCertificateType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.KeyDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.CommitmentDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.AlgorithmSuite will be assigned a default value of type AlgorithmSuiteInfo, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.DecryptionMaterialsPendingPlaintextDataKey will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.SealedDecryptionMaterials will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
-// Warning: Values of type Frames.FramedHeader will be assigned a default value of type Header.Header, which may or may not match the associated condition
-// Warning: Values of type Frames.NonFramedHeader will be assigned a default value of type Header.Header, which may or may not match the associated condition
-// Warning: Values of type Frames.RegularFrame will be assigned a default value of type Frame, which may or may not match the associated condition
-// Warning: Values of type Frames.FinalFrame will be assigned a default value of type Frame, which may or may not match the associated condition
-// Warning: Values of type Frames.NonFramed will be assigned a default value of type Frame, which may or may not match the associated condition
-// Values of type UTF8.ValidUTF8Bytes will be assigned the default value of []
-// Warning: Values of type StandardLibrary.UInt.uint8 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint16 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.uint64 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int32 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.int64 will be assigned a default value of type int, which may or may not match the associated condition
-// Values of type StandardLibrary.UInt.posInt64 will be assigned the default value of 1
-// Warning: Values of type StandardLibrary.UInt.seq16 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq16 will be assigned a default value of type seq16<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq32 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq32 will be assigned a default value of type seq32<uint8>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.seq64 will be assigned a default value of type seq<T>, which may or may not match the associated condition
-// Warning: Values of type StandardLibrary.UInt.Uint8Seq64 will be assigned a default value of type seq64<uint8>, which may or may not match the associated condition
-// Values of type AESEncryption.KeyLength will be assigned the default value of 32
-// Values of type AESEncryption.TagLength will be assigned the default value of 16
-// Values of type AESEncryption.IVLength will be assigned the default value of 12
-// Values of type RSAEncryption.StrengthBits will be assigned the default value of 81
-// Warning: Values of type Base64.index will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type Base64.uint24 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsArn will be assigned a default value of type AwsArn, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsResource will be assigned a default value of type AwsResource, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Constants.AwsKmsEncryptedDataKey will be assigned a default value of type Crypto.EncryptedDataKey, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ShortUTF8Seq will be assigned a default value of type ValidUTF8Bytes, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.Linear will be assigned a default value of type seq<Pair<K, V>>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptedDataKey will be assigned a default value of type EncryptedDataKey, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptedDataKeys will be assigned a default value of type seq16<ESDKEncryptedDataKey>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptionContext will be assigned a default value of type Crypto.EncryptionContext, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKAlgorithmSuiteId will be assigned a default value of type uint16, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.MoreNeeded will be assigned a default value of type ReadProblems, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.ReadResult will be assigned a default value of type Result<SuccessfulRead<T>, E>, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.ReadCorrect will be assigned a default value of type ReadResult<T, ReadProblems>, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.ReadBinaryCorrect will be assigned a default value of type ReadResult<T, MoreNeeded>, which may or may not match the associated condition
-// Warning: Values of type Header.Header will be assigned a default value of type HeaderInfo, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKEncryptionContextPair will be assigned a default value of type Pair<UTF8.ValidUTF8Bytes, UTF8.ValidUTF8Bytes>, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKCanonicalEncryptionContext will be assigned a default value of type seq<ESDKEncryptionContextPair>, which may or may not match the associated condition
-// Warning: Values of type V1HeaderBody.V1HeaderBody will be assigned a default value of type HeaderTypes.HeaderBody, which may or may not match the associated condition
-// Values of type V1HeaderBody.ReservedBytes will be assigned the default value of RESERVED_BYTES
-// Warning: Values of type HeaderTypes.MessageId will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type V2HeaderBody.V2HeaderBody will be assigned a default value of type HeaderTypes.HeaderBody, which may or may not match the associated condition
-// Warning: Values of type HeaderAuth.AESMac will be assigned a default value of type HeaderTypes.HeaderAuth, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.KmsKeyId will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.KmsKeyIdList will be assigned a default value of type seq<KmsKeyId>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.GrantToken will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.GrantTokenList will be assigned a default value of type seq<GrantToken>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.Region will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.RegionList will be assigned a default value of type seq<Region>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.AccountId will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.AccountIdList will be assigned a default value of type seq<AccountId>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.EncryptionContext will be assigned a default value of type map<ValidUTF8Bytes, ValidUTF8Bytes>, which may or may not match the associated condition
-// Warning: Values of type Aws.Crypto.EncryptedDataKeyList will be assigned a default value of type seq<EncryptedDataKey>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AliasList will be assigned a default value of type seq<AliasListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AliasNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.ArnType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AWSAccountIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.BooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CiphertextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CloudHsmClusterIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoresList will be assigned a default value of type seq<CustomKeyStoresListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.DescriptionType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionAlgorithmSpecList will be assigned a default value of type seq<EncryptionAlgorithmSpec>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionContextKey will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionContextType will be assigned a default value of type map<EncryptionContextKey, EncryptionContextValue>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.EncryptionContextValue will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.ErrorMessageType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantList will be assigned a default value of type seq<GrantListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantOperationList will be assigned a default value of type seq<GrantOperation>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenList will be assigned a default value of type seq<GrantTokenType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyList will be assigned a default value of type seq<KeyListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyStorePasswordType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.LimitType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.MarkerType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.MultiRegionKeyList will be assigned a default value of type seq<MultiRegionKey>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.NullableBooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.NumberOfBytesType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PendingWindowInDaysType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PlaintextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyNameList will be assigned a default value of type seq<PolicyNameType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PrincipalIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PublicKeyType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.RegionType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.SigningAlgorithmSpecList will be assigned a default value of type seq<SigningAlgorithmSpec>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagKeyList will be assigned a default value of type seq<TagKeyType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagKeyType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagList will be assigned a default value of type seq<Tag>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagValueType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TrustAnchorCertificateType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.KeyDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.CommitmentDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.AlgorithmSuite will be assigned a default value of type AlgorithmSuiteInfo, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.DecryptionMaterialsPendingPlaintextDataKey will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.SealedDecryptionMaterials will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
-// Merging boogie files...
-// Converting function calls to method calls...
-// Adding Impl$$ methods to support inlining...
-// Removing assertions...
-// Annotating blocks...
-// Generating modifications...
-// Test Frames.WriteRegularFrame(block#2765384) covers block 2765384
-// Extracting the test for Frames.WriteRegularFrame(block#2765384) from the counterexample...
 method {:test} test0() {
 var d0 : HeaderTypes.MessageType := HeaderTypes.MessageType.TYPE_CUSTOMER_AED;
 var d1 : HeaderTypes.MessageId := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
@@ -435,10 +109,6 @@ var d49 : Frames.RegularFrame := Frames.Frame.RegularFrame(header:=d45,seqNum:=(
 var r0 := Frames.WriteRegularFrame(d49);
 expect SerializeFunctions.ReadUInt32(SerializeFunctions.ReadableBuffer.ReadableBuffer(r0, 0)).Success? && SerializeFunctions.ReadUInt32(SerializeFunctions.ReadableBuffer.ReadableBuffer(r0, 0)).value.data != Frames.ENDFRAME_SEQUENCE_NUMBER;
 }
-// Test Frames.ReadRegularFrame(block#2777673) covers block 2777662
-// Test Frames.ReadRegularFrame(block#2777673) covers block 2777663
-// Test Frames.ReadRegularFrame(block#2777673) covers block 2777673
-// Extracting the test for Frames.ReadRegularFrame(block#2777673) from the counterexample...
 method {:test} test1() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(4413 as nat));
@@ -475,14 +145,6 @@ var d31 : Frames.FramedHeader := Header.HeaderInfo.HeaderInfo(body:=d19,rawHeade
 var r0 := Frames.ReadRegularFrame(d1, d31);
 expect r0.Success? ==> r0.value.data.header == d31;
 }
-// No test can be generated for Frames.ReadRegularFrame(block#2777672) because the verifier suceeded.
-// Test Frames.ReadRegularFrame(block#2777671) covers block 2777662
-// Test Frames.ReadRegularFrame(block#2777671) covers block 2777664
-// Test Frames.ReadRegularFrame(block#2777671) covers block 2777666
-// Test Frames.ReadRegularFrame(block#2777671) covers block 2777668
-// Test Frames.ReadRegularFrame(block#2777671) covers block 2777670
-// Test Frames.ReadRegularFrame(block#2777671) covers block 2777671
-// Extracting the test for Frames.ReadRegularFrame(block#2777671) from the counterexample...
 method {:test} test2() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (63 as StandardLibrary.UInt.uint8), (196 as StandardLibrary.UInt.uint8), (208 as StandardLibrary.UInt.uint8), (17 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(3 as nat));
@@ -510,12 +172,6 @@ var d22 : Frames.FramedHeader := Header.HeaderInfo.HeaderInfo(body:=d10,rawHeade
 var r0 := Frames.ReadRegularFrame(d1, d22);
 expect r0.Success? ==> r0.value.data.header == d22;
 }
-// Test Frames.ReadRegularFrame(block#2777669) covers block 2777662
-// Test Frames.ReadRegularFrame(block#2777669) covers block 2777664
-// Test Frames.ReadRegularFrame(block#2777669) covers block 2777666
-// Test Frames.ReadRegularFrame(block#2777669) covers block 2777668
-// Test Frames.ReadRegularFrame(block#2777669) covers block 2777669
-// Extracting the test for Frames.ReadRegularFrame(block#2777669) from the counterexample...
 method {:test} test3() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (208 as StandardLibrary.UInt.uint8), (78 as StandardLibrary.UInt.uint8), (56 as StandardLibrary.UInt.uint8), (148 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(2 as nat));
@@ -543,11 +199,6 @@ var d22 : Frames.FramedHeader := Header.HeaderInfo.HeaderInfo(body:=d10,rawHeade
 var r0 := Frames.ReadRegularFrame(d1, d22);
 expect r0.Success? ==> r0.value.data.header == d22;
 }
-// Test Frames.ReadRegularFrame(block#2777667) covers block 2777662
-// Test Frames.ReadRegularFrame(block#2777667) covers block 2777664
-// Test Frames.ReadRegularFrame(block#2777667) covers block 2777666
-// Test Frames.ReadRegularFrame(block#2777667) covers block 2777667
-// Extracting the test for Frames.ReadRegularFrame(block#2777667) from the counterexample...
 method {:test} test4() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (41 as StandardLibrary.UInt.uint8), (186 as StandardLibrary.UInt.uint8), (123 as StandardLibrary.UInt.uint8), (14 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(1 as nat));
@@ -601,10 +252,6 @@ var d48 : Frames.FramedHeader := Header.HeaderInfo.HeaderInfo(body:=d36,rawHeade
 var r0 := Frames.ReadRegularFrame(d1, d48);
 expect r0.Success? ==> r0.value.data.header == d48;
 }
-// Test Frames.ReadRegularFrame(block#2777665) covers block 2777662
-// Test Frames.ReadRegularFrame(block#2777665) covers block 2777664
-// Test Frames.ReadRegularFrame(block#2777665) covers block 2777665
-// Extracting the test for Frames.ReadRegularFrame(block#2777665) from the counterexample...
 method {:test} test5() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (199 as StandardLibrary.UInt.uint8), (156 as StandardLibrary.UInt.uint8), (75 as StandardLibrary.UInt.uint8), (70 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(12 as nat));
@@ -632,8 +279,6 @@ var d22 : Frames.FramedHeader := Header.HeaderInfo.HeaderInfo(body:=d10,rawHeade
 var r0 := Frames.ReadRegularFrame(d1, d22);
 expect r0.Success? ==> r0.value.data.header == d22;
 }
-// Test Frames.WriteFinalFrame(block#2781995) covers block 2781995
-// Extracting the test for Frames.WriteFinalFrame(block#2781995) from the counterexample...
 method {:test} test6() {
 var d0 : HeaderTypes.MessageType := HeaderTypes.MessageType.TYPE_CUSTOMER_AED;
 var d1 : HeaderTypes.MessageId := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
@@ -689,10 +334,6 @@ var d50 : Frames.FinalFrame := Frames.Frame.FinalFrame(header:=d46,seqNum:=(9166
 var r0 := Frames.WriteFinalFrame(d50);
 expect SerializeFunctions.ReadUInt32(SerializeFunctions.ReadableBuffer.ReadableBuffer(r0, 0)).Success? && SerializeFunctions.ReadUInt32(SerializeFunctions.ReadableBuffer.ReadableBuffer(r0, 0)).value.data == Frames.ENDFRAME_SEQUENCE_NUMBER;
 }
-// Test Frames.ReadFinalFrame(block#2798279) covers block 2798264
-// Test Frames.ReadFinalFrame(block#2798279) covers block 2798265
-// Test Frames.ReadFinalFrame(block#2798279) covers block 2798279
-// Extracting the test for Frames.ReadFinalFrame(block#2798279) from the counterexample...
 method {:test} test7() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(9992 as nat));
@@ -748,18 +389,6 @@ var d50 : Frames.FramedHeader := Header.HeaderInfo.HeaderInfo(body:=d38,rawHeade
 var r0 := Frames.ReadFinalFrame(d1, d50);
 expect r0.Success? ==> r0.value.data.header == d50;
 }
-// No test can be generated for Frames.ReadFinalFrame(block#2798278) because the verifier suceeded.
-// No test can be generated for Frames.ReadFinalFrame(block#2798277) because the verifier suceeded.
-// No test can be generated for Frames.ReadFinalFrame(block#2798276) because the verifier suceeded.
-// No test can be generated for Frames.ReadFinalFrame(block#2798275) because the verifier suceeded.
-// No test can be generated for Frames.ReadFinalFrame(block#2798274) because the verifier suceeded.
-// Test Frames.ReadFinalFrame(block#2798273) covers block 2798264
-// Test Frames.ReadFinalFrame(block#2798273) covers block 2798266
-// Test Frames.ReadFinalFrame(block#2798273) covers block 2798268
-// Test Frames.ReadFinalFrame(block#2798273) covers block 2798270
-// Test Frames.ReadFinalFrame(block#2798273) covers block 2798272
-// Test Frames.ReadFinalFrame(block#2798273) covers block 2798273
-// Extracting the test for Frames.ReadFinalFrame(block#2798273) from the counterexample...
 method {:test} test8() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(201 as StandardLibrary.UInt.uint8), (197 as StandardLibrary.UInt.uint8), (28 as StandardLibrary.UInt.uint8), (190 as StandardLibrary.UInt.uint8), (213 as StandardLibrary.UInt.uint8), (12 as StandardLibrary.UInt.uint8), (139 as StandardLibrary.UInt.uint8), (148 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(0 as nat));
@@ -815,12 +444,6 @@ var d50 : Frames.FramedHeader := Header.HeaderInfo.HeaderInfo(body:=d38,rawHeade
 var r0 := Frames.ReadFinalFrame(d1, d50);
 expect r0.Success? ==> r0.value.data.header == d50;
 }
-// No test can be generated for Frames.ReadFinalFrame(block#2798271) because the verifier suceeded.
-// Test Frames.ReadFinalFrame(block#2798269) covers block 2798264
-// Test Frames.ReadFinalFrame(block#2798269) covers block 2798266
-// Test Frames.ReadFinalFrame(block#2798269) covers block 2798268
-// Test Frames.ReadFinalFrame(block#2798269) covers block 2798269
-// Extracting the test for Frames.ReadFinalFrame(block#2798269) from the counterexample...
 method {:test} test9() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (89 as StandardLibrary.UInt.uint8), (229 as StandardLibrary.UInt.uint8), (130 as StandardLibrary.UInt.uint8), (156 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(16 as nat));
@@ -873,10 +496,6 @@ var d47 : Frames.FramedHeader := Header.HeaderInfo.HeaderInfo(body:=d35,rawHeade
 var r0 := Frames.ReadFinalFrame(d1, d47);
 expect r0.Success? ==> r0.value.data.header == d47;
 }
-// Test Frames.ReadFinalFrame(block#2798267) covers block 2798264
-// Test Frames.ReadFinalFrame(block#2798267) covers block 2798266
-// Test Frames.ReadFinalFrame(block#2798267) covers block 2798267
-// Extracting the test for Frames.ReadFinalFrame(block#2798267) from the counterexample...
 method {:test} test10() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (196 as StandardLibrary.UInt.uint8), (17 as StandardLibrary.UInt.uint8), (17 as StandardLibrary.UInt.uint8), (208 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(13 as nat));
@@ -904,10 +523,6 @@ var d22 : Frames.FramedHeader := Header.HeaderInfo.HeaderInfo(body:=d10,rawHeade
 var r0 := Frames.ReadFinalFrame(d1, d22);
 expect r0.Success? ==> r0.value.data.header == d22;
 }
-// Test Frames.ReadNonFrame(block#2810348) covers block 2810337
-// Test Frames.ReadNonFrame(block#2810348) covers block 2810338
-// Test Frames.ReadNonFrame(block#2810348) covers block 2810348
-// Extracting the test for Frames.ReadNonFrame(block#2810348) from the counterexample...
 method {:test} test11() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(1372 as nat));
@@ -960,14 +575,6 @@ var d47 : HeaderTypes.HeaderAuth := HeaderTypes.HeaderAuth.AESMac(headerIv:=d45,
 var d48 : Frames.NonFramedHeader := Header.HeaderInfo.HeaderInfo(body:=d36,rawHeader:=d37,encryptionContext:=d38,suite:=d44,headerAuth:=d47);
 var r0 := Frames.ReadNonFrame(d1, d48);
 }
-// No test can be generated for Frames.ReadNonFrame(block#2810347) because the verifier suceeded.
-// Test Frames.ReadNonFrame(block#2810346) covers block 2810337
-// Test Frames.ReadNonFrame(block#2810346) covers block 2810339
-// Test Frames.ReadNonFrame(block#2810346) covers block 2810341
-// Test Frames.ReadNonFrame(block#2810346) covers block 2810343
-// Test Frames.ReadNonFrame(block#2810346) covers block 2810345
-// Test Frames.ReadNonFrame(block#2810346) covers block 2810346
-// Extracting the test for Frames.ReadNonFrame(block#2810346) from the counterexample...
 method {:test} test12() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(0 as nat));
@@ -1022,12 +629,6 @@ var d49 : HeaderTypes.HeaderAuth := HeaderTypes.HeaderAuth.AESMac(headerIv:=d47,
 var d50 : Frames.NonFramedHeader := Header.HeaderInfo.HeaderInfo(body:=d38,rawHeader:=d39,encryptionContext:=d40,suite:=d46,headerAuth:=d49);
 var r0 := Frames.ReadNonFrame(d1, d50);
 }
-// Test Frames.ReadNonFrame(block#2810344) covers block 2810337
-// Test Frames.ReadNonFrame(block#2810344) covers block 2810339
-// Test Frames.ReadNonFrame(block#2810344) covers block 2810341
-// Test Frames.ReadNonFrame(block#2810344) covers block 2810343
-// Test Frames.ReadNonFrame(block#2810344) covers block 2810344
-// Extracting the test for Frames.ReadNonFrame(block#2810344) from the counterexample...
 method {:test} test13() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (163 as StandardLibrary.UInt.uint8), (83 as StandardLibrary.UInt.uint8), (113 as StandardLibrary.UInt.uint8), (43 as StandardLibrary.UInt.uint8), (148 as StandardLibrary.UInt.uint8), (205 as StandardLibrary.UInt.uint8), (133 as StandardLibrary.UInt.uint8), (79 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(0 as nat));
@@ -1063,11 +664,6 @@ var d30 : HeaderTypes.HeaderAuth := HeaderTypes.HeaderAuth.AESMac(headerIv:=d28,
 var d31 : Frames.NonFramedHeader := Header.HeaderInfo.HeaderInfo(body:=d19,rawHeader:=d20,encryptionContext:=d21,suite:=d27,headerAuth:=d30);
 var r0 := Frames.ReadNonFrame(d1, d31);
 }
-// No test can be generated for Frames.ReadNonFrame(block#2810342) because the verifier suceeded.
-// Test Frames.ReadNonFrame(block#2810340) covers block 2810337
-// Test Frames.ReadNonFrame(block#2810340) covers block 2810339
-// Test Frames.ReadNonFrame(block#2810340) covers block 2810340
-// Extracting the test for Frames.ReadNonFrame(block#2810340) from the counterexample...
 method {:test} test14() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
 var d1 : SerializeFunctions.ReadableBuffer := SerializeFunctions.ReadableBuffer.ReadableBuffer(bytes:=d0,start:=(6 as nat));
@@ -1094,10 +690,5 @@ var d21 : HeaderTypes.HeaderAuth := HeaderTypes.HeaderAuth.AESMac(headerIv:=d19,
 var d22 : Frames.NonFramedHeader := Header.HeaderInfo.HeaderInfo(body:=d10,rawHeader:=d11,encryptionContext:=d12,suite:=d18,headerAuth:=d21);
 var r0 := Frames.ReadNonFrame(d1, d22);
 }
-// Procedure Impl$$Frames.__default.WriteRegularFrame (1 blocks) is completely covered by 1 (failed to extract 0) tests generated using 1 SMT queries (failed 0 queries)
-// Procedure Impl$$Frames.__default.ReadRegularFrame (12 blocks) is not fully covered by 5 (failed to extract 0) tests generated using 6 SMT queries (failed 1 queries)
-// Procedure Impl$$Frames.__default.WriteFinalFrame (1 blocks) is completely covered by 1 (failed to extract 0) tests generated using 1 SMT queries (failed 0 queries)
-// Procedure Impl$$Frames.__default.ReadFinalFrame (16 blocks) is not fully covered by 4 (failed to extract 0) tests generated using 10 SMT queries (failed 6 queries)
-// Procedure Impl$$Frames.__default.ReadNonFrame (12 blocks) is not fully covered by 4 (failed to extract 0) tests generated using 6 SMT queries (failed 2 queries)
 
 }
