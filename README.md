@@ -2,7 +2,7 @@
 
 This fork of AWS Encryption SDK hosts some tests produced by Dafny's automated test generation tool.
 To look at the generated tests, go to `test` directory. 
-You will notice a dozen commented-out tests - these are the product of Boogie's incompleteness and at this point have to be removed manually. 
+You will notice several commented-out tests - these are the product of Boogie's incompleteness and at this point have to be removed manually. 
 
 To reproduce the tests, run `make generate`. 
 Note that doing so updates your Dafny path for the duration of the console session. 
