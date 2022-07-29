@@ -1,4 +1,4 @@
-for filename in $(find src/ -name '*.dfy'); do
+for filename in $(find src -name '*.dfy'); do
     [ -e "$filename" ] || continue
     propername=${filename##*/}
     echo $filename
@@ -7,7 +7,8 @@ for filename in $(find src/ -name '*.dfy'); do
     #     cd ../
     #     continue
     # fi
-    dotnet ../dafny/Binaries/Dafny.dll /definiteAssignment:3 /warnShadowing /generateTestTimeout:7 /generateTestMode:Block /generateTestSeqLengthLimit:20 /generateTestOracle:Spec /prune ../$filename > $propername
+    name=${propername%.*}
+    dotnet ../dafny/Binaries/Dafny.dll /definiteAssignment:3 /warnShadowing /generateTestTimeout:7 /generateTestMode:Block /prune /generateTestOracle:Spec /generateTestSeqLengthLimit:20 /generateTestPrintTargets:../targetMethods/$name.json ../$filename > $propername
     pkill -9 -f "z3/bin/z3"
     pkill -9 -f "local/bin/z3"
     cd ../

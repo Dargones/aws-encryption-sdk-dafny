@@ -1,0 +1,11 @@
+{
+  "SharedHeaderFunctions_Compile.__default.WriteMessageFormatVersion": 1,
+  "SharedHeaderFunctions_Compile.__default.ReadMessageFormatVersion": 1,
+  "SharedHeaderFunctions_Compile.__default.WriteESDKSuiteId": 1,
+  "SharedHeaderFunctions_Compile.__default.ReadESDKSuiteId": 1,
+  "SharedHeaderFunctions_Compile.__default.WriteMessageId": 1,
+  "SharedHeaderFunctions_Compile.__default.ReadMessageIdV1": 2,
+  "SharedHeaderFunctions_Compile.__default.ReadMessageIdV2": 2,
+  "SharedHeaderFunctions_Compile.__default.WriteContentType": 1,
+  "SharedHeaderFunctions_Compile.__default.ReadContentType": 1
+}

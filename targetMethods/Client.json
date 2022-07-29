@@ -1,0 +1,13 @@
+{
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateDefaultCryptographicMaterialsManager": 1,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateAwsKmsKeyring": 2,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateAwsKmsMrkKeyring": 2,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateAwsKmsMrkDiscoveryKeyring": 3,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateAwsKmsDiscoveryKeyring": 4,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateMultiKeyring": 2,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateAwsKmsMrkMultiKeyring": 3,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateAwsKmsMrkDiscoveryMultiKeyring": 4,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateAwsKmsMultiKeyring": 4,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateAwsKmsDiscoveryMultiKeyring": 4,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders.CreateDefaultClientSupplier": 1
+}

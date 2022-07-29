@@ -1,0 +1,12 @@
+{
+  "EncryptionContext_Compile.__default.GetEncryptionContext": 4,
+  "EncryptionContext_Compile.__default.WriteAADSection": 2,
+  "EncryptionContext_Compile.__default.WriteAAD": 1,
+  "EncryptionContext_Compile.__default.WriteAADPairs": 2,
+  "EncryptionContext_Compile.__default.WriteAADPair": 1,
+  "EncryptionContext_Compile.__default.ReadAADPair": 1,
+  "EncryptionContext_Compile.__default.ReadAADPairs": 2,
+  "EncryptionContext_Compile.__default.ReadAAD": 2,
+  "EncryptionContext_Compile.__default.ReadAADSection": 5,
+  "EncryptionContext_Compile.__default.KeysToSet": 2
+}

@@ -1,0 +1,6 @@
+{
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.DefaultCMM.DefaultCMM.OfKeyring": 1,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.DefaultCMM.DefaultCMM.DecryptMaterials": 2,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.DefaultCMM.__default.InitializeEncryptionMaterials": 2,
+  "MaterialProviders_Compile.Dafny.Aws.EncryptionSdk.Core.DefaultCMM.__default.InitializeDecryptionMaterials": 1
+}

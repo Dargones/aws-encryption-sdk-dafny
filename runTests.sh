@@ -13,9 +13,7 @@ cd ..
 python3 MoveCoverage.py
 dotnet new tool-manifest --force
 
-dotnet build ../TestedMethodLister/TestedMethodLister.sln
-dotnet ../TestedMethodLister/bin/Debug/net6.0/TestedMethodLister.dll Test/obj/Debug/netcoreapp3.1/GeneratedFromDafny.cs > ../TestedMethodLister/TestedMethods.json
-python3 FilterCoverage.py ../TestedMethodLister/TestedMethods.json
+python3 FilterCoverage.py ../targetMethods
 
 dotnet tool install dotnet-reportgenerator-globaltool
 cd Source/

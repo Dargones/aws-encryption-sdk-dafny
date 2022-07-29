@@ -1,0 +1,9 @@
+{
+  "Actions_Compile.__default.Map": 5,
+  "Actions_Compile.__default.MapWithResult": 6,
+  "Actions_Compile.__default.FlatMap": 8,
+  "Actions_Compile.__default.FlatMapWithResult": 7,
+  "Actions_Compile.__default.Filter": 7,
+  "Actions_Compile.__default.FilterWithResult": 8,
+  "Actions_Compile.__default.ReduceToSuccess": 3
+}

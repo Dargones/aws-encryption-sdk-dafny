@@ -15,8 +15,14 @@ def remove_lines(class_lines, lines):
             class_lines.remove(class_line)
 
 def filter_by_method():
-    data = " ".join([line.strip("\n") for line in open(sys.argv[1]).readlines()])
-    target_methods = json.loads(data)
+    target_methods = {}
+    for (dirpath, dirnames, filenames) in os.walk(sys.argv[1]):
+      for filename in filenames:
+        fullPath = os.path.join(dirpath, filename)
+        data = " ".join([line.strip("\n") for line in open(fullPath).readlines()])
+        new_target_methods = json.loads(data)
+        target_methods.update(new_target_methods)
+
 
     coverage = ElementTree.parse(os.path.join(ROOT_DIR, 'coverage.cobertura.xml'))
     root = coverage.getroot()
