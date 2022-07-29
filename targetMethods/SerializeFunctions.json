@@ -1,0 +1,16 @@
+{
+  "SerializeFunctions_Compile.__default.Write": 1,
+  "SerializeFunctions_Compile.__default.Read": 2,
+  "SerializeFunctions_Compile.__default.WriteUint16": 1,
+  "SerializeFunctions_Compile.__default.ReadUInt16": 2,
+  "SerializeFunctions_Compile.__default.WriteUint32": 1,
+  "SerializeFunctions_Compile.__default.ReadUInt32": 2,
+  "SerializeFunctions_Compile.__default.WriteUint64": 1,
+  "SerializeFunctions_Compile.__default.ReadUInt64": 2,
+  "SerializeFunctions_Compile.__default.WriteShortLengthSeq": 1,
+  "SerializeFunctions_Compile.__default.ReadShortLengthSeq": 3,
+  "SerializeFunctions_Compile.__default.WriteUint32Seq": 1,
+  "SerializeFunctions_Compile.__default.ReadUint32Seq": 3,
+  "SerializeFunctions_Compile.__default.WriteUint64Seq": 1,
+  "SerializeFunctions_Compile.__default.ReadUint64Seq": 3
+}

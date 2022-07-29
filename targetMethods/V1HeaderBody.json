@@ -1,0 +1,10 @@
+{
+  "V1HeaderBody_Compile.__default.WriteV1HeaderBody": 1,
+  "V1HeaderBody_Compile.__default.ReadV1HeaderBody": 1,
+  "V1HeaderBody_Compile.__default.WriteV1MessageType": 1,
+  "V1HeaderBody_Compile.__default.ReadV1MessageType": 1,
+  "V1HeaderBody_Compile.__default.WriteV1ReservedBytes": 1,
+  "V1HeaderBody_Compile.__default.ReadV1ReservedBytes": 1,
+  "V1HeaderBody_Compile.__default.WriteV1HeaderIvLength": 1,
+  "V1HeaderBody_Compile.__default.ReadV1HeaderIvLength": 1
+}

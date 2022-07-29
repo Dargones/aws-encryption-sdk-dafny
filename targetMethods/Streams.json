@@ -1,0 +1,18 @@
+{
+  "Streams_Compile.SeqReader.ReadElements": 1,
+  "Streams_Compile.SeqReader.ReadExact": 1,
+  "Streams_Compile.ByteReader.ReadByte": 2,
+  "Streams_Compile.ByteReader.ReadBytes": 2,
+  "Streams_Compile.ByteReader.ReadUInt16": 2,
+  "Streams_Compile.ByteReader.ReadUInt32": 2,
+  "Streams_Compile.ByteReader.ReadUInt64": 2,
+  "Streams_Compile.ByteReader.IsDoneReading": 1,
+  "Streams_Compile.ByteReader.GetSizeRead": 1,
+  "Streams_Compile.SeqWriter.WriteElements": 1,
+  "Streams_Compile.ByteWriter.WriteByte": 1,
+  "Streams_Compile.ByteWriter.WriteBytes": 1,
+  "Streams_Compile.ByteWriter.WriteUInt16": 1,
+  "Streams_Compile.ByteWriter.WriteUInt32": 1,
+  "Streams_Compile.ByteWriter.GetDataWritten": 1,
+  "Streams_Compile.ByteWriter.GetSizeWritten": 1
+}

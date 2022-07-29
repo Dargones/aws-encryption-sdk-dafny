@@ -1,0 +1,8 @@
+{
+  "EncryptedDataKeys_Compile.__default.WriteEncryptedDataKey": 1,
+  "EncryptedDataKeys_Compile.__default.WriteEncryptedDataKeys": 2,
+  "EncryptedDataKeys_Compile.__default.WriteEncryptedDataKeysSection": 1,
+  "EncryptedDataKeys_Compile.__default.ReadEncryptedDataKey": 5,
+  "EncryptedDataKeys_Compile.__default.ReadEncryptedDataKeys": 3,
+  "EncryptedDataKeys_Compile.__default.ReadEncryptedDataKeysSection": 5
+}

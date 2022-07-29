@@ -1,0 +1,4 @@
+{
+  "Dafny.Aws.EncryptionSdk.AwsEncryptionSdkFactory.AwsEncryptionSdkFactory.CreateDefaultAwsEncryptionSdk": 1,
+  "Dafny.Aws.EncryptionSdk.AwsEncryptionSdkFactory.AwsEncryptionSdkFactory.CreateAwsEncryptionSdk": 2
+}
