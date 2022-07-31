@@ -2,7 +2,7 @@
 
 This fork of AWS Encryption SDK hosts some tests produced by Dafny's automated test generation tool.
 To look at the generated tests, go to `test` directory. 
-The coverage report is available [here](https://github.com/Dargones/aws-encryption-sdk-dafny/blob/mainline/aws-encryption-sdk-net/Test/TestResults/summary.html)
+The coverage report is available [here](https://htmlpreview.github.io/?https://github.com/Dargones/aws-encryption-sdk-dafny/blob/mainline/aws-encryption-sdk-net/Test/TestResults/summary.html)
 You will notice several commented-out tests - there are several issues that can cause the tool to produce a few spurious tests and at this point they have to be removed manually. 
 
 To reproduce the tests, run `make generate`. 
