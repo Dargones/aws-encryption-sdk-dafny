@@ -1,9 +1,0 @@
-{
-  "UTF8.__default.IsASCIIString": 2,
-  "UTF8.__default.Uses1Byte": 1,
-  "UTF8.__default.Uses2Bytes": 4,
-  "UTF8.__default.Uses3Bytes": 13,
-  "UTF8.__default.Uses4Bytes": 13,
-  "UTF8.__default.ValidUTF8Range": 9,
-  "UTF8.__default.ValidUTF8Seq": 1
-}

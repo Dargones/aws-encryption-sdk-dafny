@@ -1,0 +1,122 @@
+[
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.Join",
+    "compiledName": "StandardLibrary_Compile.__default.Join"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.Split",
+    "compiledName": "StandardLibrary_Compile.__default.Split"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "5",
+    "failedQueries": "1",
+    "queries": "4",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.FindIndexMatching",
+    "compiledName": "StandardLibrary_Compile.__default.FindIndexMatching"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.FindIndex",
+    "compiledName": "StandardLibrary_Compile.__default.FindIndex"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.Filter",
+    "compiledName": "StandardLibrary_Compile.__default.Filter"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.Min",
+    "compiledName": "StandardLibrary_Compile.__default.Min"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "4",
+    "failedQueries": "2",
+    "queries": "4",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.Fill",
+    "compiledName": "StandardLibrary_Compile.__default.Fill"
+  },
+  {
+    "blocks": "10",
+    "blocksCovered": "8",
+    "failedQueries": "2",
+    "queries": "6",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.SeqToArray",
+    "compiledName": "StandardLibrary_Compile.__default.SeqToArray"
+  },
+  {
+    "blocks": "8",
+    "blocksCovered": "7",
+    "failedQueries": "1",
+    "queries": "4",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.LexicographicLessOrEqual",
+    "compiledName": "StandardLibrary_Compile.__default.LexicographicLessOrEqual"
+  },
+  {
+    "blocks": "16",
+    "blocksCovered": "15",
+    "failedQueries": "1",
+    "queries": "8",
+    "tests": "6",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.LexicographicLessOrEqualAux",
+    "compiledName": "StandardLibrary_Compile.__default.LexicographicLessOrEqualAux"
+  },
+  {
+    "blocks": "23",
+    "blocksCovered": "21",
+    "failedQueries": "2",
+    "queries": "11",
+    "tests": "5",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.SetToOrderedSequence",
+    "compiledName": "StandardLibrary_Compile.__default.SetToOrderedSequence"
+  },
+  {
+    "blocks": "8",
+    "blocksCovered": "8",
+    "failedQueries": "0",
+    "queries": "4",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "StandardLibrary.IsMinimum",
+    "compiledName": "StandardLibrary_Compile.__default.IsMinimum"
+  }
+]

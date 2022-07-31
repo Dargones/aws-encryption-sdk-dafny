@@ -1,0 +1,32 @@
+[
+  {
+    "blocks": "12",
+    "blocksCovered": "1",
+    "failedQueries": "11",
+    "queries": "12",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Header.HeaderVersionSupportsCommitment?",
+    "compiledName": "Header_Compile.__default.HeaderVersionSupportsCommitment_q"
+  },
+  {
+    "blocks": "19",
+    "blocksCovered": "11",
+    "failedQueries": "8",
+    "queries": "11",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "Header.ReadHeaderBody",
+    "compiledName": "Header_Compile.__default.ReadHeaderBody"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "0",
+    "failedQueries": "6",
+    "queries": "6",
+    "tests": "0",
+    "failedTests": "0",
+    "dafnyName": "Header.WriteHeaderBody",
+    "compiledName": "Header_Compile.__default.WriteHeaderBody"
+  }
+]

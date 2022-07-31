@@ -1,0 +1,12 @@
+[
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Random.GenerateBytes",
+    "compiledName": "Random_Compile.__default.GenerateBytes"
+  }
+]

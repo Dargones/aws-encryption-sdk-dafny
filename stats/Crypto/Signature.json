@@ -1,0 +1,32 @@
+[
+  {
+    "blocks": "6",
+    "blocksCovered": "5",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Signature.ECDSAParams.SignatureLength",
+    "compiledName": "Signature.ECDSAParams.SignatureLength"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "5",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Signature.ECDSAParams.FieldSize",
+    "compiledName": "Signature.ECDSAParams.FieldSize"
+  },
+  {
+    "blocks": "5",
+    "blocksCovered": "5",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Signature.KeyGen",
+    "compiledName": "Signature.__default.KeyGen"
+  }
+]

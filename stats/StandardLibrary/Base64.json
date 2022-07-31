@@ -1,0 +1,262 @@
+[
+  {
+    "blocks": "16",
+    "blocksCovered": "16",
+    "failedQueries": "0",
+    "queries": "8",
+    "tests": "8",
+    "failedTests": "0",
+    "dafnyName": "Base64.IsBase64Char",
+    "compiledName": "Base64_Compile.__default.IsBase64Char"
+  },
+  {
+    "blocks": "8",
+    "blocksCovered": "7",
+    "failedQueries": "1",
+    "queries": "4",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "Base64.IsUnpaddedBase64String",
+    "compiledName": "Base64_Compile.__default.IsUnpaddedBase64String"
+  },
+  {
+    "blocks": "14",
+    "blocksCovered": "14",
+    "failedQueries": "0",
+    "queries": "5",
+    "tests": "5",
+    "failedTests": "0",
+    "dafnyName": "Base64.IndexToChar",
+    "compiledName": "Base64_Compile.__default.IndexToChar"
+  },
+  {
+    "blocks": "14",
+    "blocksCovered": "13",
+    "failedQueries": "1",
+    "queries": "6",
+    "tests": "5",
+    "failedTests": "0",
+    "dafnyName": "Base64.CharToIndex",
+    "compiledName": "Base64_Compile.__default.CharToIndex"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.UInt24ToSeq",
+    "compiledName": "Base64_Compile.__default.UInt24ToSeq"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.SeqToUInt24",
+    "compiledName": "Base64_Compile.__default.SeqToUInt24"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.UInt24ToIndexSeq",
+    "compiledName": "Base64_Compile.__default.UInt24ToIndexSeq"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.IndexSeqToUInt24",
+    "compiledName": "Base64_Compile.__default.IndexSeqToUInt24"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.DecodeBlock",
+    "compiledName": "Base64_Compile.__default.DecodeBlock"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.EncodeBlock",
+    "compiledName": "Base64_Compile.__default.EncodeBlock"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Base64.DecodeRecursively",
+    "compiledName": "Base64_Compile.__default.DecodeRecursively"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Base64.EncodeRecursively",
+    "compiledName": "Base64_Compile.__default.EncodeRecursively"
+  },
+  {
+    "blocks": "10",
+    "blocksCovered": "8",
+    "failedQueries": "2",
+    "queries": "6",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Base64.FromCharsToIndices",
+    "compiledName": "Base64_Compile.__default.FromCharsToIndices"
+  },
+  {
+    "blocks": "10",
+    "blocksCovered": "8",
+    "failedQueries": "2",
+    "queries": "6",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Base64.FromIndicesToChars",
+    "compiledName": "Base64_Compile.__default.FromIndicesToChars"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.DecodeUnpadded",
+    "compiledName": "Base64_Compile.__default.DecodeUnpadded"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.EncodeUnpadded",
+    "compiledName": "Base64_Compile.__default.EncodeUnpadded"
+  },
+  {
+    "blocks": "12",
+    "blocksCovered": "12",
+    "failedQueries": "0",
+    "queries": "6",
+    "tests": "6",
+    "failedTests": "0",
+    "dafnyName": "Base64.Is1Padding",
+    "compiledName": "Base64_Compile.__default.Is1Padding"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.Decode1Padding",
+    "compiledName": "Base64_Compile.__default.Decode1Padding"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.Encode1Padding",
+    "compiledName": "Base64_Compile.__default.Encode1Padding"
+  },
+  {
+    "blocks": "12",
+    "blocksCovered": "12",
+    "failedQueries": "0",
+    "queries": "6",
+    "tests": "6",
+    "failedTests": "0",
+    "dafnyName": "Base64.Is2Padding",
+    "compiledName": "Base64_Compile.__default.Is2Padding"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.Decode2Padding",
+    "compiledName": "Base64_Compile.__default.Decode2Padding"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Base64.Encode2Padding",
+    "compiledName": "Base64_Compile.__default.Encode2Padding"
+  },
+  {
+    "blocks": "10",
+    "blocksCovered": "10",
+    "failedQueries": "0",
+    "queries": "5",
+    "tests": "5",
+    "failedTests": "0",
+    "dafnyName": "Base64.IsBase64String",
+    "compiledName": "Base64_Compile.__default.IsBase64String"
+  },
+  {
+    "blocks": "8",
+    "blocksCovered": "8",
+    "failedQueries": "0",
+    "queries": "4",
+    "tests": "4",
+    "failedTests": "0",
+    "dafnyName": "Base64.DecodeValid",
+    "compiledName": "Base64_Compile.__default.DecodeValid"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Base64.Decode",
+    "compiledName": "Base64_Compile.__default.Decode"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "Base64.Encode",
+    "compiledName": "Base64_Compile.__default.Encode"
+  }
+]

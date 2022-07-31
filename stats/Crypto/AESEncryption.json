@@ -1,0 +1,22 @@
+[
+  {
+    "blocks": "13",
+    "blocksCovered": "13",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "AESEncryption.AESEncrypt",
+    "compiledName": "AESEncryption.__default.AESEncrypt"
+  },
+  {
+    "blocks": "7",
+    "blocksCovered": "7",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "AESEncryption.AESDecrypt",
+    "compiledName": "AESEncryption.__default.AESDecrypt"
+  }
+]

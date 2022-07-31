@@ -1,0 +1,132 @@
+[
+  {
+    "blocks": "8",
+    "blocksCovered": "7",
+    "failedQueries": "1",
+    "queries": "4",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.BodyAADContentTypeString",
+    "compiledName": "MessageBody_Compile.__default.BodyAADContentTypeString"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "4",
+    "failedQueries": "2",
+    "queries": "4",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.IVSeq",
+    "compiledName": "MessageBody_Compile.__default.IVSeq"
+  },
+  {
+    "blocks": "34",
+    "blocksCovered": "7",
+    "failedQueries": "27",
+    "queries": "28",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.EncryptMessageBody",
+    "compiledName": "MessageBody_Compile.__default.EncryptMessageBody"
+  },
+  {
+    "blocks": "3",
+    "blocksCovered": "0",
+    "failedQueries": "3",
+    "queries": "3",
+    "tests": "0",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.EncryptRegularFrame",
+    "compiledName": "MessageBody_Compile.__default.EncryptRegularFrame"
+  },
+  {
+    "blocks": "3",
+    "blocksCovered": "0",
+    "failedQueries": "3",
+    "queries": "3",
+    "tests": "0",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.EncryptFinalFrame",
+    "compiledName": "MessageBody_Compile.__default.EncryptFinalFrame"
+  },
+  {
+    "blocks": "14",
+    "blocksCovered": "11",
+    "failedQueries": "3",
+    "queries": "6",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.DecryptFramedMessageBody",
+    "compiledName": "MessageBody_Compile.__default.DecryptFramedMessageBody"
+  },
+  {
+    "blocks": "3",
+    "blocksCovered": "0",
+    "failedQueries": "3",
+    "queries": "3",
+    "tests": "0",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.DecryptFrame",
+    "compiledName": "MessageBody_Compile.__default.DecryptFrame"
+  },
+  {
+    "blocks": "8",
+    "blocksCovered": "6",
+    "failedQueries": "2",
+    "queries": "5",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.BodyAADByFrameType",
+    "compiledName": "MessageBody_Compile.__default.BodyAADByFrameType"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.BodyAAD",
+    "compiledName": "MessageBody_Compile.__default.BodyAAD"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "0",
+    "failedQueries": "1",
+    "queries": "1",
+    "tests": "0",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.WriteFramedMessageBody",
+    "compiledName": "MessageBody_Compile.__default.WriteFramedMessageBody"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "2",
+    "failedQueries": "2",
+    "queries": "3",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.WriteMessageRegularFrames",
+    "compiledName": "MessageBody_Compile.__default.WriteMessageRegularFrames"
+  },
+  {
+    "blocks": "14",
+    "blocksCovered": "5",
+    "failedQueries": "9",
+    "queries": "10",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.ReadFramedMessageBody",
+    "compiledName": "MessageBody_Compile.__default.ReadFramedMessageBody"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "3",
+    "failedQueries": "1",
+    "queries": "2",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "MessageBody.ReadNonFramedMessageBody",
+    "compiledName": "MessageBody_Compile.__default.ReadNonFramedMessageBody"
+  }
+]

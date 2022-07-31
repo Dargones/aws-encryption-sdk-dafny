@@ -1,7 +1,0 @@
-{
-  "HeaderTypes_Compile.MessageFormatVersion.Serialize": 1,
-  "HeaderTypes_Compile.MessageFormatVersion.Get": 2,
-  "HeaderTypes_Compile.MessageType.Serialize": 1,
-  "HeaderTypes_Compile.ContentType.Serialize": 2,
-  "HeaderTypes_Compile.ContentType.Get": 2
-}

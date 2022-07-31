@@ -1,8 +1,0 @@
-{
-  "HeaderAuth_Compile.__default.WriteHeaderAuthTagV2": 1,
-  "HeaderAuth_Compile.__default.WriteHeaderAuthTagV1": 1,
-  "HeaderAuth_Compile.__default.WriteHeaderAuthTag": 3,
-  "HeaderAuth_Compile.__default.ReadHeaderAuthTagV1": 2,
-  "HeaderAuth_Compile.__default.ReadHeaderAuthTagV2": 3,
-  "HeaderAuth_Compile.__default.ReadHeaderAuthTag": 3
-}

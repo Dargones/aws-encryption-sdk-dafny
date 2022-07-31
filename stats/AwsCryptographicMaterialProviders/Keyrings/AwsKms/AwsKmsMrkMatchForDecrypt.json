@@ -1,0 +1,12 @@
+[
+  {
+    "blocks": "24",
+    "blocksCovered": "21",
+    "failedQueries": "3",
+    "queries": "11",
+    "tests": "8",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsMrkMatchForDecrypt.AwsKmsMrkMatchForDecrypt",
+    "compiledName": "AwsKmsMrkMatchForDecrypt_Compile.__default.AwsKmsMrkMatchForDecrypt"
+  }
+]

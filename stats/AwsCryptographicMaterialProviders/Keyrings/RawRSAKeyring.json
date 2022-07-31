@@ -1,0 +1,22 @@
+[
+  {
+    "blocks": "20",
+    "blocksCovered": "20",
+    "failedQueries": "0",
+    "queries": "7",
+    "tests": "5",
+    "failedTests": "0",
+    "dafnyName": "MaterialProviders.RawRSAKeyring.RawRSAKeyring.OnEncrypt",
+    "compiledName": "Dafny.Aws.EncryptionSdk.Core.RawRSAKeyring.RawRSAKeyring.OnEncrypt"
+  },
+  {
+    "blocks": "24",
+    "blocksCovered": "22",
+    "failedQueries": "2",
+    "queries": "10",
+    "tests": "7",
+    "failedTests": "0",
+    "dafnyName": "MaterialProviders.RawRSAKeyring.RawRSAKeyring.OnDecrypt",
+    "compiledName": "Dafny.Aws.EncryptionSdk.Core.RawRSAKeyring.RawRSAKeyring.OnDecrypt"
+  }
+]

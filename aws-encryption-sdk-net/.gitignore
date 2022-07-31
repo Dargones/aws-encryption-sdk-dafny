@@ -16,4 +16,7 @@ TestVectorGenerator/obj
 Examples/bin
 Examples/obj
 
-Test/TestResults/
+Test/TestResults/*
+!Test/TestResults/summary.html
+!Test/TestResults/summary.htm
+!Test/TestResults/Summary.txt

@@ -1,0 +1,92 @@
+[
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SharedHeaderFunctions.WriteMessageFormatVersion",
+    "compiledName": "SharedHeaderFunctions_Compile.__default.WriteMessageFormatVersion"
+  },
+  {
+    "blocks": "11",
+    "blocksCovered": "10",
+    "failedQueries": "1",
+    "queries": "6",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "SharedHeaderFunctions.ReadMessageFormatVersion",
+    "compiledName": "SharedHeaderFunctions_Compile.__default.ReadMessageFormatVersion"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SharedHeaderFunctions.WriteESDKSuiteId",
+    "compiledName": "SharedHeaderFunctions_Compile.__default.WriteESDKSuiteId"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "SharedHeaderFunctions.ReadESDKSuiteId",
+    "compiledName": "SharedHeaderFunctions_Compile.__default.ReadESDKSuiteId"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SharedHeaderFunctions.WriteMessageId",
+    "compiledName": "SharedHeaderFunctions_Compile.__default.WriteMessageId"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "SharedHeaderFunctions.ReadMessageIdV1",
+    "compiledName": "SharedHeaderFunctions_Compile.__default.ReadMessageIdV1"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "SharedHeaderFunctions.ReadMessageIdV2",
+    "compiledName": "SharedHeaderFunctions_Compile.__default.ReadMessageIdV2"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SharedHeaderFunctions.WriteContentType",
+    "compiledName": "SharedHeaderFunctions_Compile.__default.WriteContentType"
+  },
+  {
+    "blocks": "11",
+    "blocksCovered": "10",
+    "failedQueries": "1",
+    "queries": "6",
+    "tests": "5",
+    "failedTests": "0",
+    "dafnyName": "SharedHeaderFunctions.ReadContentType",
+    "compiledName": "SharedHeaderFunctions_Compile.__default.ReadContentType"
+  }
+]

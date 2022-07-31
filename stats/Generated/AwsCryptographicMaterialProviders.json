@@ -1,0 +1,32 @@
+[
+  {
+    "blocks": "5",
+    "blocksCovered": "4",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Aws.Crypto.AwsCryptographicMaterialProvidersException.WrapResultString",
+    "compiledName": "Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProvidersException.WrapResultString"
+  },
+  {
+    "blocks": "5",
+    "blocksCovered": "4",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Aws.Crypto.AwsCryptographicMaterialProvidersException.WrapOutcomeString",
+    "compiledName": "Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProvidersException.WrapOutcomeString"
+  },
+  {
+    "blocks": "3",
+    "blocksCovered": "3",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Aws.Crypto.Need",
+    "compiledName": "Dafny.Aws.EncryptionSdk.Core.__default.Need"
+  }
+]

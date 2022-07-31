@@ -1,0 +1,142 @@
+[
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.Write",
+    "compiledName": "SerializeFunctions_Compile.__default.Write"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.Read",
+    "compiledName": "SerializeFunctions_Compile.__default.Read"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.WriteUint16",
+    "compiledName": "SerializeFunctions_Compile.__default.WriteUint16"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.ReadUInt16",
+    "compiledName": "SerializeFunctions_Compile.__default.ReadUInt16"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.WriteUint32",
+    "compiledName": "SerializeFunctions_Compile.__default.WriteUint32"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.ReadUInt32",
+    "compiledName": "SerializeFunctions_Compile.__default.ReadUInt32"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.WriteUint64",
+    "compiledName": "SerializeFunctions_Compile.__default.WriteUint64"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.ReadUInt64",
+    "compiledName": "SerializeFunctions_Compile.__default.ReadUInt64"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.WriteShortLengthSeq",
+    "compiledName": "SerializeFunctions_Compile.__default.WriteShortLengthSeq"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.ReadShortLengthSeq",
+    "compiledName": "SerializeFunctions_Compile.__default.ReadShortLengthSeq"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.WriteUint32Seq",
+    "compiledName": "SerializeFunctions_Compile.__default.WriteUint32Seq"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.ReadUint32Seq",
+    "compiledName": "SerializeFunctions_Compile.__default.ReadUint32Seq"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.WriteUint64Seq",
+    "compiledName": "SerializeFunctions_Compile.__default.WriteUint64Seq"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "SerializeFunctions.ReadUint64Seq",
+    "compiledName": "SerializeFunctions_Compile.__default.ReadUint64Seq"
+  }
+]

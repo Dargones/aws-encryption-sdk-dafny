@@ -1,0 +1,162 @@
+[
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Streams.SeqReader.ReadElements",
+    "compiledName": "Streams_Compile.SeqReader.ReadElements"
+  },
+  {
+    "blocks": "3",
+    "blocksCovered": "3",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Streams.SeqReader.ReadExact",
+    "compiledName": "Streams_Compile.SeqReader.ReadExact"
+  },
+  {
+    "blocks": "3",
+    "blocksCovered": "3",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteReader.ReadByte",
+    "compiledName": "Streams_Compile.ByteReader.ReadByte"
+  },
+  {
+    "blocks": "3",
+    "blocksCovered": "3",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteReader.ReadBytes",
+    "compiledName": "Streams_Compile.ByteReader.ReadBytes"
+  },
+  {
+    "blocks": "3",
+    "blocksCovered": "3",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteReader.ReadUInt16",
+    "compiledName": "Streams_Compile.ByteReader.ReadUInt16"
+  },
+  {
+    "blocks": "3",
+    "blocksCovered": "3",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteReader.ReadUInt32",
+    "compiledName": "Streams_Compile.ByteReader.ReadUInt32"
+  },
+  {
+    "blocks": "3",
+    "blocksCovered": "3",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteReader.ReadUInt64",
+    "compiledName": "Streams_Compile.ByteReader.ReadUInt64"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteReader.IsDoneReading",
+    "compiledName": "Streams_Compile.ByteReader.IsDoneReading"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteReader.GetSizeRead",
+    "compiledName": "Streams_Compile.ByteReader.GetSizeRead"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Streams.SeqWriter.WriteElements",
+    "compiledName": "Streams_Compile.SeqWriter.WriteElements"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteWriter.WriteByte",
+    "compiledName": "Streams_Compile.ByteWriter.WriteByte"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteWriter.WriteBytes",
+    "compiledName": "Streams_Compile.ByteWriter.WriteBytes"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteWriter.WriteUInt16",
+    "compiledName": "Streams_Compile.ByteWriter.WriteUInt16"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteWriter.WriteUInt32",
+    "compiledName": "Streams_Compile.ByteWriter.WriteUInt32"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteWriter.GetDataWritten",
+    "compiledName": "Streams_Compile.ByteWriter.GetDataWritten"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Streams.ByteWriter.GetSizeWritten",
+    "compiledName": "Streams_Compile.ByteWriter.GetSizeWritten"
+  }
+]

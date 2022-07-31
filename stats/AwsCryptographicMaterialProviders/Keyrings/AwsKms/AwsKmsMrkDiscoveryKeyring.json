@@ -1,0 +1,42 @@
+[
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "MaterialProviders.AwsKmsMrkDiscoveryKeyring.AwsKmsMrkDiscoveryKeyring.OnEncrypt",
+    "compiledName": "Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsMrkDiscoveryKeyring.OnEncrypt"
+  },
+  {
+    "blocks": "39",
+    "blocksCovered": "31",
+    "failedQueries": "8",
+    "queries": "19",
+    "tests": "9",
+    "failedTests": "0",
+    "dafnyName": "MaterialProviders.AwsKmsMrkDiscoveryKeyring.AwsKmsMrkDiscoveryKeyring.OnDecrypt",
+    "compiledName": "Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsMrkDiscoveryKeyring.OnDecrypt"
+  },
+  {
+    "blocks": "13",
+    "blocksCovered": "13",
+    "failedQueries": "0",
+    "queries": "7",
+    "tests": "7",
+    "failedTests": "0",
+    "dafnyName": "MaterialProviders.AwsKmsMrkDiscoveryKeyring.AwsKmsEncryptedDataKeyFilterTransform.Invoke",
+    "compiledName": "Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsEncryptedDataKeyFilterTransform.Invoke"
+  },
+  {
+    "blocks": "20",
+    "blocksCovered": "18",
+    "failedQueries": "2",
+    "queries": "10",
+    "tests": "6",
+    "failedTests": "0",
+    "dafnyName": "MaterialProviders.AwsKmsMrkDiscoveryKeyring.AwsKmsEncryptedDataKeyDecryptor.Invoke",
+    "compiledName": "Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsEncryptedDataKeyDecryptor.Invoke"
+  }
+]
