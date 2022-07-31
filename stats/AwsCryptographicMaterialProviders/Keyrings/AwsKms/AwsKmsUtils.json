@@ -1,0 +1,22 @@
+[
+  {
+    "blocks": "39",
+    "blocksCovered": "39",
+    "failedQueries": "0",
+    "queries": "17",
+    "tests": "15",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsUtils.StringifyEncryptionContext",
+    "compiledName": "AwsKmsUtils.__default.StringifyEncryptionContext"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsUtils.StringifyEncryptionContextPair",
+    "compiledName": "AwsKmsUtils.__default.StringifyEncryptionContextPair"
+  }
+]

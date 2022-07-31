@@ -1,0 +1,82 @@
+[
+  {
+    "blocks": "8",
+    "blocksCovered": "8",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "SerializableTypes.IsESDKEncryptedDataKey",
+    "compiledName": "SerializableTypes_Compile.__default.IsESDKEncryptedDataKey"
+  },
+  {
+    "blocks": "12",
+    "blocksCovered": "7",
+    "failedQueries": "5",
+    "queries": "9",
+    "tests": "4",
+    "failedTests": "0",
+    "dafnyName": "SerializableTypes.IsESDKEncryptionContext",
+    "compiledName": "SerializableTypes_Compile.__default.IsESDKEncryptionContext"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SerializableTypes.GetESDKAlgorithmSuiteId",
+    "compiledName": "SerializableTypes_Compile.__default.GetESDKAlgorithmSuiteId"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "SerializableTypes.GetAlgorithmSuiteId",
+    "compiledName": "SerializableTypes_Compile.__default.GetAlgorithmSuiteId"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "SerializableTypes.Length",
+    "compiledName": "SerializableTypes_Compile.__default.Length"
+  },
+  {
+    "blocks": "10",
+    "blocksCovered": "8",
+    "failedQueries": "2",
+    "queries": "6",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "SerializableTypes.GetCanonicalLinearPairs",
+    "compiledName": "SerializableTypes_Compile.__default.GetCanonicalLinearPairs"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "3",
+    "failedQueries": "1",
+    "queries": "2",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SerializableTypes.LinearLength",
+    "compiledName": "SerializableTypes_Compile.__default.LinearLength"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "SerializableTypes.PairLength",
+    "compiledName": "SerializableTypes_Compile.__default.PairLength"
+  }
+]

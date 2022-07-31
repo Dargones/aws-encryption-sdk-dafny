@@ -1,0 +1,72 @@
+[
+  {
+    "blocks": "8",
+    "blocksCovered": "7",
+    "failedQueries": "1",
+    "queries": "4",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "UTF8.IsASCIIString",
+    "compiledName": "UTF8.__default.IsASCIIString"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "3",
+    "failedQueries": "1",
+    "queries": "2",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "UTF8.Uses1Byte",
+    "compiledName": "UTF8.__default.Uses1Byte"
+  },
+  {
+    "blocks": "8",
+    "blocksCovered": "8",
+    "failedQueries": "0",
+    "queries": "4",
+    "tests": "4",
+    "failedTests": "0",
+    "dafnyName": "UTF8.Uses2Bytes",
+    "compiledName": "UTF8.__default.Uses2Bytes"
+  },
+  {
+    "blocks": "44",
+    "blocksCovered": "44",
+    "failedQueries": "0",
+    "queries": "13",
+    "tests": "13",
+    "failedTests": "0",
+    "dafnyName": "UTF8.Uses3Bytes",
+    "compiledName": "UTF8.__default.Uses3Bytes"
+  },
+  {
+    "blocks": "44",
+    "blocksCovered": "44",
+    "failedQueries": "0",
+    "queries": "13",
+    "tests": "13",
+    "failedTests": "0",
+    "dafnyName": "UTF8.Uses4Bytes",
+    "compiledName": "UTF8.__default.Uses4Bytes"
+  },
+  {
+    "blocks": "18",
+    "blocksCovered": "18",
+    "failedQueries": "0",
+    "queries": "9",
+    "tests": "9",
+    "failedTests": "0",
+    "dafnyName": "UTF8.ValidUTF8Range",
+    "compiledName": "UTF8.__default.ValidUTF8Range"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "UTF8.ValidUTF8Seq",
+    "compiledName": "UTF8.__default.ValidUTF8Seq"
+  }
+]

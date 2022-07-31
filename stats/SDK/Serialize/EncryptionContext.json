@@ -1,0 +1,112 @@
+[
+  {
+    "blocks": "1",
+    "blocksCovered": "0",
+    "failedQueries": "1",
+    "queries": "1",
+    "tests": "0",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.GetCanonicalEncryptionContext",
+    "compiledName": "EncryptionContext_Compile.__default.GetCanonicalEncryptionContext"
+  },
+  {
+    "blocks": "12",
+    "blocksCovered": "9",
+    "failedQueries": "3",
+    "queries": "5",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.GetEncryptionContext",
+    "compiledName": "EncryptionContext_Compile.__default.GetEncryptionContext"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.WriteAADSection",
+    "compiledName": "EncryptionContext_Compile.__default.WriteAADSection"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.WriteAAD",
+    "compiledName": "EncryptionContext_Compile.__default.WriteAAD"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.WriteAADPairs",
+    "compiledName": "EncryptionContext_Compile.__default.WriteAADPairs"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.WriteAADPair",
+    "compiledName": "EncryptionContext_Compile.__default.WriteAADPair"
+  },
+  {
+    "blocks": "10",
+    "blocksCovered": "10",
+    "failedQueries": "0",
+    "queries": "5",
+    "tests": "5",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.ReadAADPair",
+    "compiledName": "EncryptionContext_Compile.__default.ReadAADPair"
+  },
+  {
+    "blocks": "10",
+    "blocksCovered": "10",
+    "failedQueries": "0",
+    "queries": "5",
+    "tests": "5",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.ReadAADPairs",
+    "compiledName": "EncryptionContext_Compile.__default.ReadAADPairs"
+  },
+  {
+    "blocks": "8",
+    "blocksCovered": "7",
+    "failedQueries": "1",
+    "queries": "4",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.ReadAAD",
+    "compiledName": "EncryptionContext_Compile.__default.ReadAAD"
+  },
+  {
+    "blocks": "20",
+    "blocksCovered": "17",
+    "failedQueries": "3",
+    "queries": "11",
+    "tests": "8",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.ReadAADSection",
+    "compiledName": "EncryptionContext_Compile.__default.ReadAADSection"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "EncryptionContext.KeysToSet",
+    "compiledName": "EncryptionContext_Compile.__default.KeysToSet"
+  }
+]

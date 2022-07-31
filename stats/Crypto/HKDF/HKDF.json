@@ -1,0 +1,32 @@
+[
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "HKDF.Extract",
+    "compiledName": "HKDF_Compile.__default.Extract"
+  },
+  {
+    "blocks": "22",
+    "blocksCovered": "18",
+    "failedQueries": "4",
+    "queries": "9",
+    "tests": "5",
+    "failedTests": "0",
+    "dafnyName": "HKDF.Expand",
+    "compiledName": "HKDF_Compile.__default.Expand"
+  },
+  {
+    "blocks": "8",
+    "blocksCovered": "7",
+    "failedQueries": "1",
+    "queries": "4",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "HKDF.Hkdf",
+    "compiledName": "HKDF_Compile.__default.Hkdf"
+  }
+]

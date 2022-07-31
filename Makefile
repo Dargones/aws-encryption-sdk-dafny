@@ -1,4 +1,5 @@
 build :
+	dotnet build dafny/boogie/Source/Boogie.sln
 	dotnet build dafny/Source/Dafny.sln
 	wget https://github.com/Z3Prover/z3/releases/download/Z3-4.8.5/z3-4.8.5-x64-osx-10.14.2.zip
 	unzip z3-4.8.5-x64-osx-10.14.2.zip

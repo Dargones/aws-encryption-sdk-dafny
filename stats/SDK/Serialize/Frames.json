@@ -1,0 +1,52 @@
+[
+  {
+    "blocks": "1",
+    "blocksCovered": "0",
+    "failedQueries": "1",
+    "queries": "1",
+    "tests": "0",
+    "failedTests": "0",
+    "dafnyName": "Frames.WriteRegularFrame",
+    "compiledName": "Frames_Compile.__default.WriteRegularFrame"
+  },
+  {
+    "blocks": "12",
+    "blocksCovered": "8",
+    "failedQueries": "4",
+    "queries": "7",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "Frames.ReadRegularFrame",
+    "compiledName": "Frames_Compile.__default.ReadRegularFrame"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "0",
+    "failedQueries": "1",
+    "queries": "1",
+    "tests": "0",
+    "failedTests": "0",
+    "dafnyName": "Frames.WriteFinalFrame",
+    "compiledName": "Frames_Compile.__default.WriteFinalFrame"
+  },
+  {
+    "blocks": "16",
+    "blocksCovered": "9",
+    "failedQueries": "7",
+    "queries": "9",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Frames.ReadFinalFrame",
+    "compiledName": "Frames_Compile.__default.ReadFinalFrame"
+  },
+  {
+    "blocks": "12",
+    "blocksCovered": "3",
+    "failedQueries": "9",
+    "queries": "10",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Frames.ReadNonFrame",
+    "compiledName": "Frames_Compile.__default.ReadNonFrame"
+  }
+]

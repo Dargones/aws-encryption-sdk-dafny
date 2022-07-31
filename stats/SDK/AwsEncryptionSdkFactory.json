@@ -1,0 +1,22 @@
+[
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "AwsEncryptionSdkFactory.AwsEncryptionSdkFactory.CreateDefaultAwsEncryptionSdk",
+    "compiledName": "Dafny.Aws.EncryptionSdk.AwsEncryptionSdkFactory.AwsEncryptionSdkFactory.CreateDefaultAwsEncryptionSdk"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "AwsEncryptionSdkFactory.AwsEncryptionSdkFactory.CreateAwsEncryptionSdk",
+    "compiledName": "Dafny.Aws.EncryptionSdk.AwsEncryptionSdkFactory.AwsEncryptionSdkFactory.CreateAwsEncryptionSdk"
+  }
+]

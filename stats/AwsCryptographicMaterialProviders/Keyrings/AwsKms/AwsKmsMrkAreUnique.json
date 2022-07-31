@@ -1,0 +1,22 @@
+[
+  {
+    "blocks": "25",
+    "blocksCovered": "23",
+    "failedQueries": "2",
+    "queries": "12",
+    "tests": "5",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsMrkAreUnique.AwsKmsMrkAreUnique",
+    "compiledName": "AwsKmsMrkAreUnique_Compile.__default.AwsKmsMrkAreUnique"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "5",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsMrkAreUnique.GetKeyId",
+    "compiledName": "AwsKmsMrkAreUnique_Compile.__default.GetKeyId"
+  }
+]

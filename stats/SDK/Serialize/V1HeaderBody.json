@@ -1,0 +1,82 @@
+[
+  {
+    "blocks": "1",
+    "blocksCovered": "0",
+    "failedQueries": "1",
+    "queries": "1",
+    "tests": "0",
+    "failedTests": "0",
+    "dafnyName": "V1HeaderBody.WriteV1HeaderBody",
+    "compiledName": "V1HeaderBody_Compile.__default.WriteV1HeaderBody"
+  },
+  {
+    "blocks": "29",
+    "blocksCovered": "24",
+    "failedQueries": "5",
+    "queries": "15",
+    "tests": "10",
+    "failedTests": "0",
+    "dafnyName": "V1HeaderBody.ReadV1HeaderBody",
+    "compiledName": "V1HeaderBody_Compile.__default.ReadV1HeaderBody"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "V1HeaderBody.WriteV1MessageType",
+    "compiledName": "V1HeaderBody_Compile.__default.WriteV1MessageType"
+  },
+  {
+    "blocks": "11",
+    "blocksCovered": "10",
+    "failedQueries": "1",
+    "queries": "6",
+    "tests": "4",
+    "failedTests": "0",
+    "dafnyName": "V1HeaderBody.ReadV1MessageType",
+    "compiledName": "V1HeaderBody_Compile.__default.ReadV1MessageType"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "V1HeaderBody.WriteV1ReservedBytes",
+    "compiledName": "V1HeaderBody_Compile.__default.WriteV1ReservedBytes"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "V1HeaderBody.ReadV1ReservedBytes",
+    "compiledName": "V1HeaderBody_Compile.__default.ReadV1ReservedBytes"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "V1HeaderBody.WriteV1HeaderIvLength",
+    "compiledName": "V1HeaderBody_Compile.__default.WriteV1HeaderIvLength"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "V1HeaderBody.ReadV1HeaderIvLength",
+    "compiledName": "V1HeaderBody_Compile.__default.ReadV1HeaderIvLength"
+  }
+]

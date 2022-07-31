@@ -1,13 +1,16 @@
-.idea/*
 .vscode/*
 *.sln?*
 **/.DS_Store
+**/.idea/*
 build/*
 test/**/Output/*
 /package-lock.json
 /node_modules
 *.config
 *.bpl
+TestedMethodLister/bin
+TestedMethodLister/obj
+TestedMethodLister/.vscode
 
 # Duvet output
 specification_compliance_report.html

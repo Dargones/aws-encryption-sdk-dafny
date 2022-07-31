@@ -1,0 +1,172 @@
+[
+  {
+    "blocks": "4",
+    "blocksCovered": "3",
+    "failedQueries": "1",
+    "queries": "2",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.AwsResource.Valid",
+    "compiledName": "AwsKmsArnParsing_Compile.AwsResource.Valid"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.AwsResource.ToString",
+    "compiledName": "AwsKmsArnParsing_Compile.AwsResource.ToString"
+  },
+  {
+    "blocks": "12",
+    "blocksCovered": "12",
+    "failedQueries": "0",
+    "queries": "6",
+    "tests": "6",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.AwsArn.Valid",
+    "compiledName": "AwsKmsArnParsing_Compile.AwsArn.Valid"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.AwsArn.ToString",
+    "compiledName": "AwsKmsArnParsing_Compile.AwsArn.ToString"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "5",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.AwsArn.ToArnString",
+    "compiledName": "AwsKmsArnParsing_Compile.AwsArn.ToArnString"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "5",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.AwsKmsIdentifier.ToString",
+    "compiledName": "AwsKmsArnParsing_Compile.AwsKmsIdentifier.ToString"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.ValidAwsKmsResource",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.ValidAwsKmsResource"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.ValidAwsKmsArn",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.ValidAwsKmsArn"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.ParseAwsKmsRawResources",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.ParseAwsKmsRawResources"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.ParseAwsKmsResources",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.ParseAwsKmsResources"
+  },
+  {
+    "blocks": "8",
+    "blocksCovered": "8",
+    "failedQueries": "0",
+    "queries": "4",
+    "tests": "4",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.ParseAwsKmsArn",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.ParseAwsKmsArn"
+  },
+  {
+    "blocks": "8",
+    "blocksCovered": "8",
+    "failedQueries": "0",
+    "queries": "4",
+    "tests": "4",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.ParseAwsKmsIdentifier",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.ParseAwsKmsIdentifier"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.IsMultiRegionAwsKmsArn",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.IsMultiRegionAwsKmsArn"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "5",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.IsMultiRegionAwsKmsIdentifier",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.IsMultiRegionAwsKmsIdentifier"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.IsMultiRegionAwsKmsResource",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.IsMultiRegionAwsKmsResource"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "5",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.GetRegion",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.GetRegion"
+  },
+  {
+    "blocks": "9",
+    "blocksCovered": "9",
+    "failedQueries": "0",
+    "queries": "4",
+    "tests": "4",
+    "failedTests": "0",
+    "dafnyName": "AwsKmsArnParsing.IsAwsKmsIdentifierString",
+    "compiledName": "AwsKmsArnParsing_Compile.__default.IsAwsKmsIdentifierString"
+  }
+]

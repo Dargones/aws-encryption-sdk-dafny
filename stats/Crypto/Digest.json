@@ -1,0 +1,22 @@
+[
+  {
+    "blocks": "4",
+    "blocksCovered": "3",
+    "failedQueries": "1",
+    "queries": "2",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Digest.Length",
+    "compiledName": "Digest_Compile.__default.Length"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "Digest.Digest",
+    "compiledName": "Digest_Compile.__default.Digest"
+  }
+]

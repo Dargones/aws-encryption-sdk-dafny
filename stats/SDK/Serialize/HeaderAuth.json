@@ -1,0 +1,62 @@
+[
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "HeaderAuth.WriteHeaderAuthTagV2",
+    "compiledName": "HeaderAuth_Compile.__default.WriteHeaderAuthTagV2"
+  },
+  {
+    "blocks": "1",
+    "blocksCovered": "1",
+    "failedQueries": "0",
+    "queries": "1",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "HeaderAuth.WriteHeaderAuthTagV1",
+    "compiledName": "HeaderAuth_Compile.__default.WriteHeaderAuthTagV1"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "HeaderAuth.WriteHeaderAuthTag",
+    "compiledName": "HeaderAuth_Compile.__default.WriteHeaderAuthTag"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "HeaderAuth.ReadHeaderAuthTagV1",
+    "compiledName": "HeaderAuth_Compile.__default.ReadHeaderAuthTagV1"
+  },
+  {
+    "blocks": "9",
+    "blocksCovered": "7",
+    "failedQueries": "2",
+    "queries": "5",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "HeaderAuth.ReadHeaderAuthTagV2",
+    "compiledName": "HeaderAuth_Compile.__default.ReadHeaderAuthTagV2"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "6",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "HeaderAuth.ReadHeaderAuthTag",
+    "compiledName": "HeaderAuth_Compile.__default.ReadHeaderAuthTag"
+  }
+]

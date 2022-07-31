@@ -1,0 +1,12 @@
+[
+  {
+    "blocks": "5",
+    "blocksCovered": "4",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "Aws.Esdk.AwsEncryptionSdkException.WrapResultString",
+    "compiledName": "Dafny.Aws.EncryptionSdk.AwsEncryptionSdkException.WrapResultString"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "blocks": "11",
+    "blocksCovered": "7",
+    "failedQueries": "4",
+    "queries": "7",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "KeyDerivation.DeriveKey",
+    "compiledName": "KeyDerivation.__default.DeriveKey"
+  },
+  {
+    "blocks": "5",
+    "blocksCovered": "3",
+    "failedQueries": "2",
+    "queries": "3",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "KeyDerivation.ExpandKeyMaterial",
+    "compiledName": "KeyDerivation.__default.ExpandKeyMaterial"
+  },
+  {
+    "blocks": "14",
+    "blocksCovered": "14",
+    "failedQueries": "0",
+    "queries": "7",
+    "tests": "7",
+    "failedTests": "0",
+    "dafnyName": "KeyDerivation.DeriveKeys",
+    "compiledName": "KeyDerivation.__default.DeriveKeys"
+  }
+]

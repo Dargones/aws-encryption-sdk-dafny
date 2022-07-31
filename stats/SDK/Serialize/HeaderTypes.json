@@ -1,0 +1,62 @@
+[
+  {
+    "blocks": "6",
+    "blocksCovered": "5",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "HeaderTypes.MessageFormatVersion.Serialize",
+    "compiledName": "HeaderTypes_Compile.MessageFormatVersion.Serialize"
+  },
+  {
+    "blocks": "9",
+    "blocksCovered": "9",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "HeaderTypes.MessageFormatVersion.Get",
+    "compiledName": "HeaderTypes_Compile.MessageFormatVersion.Get"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "3",
+    "failedQueries": "1",
+    "queries": "2",
+    "tests": "1",
+    "failedTests": "0",
+    "dafnyName": "HeaderTypes.MessageType.Serialize",
+    "compiledName": "HeaderTypes_Compile.MessageType.Serialize"
+  },
+  {
+    "blocks": "4",
+    "blocksCovered": "4",
+    "failedQueries": "0",
+    "queries": "2",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "HeaderTypes.MessageType.Get",
+    "compiledName": "HeaderTypes_Compile.MessageType.Get"
+  },
+  {
+    "blocks": "6",
+    "blocksCovered": "5",
+    "failedQueries": "1",
+    "queries": "3",
+    "tests": "2",
+    "failedTests": "0",
+    "dafnyName": "HeaderTypes.ContentType.Serialize",
+    "compiledName": "HeaderTypes_Compile.ContentType.Serialize"
+  },
+  {
+    "blocks": "9",
+    "blocksCovered": "9",
+    "failedQueries": "0",
+    "queries": "3",
+    "tests": "3",
+    "failedTests": "0",
+    "dafnyName": "HeaderTypes.ContentType.Get",
+    "compiledName": "HeaderTypes_Compile.ContentType.Get"
+  }
+]
