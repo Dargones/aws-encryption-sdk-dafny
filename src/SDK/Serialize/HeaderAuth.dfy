@@ -27,7 +27,10 @@ module HeaderAuth {
 
   type AESMac = a: HeaderTypes.HeaderAuth
   | a.AESMac?
-  witness *
+  witness HeaderTypes.HeaderAuth.AESMac(
+    headerIv:=[],
+    headerAuthTag:=[]
+  )
 
   function method WriteHeaderAuthTagV2(
     headerAuth: AESMac

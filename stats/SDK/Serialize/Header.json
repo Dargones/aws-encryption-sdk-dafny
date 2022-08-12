@@ -1,10 +1,10 @@
 [
   {
     "blocks": "12",
-    "blocksCovered": "1",
-    "failedQueries": "11",
+    "blocksCovered": "0",
+    "failedQueries": "12",
     "queries": "12",
-    "tests": "1",
+    "tests": "0",
     "failedTests": "0",
     "dafnyName": "Header.HeaderVersionSupportsCommitment?",
     "compiledName": "Header_Compile.__default.HeaderVersionSupportsCommitment_q"

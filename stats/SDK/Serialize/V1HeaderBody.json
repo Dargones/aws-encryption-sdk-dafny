@@ -11,10 +11,10 @@
   },
   {
     "blocks": "29",
-    "blocksCovered": "24",
-    "failedQueries": "5",
-    "queries": "15",
-    "tests": "10",
+    "blocksCovered": "15",
+    "failedQueries": "14",
+    "queries": "21",
+    "tests": "7",
     "failedTests": "0",
     "dafnyName": "V1HeaderBody.ReadV1HeaderBody",
     "compiledName": "V1HeaderBody_Compile.__default.ReadV1HeaderBody"
@@ -34,7 +34,7 @@
     "blocksCovered": "10",
     "failedQueries": "1",
     "queries": "6",
-    "tests": "4",
+    "tests": "5",
     "failedTests": "0",
     "dafnyName": "V1HeaderBody.ReadV1MessageType",
     "compiledName": "V1HeaderBody_Compile.__default.ReadV1MessageType"

@@ -30,6 +30,7 @@ def read_stats(directory):
 
 def filter_by_method(stats_dir, report_file):
 
+    coverage_comparison = {}
     target_methods = read_stats(stats_dir)
     coverage = ElementTree.parse(report_file)
     root = coverage.getroot()
@@ -38,14 +39,17 @@ def filter_by_method(stats_dir, report_file):
         classes_to_remove = []
         for clazz in package.iter('class'):
             methods_to_remove = []
+            coverage_comparison[clazz] = []
             for method in clazz.iter('method'):
                 full_name = clazz.get('name').split("`")[0] + '.' + \
                             method.get('name')
                 full_name_alt = clazz.get('name').split("`")[0] + '.' + \
                                 method.get('name').lstrip("_")
                 if full_name in target_methods:
+                    coverage_comparison[clazz].append((int(target_methods[full_name]["blocksCovered"]), int(target_methods[full_name]["blocks"])))
                     target_methods.pop(full_name)
                 elif full_name_alt in target_methods:
+                    coverage_comparison[clazz].append((int(target_methods[full_name_alt]["blocksCovered"]), int(target_methods[full_name_alt]["blocks"])))
                     target_methods.pop(full_name_alt)
                 else:
                     methods_to_remove.append(method)
@@ -64,6 +68,11 @@ def filter_by_method(stats_dir, report_file):
     if len(target_methods) != 0:
         print("Warning - cannot find the following methods in the "
               "coverage report: " + ",".join(target_methods.keys()))
+    """for clazz in coverage_comparison.keys():
+        blocks = sum(x[1] for x in coverage_comparison[clazz])
+        covered = sum(x[0] for x in coverage_comparison[clazz])
+        coverage = covered/blocks if blocks != 0 else 1
+        print(clazz.get('name') + "," + str(covered) + "," + str(blocks))"""
 
 
 def get_condition_coverage(lines):

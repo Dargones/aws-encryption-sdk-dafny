@@ -11,10 +11,10 @@
   },
   {
     "blocks": "12",
-    "blocksCovered": "9",
-    "failedQueries": "3",
-    "queries": "5",
-    "tests": "2",
+    "blocksCovered": "7",
+    "failedQueries": "5",
+    "queries": "6",
+    "tests": "1",
     "failedTests": "0",
     "dafnyName": "EncryptionContext.GetEncryptionContext",
     "compiledName": "EncryptionContext_Compile.__default.GetEncryptionContext"
@@ -71,20 +71,20 @@
   },
   {
     "blocks": "10",
-    "blocksCovered": "10",
-    "failedQueries": "0",
-    "queries": "5",
-    "tests": "5",
+    "blocksCovered": "6",
+    "failedQueries": "4",
+    "queries": "6",
+    "tests": "2",
     "failedTests": "0",
     "dafnyName": "EncryptionContext.ReadAADPairs",
     "compiledName": "EncryptionContext_Compile.__default.ReadAADPairs"
   },
   {
     "blocks": "8",
-    "blocksCovered": "7",
-    "failedQueries": "1",
-    "queries": "4",
-    "tests": "3",
+    "blocksCovered": "5",
+    "failedQueries": "3",
+    "queries": "5",
+    "tests": "2",
     "failedTests": "0",
     "dafnyName": "EncryptionContext.ReadAAD",
     "compiledName": "EncryptionContext_Compile.__default.ReadAAD"

@@ -28,7 +28,7 @@ module SerializableTypes {
     && HasUint16Len(edk.ciphertext)
   }
 
-  type ESDKEncryptedDataKey = e: EncryptedDataKey | IsESDKEncryptedDataKey(e) witness *
+  type ESDKEncryptedDataKey = e: EncryptedDataKey | IsESDKEncryptedDataKey(e) witness EncryptedDataKey.EncryptedDataKey(keyProviderId:=[], keyProviderInfo:=[], ciphertext:=[])
   type ESDKEncryptedDataKeys = seq16<ESDKEncryptedDataKey>
   // The AAD section is the total length|number of pairs|key|value|key|value...
   // The total length is uint16, so the maximum length for the keys and values
@@ -47,7 +47,7 @@ module SerializableTypes {
 
   type ESDKEncryptionContext = ec: Crypto.EncryptionContext
   | IsESDKEncryptionContext(ec)
-  witness *
+  witness map[]
 
   const VALID_IDS: set<uint16> := {0x0578, 0x0478, 0x0378, 0x0346, 0x0214, 0x0178, 0x0146, 0x0114, 0x0078, 0x0046, 0x0014};
 
@@ -56,7 +56,7 @@ module SerializableTypes {
   //# The value (hex) of this field MUST be a value that exists
   //# in the Supported Algorithm Suites (../framework/algorithm-
   //# suites.md#supported-algorithm-suites) table.
-  type ESDKAlgorithmSuiteId = id: uint16 | id in VALID_IDS witness *
+  type ESDKAlgorithmSuiteId = id: uint16 | id in VALID_IDS witness 0x0578
 
   const SupportedAlgorithmSuites: map<Crypto.AlgorithmSuiteId, ESDKAlgorithmSuiteId> := map[
     Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF := 0x0014,

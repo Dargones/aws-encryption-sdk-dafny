@@ -28,6 +28,9 @@ module Header {
   import HeaderAuth
   import SharedHeaderFunctions
 
+  import MaterialProviders.AlgorithmSuites
+  import AESEncryption
+
   import opened SerializableTypes
   import opened StandardLibrary.UInt
   import opened Wrappers
@@ -96,8 +99,36 @@ module Header {
 
   type Header = h: HeaderInfo
   | IsHeader(h)
-  witness *
-
+  witness HeaderInfo.HeaderInfo(
+    body:=HeaderTypes.HeaderBody.V1HeaderBody(
+      messageType:=HeaderTypes.MessageType.TYPE_CUSTOMER_AED,
+      esdkSuiteId:=0x0014,
+      messageId:=[0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8],
+      encryptionContext:=[],
+      encryptedDataKeys:=[],
+      contentType:=HeaderTypes.ContentType.Framed,
+      frameLength:=0x0014,
+      headerIvLength:=0
+    ),
+    rawHeader:=[],
+    encryptionContext:=map[],
+    suite:=AlgorithmSuites.AlgorithmSuiteInfo(
+      messageVersion:=1,
+      id:=Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF,
+      encrypt:=AESEncryption.AES_GCM(
+        keyLength:=16,
+        tagLength:=16,
+        ivLength:=12
+      ),
+      kdf:=AlgorithmSuites.DerivationAlgorithm.IDENTITY,
+      commitment:=AlgorithmSuites.DerivationAlgorithm.None,
+      signature:=AlgorithmSuites.SignatureAlgorithm.None
+    ),
+    headerAuth:=HeaderTypes.HeaderAuth.AESMac(
+      headerIv:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      headerAuthTag:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    )
+  )
   // ReadHeaderBody does not support streaming at this time
   //= compliance/client-apis/decrypt.txt#2.7.1
   //= type=exception

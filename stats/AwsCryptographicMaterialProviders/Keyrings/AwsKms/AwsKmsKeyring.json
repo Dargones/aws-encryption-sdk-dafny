@@ -1,10 +1,10 @@
 [
   {
     "blocks": "45",
-    "blocksCovered": "44",
-    "failedQueries": "1",
+    "blocksCovered": "39",
+    "failedQueries": "6",
     "queries": "21",
-    "tests": "8",
+    "tests": "7",
     "failedTests": "0",
     "dafnyName": "MaterialProviders.AwsKmsKeyring.AwsKmsKeyring.OnEncrypt",
     "compiledName": "Dafny.Aws.EncryptionSdk.Core.AwsKmsKeyring.AwsKmsKeyring.OnEncrypt"
@@ -34,7 +34,7 @@
     "blocksCovered": "17",
     "failedQueries": "1",
     "queries": "9",
-    "tests": "6",
+    "tests": "7",
     "failedTests": "0",
     "dafnyName": "MaterialProviders.AwsKmsKeyring.DecryptSingleEncryptedDataKey.Invoke",
     "compiledName": "Dafny.Aws.EncryptionSdk.Core.AwsKmsKeyring.DecryptSingleEncryptedDataKey.Invoke"

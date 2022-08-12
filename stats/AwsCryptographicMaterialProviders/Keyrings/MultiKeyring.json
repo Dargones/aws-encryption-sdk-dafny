@@ -1,10 +1,10 @@
 [
   {
     "blocks": "30",
-    "blocksCovered": "21",
-    "failedQueries": "9",
+    "blocksCovered": "20",
+    "failedQueries": "10",
     "queries": "16",
-    "tests": "5",
+    "tests": "4",
     "failedTests": "0",
     "dafnyName": "MaterialProviders.MultiKeyring.MultiKeyring.OnEncrypt",
     "compiledName": "Dafny.Aws.EncryptionSdk.Core.MultiKeyring.MultiKeyring.OnEncrypt"
@@ -24,8 +24,8 @@
     "blocksCovered": "5",
     "failedQueries": "0",
     "queries": "3",
-    "tests": "3",
-    "failedTests": "3",
+    "tests": "2",
+    "failedTests": "0",
     "dafnyName": "MaterialProviders.MultiKeyring.AttemptDecryptDataKey",
     "compiledName": "Dafny.Aws.EncryptionSdk.Core.MultiKeyring.__default.AttemptDecryptDataKey"
   }

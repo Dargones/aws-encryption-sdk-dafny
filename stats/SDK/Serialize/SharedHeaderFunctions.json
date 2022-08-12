@@ -14,7 +14,7 @@
     "blocksCovered": "10",
     "failedQueries": "1",
     "queries": "6",
-    "tests": "3",
+    "tests": "4",
     "failedTests": "0",
     "dafnyName": "SharedHeaderFunctions.ReadMessageFormatVersion",
     "compiledName": "SharedHeaderFunctions_Compile.__default.ReadMessageFormatVersion"
@@ -34,7 +34,7 @@
     "blocksCovered": "6",
     "failedQueries": "0",
     "queries": "3",
-    "tests": "2",
+    "tests": "3",
     "failedTests": "0",
     "dafnyName": "SharedHeaderFunctions.ReadESDKSuiteId",
     "compiledName": "SharedHeaderFunctions_Compile.__default.ReadESDKSuiteId"

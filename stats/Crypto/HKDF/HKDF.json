@@ -14,7 +14,7 @@
     "blocksCovered": "18",
     "failedQueries": "4",
     "queries": "9",
-    "tests": "5",
+    "tests": "4",
     "failedTests": "0",
     "dafnyName": "HKDF.Expand",
     "compiledName": "HKDF_Compile.__default.Expand"

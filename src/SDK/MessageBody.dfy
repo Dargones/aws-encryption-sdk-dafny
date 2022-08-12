@@ -31,6 +31,8 @@ module MessageBody {
   import UTF8
   import SerializableTypes
   import MaterialProviders.Client
+  import MaterialProviders.AlgorithmSuites
+  import Aws.Crypto
   import Frames
   import Header
   import opened SerializeFunctions
@@ -132,7 +134,7 @@ module MessageBody {
 
   type MessageRegularFrames = regularFrames: seq<Frames.RegularFrame>
   | IsMessageRegularFrames(regularFrames)
-  witness *
+  witness []
 
   predicate MessageFramesAreMonotonic(frames: seq<MessageFrame>){
     if |frames| == 0 then true
@@ -195,20 +197,125 @@ module MessageBody {
   //# frames in the Framed Data.
   && MessageFramesAreMonotonic(body.regularFrames + [body.finalFrame])
   && MessageFramesAreForTheSameMessage(body.regularFrames + [body.finalFrame])
-  witness *
+  witness FramedMessageBody.FramedMessageBody(
+    regularFrames:=[],
+    finalFrame:=Frame.FinalFrame(
+      header:=Header.HeaderInfo.HeaderInfo(
+        body:=Header.HeaderTypes.HeaderBody.V1HeaderBody(
+          messageType:=Header.HeaderTypes.MessageType.TYPE_CUSTOMER_AED,
+          esdkSuiteId:=0x0014,
+          messageId:=[0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8],
+          encryptionContext:=[],
+          encryptedDataKeys:=[],
+          contentType:=Header.HeaderTypes.ContentType.Framed,
+          frameLength:=0x0014,
+          headerIvLength:=0
+        ),
+        rawHeader:=[],
+        encryptionContext:=map[],
+        suite:=AlgorithmSuites.AlgorithmSuiteInfo(
+          messageVersion:=1,
+          id:=Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF,
+          encrypt:=AESEncryption.AES_GCM(
+            keyLength:=16,
+            tagLength:=16,
+            ivLength:=12
+          ),
+          kdf:=AlgorithmSuites.DerivationAlgorithm.IDENTITY,
+          commitment:=AlgorithmSuites.DerivationAlgorithm.None,
+          signature:=AlgorithmSuites.SignatureAlgorithm.None
+        ),
+        headerAuth:=Header.HeaderTypes.HeaderAuth.AESMac(
+          headerIv:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          headerAuthTag:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        )
+      ),
+      seqNum:=1,
+      iv:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      encContent:=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      authTag:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+    )
 
   type MessageFrame = frame: Frames.Frame
   |
   || Frames.IsFinalFrame(frame)
   || Frames.IsRegularFrame(frame)
-  witness *
+  witness Frame.RegularFrame(
+    header:=Header.HeaderInfo.HeaderInfo(
+      body:=Header.HeaderTypes.HeaderBody.V1HeaderBody(
+        messageType:=Header.HeaderTypes.MessageType.TYPE_CUSTOMER_AED,
+        esdkSuiteId:=0x0014,
+        messageId:=[0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8],
+        encryptionContext:=[],
+        encryptedDataKeys:=[],
+        contentType:=Header.HeaderTypes.ContentType.Framed,
+        frameLength:=0x0014,
+        headerIvLength:=0
+      ),
+      rawHeader:=[],
+      encryptionContext:=map[],
+      suite:=AlgorithmSuites.AlgorithmSuiteInfo(
+        messageVersion:=1,
+        id:=Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF,
+        encrypt:=AESEncryption.AES_GCM(
+          keyLength:=16,
+          tagLength:=16,
+          ivLength:=12
+        ),
+        kdf:=AlgorithmSuites.DerivationAlgorithm.IDENTITY,
+        commitment:=AlgorithmSuites.DerivationAlgorithm.None,
+        signature:=AlgorithmSuites.SignatureAlgorithm.None
+      ),
+      headerAuth:=Header.HeaderTypes.HeaderAuth.AESMac(
+        headerIv:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        headerAuthTag:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      )
+    ),
+    seqNum:=0,
+    iv:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    encContent:=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    authTag:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
   type Frame = frame: Frames.Frame
   |
   || Frames.IsFinalFrame(frame)
   || Frames.IsRegularFrame(frame)
   || Frames.IsNonFramed(frame)
-  witness *
+  witness Frame.RegularFrame(
+    header:=Header.HeaderInfo.HeaderInfo(
+      body:=Header.HeaderTypes.HeaderBody.V1HeaderBody(
+        messageType:=Header.HeaderTypes.MessageType.TYPE_CUSTOMER_AED,
+        esdkSuiteId:=0x0014,
+        messageId:=[0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8],
+        encryptionContext:=[],
+        encryptedDataKeys:=[],
+        contentType:=Header.HeaderTypes.ContentType.Framed,
+        frameLength:=0x0014,
+        headerIvLength:=0
+      ),
+      rawHeader:=[],
+      encryptionContext:=map[],
+      suite:=AlgorithmSuites.AlgorithmSuiteInfo(
+        messageVersion:=1,
+        id:=Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF,
+        encrypt:=AESEncryption.AES_GCM(
+          keyLength:=16,
+          tagLength:=16,
+          ivLength:=12
+        ),
+        kdf:=AlgorithmSuites.DerivationAlgorithm.IDENTITY,
+        commitment:=AlgorithmSuites.DerivationAlgorithm.None,
+        signature:=AlgorithmSuites.SignatureAlgorithm.None
+      ),
+      headerAuth:=Header.HeaderTypes.HeaderAuth.AESMac(
+        headerIv:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        headerAuthTag:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      )
+    ),
+    seqNum:=0,
+    iv:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    encContent:=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    authTag:=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
   lemma LemmaAddingNextRegularFrame(
     regularFrames: MessageRegularFrames,

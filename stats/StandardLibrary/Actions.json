@@ -4,8 +4,8 @@
     "blocksCovered": "15",
     "failedQueries": "4",
     "queries": "9",
-    "tests": "5",
-    "failedTests": "5",
+    "tests": "2",
+    "failedTests": "0",
     "dafnyName": "Actions.Map",
     "compiledName": "Actions_Compile.__default.Map"
   },
@@ -14,8 +14,8 @@
     "blocksCovered": "17",
     "failedQueries": "4",
     "queries": "10",
-    "tests": "6",
-    "failedTests": "6",
+    "tests": "3",
+    "failedTests": "0",
     "dafnyName": "Actions.MapWithResult",
     "compiledName": "Actions_Compile.__default.MapWithResult"
   },
@@ -24,8 +24,8 @@
     "blocksCovered": "21",
     "failedQueries": "4",
     "queries": "12",
-    "tests": "8",
-    "failedTests": "8",
+    "tests": "2",
+    "failedTests": "0",
     "dafnyName": "Actions.FlatMap",
     "compiledName": "Actions_Compile.__default.FlatMap"
   },
@@ -34,8 +34,8 @@
     "blocksCovered": "19",
     "failedQueries": "4",
     "queries": "11",
-    "tests": "7",
-    "failedTests": "7",
+    "tests": "3",
+    "failedTests": "0",
     "dafnyName": "Actions.FlatMapWithResult",
     "compiledName": "Actions_Compile.__default.FlatMapWithResult"
   },
@@ -44,8 +44,8 @@
     "blocksCovered": "18",
     "failedQueries": "2",
     "queries": "9",
-    "tests": "7",
-    "failedTests": "7",
+    "tests": "3",
+    "failedTests": "0",
     "dafnyName": "Actions.Filter",
     "compiledName": "Actions_Compile.__default.Filter"
   },
@@ -54,8 +54,8 @@
     "blocksCovered": "20",
     "failedQueries": "2",
     "queries": "10",
-    "tests": "8",
-    "failedTests": "8",
+    "tests": "4",
+    "failedTests": "0",
     "dafnyName": "Actions.FilterWithResult",
     "compiledName": "Actions_Compile.__default.FilterWithResult"
   },
@@ -64,8 +64,8 @@
     "blocksCovered": "10",
     "failedQueries": "2",
     "queries": "5",
-    "tests": "3",
-    "failedTests": "3",
+    "tests": "2",
+    "failedTests": "0",
     "dafnyName": "Actions.ReduceToSuccess",
     "compiledName": "Actions_Compile.__default.ReduceToSuccess"
   }

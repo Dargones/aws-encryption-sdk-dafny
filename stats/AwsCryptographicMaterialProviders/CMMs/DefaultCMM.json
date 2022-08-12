@@ -11,8 +11,8 @@
   },
   {
     "blocks": "19",
-    "blocksCovered": "19",
-    "failedQueries": "0",
+    "blocksCovered": "18",
+    "failedQueries": "1",
     "queries": "9",
     "tests": "4",
     "failedTests": "0",
@@ -21,10 +21,10 @@
   },
   {
     "blocks": "9",
-    "blocksCovered": "9",
-    "failedQueries": "0",
+    "blocksCovered": "8",
+    "failedQueries": "1",
     "queries": "5",
-    "tests": "3",
+    "tests": "2",
     "failedTests": "0",
     "dafnyName": "MaterialProviders.DefaultCMM.DefaultCMM.DecryptMaterials",
     "compiledName": "Dafny.Aws.EncryptionSdk.Core.DefaultCMM.DefaultCMM.DecryptMaterials"

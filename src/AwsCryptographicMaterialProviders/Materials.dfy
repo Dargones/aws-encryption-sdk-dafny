@@ -269,10 +269,18 @@ import opened StandardLibrary
   // or any other rational combinator.
   type DecryptionMaterialsPendingPlaintextDataKey = d: Crypto.DecryptionMaterials
     | DecryptionMaterialsWithoutPlaintextDataKey(d)
-    witness *
+    witness Crypto.DecryptionMaterials(
+      algorithmSuiteId:=Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF,
+      encryptionContext:=map[],
+      plaintextDataKey:=Option.None,
+      verificationKey:=Option.None)
 
   type SealedDecryptionMaterials = d: Crypto.DecryptionMaterials
     | DecryptionMaterialsWithPlaintextDataKey(d)
-    witness *
+    witness Crypto.DecryptionMaterials(
+      algorithmSuiteId:=Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF,
+      encryptionContext:=map[],
+      plaintextDataKey:=Option.Some([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
+      verificationKey:=Option.None)
 
 }

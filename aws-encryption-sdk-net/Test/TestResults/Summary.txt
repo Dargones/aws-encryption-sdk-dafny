@@ -1,18 +1,18 @@
 ﻿Summary
-  Generated on: 7/31/2022 - 1:13:45 AM
-  Coverage date: 7/31/2022 - 1:13:36 AM
+  Generated on: 8/12/2022 - 4:02:53 AM
+  Coverage date: 8/12/2022 - 4:02:40 AM
   Parser: Cobertura
   Assemblies: 1
   Classes: 68
   Files: 1
-  Line coverage: 57.7%
-  Covered lines: 2652
-  Uncovered lines: 1939
-  Coverable lines: 4591
-  Total lines: 89391
+  Line coverage: 62.2%
+  Covered lines: 2862
+  Uncovered lines: 1734
+  Coverable lines: 4596
+  Total lines: 113901
 
-AWSEncryptionSDKTests                                                                                              57.7%
-  Actions_Compile.__default                                                                                        37.6%
+AWSEncryptionSDKTests                                                                                              62.2%
+  Actions_Compile.__default                                                                                        80.7%
   AESEncryption.__default                                                                                          71.4%
   AwsKmsArnParsing_Compile.__default                                                                               82.5%
   AwsKmsArnParsing_Compile.AwsArn                                                                                  51.4%
@@ -22,61 +22,61 @@ AWSEncryptionSDKTests                                                           
   AwsKmsMrkMatchForDecrypt_Compile.__default                                                                       92.5%
   AwsKmsUtils.__default                                                                                            92.1%
   Base64_Compile.__default                                                                                        100.0%
-  Dafny.Aws.EncryptionSdk.AwsEncryptionSdk.__default                                                               53.3%
-  Dafny.Aws.EncryptionSdk.AwsEncryptionSdk.AwsEncryptionSdk                                                        29.9%
+  Dafny.Aws.EncryptionSdk.AwsEncryptionSdk.__default                                                                0.0%
+  Dafny.Aws.EncryptionSdk.AwsEncryptionSdk.AwsEncryptionSdk                                                        22.1%
   Dafny.Aws.EncryptionSdk.AwsEncryptionSdkException                                                               100.0%
   Dafny.Aws.EncryptionSdk.AwsEncryptionSdkFactory.AwsEncryptionSdkFactory                                         100.0%
   Dafny.Aws.EncryptionSdk.Core.__default                                                                          100.0%
-  Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders                 56.3%
+  Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProviders.AwsCryptographicMaterialProviders                 84.4%
   Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProvidersException                                         100.0%
   Dafny.Aws.EncryptionSdk.Core.AwsCryptographicMaterialProvidersFactory.AwsCryptographicMaterialProvidersFactory  100.0%
   Dafny.Aws.EncryptionSdk.Core.AwsKmsDiscoveryKeyring.AwsKmsDiscoveryKeyring                                       96.8%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsDiscoveryKeyring.AwsKmsEncryptedDataKeyDecryptor                              21.9%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsDiscoveryKeyring.AwsKmsEncryptedDataKeyFilter                                 43.7%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsDiscoveryKeyring.AwsKmsEncryptedDataKeyTransformer                            30.7%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsKeyring.AwsKmsKeyring                                                         26.4%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsKeyring.DecryptSingleEncryptedDataKey                                         23.5%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsKeyring.OnDecryptEncryptedDataKeyFilter                                       27.2%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsEncryptedDataKeyDecryptor                            0.0%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsEncryptedDataKeyFilterTransform                     18.7%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsMrkDiscoveryKeyring                                 96.1%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkKeyring.AwsKmsMrkKeyring                                                   37.2%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkKeyring.DecryptSingleEncryptedDataKey                                      22.8%
-  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkKeyring.OnDecryptEncryptedDataKeyFilter                                    27.2%
-  Dafny.Aws.EncryptionSdk.Core.DefaultCMM.__default                                                                49.1%
-  Dafny.Aws.EncryptionSdk.Core.DefaultCMM.DefaultCMM                                                               10.8%
-  Dafny.Aws.EncryptionSdk.Core.MultiKeyring.__default                                                               0.0%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsDiscoveryKeyring.AwsKmsEncryptedDataKeyDecryptor                              65.0%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsDiscoveryKeyring.AwsKmsEncryptedDataKeyFilter                                 45.4%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsDiscoveryKeyring.AwsKmsEncryptedDataKeyTransformer                            74.0%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsKeyring.AwsKmsKeyring                                                         50.5%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsKeyring.DecryptSingleEncryptedDataKey                                         63.6%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsKeyring.OnDecryptEncryptedDataKeyFilter                                       69.5%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsEncryptedDataKeyDecryptor                           65.0%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsEncryptedDataKeyFilterTransform                     54.5%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsMrkDiscoveryKeyring                                100.0%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkKeyring.AwsKmsMrkKeyring                                                   50.2%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkKeyring.DecryptSingleEncryptedDataKey                                      64.7%
+  Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkKeyring.OnDecryptEncryptedDataKeyFilter                                    69.5%
+  Dafny.Aws.EncryptionSdk.Core.DefaultCMM.__default                                                                61.4%
+  Dafny.Aws.EncryptionSdk.Core.DefaultCMM.DefaultCMM                                                               59.7%
+  Dafny.Aws.EncryptionSdk.Core.MultiKeyring.__default                                                              31.2%
   Dafny.Aws.EncryptionSdk.Core.MultiKeyring.MultiKeyring                                                           43.1%
-  Dafny.Aws.EncryptionSdk.Core.RawAESKeyring.RawAESKeyring                                                         45.0%
+  Dafny.Aws.EncryptionSdk.Core.RawAESKeyring.RawAESKeyring                                                         33.9%
   Dafny.Aws.EncryptionSdk.Core.RawRSAKeyring.RawRSAKeyring                                                         20.6%
   Defaults.__default                                                                                              100.0%
   Digest_Compile.__default                                                                                         86.6%
-  EncryptDecryptHelpers.__default                                                                                  64.8%
-  EncryptedDataKeys_Compile.__default                                                                              98.8%
-  EncryptionContext_Compile.__default                                                                              89.7%
-  Frames_Compile.__default                                                                                         45.4%
-  Header_Compile.__default                                                                                         35.1%
-  HeaderAuth_Compile.__default                                                                                    100.0%
+  EncryptDecryptHelpers.__default                                                                                  24.0%
+  EncryptedDataKeys_Compile.__default                                                                              83.1%
+  EncryptionContext_Compile.__default                                                                              75.0%
+  Frames_Compile.__default                                                                                         53.5%
+  Header_Compile.__default                                                                                         29.6%
+  HeaderAuth_Compile.__default                                                                                     11.1%
   HeaderTypes_Compile.ContentType                                                                                 100.0%
   HeaderTypes_Compile.MessageFormatVersion                                                                        100.0%
   HeaderTypes_Compile.MessageType                                                                                 100.0%
   HKDF_Compile.__default                                                                                          100.0%
   HMAC.__default                                                                                                  100.0%
-  KeyDerivation.__default                                                                                          87.8%
-  MessageBody_Compile.__default                                                                                    73.0%
+  KeyDerivation.__default                                                                                          52.5%
+  MessageBody_Compile.__default                                                                                    33.7%
   Random_Compile.__default                                                                                         80.0%
   RSAEncryption.__default                                                                                           0.0%
   SerializableTypes_Compile.__default                                                                             100.0%
   SerializeFunctions_Compile.__default                                                                            100.0%
-  SharedHeaderFunctions_Compile.__default                                                                          96.0%
+  SharedHeaderFunctions_Compile.__default                                                                         100.0%
   Signature.__default                                                                                              68.7%
   Signature.ECDSAParams                                                                                           100.0%
   Sorting_Compile.__default                                                                                        20.0%
   StandardLibrary_Compile.__default                                                                                95.4%
-  Streams_Compile.ByteReader                                                                                        0.0%
-  Streams_Compile.ByteWriter                                                                                        0.0%
+  Streams_Compile.ByteReader                                                                                       75.3%
+  Streams_Compile.ByteWriter                                                                                      100.0%
   Streams_Compile.SeqReader<T>                                                                                     33.3%
   Streams_Compile.SeqWriter<T>                                                                                    100.0%
   UTF8.__default                                                                                                  100.0%
-  V1HeaderBody_Compile.__default                                                                                   51.6%
-  V2HeaderBody_Compile.__default                                                                                   29.8%
+  V1HeaderBody_Compile.__default                                                                                   61.2%
+  V2HeaderBody_Compile.__default                                                                                   87.7%

@@ -4,7 +4,7 @@
     "blocksCovered": "23",
     "failedQueries": "2",
     "queries": "12",
-    "tests": "5",
+    "tests": "8",
     "failedTests": "0",
     "dafnyName": "AwsKmsMrkAreUnique.AwsKmsMrkAreUnique",
     "compiledName": "AwsKmsMrkAreUnique_Compile.__default.AwsKmsMrkAreUnique"

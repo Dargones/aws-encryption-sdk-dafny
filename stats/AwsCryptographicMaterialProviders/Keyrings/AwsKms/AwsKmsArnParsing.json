@@ -163,8 +163,8 @@
     "blocks": "9",
     "blocksCovered": "9",
     "failedQueries": "0",
-    "queries": "4",
-    "tests": "4",
+    "queries": "3",
+    "tests": "3",
     "failedTests": "0",
     "dafnyName": "AwsKmsArnParsing.IsAwsKmsIdentifierString",
     "compiledName": "AwsKmsArnParsing_Compile.__default.IsAwsKmsIdentifierString"

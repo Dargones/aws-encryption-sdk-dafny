@@ -18,7 +18,7 @@ import opened UTF8
 	nameonly TargetKeyId: Option<KeyIdType> ,
 	nameonly CreationDate: Option<string> ,
 	nameonly LastUpdatedDate: Option<string> )
- type AliasNameType = x: string | IsValid_AliasNameType(x) witness *
+ type AliasNameType = x: string | IsValid_AliasNameType(x) witness "a"
  predicate method IsValid_AliasNameType(x: string) {
  ( 1 <= |x| <= 256 )
 }
@@ -36,7 +36,7 @@ import opened UTF8
     }
 }
 
- type ArnType = x: string | IsValid_ArnType(x) witness *
+ type ArnType = x: string | IsValid_ArnType(x) witness "aaaaaaaaaaaaaaaaaaaa"
  predicate method IsValid_ArnType(x: string) {
  ( 20 <= |x| <= 2048 )
 }
@@ -46,11 +46,11 @@ import opened UTF8
 	nameonly KeyId: KeyIdType )
  datatype CancelKeyDeletionResponse = CancelKeyDeletionResponse (
 	nameonly KeyId: Option<KeyIdType> )
- type CiphertextType = x: seq<uint8> | IsValid_CiphertextType(x) witness *
+ type CiphertextType = x: seq<uint8> | IsValid_CiphertextType(x) witness [0 as uint8]
  predicate method IsValid_CiphertextType(x: seq<uint8>) {
  ( 1 <= |x| <= 6144 )
 }
- type CloudHsmClusterIdType = x: string | IsValid_CloudHsmClusterIdType(x) witness *
+ type CloudHsmClusterIdType = x: string | IsValid_CloudHsmClusterIdType(x) witness "aaaaaaaaaaaaaaaaaaa"
  predicate method IsValid_CloudHsmClusterIdType(x: string) {
  ( 19 <= |x| <= 24 )
 }
@@ -200,7 +200,7 @@ import opened UTF8
     }
 }
 
- type CustomKeyStoreIdType = x: string | IsValid_CustomKeyStoreIdType(x) witness *
+ type CustomKeyStoreIdType = x: string | IsValid_CustomKeyStoreIdType(x) witness "a"
  predicate method IsValid_CustomKeyStoreIdType(x: string) {
  ( 1 <= |x| <= 64 )
 }
@@ -232,7 +232,7 @@ import opened UTF8
     }
 }
 
- type CustomKeyStoreNameType = x: string | IsValid_CustomKeyStoreNameType(x) witness *
+ type CustomKeyStoreNameType = x: string | IsValid_CustomKeyStoreNameType(x) witness "a"
  predicate method IsValid_CustomKeyStoreNameType(x: string) {
  ( 1 <= |x| <= 256 )
 }
@@ -315,7 +315,7 @@ import opened UTF8
 	nameonly GrantTokens: Option<GrantTokenList> )
  datatype DescribeKeyResponse = DescribeKeyResponse (
 	nameonly KeyMetadata: Option<KeyMetadata> )
- type DescriptionType = x: string | IsValid_DescriptionType(x) witness *
+ type DescriptionType = x: string | IsValid_DescriptionType(x) witness ""
  predicate method IsValid_DescriptionType(x: string) {
  ( 0 <= |x| <= 8192 )
 }
@@ -457,7 +457,7 @@ import opened UTF8
  datatype GrantConstraints = GrantConstraints (
 	nameonly EncryptionContextSubset: Option<EncryptionContextType> ,
 	nameonly EncryptionContextEquals: Option<EncryptionContextType> )
- type GrantIdType = x: string | IsValid_GrantIdType(x) witness *
+ type GrantIdType = x: string | IsValid_GrantIdType(x) witness "a"
  predicate method IsValid_GrantIdType(x: string) {
  ( 1 <= |x| <= 128 )
 }
@@ -472,7 +472,7 @@ import opened UTF8
 	nameonly IssuingAccount: Option<PrincipalIdType> ,
 	nameonly Operations: Option<GrantOperationList> ,
 	nameonly Constraints: Option<GrantConstraints> )
- type GrantNameType = x: string | IsValid_GrantNameType(x) witness *
+ type GrantNameType = x: string | IsValid_GrantNameType(x) witness "a"
  predicate method IsValid_GrantNameType(x: string) {
  ( 1 <= |x| <= 256 )
 }
@@ -492,11 +492,11 @@ import opened UTF8
 	| GenerateDataKeyPair
 	| GenerateDataKeyPairWithoutPlaintext
  type GrantOperationList = seq<GrantOperation>
- type GrantTokenList = x: seq<GrantTokenType> | IsValid_GrantTokenList(x) witness *
+ type GrantTokenList = x: seq<GrantTokenType> | IsValid_GrantTokenList(x) witness []
  predicate method IsValid_GrantTokenList(x: seq<GrantTokenType>) {
  ( 0 <= |x| <= 10 )
 }
- type GrantTokenType = x: string | IsValid_GrantTokenType(x) witness *
+ type GrantTokenType = x: string | IsValid_GrantTokenType(x) witness "a"
  predicate method IsValid_GrantTokenType(x: string) {
  ( 1 <= |x| <= 8192 )
 }
@@ -661,7 +661,7 @@ import opened UTF8
     }
 }
 
- type KeyIdType = x: string | IsValid_KeyIdType(x) witness *
+ type KeyIdType = x: string | IsValid_KeyIdType(x) witness "a"
  predicate method IsValid_KeyIdType(x: string) {
  ( 1 <= |x| <= 2048 )
 }
@@ -672,277 +672,277 @@ import opened UTF8
  trait IKeyManagementServiceClient {
  predicate {:opaque} CancelKeyDeletionCalledWith ( input: CancelKeyDeletionRequest ) {true}
  predicate {:opaque} CancelKeyDeletionSucceededWith (  input: CancelKeyDeletionRequest , output: CancelKeyDeletionResponse ) {true}
- method CancelKeyDeletion ( input: CancelKeyDeletionRequest ) returns  ( output: Result<CancelKeyDeletionResponse, IKeyManagementServiceException> )
+ function method CancelKeyDeletion ( input: CancelKeyDeletionRequest ) :  ( output: Result<CancelKeyDeletionResponse, IKeyManagementServiceException> )
 	ensures CancelKeyDeletionCalledWith (  input )
 	ensures output.Success? ==> CancelKeyDeletionSucceededWith (  input , output.value )
 
  predicate {:opaque} ConnectCustomKeyStoreCalledWith ( input: ConnectCustomKeyStoreRequest ) {true}
  predicate {:opaque} ConnectCustomKeyStoreSucceededWith (  input: ConnectCustomKeyStoreRequest , output: ConnectCustomKeyStoreResponse ) {true}
- method ConnectCustomKeyStore ( input: ConnectCustomKeyStoreRequest ) returns  ( output: Result<ConnectCustomKeyStoreResponse, IKeyManagementServiceException> )
+ function method ConnectCustomKeyStore ( input: ConnectCustomKeyStoreRequest ) :  ( output: Result<ConnectCustomKeyStoreResponse, IKeyManagementServiceException> )
 	ensures ConnectCustomKeyStoreCalledWith (  input )
 	ensures output.Success? ==> ConnectCustomKeyStoreSucceededWith (  input , output.value )
 
  predicate {:opaque} CreateAliasCalledWith ( input: CreateAliasRequest ) {true}
  predicate {:opaque} CreateAliasSucceededWith (  input: CreateAliasRequest ) {true}
- method CreateAlias ( input: CreateAliasRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method CreateAlias ( input: CreateAliasRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures CreateAliasCalledWith (  input )
 	ensures output.Success? ==> CreateAliasSucceededWith (  input )
 
  predicate {:opaque} CreateCustomKeyStoreCalledWith ( input: CreateCustomKeyStoreRequest ) {true}
  predicate {:opaque} CreateCustomKeyStoreSucceededWith (  input: CreateCustomKeyStoreRequest , output: CreateCustomKeyStoreResponse ) {true}
- method CreateCustomKeyStore ( input: CreateCustomKeyStoreRequest ) returns  ( output: Result<CreateCustomKeyStoreResponse, IKeyManagementServiceException> )
+ function method CreateCustomKeyStore ( input: CreateCustomKeyStoreRequest ) :  ( output: Result<CreateCustomKeyStoreResponse, IKeyManagementServiceException> )
 	ensures CreateCustomKeyStoreCalledWith (  input )
 	ensures output.Success? ==> CreateCustomKeyStoreSucceededWith (  input , output.value )
 
  predicate {:opaque} CreateGrantCalledWith ( input: CreateGrantRequest ) {true}
  predicate {:opaque} CreateGrantSucceededWith (  input: CreateGrantRequest , output: CreateGrantResponse ) {true}
- method CreateGrant ( input: CreateGrantRequest ) returns  ( output: Result<CreateGrantResponse, IKeyManagementServiceException> )
+ function method CreateGrant ( input: CreateGrantRequest ) :  ( output: Result<CreateGrantResponse, IKeyManagementServiceException> )
 	ensures CreateGrantCalledWith (  input )
 	ensures output.Success? ==> CreateGrantSucceededWith (  input , output.value )
 
  predicate {:opaque} CreateKeyCalledWith ( input: CreateKeyRequest ) {true}
  predicate {:opaque} CreateKeySucceededWith (  input: CreateKeyRequest , output: CreateKeyResponse ) {true}
- method CreateKey ( input: CreateKeyRequest ) returns  ( output: Result<CreateKeyResponse, IKeyManagementServiceException> )
+ function method CreateKey ( input: CreateKeyRequest ) :  ( output: Result<CreateKeyResponse, IKeyManagementServiceException> )
 	ensures CreateKeyCalledWith (  input )
 	ensures output.Success? ==> CreateKeySucceededWith (  input , output.value )
 
  predicate {:opaque} DecryptCalledWith ( input: DecryptRequest ) {true}
  predicate {:opaque} DecryptSucceededWith (  input: DecryptRequest , output: DecryptResponse ) {true}
- method Decrypt ( input: DecryptRequest ) returns  ( output: Result<DecryptResponse, IKeyManagementServiceException> )
+ function method Decrypt ( input: DecryptRequest ) :  ( output: Result<DecryptResponse, IKeyManagementServiceException> )
 	ensures DecryptCalledWith (  input )
 	ensures output.Success? ==> DecryptSucceededWith (  input , output.value )
 
  predicate {:opaque} DeleteAliasCalledWith ( input: DeleteAliasRequest ) {true}
  predicate {:opaque} DeleteAliasSucceededWith (  input: DeleteAliasRequest ) {true}
- method DeleteAlias ( input: DeleteAliasRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method DeleteAlias ( input: DeleteAliasRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures DeleteAliasCalledWith (  input )
 	ensures output.Success? ==> DeleteAliasSucceededWith (  input )
 
  predicate {:opaque} DeleteCustomKeyStoreCalledWith ( input: DeleteCustomKeyStoreRequest ) {true}
  predicate {:opaque} DeleteCustomKeyStoreSucceededWith (  input: DeleteCustomKeyStoreRequest , output: DeleteCustomKeyStoreResponse ) {true}
- method DeleteCustomKeyStore ( input: DeleteCustomKeyStoreRequest ) returns  ( output: Result<DeleteCustomKeyStoreResponse, IKeyManagementServiceException> )
+ function method DeleteCustomKeyStore ( input: DeleteCustomKeyStoreRequest ) :  ( output: Result<DeleteCustomKeyStoreResponse, IKeyManagementServiceException> )
 	ensures DeleteCustomKeyStoreCalledWith (  input )
 	ensures output.Success? ==> DeleteCustomKeyStoreSucceededWith (  input , output.value )
 
  predicate {:opaque} DeleteImportedKeyMaterialCalledWith ( input: DeleteImportedKeyMaterialRequest ) {true}
  predicate {:opaque} DeleteImportedKeyMaterialSucceededWith (  input: DeleteImportedKeyMaterialRequest ) {true}
- method DeleteImportedKeyMaterial ( input: DeleteImportedKeyMaterialRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method DeleteImportedKeyMaterial ( input: DeleteImportedKeyMaterialRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures DeleteImportedKeyMaterialCalledWith (  input )
 	ensures output.Success? ==> DeleteImportedKeyMaterialSucceededWith (  input )
 
  predicate {:opaque} DescribeCustomKeyStoresCalledWith ( input: DescribeCustomKeyStoresRequest ) {true}
  predicate {:opaque} DescribeCustomKeyStoresSucceededWith (  input: DescribeCustomKeyStoresRequest , output: DescribeCustomKeyStoresResponse ) {true}
- method DescribeCustomKeyStores ( input: DescribeCustomKeyStoresRequest ) returns  ( output: Result<DescribeCustomKeyStoresResponse, IKeyManagementServiceException> )
+ function method DescribeCustomKeyStores ( input: DescribeCustomKeyStoresRequest ) :  ( output: Result<DescribeCustomKeyStoresResponse, IKeyManagementServiceException> )
 	ensures DescribeCustomKeyStoresCalledWith (  input )
 	ensures output.Success? ==> DescribeCustomKeyStoresSucceededWith (  input , output.value )
 
  predicate {:opaque} DescribeKeyCalledWith ( input: DescribeKeyRequest ) {true}
  predicate {:opaque} DescribeKeySucceededWith (  input: DescribeKeyRequest , output: DescribeKeyResponse ) {true}
- method DescribeKey ( input: DescribeKeyRequest ) returns  ( output: Result<DescribeKeyResponse, IKeyManagementServiceException> )
+ function method DescribeKey ( input: DescribeKeyRequest ) :  ( output: Result<DescribeKeyResponse, IKeyManagementServiceException> )
 	ensures DescribeKeyCalledWith (  input )
 	ensures output.Success? ==> DescribeKeySucceededWith (  input , output.value )
 
  predicate {:opaque} DisableKeyCalledWith ( input: DisableKeyRequest ) {true}
  predicate {:opaque} DisableKeySucceededWith (  input: DisableKeyRequest ) {true}
- method DisableKey ( input: DisableKeyRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method DisableKey ( input: DisableKeyRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures DisableKeyCalledWith (  input )
 	ensures output.Success? ==> DisableKeySucceededWith (  input )
 
  predicate {:opaque} DisableKeyRotationCalledWith ( input: DisableKeyRotationRequest ) {true}
  predicate {:opaque} DisableKeyRotationSucceededWith (  input: DisableKeyRotationRequest ) {true}
- method DisableKeyRotation ( input: DisableKeyRotationRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method DisableKeyRotation ( input: DisableKeyRotationRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures DisableKeyRotationCalledWith (  input )
 	ensures output.Success? ==> DisableKeyRotationSucceededWith (  input )
 
  predicate {:opaque} DisconnectCustomKeyStoreCalledWith ( input: DisconnectCustomKeyStoreRequest ) {true}
  predicate {:opaque} DisconnectCustomKeyStoreSucceededWith (  input: DisconnectCustomKeyStoreRequest , output: DisconnectCustomKeyStoreResponse ) {true}
- method DisconnectCustomKeyStore ( input: DisconnectCustomKeyStoreRequest ) returns  ( output: Result<DisconnectCustomKeyStoreResponse, IKeyManagementServiceException> )
+ function method DisconnectCustomKeyStore ( input: DisconnectCustomKeyStoreRequest ) :  ( output: Result<DisconnectCustomKeyStoreResponse, IKeyManagementServiceException> )
 	ensures DisconnectCustomKeyStoreCalledWith (  input )
 	ensures output.Success? ==> DisconnectCustomKeyStoreSucceededWith (  input , output.value )
 
  predicate {:opaque} EnableKeyCalledWith ( input: EnableKeyRequest ) {true}
  predicate {:opaque} EnableKeySucceededWith (  input: EnableKeyRequest ) {true}
- method EnableKey ( input: EnableKeyRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method EnableKey ( input: EnableKeyRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures EnableKeyCalledWith (  input )
 	ensures output.Success? ==> EnableKeySucceededWith (  input )
 
  predicate {:opaque} EnableKeyRotationCalledWith ( input: EnableKeyRotationRequest ) {true}
  predicate {:opaque} EnableKeyRotationSucceededWith (  input: EnableKeyRotationRequest ) {true}
- method EnableKeyRotation ( input: EnableKeyRotationRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method EnableKeyRotation ( input: EnableKeyRotationRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures EnableKeyRotationCalledWith (  input )
 	ensures output.Success? ==> EnableKeyRotationSucceededWith (  input )
 
  predicate {:opaque} EncryptCalledWith ( input: EncryptRequest ) {true}
  predicate {:opaque} EncryptSucceededWith (  input: EncryptRequest , output: EncryptResponse ) {true}
- method Encrypt ( input: EncryptRequest ) returns  ( output: Result<EncryptResponse, IKeyManagementServiceException> )
+ function method Encrypt ( input: EncryptRequest ) :  ( output: Result<EncryptResponse, IKeyManagementServiceException> )
 	ensures EncryptCalledWith (  input )
 	ensures output.Success? ==> EncryptSucceededWith (  input , output.value )
 
  predicate {:opaque} GenerateDataKeyCalledWith ( input: GenerateDataKeyRequest ) {true}
  predicate {:opaque} GenerateDataKeySucceededWith (  input: GenerateDataKeyRequest , output: GenerateDataKeyResponse ) {true}
- method GenerateDataKey ( input: GenerateDataKeyRequest ) returns  ( output: Result<GenerateDataKeyResponse, IKeyManagementServiceException> )
+ function method GenerateDataKey ( input: GenerateDataKeyRequest ) :  ( output: Result<GenerateDataKeyResponse, IKeyManagementServiceException> )
 	ensures GenerateDataKeyCalledWith (  input )
 	ensures output.Success? ==> GenerateDataKeySucceededWith (  input , output.value )
 
  predicate {:opaque} GenerateDataKeyPairCalledWith ( input: GenerateDataKeyPairRequest ) {true}
  predicate {:opaque} GenerateDataKeyPairSucceededWith (  input: GenerateDataKeyPairRequest , output: GenerateDataKeyPairResponse ) {true}
- method GenerateDataKeyPair ( input: GenerateDataKeyPairRequest ) returns  ( output: Result<GenerateDataKeyPairResponse, IKeyManagementServiceException> )
+ function method GenerateDataKeyPair ( input: GenerateDataKeyPairRequest ) :  ( output: Result<GenerateDataKeyPairResponse, IKeyManagementServiceException> )
 	ensures GenerateDataKeyPairCalledWith (  input )
 	ensures output.Success? ==> GenerateDataKeyPairSucceededWith (  input , output.value )
 
  predicate {:opaque} GenerateDataKeyPairWithoutPlaintextCalledWith ( input: GenerateDataKeyPairWithoutPlaintextRequest ) {true}
  predicate {:opaque} GenerateDataKeyPairWithoutPlaintextSucceededWith (  input: GenerateDataKeyPairWithoutPlaintextRequest , output: GenerateDataKeyPairWithoutPlaintextResponse ) {true}
- method GenerateDataKeyPairWithoutPlaintext ( input: GenerateDataKeyPairWithoutPlaintextRequest ) returns  ( output: Result<GenerateDataKeyPairWithoutPlaintextResponse, IKeyManagementServiceException> )
+ function method GenerateDataKeyPairWithoutPlaintext ( input: GenerateDataKeyPairWithoutPlaintextRequest ) :  ( output: Result<GenerateDataKeyPairWithoutPlaintextResponse, IKeyManagementServiceException> )
 	ensures GenerateDataKeyPairWithoutPlaintextCalledWith (  input )
 	ensures output.Success? ==> GenerateDataKeyPairWithoutPlaintextSucceededWith (  input , output.value )
 
  predicate {:opaque} GenerateDataKeyWithoutPlaintextCalledWith ( input: GenerateDataKeyWithoutPlaintextRequest ) {true}
  predicate {:opaque} GenerateDataKeyWithoutPlaintextSucceededWith (  input: GenerateDataKeyWithoutPlaintextRequest , output: GenerateDataKeyWithoutPlaintextResponse ) {true}
- method GenerateDataKeyWithoutPlaintext ( input: GenerateDataKeyWithoutPlaintextRequest ) returns  ( output: Result<GenerateDataKeyWithoutPlaintextResponse, IKeyManagementServiceException> )
+ function method GenerateDataKeyWithoutPlaintext ( input: GenerateDataKeyWithoutPlaintextRequest ) :  ( output: Result<GenerateDataKeyWithoutPlaintextResponse, IKeyManagementServiceException> )
 	ensures GenerateDataKeyWithoutPlaintextCalledWith (  input )
 	ensures output.Success? ==> GenerateDataKeyWithoutPlaintextSucceededWith (  input , output.value )
 
  predicate {:opaque} GenerateRandomCalledWith ( input: GenerateRandomRequest ) {true}
  predicate {:opaque} GenerateRandomSucceededWith (  input: GenerateRandomRequest , output: GenerateRandomResponse ) {true}
- method GenerateRandom ( input: GenerateRandomRequest ) returns  ( output: Result<GenerateRandomResponse, IKeyManagementServiceException> )
+ function method GenerateRandom ( input: GenerateRandomRequest ) :  ( output: Result<GenerateRandomResponse, IKeyManagementServiceException> )
 	ensures GenerateRandomCalledWith (  input )
 	ensures output.Success? ==> GenerateRandomSucceededWith (  input , output.value )
 
  predicate {:opaque} GetKeyPolicyCalledWith ( input: GetKeyPolicyRequest ) {true}
  predicate {:opaque} GetKeyPolicySucceededWith (  input: GetKeyPolicyRequest , output: GetKeyPolicyResponse ) {true}
- method GetKeyPolicy ( input: GetKeyPolicyRequest ) returns  ( output: Result<GetKeyPolicyResponse, IKeyManagementServiceException> )
+ function method GetKeyPolicy ( input: GetKeyPolicyRequest ) :  ( output: Result<GetKeyPolicyResponse, IKeyManagementServiceException> )
 	ensures GetKeyPolicyCalledWith (  input )
 	ensures output.Success? ==> GetKeyPolicySucceededWith (  input , output.value )
 
  predicate {:opaque} GetKeyRotationStatusCalledWith ( input: GetKeyRotationStatusRequest ) {true}
  predicate {:opaque} GetKeyRotationStatusSucceededWith (  input: GetKeyRotationStatusRequest , output: GetKeyRotationStatusResponse ) {true}
- method GetKeyRotationStatus ( input: GetKeyRotationStatusRequest ) returns  ( output: Result<GetKeyRotationStatusResponse, IKeyManagementServiceException> )
+ function method GetKeyRotationStatus ( input: GetKeyRotationStatusRequest ) :  ( output: Result<GetKeyRotationStatusResponse, IKeyManagementServiceException> )
 	ensures GetKeyRotationStatusCalledWith (  input )
 	ensures output.Success? ==> GetKeyRotationStatusSucceededWith (  input , output.value )
 
  predicate {:opaque} GetParametersForImportCalledWith ( input: GetParametersForImportRequest ) {true}
  predicate {:opaque} GetParametersForImportSucceededWith (  input: GetParametersForImportRequest , output: GetParametersForImportResponse ) {true}
- method GetParametersForImport ( input: GetParametersForImportRequest ) returns  ( output: Result<GetParametersForImportResponse, IKeyManagementServiceException> )
+ function method GetParametersForImport ( input: GetParametersForImportRequest ) :  ( output: Result<GetParametersForImportResponse, IKeyManagementServiceException> )
 	ensures GetParametersForImportCalledWith (  input )
 	ensures output.Success? ==> GetParametersForImportSucceededWith (  input , output.value )
 
  predicate {:opaque} GetPublicKeyCalledWith ( input: GetPublicKeyRequest ) {true}
  predicate {:opaque} GetPublicKeySucceededWith (  input: GetPublicKeyRequest , output: GetPublicKeyResponse ) {true}
- method GetPublicKey ( input: GetPublicKeyRequest ) returns  ( output: Result<GetPublicKeyResponse, IKeyManagementServiceException> )
+ function method GetPublicKey ( input: GetPublicKeyRequest ) :  ( output: Result<GetPublicKeyResponse, IKeyManagementServiceException> )
 	ensures GetPublicKeyCalledWith (  input )
 	ensures output.Success? ==> GetPublicKeySucceededWith (  input , output.value )
 
  predicate {:opaque} ImportKeyMaterialCalledWith ( input: ImportKeyMaterialRequest ) {true}
  predicate {:opaque} ImportKeyMaterialSucceededWith (  input: ImportKeyMaterialRequest , output: ImportKeyMaterialResponse ) {true}
- method ImportKeyMaterial ( input: ImportKeyMaterialRequest ) returns  ( output: Result<ImportKeyMaterialResponse, IKeyManagementServiceException> )
+ function method ImportKeyMaterial ( input: ImportKeyMaterialRequest ) :  ( output: Result<ImportKeyMaterialResponse, IKeyManagementServiceException> )
 	ensures ImportKeyMaterialCalledWith (  input )
 	ensures output.Success? ==> ImportKeyMaterialSucceededWith (  input , output.value )
 
  predicate {:opaque} ListAliasesCalledWith ( input: ListAliasesRequest ) {true}
  predicate {:opaque} ListAliasesSucceededWith (  input: ListAliasesRequest , output: ListAliasesResponse ) {true}
- method ListAliases ( input: ListAliasesRequest ) returns  ( output: Result<ListAliasesResponse, IKeyManagementServiceException> )
+ function method ListAliases ( input: ListAliasesRequest ) :  ( output: Result<ListAliasesResponse, IKeyManagementServiceException> )
 	ensures ListAliasesCalledWith (  input )
 	ensures output.Success? ==> ListAliasesSucceededWith (  input , output.value )
 
  predicate {:opaque} ListGrantsCalledWith ( input: ListGrantsRequest ) {true}
  predicate {:opaque} ListGrantsSucceededWith (  input: ListGrantsRequest , output: ListGrantsResponse ) {true}
- method ListGrants ( input: ListGrantsRequest ) returns  ( output: Result<ListGrantsResponse, IKeyManagementServiceException> )
+ function method ListGrants ( input: ListGrantsRequest ) :  ( output: Result<ListGrantsResponse, IKeyManagementServiceException> )
 	ensures ListGrantsCalledWith (  input )
 	ensures output.Success? ==> ListGrantsSucceededWith (  input , output.value )
 
  predicate {:opaque} ListKeyPoliciesCalledWith ( input: ListKeyPoliciesRequest ) {true}
  predicate {:opaque} ListKeyPoliciesSucceededWith (  input: ListKeyPoliciesRequest , output: ListKeyPoliciesResponse ) {true}
- method ListKeyPolicies ( input: ListKeyPoliciesRequest ) returns  ( output: Result<ListKeyPoliciesResponse, IKeyManagementServiceException> )
+ function method ListKeyPolicies ( input: ListKeyPoliciesRequest ) :  ( output: Result<ListKeyPoliciesResponse, IKeyManagementServiceException> )
 	ensures ListKeyPoliciesCalledWith (  input )
 	ensures output.Success? ==> ListKeyPoliciesSucceededWith (  input , output.value )
 
  predicate {:opaque} ListResourceTagsCalledWith ( input: ListResourceTagsRequest ) {true}
  predicate {:opaque} ListResourceTagsSucceededWith (  input: ListResourceTagsRequest , output: ListResourceTagsResponse ) {true}
- method ListResourceTags ( input: ListResourceTagsRequest ) returns  ( output: Result<ListResourceTagsResponse, IKeyManagementServiceException> )
+ function method ListResourceTags ( input: ListResourceTagsRequest ) :  ( output: Result<ListResourceTagsResponse, IKeyManagementServiceException> )
 	ensures ListResourceTagsCalledWith (  input )
 	ensures output.Success? ==> ListResourceTagsSucceededWith (  input , output.value )
 
  predicate {:opaque} PutKeyPolicyCalledWith ( input: PutKeyPolicyRequest ) {true}
  predicate {:opaque} PutKeyPolicySucceededWith (  input: PutKeyPolicyRequest ) {true}
- method PutKeyPolicy ( input: PutKeyPolicyRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method PutKeyPolicy ( input: PutKeyPolicyRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures PutKeyPolicyCalledWith (  input )
 	ensures output.Success? ==> PutKeyPolicySucceededWith (  input )
 
  predicate {:opaque} ReEncryptCalledWith ( input: ReEncryptRequest ) {true}
  predicate {:opaque} ReEncryptSucceededWith (  input: ReEncryptRequest , output: ReEncryptResponse ) {true}
- method ReEncrypt ( input: ReEncryptRequest ) returns  ( output: Result<ReEncryptResponse, IKeyManagementServiceException> )
+ function method ReEncrypt ( input: ReEncryptRequest ) :  ( output: Result<ReEncryptResponse, IKeyManagementServiceException> )
 	ensures ReEncryptCalledWith (  input )
 	ensures output.Success? ==> ReEncryptSucceededWith (  input , output.value )
 
  predicate {:opaque} ReplicateKeyCalledWith ( input: ReplicateKeyRequest ) {true}
  predicate {:opaque} ReplicateKeySucceededWith (  input: ReplicateKeyRequest , output: ReplicateKeyResponse ) {true}
- method ReplicateKey ( input: ReplicateKeyRequest ) returns  ( output: Result<ReplicateKeyResponse, IKeyManagementServiceException> )
+ function method ReplicateKey ( input: ReplicateKeyRequest ) :  ( output: Result<ReplicateKeyResponse, IKeyManagementServiceException> )
 	ensures ReplicateKeyCalledWith (  input )
 	ensures output.Success? ==> ReplicateKeySucceededWith (  input , output.value )
 
  predicate {:opaque} RetireGrantCalledWith ( input: RetireGrantRequest ) {true}
  predicate {:opaque} RetireGrantSucceededWith (  input: RetireGrantRequest ) {true}
- method RetireGrant ( input: RetireGrantRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method RetireGrant ( input: RetireGrantRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures RetireGrantCalledWith (  input )
 	ensures output.Success? ==> RetireGrantSucceededWith (  input )
 
  predicate {:opaque} RevokeGrantCalledWith ( input: RevokeGrantRequest ) {true}
  predicate {:opaque} RevokeGrantSucceededWith (  input: RevokeGrantRequest ) {true}
- method RevokeGrant ( input: RevokeGrantRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method RevokeGrant ( input: RevokeGrantRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures RevokeGrantCalledWith (  input )
 	ensures output.Success? ==> RevokeGrantSucceededWith (  input )
 
  predicate {:opaque} ScheduleKeyDeletionCalledWith ( input: ScheduleKeyDeletionRequest ) {true}
  predicate {:opaque} ScheduleKeyDeletionSucceededWith (  input: ScheduleKeyDeletionRequest , output: ScheduleKeyDeletionResponse ) {true}
- method ScheduleKeyDeletion ( input: ScheduleKeyDeletionRequest ) returns  ( output: Result<ScheduleKeyDeletionResponse, IKeyManagementServiceException> )
+ function method ScheduleKeyDeletion ( input: ScheduleKeyDeletionRequest ) :  ( output: Result<ScheduleKeyDeletionResponse, IKeyManagementServiceException> )
 	ensures ScheduleKeyDeletionCalledWith (  input )
 	ensures output.Success? ==> ScheduleKeyDeletionSucceededWith (  input , output.value )
 
  predicate {:opaque} SignCalledWith ( input: SignRequest ) {true}
  predicate {:opaque} SignSucceededWith (  input: SignRequest , output: SignResponse ) {true}
- method Sign ( input: SignRequest ) returns  ( output: Result<SignResponse, IKeyManagementServiceException> )
+ function method Sign ( input: SignRequest ) :  ( output: Result<SignResponse, IKeyManagementServiceException> )
 	ensures SignCalledWith (  input )
 	ensures output.Success? ==> SignSucceededWith (  input , output.value )
 
  predicate {:opaque} TagResourceCalledWith ( input: TagResourceRequest ) {true}
  predicate {:opaque} TagResourceSucceededWith (  input: TagResourceRequest ) {true}
- method TagResource ( input: TagResourceRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method TagResource ( input: TagResourceRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures TagResourceCalledWith (  input )
 	ensures output.Success? ==> TagResourceSucceededWith (  input )
 
  predicate {:opaque} UntagResourceCalledWith ( input: UntagResourceRequest ) {true}
  predicate {:opaque} UntagResourceSucceededWith (  input: UntagResourceRequest ) {true}
- method UntagResource ( input: UntagResourceRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method UntagResource ( input: UntagResourceRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures UntagResourceCalledWith (  input )
 	ensures output.Success? ==> UntagResourceSucceededWith (  input )
 
  predicate {:opaque} UpdateAliasCalledWith ( input: UpdateAliasRequest ) {true}
  predicate {:opaque} UpdateAliasSucceededWith (  input: UpdateAliasRequest ) {true}
- method UpdateAlias ( input: UpdateAliasRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method UpdateAlias ( input: UpdateAliasRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures UpdateAliasCalledWith (  input )
 	ensures output.Success? ==> UpdateAliasSucceededWith (  input )
 
  predicate {:opaque} UpdateCustomKeyStoreCalledWith ( input: UpdateCustomKeyStoreRequest ) {true}
  predicate {:opaque} UpdateCustomKeyStoreSucceededWith (  input: UpdateCustomKeyStoreRequest , output: UpdateCustomKeyStoreResponse ) {true}
- method UpdateCustomKeyStore ( input: UpdateCustomKeyStoreRequest ) returns  ( output: Result<UpdateCustomKeyStoreResponse, IKeyManagementServiceException> )
+ function method UpdateCustomKeyStore ( input: UpdateCustomKeyStoreRequest ) :  ( output: Result<UpdateCustomKeyStoreResponse, IKeyManagementServiceException> )
 	ensures UpdateCustomKeyStoreCalledWith (  input )
 	ensures output.Success? ==> UpdateCustomKeyStoreSucceededWith (  input , output.value )
 
  predicate {:opaque} UpdateKeyDescriptionCalledWith ( input: UpdateKeyDescriptionRequest ) {true}
  predicate {:opaque} UpdateKeyDescriptionSucceededWith (  input: UpdateKeyDescriptionRequest ) {true}
- method UpdateKeyDescription ( input: UpdateKeyDescriptionRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method UpdateKeyDescription ( input: UpdateKeyDescriptionRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures UpdateKeyDescriptionCalledWith (  input )
 	ensures output.Success? ==> UpdateKeyDescriptionSucceededWith (  input )
 
  predicate {:opaque} UpdatePrimaryRegionCalledWith ( input: UpdatePrimaryRegionRequest ) {true}
  predicate {:opaque} UpdatePrimaryRegionSucceededWith (  input: UpdatePrimaryRegionRequest ) {true}
- method UpdatePrimaryRegion ( input: UpdatePrimaryRegionRequest ) returns  ( output: Result<(), IKeyManagementServiceException> )
+ function method UpdatePrimaryRegion ( input: UpdatePrimaryRegionRequest ) :  ( output: Result<(), IKeyManagementServiceException> )
 	ensures UpdatePrimaryRegionCalledWith (  input )
 	ensures output.Success? ==> UpdatePrimaryRegionSucceededWith (  input )
 
  predicate {:opaque} VerifyCalledWith ( input: VerifyRequest ) {true}
  predicate {:opaque} VerifySucceededWith (  input: VerifyRequest , output: VerifyResponse ) {true}
- method Verify ( input: VerifyRequest ) returns  ( output: Result<VerifyResponse, IKeyManagementServiceException> )
+ function method Verify ( input: VerifyRequest ) :  ( output: Result<VerifyResponse, IKeyManagementServiceException> )
 	ensures VerifyCalledWith (  input )
 	ensures output.Success? ==> VerifySucceededWith (  input , output.value )
 
@@ -1009,7 +1009,7 @@ import opened UTF8
 	| PendingReplicaDeletion
 	| Unavailable
 	| Updating
- type KeyStorePasswordType = x: string | IsValid_KeyStorePasswordType(x) witness *
+ type KeyStorePasswordType = x: string | IsValid_KeyStorePasswordType(x) witness "1234567"
  predicate method IsValid_KeyStorePasswordType(x: string) {
  ( 7 <= |x| <= 32 )
 }
@@ -1086,7 +1086,7 @@ import opened UTF8
     }
 }
 
- type LimitType = x: int32 | IsValid_LimitType(x) witness *
+ type LimitType = x: int32 | IsValid_LimitType(x) witness 1 as int32
  predicate method IsValid_LimitType(x: int32) {
  ( 1 <= x <= 1000 )
 }
@@ -1145,7 +1145,7 @@ import opened UTF8
     }
 }
 
- type MarkerType = x: string | IsValid_MarkerType(x) witness *
+ type MarkerType = x: string | IsValid_MarkerType(x) witness "a"
  predicate method IsValid_MarkerType(x: string) {
  ( 1 <= |x| <= 1024 )
 }
@@ -1178,7 +1178,7 @@ import opened UTF8
 }
 
  type NullableBooleanType = bool
- type NumberOfBytesType = x: int32 | IsValid_NumberOfBytesType(x) witness *
+ type NumberOfBytesType = x: int32 | IsValid_NumberOfBytesType(x) witness 1 as int32
  predicate method IsValid_NumberOfBytesType(x: int32) {
  ( 1 <= x <= 1024 )
 }
@@ -1186,28 +1186,28 @@ import opened UTF8
 	| AWS_KMS
 	| EXTERNAL
 	| AWS_CLOUDHSM
- type PendingWindowInDaysType = x: int32 | IsValid_PendingWindowInDaysType(x) witness *
+ type PendingWindowInDaysType = x: int32 | IsValid_PendingWindowInDaysType(x) witness 1 as int32
  predicate method IsValid_PendingWindowInDaysType(x: int32) {
  ( 1 <= x <= 365 )
 }
- type PlaintextType = x: seq<uint8> | IsValid_PlaintextType(x) witness *
+ type PlaintextType = x: seq<uint8> | IsValid_PlaintextType(x) witness [0 as uint8]
  predicate method IsValid_PlaintextType(x: seq<uint8>) {
  ( 1 <= |x| <= 4096 )
 }
  type PolicyNameList = seq<PolicyNameType>
- type PolicyNameType = x: string | IsValid_PolicyNameType(x) witness *
+ type PolicyNameType = x: string | IsValid_PolicyNameType(x) witness "a"
  predicate method IsValid_PolicyNameType(x: string) {
  ( 1 <= |x| <= 128 )
 }
- type PolicyType = x: string | IsValid_PolicyType(x) witness *
+ type PolicyType = x: string | IsValid_PolicyType(x) witness "a"
  predicate method IsValid_PolicyType(x: string) {
  ( 1 <= |x| <= 131072 )
 }
- type PrincipalIdType = x: string | IsValid_PrincipalIdType(x) witness *
+ type PrincipalIdType = x: string | IsValid_PrincipalIdType(x) witness "a"
  predicate method IsValid_PrincipalIdType(x: string) {
  ( 1 <= |x| <= 256 )
 }
- type PublicKeyType = x: seq<uint8> | IsValid_PublicKeyType(x) witness *
+ type PublicKeyType = x: seq<uint8> | IsValid_PublicKeyType(x) witness [0 as uint8]
  predicate method IsValid_PublicKeyType(x: seq<uint8>) {
  ( 1 <= |x| <= 8192 )
 }
@@ -1231,7 +1231,7 @@ import opened UTF8
 	nameonly KeyId: Option<KeyIdType> ,
 	nameonly SourceEncryptionAlgorithm: Option<EncryptionAlgorithmSpec> ,
 	nameonly DestinationEncryptionAlgorithm: Option<EncryptionAlgorithmSpec> )
- type RegionType = x: string | IsValid_RegionType(x) witness *
+ type RegionType = x: string | IsValid_RegionType(x) witness "a"
  predicate method IsValid_RegionType(x: string) {
  ( 1 <= |x| <= 32 )
 }
@@ -1300,7 +1300,7 @@ import opened UTF8
 }
 
  type TagKeyList = seq<TagKeyType>
- type TagKeyType = x: string | IsValid_TagKeyType(x) witness *
+ type TagKeyType = x: string | IsValid_TagKeyType(x) witness "a"
  predicate method IsValid_TagKeyType(x: string) {
  ( 1 <= |x| <= 128 )
 }
@@ -1308,11 +1308,11 @@ import opened UTF8
  datatype TagResourceRequest = TagResourceRequest (
 	nameonly KeyId: KeyIdType ,
 	nameonly Tags: TagList )
- type TagValueType = x: string | IsValid_TagValueType(x) witness *
+ type TagValueType = x: string | IsValid_TagValueType(x) witness ""
  predicate method IsValid_TagValueType(x: string) {
  ( 0 <= |x| <= 256 )
 }
- type TrustAnchorCertificateType = x: string | IsValid_TrustAnchorCertificateType(x) witness *
+ type TrustAnchorCertificateType = x: string | IsValid_TrustAnchorCertificateType(x) witness "a"
  predicate method IsValid_TrustAnchorCertificateType(x: string) {
  ( 1 <= |x| <= 5000 )
 }

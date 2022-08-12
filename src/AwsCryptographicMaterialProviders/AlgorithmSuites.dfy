@@ -60,7 +60,7 @@ module
       && kdf.inputKeyLength == kdf.outputKeyLength
       && (kdf.hmac == HMAC.Digests.SHA_512 ==> kdf.inputKeyLength == 32))
     && !kdf.None?
-    witness *
+    witness DerivationAlgorithm.IDENTITY
 
   type CommitmentDerivationAlgorithm = kdf: DerivationAlgorithm
     |
@@ -72,7 +72,7 @@ module
       && kdf.inputKeyLength == 32
       && kdf.outputKeyLength == 32)
     && !kdf.IDENTITY?
-    witness *
+    witness DerivationAlgorithm.None
 
   datatype SignatureAlgorithm =
     | ECDSA(curve: Signature.ECDSAParams)
@@ -215,7 +215,18 @@ module
         && a.signature.ECDSA?
         && a.signature.curve == Signature.ECDSAParams.ECDSA_P384
         && a.commitment.HKDF?)
-  witness *
+  witness AlgorithmSuiteInfo(
+    messageVersion:=1,
+    id:=Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF,
+    encrypt:=AESEncryption.AES_GCM(
+     keyLength:=16,
+     tagLength:=16,
+     ivLength:=12
+    ),
+    kdf:=DerivationAlgorithm.IDENTITY,
+    commitment:=DerivationAlgorithm.None,
+    signature:=SignatureAlgorithm.None
+  )
 
   const Bits256 := 32 as AESEncryption.KeyLength;
   const Bits192 := 24 as AESEncryption.KeyLength;

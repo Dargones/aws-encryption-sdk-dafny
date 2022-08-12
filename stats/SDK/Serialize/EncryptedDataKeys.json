@@ -41,10 +41,10 @@
   },
   {
     "blocks": "6",
-    "blocksCovered": "6",
-    "failedQueries": "0",
+    "blocksCovered": "5",
+    "failedQueries": "1",
     "queries": "3",
-    "tests": "3",
+    "tests": "2",
     "failedTests": "0",
     "dafnyName": "EncryptedDataKeys.ReadEncryptedDataKeys",
     "compiledName": "EncryptedDataKeys_Compile.__default.ReadEncryptedDataKeys"

@@ -30,11 +30,11 @@ module EncryptionContext {
   |
     && HasUint16Len(p.key) && ValidUTF8Seq(p.key)
     && HasUint16Len(p.value) && ValidUTF8Seq(p.value)
-  witness *
+  witness Pair<UTF8.ValidUTF8Bytes, UTF8.ValidUTF8Bytes>.Pair([], [])
 
   type ESDKCanonicalEncryptionContext = pairs: seq<ESDKEncryptionContextPair>
   | ESDKCanonicalEncryptionContext?(pairs)
-  witness *
+  witness []
 
   predicate ESDKCanonicalEncryptionContext?(pairs: seq<ESDKEncryptionContextPair>) {
     && HasUint16Len(pairs)

@@ -51,35 +51,35 @@ import CryptoDatatypes
 // Removing assertions...
 // Annotating blocks...
 // Generating modifications...
-// Test Digest.Length(block#524179) covers block 524176
-// Test Digest.Length(block#524179) covers block 524177
-// Test Digest.Length(block#524179) covers block 524179
-// Extracting the test for Digest.Length(block#524179) from the counterexample...
+// Test Digest.Length(block#322273) covers block 322270
+// Test Digest.Length(block#322273) covers block 322271
+// Test Digest.Length(block#322273) covers block 322273
+// Extracting the test for Digest.Length(block#322273) from the counterexample...
 method {:test} test0() {
 var d0 : CryptoDatatypes.DigestAlgorithm := CryptoDatatypes.DigestAlgorithm.SHA_512;
 var r0 := Digest.Length(d0);
 }
-// No test can be generated for Digest.Length(block#524178) because the verifier suceeded.
-// Test Digest.Digest(block#525397) covers block 525392
-// Test Digest.Digest(block#525397) covers block 525393
-// Test Digest.Digest(block#525397) covers block 525395
-// Test Digest.Digest(block#525397) covers block 525397
-// Extracting the test for Digest.Digest(block#525397) from the counterexample...
+// No test can be generated for Digest.Length(block#322272) because the verifier suceeded.
+// Test Digest.Digest(block#323321) covers block 323316
+// Test Digest.Digest(block#323321) covers block 323317
+// Test Digest.Digest(block#323321) covers block 323319
+// Test Digest.Digest(block#323321) covers block 323321
+// Extracting the test for Digest.Digest(block#323321) from the counterexample...
 method {:test} test1() {
 var d0 : CryptoDatatypes.DigestAlgorithm := CryptoDatatypes.DigestAlgorithm.SHA_512;
 var d1 : seq<StandardLibrary.UInt.uint8> := [];
 var r0 := Digest.Digest(d0, d1);
 expect r0.Success? ==> |r0.value| == Digest.Length(d0);
 }
-// Test Digest.Digest(block#525396) covers block 525392
-// Test Digest.Digest(block#525396) covers block 525393
-// Test Digest.Digest(block#525396) covers block 525395
-// Test Digest.Digest(block#525396) covers block 525396
-// Extracting the test for Digest.Digest(block#525396) from the counterexample...
-// Test for Digest.Digest(block#525396) matches a test previously generated for Digest.Digest(block#525397).
-// Test Digest.Digest(block#525394) covers block 525392
-// Test Digest.Digest(block#525394) covers block 525394
-// Extracting the test for Digest.Digest(block#525394) from the counterexample...
-// Test for Digest.Digest(block#525394) matches a test previously generated for Digest.Digest(block#525397).
+// Test Digest.Digest(block#323320) covers block 323316
+// Test Digest.Digest(block#323320) covers block 323317
+// Test Digest.Digest(block#323320) covers block 323319
+// Test Digest.Digest(block#323320) covers block 323320
+// Extracting the test for Digest.Digest(block#323320) from the counterexample...
+// Test for Digest.Digest(block#323320) matches a test previously generated for Digest.Digest(block#323321).
+// Test Digest.Digest(block#323318) covers block 323316
+// Test Digest.Digest(block#323318) covers block 323318
+// Extracting the test for Digest.Digest(block#323318) from the counterexample...
+// Test for Digest.Digest(block#323318) matches a test previously generated for Digest.Digest(block#323321).
 
 }

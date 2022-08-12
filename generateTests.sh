@@ -33,7 +33,7 @@ for filename in $(find . -name '*.dfy'); do
     if [[ ! -z $dirname ]]; then
         relative=$relative../
     fi
-    dotnet $baseDir/dafny/Binaries/Dafny.dll /definiteAssignment:3 /warnShadowing /timeLimit:5 /generateTestMode:Block /prune /generateTestOracle:Spec /generateTestSeqLengthLimit:100 /generateTestVerbose /generateTestPrintStats:$baseDir/stats/$jsonname $relative/src/$filename > ${filename##*/}
+    dotnet $baseDir/dafny/Binaries/Dafny.dll /noPrune /definiteAssignment:3 /warnShadowing /timeLimit:5 /generateTestMode:Block /generateTestOracle:Spec /generateTestSeqLengthLimit:80 /generateTestVerbose /generateTestPrintStats:$baseDir/stats/$jsonname $relative/src/$filename > ${filename##*/}
     # kill all z3 processes that might still be running
     pkill -9 -f "z3/bin/z3"
     pkill -9 -f "local/bin/z3"

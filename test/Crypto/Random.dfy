@@ -50,27 +50,29 @@ import Wrappers
 // Removing assertions...
 // Annotating blocks...
 // Generating modifications...
-// Test Random.GenerateBytes(block#516073) covers block 516068
-// Test Random.GenerateBytes(block#516073) covers block 516069
-// Test Random.GenerateBytes(block#516073) covers block 516071
-// Test Random.GenerateBytes(block#516073) covers block 516073
-// Extracting the test for Random.GenerateBytes(block#516073) from the counterexample...
+// Test Random.GenerateBytes(block#315949) covers block 315944
+// Test Random.GenerateBytes(block#315949) covers block 315945
+// Test Random.GenerateBytes(block#315949) covers block 315947
+// Test Random.GenerateBytes(block#315949) covers block 315949
+// Extracting the test for Random.GenerateBytes(block#315949) from the counterexample...
 method {:test} test0() {
+expect 0 <= (1 as StandardLibrary.UInt.int32), "Test does not meet preconditions and should be removed";
 var r0 := Random.GenerateBytes((1 as StandardLibrary.UInt.int32));
 expect r0.Success? ==> |r0.value| == (1 as StandardLibrary.UInt.int32) as int;
 }
-// Test Random.GenerateBytes(block#516072) covers block 516068
-// Test Random.GenerateBytes(block#516072) covers block 516069
-// Test Random.GenerateBytes(block#516072) covers block 516071
-// Test Random.GenerateBytes(block#516072) covers block 516072
-// Extracting the test for Random.GenerateBytes(block#516072) from the counterexample...
+// Test Random.GenerateBytes(block#315948) covers block 315944
+// Test Random.GenerateBytes(block#315948) covers block 315945
+// Test Random.GenerateBytes(block#315948) covers block 315947
+// Test Random.GenerateBytes(block#315948) covers block 315948
+// Extracting the test for Random.GenerateBytes(block#315948) from the counterexample...
 method {:test} test1() {
+expect 0 <= (0 as StandardLibrary.UInt.int32), "Test does not meet preconditions and should be removed";
 var r0 := Random.GenerateBytes((0 as StandardLibrary.UInt.int32));
 expect r0.Success? ==> |r0.value| == (0 as StandardLibrary.UInt.int32) as int;
 }
-// Test Random.GenerateBytes(block#516070) covers block 516068
-// Test Random.GenerateBytes(block#516070) covers block 516070
-// Extracting the test for Random.GenerateBytes(block#516070) from the counterexample...
-// Test for Random.GenerateBytes(block#516070) matches a test previously generated for Random.GenerateBytes(block#516072).
+// Test Random.GenerateBytes(block#315946) covers block 315944
+// Test Random.GenerateBytes(block#315946) covers block 315946
+// Extracting the test for Random.GenerateBytes(block#315946) from the counterexample...
+// Test for Random.GenerateBytes(block#315946) matches a test previously generated for Random.GenerateBytes(block#315948).
 
 }

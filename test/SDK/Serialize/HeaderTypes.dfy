@@ -1,4 +1,4 @@
-// Warning: Values of type HeaderTypes.MessageId will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
+// Values of type HeaderTypes.MessageId will be assigned the default value of [0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8]
 // Values of type UTF8.ValidUTF8Bytes will be assigned the default value of []
 // Warning: Values of type StandardLibrary.UInt.uint8 will be assigned a default value of type int, which may or may not match the associated condition
 // Warning: Values of type StandardLibrary.UInt.uint16 will be assigned a default value of type int, which may or may not match the associated condition
@@ -19,22 +19,22 @@
 // Values of type RSAEncryption.StrengthBits will be assigned the default value of 81
 // Warning: Values of type Base64.index will be assigned a default value of type int, which may or may not match the associated condition
 // Warning: Values of type Base64.uint24 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsArn will be assigned a default value of type AwsArn, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsResource will be assigned a default value of type AwsResource, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Constants.AwsKmsEncryptedDataKey will be assigned a default value of type Crypto.EncryptedDataKey, which may or may not match the associated condition
+// Values of type AwsKmsArnParsing.AwsKmsArn will be assigned the default value of AwsArn("arn", "a", "kms", "a", "a", AwsResource("key", "a"))
+// Values of type AwsKmsArnParsing.AwsKmsResource will be assigned the default value of AwsResource("key", "a")
+// Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned the default value of "arn:::a"
+// Values of type Constants.AwsKmsEncryptedDataKey will be assigned the default value of Crypto.EncryptedDataKey(keyProviderId := PROVIDER_ID, keyProviderInfo := [], ciphertext := [])
 // Warning: Values of type SerializableTypes.ShortUTF8Seq will be assigned a default value of type ValidUTF8Bytes, which may or may not match the associated condition
 // Warning: Values of type SerializableTypes.Linear will be assigned a default value of type seq<Pair<K, V>>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptedDataKey will be assigned a default value of type EncryptedDataKey, which may or may not match the associated condition
+// Values of type SerializableTypes.ESDKEncryptedDataKey will be assigned the default value of EncryptedDataKey.EncryptedDataKey(keyProviderId := [], keyProviderInfo := [], ciphertext := [])
 // Warning: Values of type SerializableTypes.ESDKEncryptedDataKeys will be assigned a default value of type seq16<ESDKEncryptedDataKey>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptionContext will be assigned a default value of type Crypto.EncryptionContext, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKAlgorithmSuiteId will be assigned a default value of type uint16, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.MoreNeeded will be assigned a default value of type ReadProblems, which may or may not match the associated condition
+// Values of type SerializableTypes.ESDKEncryptionContext will be assigned the default value of map[]
+// Values of type SerializableTypes.ESDKAlgorithmSuiteId will be assigned the default value of 1400
+// Values of type SerializeFunctions.MoreNeeded will be assigned the default value of MoreNeeded(1)
 // Warning: Values of type SerializeFunctions.ReadResult will be assigned a default value of type Result<SuccessfulRead<T>, E>, which may or may not match the associated condition
 // Warning: Values of type SerializeFunctions.ReadCorrect will be assigned a default value of type ReadResult<T, ReadProblems>, which may or may not match the associated condition
 // Warning: Values of type SerializeFunctions.ReadBinaryCorrect will be assigned a default value of type ReadResult<T, MoreNeeded>, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKEncryptionContextPair will be assigned a default value of type Pair<UTF8.ValidUTF8Bytes, UTF8.ValidUTF8Bytes>, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKCanonicalEncryptionContext will be assigned a default value of type seq<ESDKEncryptionContextPair>, which may or may not match the associated condition
+// Values of type EncryptionContext.ESDKEncryptionContextPair will be assigned the default value of Pair<UTF8.ValidUTF8Bytes, UTF8.ValidUTF8Bytes>.Pair([], [])
+// Values of type EncryptionContext.ESDKCanonicalEncryptionContext will be assigned the default value of []
 // Warning: Values of type Aws.Crypto.KmsKeyId will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Aws.Crypto.KmsKeyIdList will be assigned a default value of type seq<KmsKeyId>, which may or may not match the associated condition
 // Warning: Values of type Aws.Crypto.GrantToken will be assigned a default value of type string, which may or may not match the associated condition
@@ -46,54 +46,54 @@
 // Warning: Values of type Aws.Crypto.EncryptionContext will be assigned a default value of type map<ValidUTF8Bytes, ValidUTF8Bytes>, which may or may not match the associated condition
 // Warning: Values of type Aws.Crypto.EncryptedDataKeyList will be assigned a default value of type seq<EncryptedDataKey>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.AliasList will be assigned a default value of type seq<AliasListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AliasNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.ArnType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.AliasNameType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.ArnType will be assigned the default value of "aaaaaaaaaaaaaaaaaaaa"
 // Warning: Values of type Com.Amazonaws.Kms.AWSAccountIdType will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.BooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CiphertextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CloudHsmClusterIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreNameType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.CiphertextType will be assigned the default value of [0 as uint8]
+// Values of type Com.Amazonaws.Kms.CloudHsmClusterIdType will be assigned the default value of "aaaaaaaaaaaaaaaaaaa"
+// Values of type Com.Amazonaws.Kms.CustomKeyStoreIdType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.CustomKeyStoreNameType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoresList will be assigned a default value of type seq<CustomKeyStoresListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.DescriptionType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.DescriptionType will be assigned the default value of ""
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionAlgorithmSpecList will be assigned a default value of type seq<EncryptionAlgorithmSpec>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionContextKey will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionContextType will be assigned a default value of type map<EncryptionContextKey, EncryptionContextValue>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionContextValue will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.ErrorMessageType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantIdType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.GrantIdType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.GrantList will be assigned a default value of type seq<GrantListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantNameType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.GrantNameType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.GrantOperationList will be assigned a default value of type seq<GrantOperation>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenList will be assigned a default value of type seq<GrantTokenType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyIdType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.GrantTokenList will be assigned the default value of []
+// Values of type Com.Amazonaws.Kms.GrantTokenType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.KeyIdType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.KeyList will be assigned a default value of type seq<KeyListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyStorePasswordType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.LimitType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.MarkerType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.KeyStorePasswordType will be assigned the default value of "1234567"
+// Values of type Com.Amazonaws.Kms.LimitType will be assigned the default value of 1 as int32
+// Values of type Com.Amazonaws.Kms.MarkerType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.MultiRegionKeyList will be assigned a default value of type seq<MultiRegionKey>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.NullableBooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.NumberOfBytesType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PendingWindowInDaysType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PlaintextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.NumberOfBytesType will be assigned the default value of 1 as int32
+// Values of type Com.Amazonaws.Kms.PendingWindowInDaysType will be assigned the default value of 1 as int32
+// Values of type Com.Amazonaws.Kms.PlaintextType will be assigned the default value of [0 as uint8]
 // Warning: Values of type Com.Amazonaws.Kms.PolicyNameList will be assigned a default value of type seq<PolicyNameType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PrincipalIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PublicKeyType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.RegionType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.PolicyNameType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.PolicyType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.PrincipalIdType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.PublicKeyType will be assigned the default value of [0 as uint8]
+// Values of type Com.Amazonaws.Kms.RegionType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.SigningAlgorithmSpecList will be assigned a default value of type seq<SigningAlgorithmSpec>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.TagKeyList will be assigned a default value of type seq<TagKeyType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagKeyType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.TagKeyType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.TagList will be assigned a default value of type seq<Tag>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagValueType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TrustAnchorCertificateType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.KeyDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.CommitmentDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.AlgorithmSuite will be assigned a default value of type AlgorithmSuiteInfo, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.DecryptionMaterialsPendingPlaintextDataKey will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.SealedDecryptionMaterials will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.TagValueType will be assigned the default value of ""
+// Values of type Com.Amazonaws.Kms.TrustAnchorCertificateType will be assigned the default value of "a"
+// Values of type MaterialProviders.AlgorithmSuites.KeyDerivationAlgorithm will be assigned the default value of DerivationAlgorithm.IDENTITY
+// Values of type MaterialProviders.AlgorithmSuites.CommitmentDerivationAlgorithm will be assigned the default value of DerivationAlgorithm.None
+// Values of type MaterialProviders.AlgorithmSuites.AlgorithmSuite will be assigned the default value of AlgorithmSuiteInfo(messageVersion := 1, id := Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF, encrypt := AESEncryption.AES_GCM(keyLength := 16, tagLength := 16, ivLength := 12), kdf := DerivationAlgorithm.IDENTITY, commitment := DerivationAlgorithm.None, signature := SignatureAlgorithm.None)
+// Values of type MaterialProviders.Materials.DecryptionMaterialsPendingPlaintextDataKey will be assigned the default value of Crypto.DecryptionMaterials(algorithmSuiteId := Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF, encryptionContext := map[], plaintextDataKey := Option.None, verificationKey := Option.None)
+// Values of type MaterialProviders.Materials.SealedDecryptionMaterials will be assigned the default value of Crypto.DecryptionMaterials(algorithmSuiteId := Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF, encryptionContext := map[], plaintextDataKey := Option.Some([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), verificationKey := Option.None)
 include "../../..//src/SDK/Serialize/HeaderTypes.dfy"
 module srcSDKSerializeHeaderTypesdfyUnitTests {
 import HeaderTypes
@@ -144,7 +144,7 @@ import MaterialProviders.AwsKmsKeyring
 import MaterialProviders.MultiKeyring
 import MaterialProviders.RawAESKeyring
 import MaterialProviders.RawRSAKeyring
-// Warning: Values of type HeaderTypes.MessageId will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
+// Values of type HeaderTypes.MessageId will be assigned the default value of [0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8]
 // Values of type UTF8.ValidUTF8Bytes will be assigned the default value of []
 // Warning: Values of type StandardLibrary.UInt.uint8 will be assigned a default value of type int, which may or may not match the associated condition
 // Warning: Values of type StandardLibrary.UInt.uint16 will be assigned a default value of type int, which may or may not match the associated condition
@@ -165,22 +165,22 @@ import MaterialProviders.RawRSAKeyring
 // Values of type RSAEncryption.StrengthBits will be assigned the default value of 81
 // Warning: Values of type Base64.index will be assigned a default value of type int, which may or may not match the associated condition
 // Warning: Values of type Base64.uint24 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsArn will be assigned a default value of type AwsArn, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsResource will be assigned a default value of type AwsResource, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Constants.AwsKmsEncryptedDataKey will be assigned a default value of type Crypto.EncryptedDataKey, which may or may not match the associated condition
+// Values of type AwsKmsArnParsing.AwsKmsArn will be assigned the default value of AwsArn("arn", "a", "kms", "a", "a", AwsResource("key", "a"))
+// Values of type AwsKmsArnParsing.AwsKmsResource will be assigned the default value of AwsResource("key", "a")
+// Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned the default value of "arn:::a"
+// Values of type Constants.AwsKmsEncryptedDataKey will be assigned the default value of Crypto.EncryptedDataKey(keyProviderId := PROVIDER_ID, keyProviderInfo := [], ciphertext := [])
 // Warning: Values of type SerializableTypes.ShortUTF8Seq will be assigned a default value of type ValidUTF8Bytes, which may or may not match the associated condition
 // Warning: Values of type SerializableTypes.Linear will be assigned a default value of type seq<Pair<K, V>>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptedDataKey will be assigned a default value of type EncryptedDataKey, which may or may not match the associated condition
+// Values of type SerializableTypes.ESDKEncryptedDataKey will be assigned the default value of EncryptedDataKey.EncryptedDataKey(keyProviderId := [], keyProviderInfo := [], ciphertext := [])
 // Warning: Values of type SerializableTypes.ESDKEncryptedDataKeys will be assigned a default value of type seq16<ESDKEncryptedDataKey>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptionContext will be assigned a default value of type Crypto.EncryptionContext, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKAlgorithmSuiteId will be assigned a default value of type uint16, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.MoreNeeded will be assigned a default value of type ReadProblems, which may or may not match the associated condition
+// Values of type SerializableTypes.ESDKEncryptionContext will be assigned the default value of map[]
+// Values of type SerializableTypes.ESDKAlgorithmSuiteId will be assigned the default value of 1400
+// Values of type SerializeFunctions.MoreNeeded will be assigned the default value of MoreNeeded(1)
 // Warning: Values of type SerializeFunctions.ReadResult will be assigned a default value of type Result<SuccessfulRead<T>, E>, which may or may not match the associated condition
 // Warning: Values of type SerializeFunctions.ReadCorrect will be assigned a default value of type ReadResult<T, ReadProblems>, which may or may not match the associated condition
 // Warning: Values of type SerializeFunctions.ReadBinaryCorrect will be assigned a default value of type ReadResult<T, MoreNeeded>, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKEncryptionContextPair will be assigned a default value of type Pair<UTF8.ValidUTF8Bytes, UTF8.ValidUTF8Bytes>, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKCanonicalEncryptionContext will be assigned a default value of type seq<ESDKEncryptionContextPair>, which may or may not match the associated condition
+// Values of type EncryptionContext.ESDKEncryptionContextPair will be assigned the default value of Pair<UTF8.ValidUTF8Bytes, UTF8.ValidUTF8Bytes>.Pair([], [])
+// Values of type EncryptionContext.ESDKCanonicalEncryptionContext will be assigned the default value of []
 // Warning: Values of type Aws.Crypto.KmsKeyId will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Aws.Crypto.KmsKeyIdList will be assigned a default value of type seq<KmsKeyId>, which may or may not match the associated condition
 // Warning: Values of type Aws.Crypto.GrantToken will be assigned a default value of type string, which may or may not match the associated condition
@@ -192,55 +192,55 @@ import MaterialProviders.RawRSAKeyring
 // Warning: Values of type Aws.Crypto.EncryptionContext will be assigned a default value of type map<ValidUTF8Bytes, ValidUTF8Bytes>, which may or may not match the associated condition
 // Warning: Values of type Aws.Crypto.EncryptedDataKeyList will be assigned a default value of type seq<EncryptedDataKey>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.AliasList will be assigned a default value of type seq<AliasListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AliasNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.ArnType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.AliasNameType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.ArnType will be assigned the default value of "aaaaaaaaaaaaaaaaaaaa"
 // Warning: Values of type Com.Amazonaws.Kms.AWSAccountIdType will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.BooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CiphertextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CloudHsmClusterIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreNameType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.CiphertextType will be assigned the default value of [0 as uint8]
+// Values of type Com.Amazonaws.Kms.CloudHsmClusterIdType will be assigned the default value of "aaaaaaaaaaaaaaaaaaa"
+// Values of type Com.Amazonaws.Kms.CustomKeyStoreIdType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.CustomKeyStoreNameType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoresList will be assigned a default value of type seq<CustomKeyStoresListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.DescriptionType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.DescriptionType will be assigned the default value of ""
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionAlgorithmSpecList will be assigned a default value of type seq<EncryptionAlgorithmSpec>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionContextKey will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionContextType will be assigned a default value of type map<EncryptionContextKey, EncryptionContextValue>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionContextValue will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.ErrorMessageType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantIdType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.GrantIdType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.GrantList will be assigned a default value of type seq<GrantListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantNameType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.GrantNameType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.GrantOperationList will be assigned a default value of type seq<GrantOperation>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenList will be assigned a default value of type seq<GrantTokenType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyIdType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.GrantTokenList will be assigned the default value of []
+// Values of type Com.Amazonaws.Kms.GrantTokenType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.KeyIdType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.KeyList will be assigned a default value of type seq<KeyListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyStorePasswordType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.LimitType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.MarkerType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.KeyStorePasswordType will be assigned the default value of "1234567"
+// Values of type Com.Amazonaws.Kms.LimitType will be assigned the default value of 1 as int32
+// Values of type Com.Amazonaws.Kms.MarkerType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.MultiRegionKeyList will be assigned a default value of type seq<MultiRegionKey>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.NullableBooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.NumberOfBytesType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PendingWindowInDaysType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PlaintextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.NumberOfBytesType will be assigned the default value of 1 as int32
+// Values of type Com.Amazonaws.Kms.PendingWindowInDaysType will be assigned the default value of 1 as int32
+// Values of type Com.Amazonaws.Kms.PlaintextType will be assigned the default value of [0 as uint8]
 // Warning: Values of type Com.Amazonaws.Kms.PolicyNameList will be assigned a default value of type seq<PolicyNameType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PrincipalIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PublicKeyType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.RegionType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.PolicyNameType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.PolicyType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.PrincipalIdType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.PublicKeyType will be assigned the default value of [0 as uint8]
+// Values of type Com.Amazonaws.Kms.RegionType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.SigningAlgorithmSpecList will be assigned a default value of type seq<SigningAlgorithmSpec>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.TagKeyList will be assigned a default value of type seq<TagKeyType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagKeyType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.TagKeyType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.TagList will be assigned a default value of type seq<Tag>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagValueType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TrustAnchorCertificateType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.KeyDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.CommitmentDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.AlgorithmSuite will be assigned a default value of type AlgorithmSuiteInfo, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.DecryptionMaterialsPendingPlaintextDataKey will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.SealedDecryptionMaterials will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
-// Warning: Values of type HeaderTypes.MessageId will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.TagValueType will be assigned the default value of ""
+// Values of type Com.Amazonaws.Kms.TrustAnchorCertificateType will be assigned the default value of "a"
+// Values of type MaterialProviders.AlgorithmSuites.KeyDerivationAlgorithm will be assigned the default value of DerivationAlgorithm.IDENTITY
+// Values of type MaterialProviders.AlgorithmSuites.CommitmentDerivationAlgorithm will be assigned the default value of DerivationAlgorithm.None
+// Values of type MaterialProviders.AlgorithmSuites.AlgorithmSuite will be assigned the default value of AlgorithmSuiteInfo(messageVersion := 1, id := Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF, encrypt := AESEncryption.AES_GCM(keyLength := 16, tagLength := 16, ivLength := 12), kdf := DerivationAlgorithm.IDENTITY, commitment := DerivationAlgorithm.None, signature := SignatureAlgorithm.None)
+// Values of type MaterialProviders.Materials.DecryptionMaterialsPendingPlaintextDataKey will be assigned the default value of Crypto.DecryptionMaterials(algorithmSuiteId := Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF, encryptionContext := map[], plaintextDataKey := Option.None, verificationKey := Option.None)
+// Values of type MaterialProviders.Materials.SealedDecryptionMaterials will be assigned the default value of Crypto.DecryptionMaterials(algorithmSuiteId := Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF, encryptionContext := map[], plaintextDataKey := Option.Some([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), verificationKey := Option.None)
+// Values of type HeaderTypes.MessageId will be assigned the default value of [0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8]
 // Values of type UTF8.ValidUTF8Bytes will be assigned the default value of []
 // Warning: Values of type StandardLibrary.UInt.uint8 will be assigned a default value of type int, which may or may not match the associated condition
 // Warning: Values of type StandardLibrary.UInt.uint16 will be assigned a default value of type int, which may or may not match the associated condition
@@ -261,22 +261,22 @@ import MaterialProviders.RawRSAKeyring
 // Values of type RSAEncryption.StrengthBits will be assigned the default value of 81
 // Warning: Values of type Base64.index will be assigned a default value of type int, which may or may not match the associated condition
 // Warning: Values of type Base64.uint24 will be assigned a default value of type int, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsArn will be assigned a default value of type AwsArn, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsResource will be assigned a default value of type AwsResource, which may or may not match the associated condition
-// Warning: Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Constants.AwsKmsEncryptedDataKey will be assigned a default value of type Crypto.EncryptedDataKey, which may or may not match the associated condition
+// Values of type AwsKmsArnParsing.AwsKmsArn will be assigned the default value of AwsArn("arn", "a", "kms", "a", "a", AwsResource("key", "a"))
+// Values of type AwsKmsArnParsing.AwsKmsResource will be assigned the default value of AwsResource("key", "a")
+// Values of type AwsKmsArnParsing.AwsKmsIdentifierString will be assigned the default value of "arn:::a"
+// Values of type Constants.AwsKmsEncryptedDataKey will be assigned the default value of Crypto.EncryptedDataKey(keyProviderId := PROVIDER_ID, keyProviderInfo := [], ciphertext := [])
 // Warning: Values of type SerializableTypes.ShortUTF8Seq will be assigned a default value of type ValidUTF8Bytes, which may or may not match the associated condition
 // Warning: Values of type SerializableTypes.Linear will be assigned a default value of type seq<Pair<K, V>>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptedDataKey will be assigned a default value of type EncryptedDataKey, which may or may not match the associated condition
+// Values of type SerializableTypes.ESDKEncryptedDataKey will be assigned the default value of EncryptedDataKey.EncryptedDataKey(keyProviderId := [], keyProviderInfo := [], ciphertext := [])
 // Warning: Values of type SerializableTypes.ESDKEncryptedDataKeys will be assigned a default value of type seq16<ESDKEncryptedDataKey>, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKEncryptionContext will be assigned a default value of type Crypto.EncryptionContext, which may or may not match the associated condition
-// Warning: Values of type SerializableTypes.ESDKAlgorithmSuiteId will be assigned a default value of type uint16, which may or may not match the associated condition
-// Warning: Values of type SerializeFunctions.MoreNeeded will be assigned a default value of type ReadProblems, which may or may not match the associated condition
+// Values of type SerializableTypes.ESDKEncryptionContext will be assigned the default value of map[]
+// Values of type SerializableTypes.ESDKAlgorithmSuiteId will be assigned the default value of 1400
+// Values of type SerializeFunctions.MoreNeeded will be assigned the default value of MoreNeeded(1)
 // Warning: Values of type SerializeFunctions.ReadResult will be assigned a default value of type Result<SuccessfulRead<T>, E>, which may or may not match the associated condition
 // Warning: Values of type SerializeFunctions.ReadCorrect will be assigned a default value of type ReadResult<T, ReadProblems>, which may or may not match the associated condition
 // Warning: Values of type SerializeFunctions.ReadBinaryCorrect will be assigned a default value of type ReadResult<T, MoreNeeded>, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKEncryptionContextPair will be assigned a default value of type Pair<UTF8.ValidUTF8Bytes, UTF8.ValidUTF8Bytes>, which may or may not match the associated condition
-// Warning: Values of type EncryptionContext.ESDKCanonicalEncryptionContext will be assigned a default value of type seq<ESDKEncryptionContextPair>, which may or may not match the associated condition
+// Values of type EncryptionContext.ESDKEncryptionContextPair will be assigned the default value of Pair<UTF8.ValidUTF8Bytes, UTF8.ValidUTF8Bytes>.Pair([], [])
+// Values of type EncryptionContext.ESDKCanonicalEncryptionContext will be assigned the default value of []
 // Warning: Values of type Aws.Crypto.KmsKeyId will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Aws.Crypto.KmsKeyIdList will be assigned a default value of type seq<KmsKeyId>, which may or may not match the associated condition
 // Warning: Values of type Aws.Crypto.GrantToken will be assigned a default value of type string, which may or may not match the associated condition
@@ -288,174 +288,177 @@ import MaterialProviders.RawRSAKeyring
 // Warning: Values of type Aws.Crypto.EncryptionContext will be assigned a default value of type map<ValidUTF8Bytes, ValidUTF8Bytes>, which may or may not match the associated condition
 // Warning: Values of type Aws.Crypto.EncryptedDataKeyList will be assigned a default value of type seq<EncryptedDataKey>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.AliasList will be assigned a default value of type seq<AliasListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.AliasNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.ArnType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.AliasNameType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.ArnType will be assigned the default value of "aaaaaaaaaaaaaaaaaaaa"
 // Warning: Values of type Com.Amazonaws.Kms.AWSAccountIdType will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.BooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CiphertextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CloudHsmClusterIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoreNameType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.CiphertextType will be assigned the default value of [0 as uint8]
+// Values of type Com.Amazonaws.Kms.CloudHsmClusterIdType will be assigned the default value of "aaaaaaaaaaaaaaaaaaa"
+// Values of type Com.Amazonaws.Kms.CustomKeyStoreIdType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.CustomKeyStoreNameType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.CustomKeyStoresList will be assigned a default value of type seq<CustomKeyStoresListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.DescriptionType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.DescriptionType will be assigned the default value of ""
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionAlgorithmSpecList will be assigned a default value of type seq<EncryptionAlgorithmSpec>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionContextKey will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionContextType will be assigned a default value of type map<EncryptionContextKey, EncryptionContextValue>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.EncryptionContextValue will be assigned a default value of type string, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.ErrorMessageType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantIdType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.GrantIdType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.GrantList will be assigned a default value of type seq<GrantListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantNameType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.GrantNameType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.GrantOperationList will be assigned a default value of type seq<GrantOperation>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenList will be assigned a default value of type seq<GrantTokenType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.GrantTokenType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyIdType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.GrantTokenList will be assigned the default value of []
+// Values of type Com.Amazonaws.Kms.GrantTokenType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.KeyIdType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.KeyList will be assigned a default value of type seq<KeyListEntry>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.KeyStorePasswordType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.LimitType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.MarkerType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.KeyStorePasswordType will be assigned the default value of "1234567"
+// Values of type Com.Amazonaws.Kms.LimitType will be assigned the default value of 1 as int32
+// Values of type Com.Amazonaws.Kms.MarkerType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.MultiRegionKeyList will be assigned a default value of type seq<MultiRegionKey>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.NullableBooleanType will be assigned a default value of type bool, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.NumberOfBytesType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PendingWindowInDaysType will be assigned a default value of type int32, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PlaintextType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.NumberOfBytesType will be assigned the default value of 1 as int32
+// Values of type Com.Amazonaws.Kms.PendingWindowInDaysType will be assigned the default value of 1 as int32
+// Values of type Com.Amazonaws.Kms.PlaintextType will be assigned the default value of [0 as uint8]
 // Warning: Values of type Com.Amazonaws.Kms.PolicyNameList will be assigned a default value of type seq<PolicyNameType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyNameType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PolicyType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PrincipalIdType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.PublicKeyType will be assigned a default value of type seq<uint8>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.RegionType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.PolicyNameType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.PolicyType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.PrincipalIdType will be assigned the default value of "a"
+// Values of type Com.Amazonaws.Kms.PublicKeyType will be assigned the default value of [0 as uint8]
+// Values of type Com.Amazonaws.Kms.RegionType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.SigningAlgorithmSpecList will be assigned a default value of type seq<SigningAlgorithmSpec>, which may or may not match the associated condition
 // Warning: Values of type Com.Amazonaws.Kms.TagKeyList will be assigned a default value of type seq<TagKeyType>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagKeyType will be assigned a default value of type string, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.TagKeyType will be assigned the default value of "a"
 // Warning: Values of type Com.Amazonaws.Kms.TagList will be assigned a default value of type seq<Tag>, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TagValueType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type Com.Amazonaws.Kms.TrustAnchorCertificateType will be assigned a default value of type string, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.KeyDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.CommitmentDerivationAlgorithm will be assigned a default value of type DerivationAlgorithm, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.AlgorithmSuites.AlgorithmSuite will be assigned a default value of type AlgorithmSuiteInfo, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.DecryptionMaterialsPendingPlaintextDataKey will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
-// Warning: Values of type MaterialProviders.Materials.SealedDecryptionMaterials will be assigned a default value of type Crypto.DecryptionMaterials, which may or may not match the associated condition
+// Values of type Com.Amazonaws.Kms.TagValueType will be assigned the default value of ""
+// Values of type Com.Amazonaws.Kms.TrustAnchorCertificateType will be assigned the default value of "a"
+// Values of type MaterialProviders.AlgorithmSuites.KeyDerivationAlgorithm will be assigned the default value of DerivationAlgorithm.IDENTITY
+// Values of type MaterialProviders.AlgorithmSuites.CommitmentDerivationAlgorithm will be assigned the default value of DerivationAlgorithm.None
+// Values of type MaterialProviders.AlgorithmSuites.AlgorithmSuite will be assigned the default value of AlgorithmSuiteInfo(messageVersion := 1, id := Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF, encrypt := AESEncryption.AES_GCM(keyLength := 16, tagLength := 16, ivLength := 12), kdf := DerivationAlgorithm.IDENTITY, commitment := DerivationAlgorithm.None, signature := SignatureAlgorithm.None)
+// Values of type MaterialProviders.Materials.DecryptionMaterialsPendingPlaintextDataKey will be assigned the default value of Crypto.DecryptionMaterials(algorithmSuiteId := Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF, encryptionContext := map[], plaintextDataKey := Option.None, verificationKey := Option.None)
+// Values of type MaterialProviders.Materials.SealedDecryptionMaterials will be assigned the default value of Crypto.DecryptionMaterials(algorithmSuiteId := Crypto.AlgorithmSuiteId.ALG_AES_128_GCM_IV12_TAG16_NO_KDF, encryptionContext := map[], plaintextDataKey := Option.Some([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), verificationKey := Option.None)
 // Merging boogie files...
 // Converting function calls to method calls...
 // Adding Impl$$ methods to support inlining...
 // Removing assertions...
 // Annotating blocks...
 // Generating modifications...
-// Test HeaderTypes.MessageFormatVersion.Serialize(block#2308197) covers block 2308192
-// Test HeaderTypes.MessageFormatVersion.Serialize(block#2308197) covers block 2308193
-// Test HeaderTypes.MessageFormatVersion.Serialize(block#2308197) covers block 2308197
-// Extracting the test for HeaderTypes.MessageFormatVersion.Serialize(block#2308197) from the counterexample...
+// Test HeaderTypes.MessageFormatVersion.Serialize(block#2227459) covers block 2227454
+// Test HeaderTypes.MessageFormatVersion.Serialize(block#2227459) covers block 2227455
+// Test HeaderTypes.MessageFormatVersion.Serialize(block#2227459) covers block 2227459
+// Extracting the test for HeaderTypes.MessageFormatVersion.Serialize(block#2227459) from the counterexample...
 method {:test} test0() {
+var d0 : HeaderTypes.MessageFormatVersion := HeaderTypes.MessageFormatVersion.V1;
+var r0 := d0.Serialize();
+}
+// No test can be generated for HeaderTypes.MessageFormatVersion.Serialize(block#2227458) because the verifier suceeded.
+// Test HeaderTypes.MessageFormatVersion.Serialize(block#2227457) covers block 2227454
+// Test HeaderTypes.MessageFormatVersion.Serialize(block#2227457) covers block 2227456
+// Test HeaderTypes.MessageFormatVersion.Serialize(block#2227457) covers block 2227457
+// Extracting the test for HeaderTypes.MessageFormatVersion.Serialize(block#2227457) from the counterexample...
+method {:test} test1() {
 var d0 : HeaderTypes.MessageFormatVersion := HeaderTypes.MessageFormatVersion.V2;
 var r0 := d0.Serialize();
 }
-// No test can be generated for HeaderTypes.MessageFormatVersion.Serialize(block#2308196) because the verifier suceeded.
-// Test HeaderTypes.MessageFormatVersion.Serialize(block#2308195) covers block 2308192
-// Test HeaderTypes.MessageFormatVersion.Serialize(block#2308195) covers block 2308194
-// Test HeaderTypes.MessageFormatVersion.Serialize(block#2308195) covers block 2308195
-// Extracting the test for HeaderTypes.MessageFormatVersion.Serialize(block#2308195) from the counterexample...
-// Test for HeaderTypes.MessageFormatVersion.Serialize(block#2308195) matches a test previously generated for HeaderTypes.MessageFormatVersion.Serialize(block#2308197).
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319869) covers block 2319861
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319869) covers block 2319862
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319869) covers block 2319864
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319869) covers block 2319865
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319869) covers block 2319869
-// Extracting the test for HeaderTypes.MessageFormatVersion.Get(block#2319869) from the counterexample...
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238027) covers block 2238019
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238027) covers block 2238020
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238027) covers block 2238022
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238027) covers block 2238023
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238027) covers block 2238027
+// Extracting the test for HeaderTypes.MessageFormatVersion.Get(block#2238027) from the counterexample...
 method {:test} test2() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
 var r0 := HeaderTypes.MessageFormatVersion.Get(d0);
 expect r0.Success? ==> d0 == r0.value.Serialize();
 }
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319868) covers block 2319861
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319868) covers block 2319862
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319868) covers block 2319864
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319868) covers block 2319866
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319868) covers block 2319868
-// Extracting the test for HeaderTypes.MessageFormatVersion.Get(block#2319868) from the counterexample...
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238026) covers block 2238019
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238026) covers block 2238020
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238026) covers block 2238022
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238026) covers block 2238024
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238026) covers block 2238026
+// Extracting the test for HeaderTypes.MessageFormatVersion.Get(block#2238026) from the counterexample...
 method {:test} test3() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(2 as StandardLibrary.UInt.uint8)];
 var r0 := HeaderTypes.MessageFormatVersion.Get(d0);
 expect r0.Success? ==> d0 == r0.value.Serialize();
 }
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319867) covers block 2319861
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319867) covers block 2319863
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319867) covers block 2319864
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319867) covers block 2319866
-// Test HeaderTypes.MessageFormatVersion.Get(block#2319867) covers block 2319867
-// Extracting the test for HeaderTypes.MessageFormatVersion.Get(block#2319867) from the counterexample...
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238025) covers block 2238019
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238025) covers block 2238021
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238025) covers block 2238022
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238025) covers block 2238024
+// Test HeaderTypes.MessageFormatVersion.Get(block#2238025) covers block 2238025
+// Extracting the test for HeaderTypes.MessageFormatVersion.Get(block#2238025) from the counterexample...
 method {:test} test4() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(1 as StandardLibrary.UInt.uint8)];
 var r0 := HeaderTypes.MessageFormatVersion.Get(d0);
 expect r0.Success? ==> d0 == r0.value.Serialize();
 }
-// Test HeaderTypes.MessageType.Serialize(block#2328417) covers block 2328414
-// Test HeaderTypes.MessageType.Serialize(block#2328417) covers block 2328415
-// Test HeaderTypes.MessageType.Serialize(block#2328417) covers block 2328417
-// Extracting the test for HeaderTypes.MessageType.Serialize(block#2328417) from the counterexample...
+// Test HeaderTypes.MessageType.Serialize(block#2246023) covers block 2246020
+// Test HeaderTypes.MessageType.Serialize(block#2246023) covers block 2246021
+// Test HeaderTypes.MessageType.Serialize(block#2246023) covers block 2246023
+// Extracting the test for HeaderTypes.MessageType.Serialize(block#2246023) from the counterexample...
 method {:test} test5() {
 var d0 : HeaderTypes.MessageType := HeaderTypes.MessageType.TYPE_CUSTOMER_AED;
 var r0 := d0.Serialize();
 }
-// No test can be generated for HeaderTypes.MessageType.Serialize(block#2328416) because the verifier suceeded.
-// Test HeaderTypes.MessageType.Get(block#2339273) covers block 2339270
-// Test HeaderTypes.MessageType.Get(block#2339273) covers block 2339271
-// Test HeaderTypes.MessageType.Get(block#2339273) covers block 2339273
-// Extracting the test for HeaderTypes.MessageType.Get(block#2339273) from the counterexample...
+// No test can be generated for HeaderTypes.MessageType.Serialize(block#2246022) because the verifier suceeded.
+// Test HeaderTypes.MessageType.Get(block#2255775) covers block 2255772
+// Test HeaderTypes.MessageType.Get(block#2255775) covers block 2255773
+// Test HeaderTypes.MessageType.Get(block#2255775) covers block 2255775
+// Extracting the test for HeaderTypes.MessageType.Get(block#2255775) from the counterexample...
 method {:test} test6() {
 var r0 := HeaderTypes.MessageType.Get((129 as StandardLibrary.UInt.uint8));
 expect r0.Success? ==> (129 as StandardLibrary.UInt.uint8) == r0.value.Serialize();
 }
-// Test HeaderTypes.MessageType.Get(block#2339272) covers block 2339270
-// Test HeaderTypes.MessageType.Get(block#2339272) covers block 2339272
-// Extracting the test for HeaderTypes.MessageType.Get(block#2339272) from the counterexample...
+// Test HeaderTypes.MessageType.Get(block#2255774) covers block 2255772
+// Test HeaderTypes.MessageType.Get(block#2255774) covers block 2255774
+// Extracting the test for HeaderTypes.MessageType.Get(block#2255774) from the counterexample...
 method {:test} test7() {
 var r0 := HeaderTypes.MessageType.Get((128 as StandardLibrary.UInt.uint8));
 expect r0.Success? ==> (128 as StandardLibrary.UInt.uint8) == r0.value.Serialize();
 }
-// Test HeaderTypes.ContentType.Serialize(block#2343035) covers block 2343030
-// Test HeaderTypes.ContentType.Serialize(block#2343035) covers block 2343031
-// Test HeaderTypes.ContentType.Serialize(block#2343035) covers block 2343035
-// Extracting the test for HeaderTypes.ContentType.Serialize(block#2343035) from the counterexample...
+// Test HeaderTypes.ContentType.Serialize(block#2258985) covers block 2258980
+// Test HeaderTypes.ContentType.Serialize(block#2258985) covers block 2258981
+// Test HeaderTypes.ContentType.Serialize(block#2258985) covers block 2258985
+// Extracting the test for HeaderTypes.ContentType.Serialize(block#2258985) from the counterexample...
 method {:test} test8() {
 var d0 : HeaderTypes.ContentType := HeaderTypes.ContentType.NonFramed;
 var r0 := d0.Serialize();
 }
-// No test can be generated for HeaderTypes.ContentType.Serialize(block#2343034) because the verifier suceeded.
-// Test HeaderTypes.ContentType.Serialize(block#2343033) covers block 2343030
-// Test HeaderTypes.ContentType.Serialize(block#2343033) covers block 2343032
-// Test HeaderTypes.ContentType.Serialize(block#2343033) covers block 2343033
-// Extracting the test for HeaderTypes.ContentType.Serialize(block#2343033) from the counterexample...
+// No test can be generated for HeaderTypes.ContentType.Serialize(block#2258984) because the verifier suceeded.
+// Test HeaderTypes.ContentType.Serialize(block#2258983) covers block 2258980
+// Test HeaderTypes.ContentType.Serialize(block#2258983) covers block 2258982
+// Test HeaderTypes.ContentType.Serialize(block#2258983) covers block 2258983
+// Extracting the test for HeaderTypes.ContentType.Serialize(block#2258983) from the counterexample...
 method {:test} test9() {
 var d0 : HeaderTypes.ContentType := HeaderTypes.ContentType.Framed;
 var r0 := d0.Serialize();
 }
-// Test HeaderTypes.ContentType.Get(block#2354228) covers block 2354220
-// Test HeaderTypes.ContentType.Get(block#2354228) covers block 2354221
-// Test HeaderTypes.ContentType.Get(block#2354228) covers block 2354223
-// Test HeaderTypes.ContentType.Get(block#2354228) covers block 2354224
-// Test HeaderTypes.ContentType.Get(block#2354228) covers block 2354228
-// Extracting the test for HeaderTypes.ContentType.Get(block#2354228) from the counterexample...
+// Test HeaderTypes.ContentType.Get(block#2269074) covers block 2269066
+// Test HeaderTypes.ContentType.Get(block#2269074) covers block 2269067
+// Test HeaderTypes.ContentType.Get(block#2269074) covers block 2269069
+// Test HeaderTypes.ContentType.Get(block#2269074) covers block 2269070
+// Test HeaderTypes.ContentType.Get(block#2269074) covers block 2269074
+// Extracting the test for HeaderTypes.ContentType.Get(block#2269074) from the counterexample...
 method {:test} test10() {
-var r0 := HeaderTypes.ContentType.Get((3 as StandardLibrary.UInt.uint8));
-expect r0.Success? ==> (3 as StandardLibrary.UInt.uint8) == r0.value.Serialize();
+var r0 := HeaderTypes.ContentType.Get((0 as StandardLibrary.UInt.uint8));
+expect r0.Success? ==> (0 as StandardLibrary.UInt.uint8) == r0.value.Serialize();
 }
-// Test HeaderTypes.ContentType.Get(block#2354227) covers block 2354220
-// Test HeaderTypes.ContentType.Get(block#2354227) covers block 2354221
-// Test HeaderTypes.ContentType.Get(block#2354227) covers block 2354223
-// Test HeaderTypes.ContentType.Get(block#2354227) covers block 2354225
-// Test HeaderTypes.ContentType.Get(block#2354227) covers block 2354227
-// Extracting the test for HeaderTypes.ContentType.Get(block#2354227) from the counterexample...
+// Test HeaderTypes.ContentType.Get(block#2269073) covers block 2269066
+// Test HeaderTypes.ContentType.Get(block#2269073) covers block 2269067
+// Test HeaderTypes.ContentType.Get(block#2269073) covers block 2269069
+// Test HeaderTypes.ContentType.Get(block#2269073) covers block 2269071
+// Test HeaderTypes.ContentType.Get(block#2269073) covers block 2269073
+// Extracting the test for HeaderTypes.ContentType.Get(block#2269073) from the counterexample...
 method {:test} test11() {
 var r0 := HeaderTypes.ContentType.Get((2 as StandardLibrary.UInt.uint8));
 expect r0.Success? ==> (2 as StandardLibrary.UInt.uint8) == r0.value.Serialize();
 }
-// Test HeaderTypes.ContentType.Get(block#2354226) covers block 2354220
-// Test HeaderTypes.ContentType.Get(block#2354226) covers block 2354222
-// Test HeaderTypes.ContentType.Get(block#2354226) covers block 2354223
-// Test HeaderTypes.ContentType.Get(block#2354226) covers block 2354225
-// Test HeaderTypes.ContentType.Get(block#2354226) covers block 2354226
-// Extracting the test for HeaderTypes.ContentType.Get(block#2354226) from the counterexample...
+// Test HeaderTypes.ContentType.Get(block#2269072) covers block 2269066
+// Test HeaderTypes.ContentType.Get(block#2269072) covers block 2269068
+// Test HeaderTypes.ContentType.Get(block#2269072) covers block 2269069
+// Test HeaderTypes.ContentType.Get(block#2269072) covers block 2269071
+// Test HeaderTypes.ContentType.Get(block#2269072) covers block 2269072
+// Extracting the test for HeaderTypes.ContentType.Get(block#2269072) from the counterexample...
 method {:test} test12() {
 var r0 := HeaderTypes.ContentType.Get((1 as StandardLibrary.UInt.uint8));
 expect r0.Success? ==> (1 as StandardLibrary.UInt.uint8) == r0.value.Serialize();

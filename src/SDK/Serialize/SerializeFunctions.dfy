@@ -23,7 +23,7 @@ module SerializeFunctions {
     // The data is incorrect
     // and reading the same data again will generate the same error.
     | Error(message: string)
-  type MoreNeeded = p: ReadProblems | p.MoreNeeded? witness *
+  type MoreNeeded = p: ReadProblems | p.MoreNeeded? witness MoreNeeded(1)
 
   // When reading a buffer,
   // there are the bytes to read,

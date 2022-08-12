@@ -4,7 +4,7 @@
     "blocksCovered": "5",
     "failedQueries": "1",
     "queries": "3",
-    "tests": "1",
+    "tests": "2",
     "failedTests": "0",
     "dafnyName": "HeaderTypes.MessageFormatVersion.Serialize",
     "compiledName": "HeaderTypes_Compile.MessageFormatVersion.Serialize"

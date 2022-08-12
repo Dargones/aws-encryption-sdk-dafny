@@ -1,5 +1,6 @@
 echo "Setting Openssl Path"
 export DYLD_LIBRARY_PATH=/usr/local/homebrew/opt/openssl@1.1/lib
+export PATH=${PWD}/dafny/Binaries/:$PATH
 echo "Cleaning Previos Test Results..."
 cd aws-encryption-sdk-net
 rm -rf Test/bin

@@ -14,7 +14,7 @@
     "blocksCovered": "31",
     "failedQueries": "8",
     "queries": "19",
-    "tests": "9",
+    "tests": "11",
     "failedTests": "0",
     "dafnyName": "MaterialProviders.AwsKmsMrkDiscoveryKeyring.AwsKmsMrkDiscoveryKeyring.OnDecrypt",
     "compiledName": "Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsMrkDiscoveryKeyring.OnDecrypt"
@@ -34,7 +34,7 @@
     "blocksCovered": "18",
     "failedQueries": "2",
     "queries": "10",
-    "tests": "6",
+    "tests": "5",
     "failedTests": "0",
     "dafnyName": "MaterialProviders.AwsKmsMrkDiscoveryKeyring.AwsKmsEncryptedDataKeyDecryptor.Invoke",
     "compiledName": "Dafny.Aws.EncryptionSdk.Core.AwsKmsMrkDiscoveryKeyring.AwsKmsEncryptedDataKeyDecryptor.Invoke"

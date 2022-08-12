@@ -103,8 +103,8 @@
     "blocks": "23",
     "blocksCovered": "21",
     "failedQueries": "2",
-    "queries": "11",
-    "tests": "5",
+    "queries": "12",
+    "tests": "6",
     "failedTests": "0",
     "dafnyName": "StandardLibrary.SetToOrderedSequence",
     "compiledName": "StandardLibrary_Compile.__default.SetToOrderedSequence"

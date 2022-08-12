@@ -19,7 +19,9 @@ module Constants {
   type AwsKmsEncryptedDataKey = edk: Crypto.EncryptedDataKey |
     && edk.keyProviderId == PROVIDER_ID
     && UTF8.ValidUTF8Seq(edk.keyProviderInfo)
-    witness *
+    witness Crypto.EncryptedDataKey(keyProviderId:=PROVIDER_ID,
+                                    keyProviderInfo:=[],
+                                    ciphertext:=[])
 
   /*
    * A datatype to make it easier to work with Encrypted Data Keys

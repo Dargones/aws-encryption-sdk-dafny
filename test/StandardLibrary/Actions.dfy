@@ -10,442 +10,532 @@ import Math
 // Removing assertions...
 // Annotating blocks...
 // Generating modifications...
-// Test Actions.Map(block#432615) covers block 432595
-// Test Actions.Map(block#432615) covers block 432596
-// Test Actions.Map(block#432615) covers block 432597
-// Test Actions.Map(block#432615) covers block 432609
-// Test Actions.Map(block#432615) covers block 432610
-// Test Actions.Map(block#432615) covers block 432611
-// Test Actions.Map(block#432615) covers block 432615
-// Extracting the test for Actions.Map(block#432615) from the counterexample...
-// Failed to determine a variable type (element T@U!val!6)
-// No test can be generated for Actions.Map(block#432614) because the verifier suceeded.
-// Test Actions.Map(block#432612) covers block 432595
-// Test Actions.Map(block#432612) covers block 432596
-// Test Actions.Map(block#432612) covers block 432597
-// Test Actions.Map(block#432612) covers block 432609
-// Test Actions.Map(block#432612) covers block 432610
-// Test Actions.Map(block#432612) covers block 432612
-// Extracting the test for Actions.Map(block#432612) from the counterexample...
-// Failed to determine a variable type (element T@U!val!6)
-// No test can be generated for Actions.Map(block#432608) because the verifier suceeded.
-// No test can be generated for Actions.Map(block#432607) because the verifier suceeded.
-// Test Actions.Map(block#432606) covers block 432595
-// Test Actions.Map(block#432606) covers block 432596
-// Test Actions.Map(block#432606) covers block 432597
-// Test Actions.Map(block#432606) covers block 432598
-// Test Actions.Map(block#432606) covers block 432599
-// Test Actions.Map(block#432606) covers block 432600
-// Test Actions.Map(block#432606) covers block 432601
-// Test Actions.Map(block#432606) covers block 432606
-// Extracting the test for Actions.Map(block#432606) from the counterexample...
-// Failed to determine a variable type (element T@U!val!6)
-// Test Actions.Map(block#432605) covers block 432595
-// Test Actions.Map(block#432605) covers block 432596
-// Test Actions.Map(block#432605) covers block 432597
-// Test Actions.Map(block#432605) covers block 432598
-// Test Actions.Map(block#432605) covers block 432599
-// Test Actions.Map(block#432605) covers block 432600
-// Test Actions.Map(block#432605) covers block 432601
-// Test Actions.Map(block#432605) covers block 432605
-// Extracting the test for Actions.Map(block#432605) from the counterexample...
-// Failed to determine a variable type (element T@U!val!6)
-// No test can be generated for Actions.Map(block#432603) because the verifier suceeded.
-// Test Actions.Map(block#432602) covers block 432595
-// Test Actions.Map(block#432602) covers block 432596
-// Test Actions.Map(block#432602) covers block 432597
-// Test Actions.Map(block#432602) covers block 432598
-// Test Actions.Map(block#432602) covers block 432599
-// Test Actions.Map(block#432602) covers block 432600
-// Test Actions.Map(block#432602) covers block 432602
-// Extracting the test for Actions.Map(block#432602) from the counterexample...
-// Failed to determine a variable type (element T@U!val!6)
-// Test Actions.MapWithResult(block#435252) covers block 435229
-// Test Actions.MapWithResult(block#435252) covers block 435230
-// Test Actions.MapWithResult(block#435252) covers block 435231
-// Test Actions.MapWithResult(block#435252) covers block 435243
-// Test Actions.MapWithResult(block#435252) covers block 435244
-// Test Actions.MapWithResult(block#435252) covers block 435245
-// Test Actions.MapWithResult(block#435252) covers block 435252
-// Extracting the test for Actions.MapWithResult(block#435252) from the counterexample...
-// Failed to determine a variable type (element T@U!val!17)
-// No test can be generated for Actions.MapWithResult(block#435251) because the verifier suceeded.
-// Test Actions.MapWithResult(block#435249) covers block 435229
-// Test Actions.MapWithResult(block#435249) covers block 435230
-// Test Actions.MapWithResult(block#435249) covers block 435231
-// Test Actions.MapWithResult(block#435249) covers block 435243
-// Test Actions.MapWithResult(block#435249) covers block 435244
-// Test Actions.MapWithResult(block#435249) covers block 435246
-// Test Actions.MapWithResult(block#435249) covers block 435249
-// Extracting the test for Actions.MapWithResult(block#435249) from the counterexample...
-// Failed to determine a variable type (element T@U!val!19)
-// Test Actions.MapWithResult(block#435248) covers block 435229
-// Test Actions.MapWithResult(block#435248) covers block 435230
-// Test Actions.MapWithResult(block#435248) covers block 435231
-// Test Actions.MapWithResult(block#435248) covers block 435243
-// Test Actions.MapWithResult(block#435248) covers block 435244
-// Test Actions.MapWithResult(block#435248) covers block 435246
-// Test Actions.MapWithResult(block#435248) covers block 435248
-// Extracting the test for Actions.MapWithResult(block#435248) from the counterexample...
-// Failed to determine a variable type (element T@U!val!18)
-// No test can be generated for Actions.MapWithResult(block#435242) because the verifier suceeded.
-// No test can be generated for Actions.MapWithResult(block#435241) because the verifier suceeded.
-// Test Actions.MapWithResult(block#435240) covers block 435229
-// Test Actions.MapWithResult(block#435240) covers block 435230
-// Test Actions.MapWithResult(block#435240) covers block 435231
-// Test Actions.MapWithResult(block#435240) covers block 435232
-// Test Actions.MapWithResult(block#435240) covers block 435233
-// Test Actions.MapWithResult(block#435240) covers block 435234
-// Test Actions.MapWithResult(block#435240) covers block 435235
-// Test Actions.MapWithResult(block#435240) covers block 435240
-// Extracting the test for Actions.MapWithResult(block#435240) from the counterexample...
-// Failed to determine a variable type (element T@U!val!17)
-// Test Actions.MapWithResult(block#435239) covers block 435229
-// Test Actions.MapWithResult(block#435239) covers block 435230
-// Test Actions.MapWithResult(block#435239) covers block 435231
-// Test Actions.MapWithResult(block#435239) covers block 435232
-// Test Actions.MapWithResult(block#435239) covers block 435233
-// Test Actions.MapWithResult(block#435239) covers block 435234
-// Test Actions.MapWithResult(block#435239) covers block 435235
-// Test Actions.MapWithResult(block#435239) covers block 435239
-// Extracting the test for Actions.MapWithResult(block#435239) from the counterexample...
-// Failed to determine a variable type (element T@U!val!17)
-// No test can be generated for Actions.MapWithResult(block#435237) because the verifier suceeded.
-// Test Actions.MapWithResult(block#435236) covers block 435229
-// Test Actions.MapWithResult(block#435236) covers block 435230
-// Test Actions.MapWithResult(block#435236) covers block 435231
-// Test Actions.MapWithResult(block#435236) covers block 435232
-// Test Actions.MapWithResult(block#435236) covers block 435233
-// Test Actions.MapWithResult(block#435236) covers block 435234
-// Test Actions.MapWithResult(block#435236) covers block 435236
-// Extracting the test for Actions.MapWithResult(block#435236) from the counterexample...
-// Failed to determine a variable type (element T@U!val!17)
-// Test Actions.FlatMap(block#437933) covers block 437906
-// Test Actions.FlatMap(block#437933) covers block 437907
-// Test Actions.FlatMap(block#437933) covers block 437908
-// Test Actions.FlatMap(block#437933) covers block 437927
-// Test Actions.FlatMap(block#437933) covers block 437928
-// Test Actions.FlatMap(block#437933) covers block 437929
-// Test Actions.FlatMap(block#437933) covers block 437933
-// Extracting the test for Actions.FlatMap(block#437933) from the counterexample...
-// Failed to determine a variable type (element T@U!val!8)
-// No test can be generated for Actions.FlatMap(block#437932) because the verifier suceeded.
-// Test Actions.FlatMap(block#437930) covers block 437906
-// Test Actions.FlatMap(block#437930) covers block 437907
-// Test Actions.FlatMap(block#437930) covers block 437908
-// Test Actions.FlatMap(block#437930) covers block 437927
-// Test Actions.FlatMap(block#437930) covers block 437928
-// Test Actions.FlatMap(block#437930) covers block 437930
-// Extracting the test for Actions.FlatMap(block#437930) from the counterexample...
-// Failed to determine a variable type (element T@U!val!6)
-// No test can be generated for Actions.FlatMap(block#437926) because the verifier suceeded.
-// No test can be generated for Actions.FlatMap(block#437925) because the verifier suceeded.
-// Test Actions.FlatMap(block#437924) covers block 437906
-// Test Actions.FlatMap(block#437924) covers block 437907
-// Test Actions.FlatMap(block#437924) covers block 437908
-// Test Actions.FlatMap(block#437924) covers block 437909
-// Test Actions.FlatMap(block#437924) covers block 437910
-// Test Actions.FlatMap(block#437924) covers block 437911
-// Test Actions.FlatMap(block#437924) covers block 437912
-// Test Actions.FlatMap(block#437924) covers block 437924
-// Extracting the test for Actions.FlatMap(block#437924) from the counterexample...
-// Failed to determine a variable type (element T@U!val!8)
-// Test Actions.FlatMap(block#437923) covers block 437906
-// Test Actions.FlatMap(block#437923) covers block 437907
-// Test Actions.FlatMap(block#437923) covers block 437908
-// Test Actions.FlatMap(block#437923) covers block 437909
-// Test Actions.FlatMap(block#437923) covers block 437910
-// Test Actions.FlatMap(block#437923) covers block 437911
-// Test Actions.FlatMap(block#437923) covers block 437912
-// Test Actions.FlatMap(block#437923) covers block 437916
-// Test Actions.FlatMap(block#437923) covers block 437923
-// Extracting the test for Actions.FlatMap(block#437923) from the counterexample...
-// Failed to determine a variable type (element T@U!val!8)
-// Test Actions.FlatMap(block#437921) covers block 437906
-// Test Actions.FlatMap(block#437921) covers block 437907
-// Test Actions.FlatMap(block#437921) covers block 437908
-// Test Actions.FlatMap(block#437921) covers block 437909
-// Test Actions.FlatMap(block#437921) covers block 437910
-// Test Actions.FlatMap(block#437921) covers block 437911
-// Test Actions.FlatMap(block#437921) covers block 437912
-// Test Actions.FlatMap(block#437921) covers block 437916
-// Test Actions.FlatMap(block#437921) covers block 437917
-// Test Actions.FlatMap(block#437921) covers block 437921
-// Extracting the test for Actions.FlatMap(block#437921) from the counterexample...
-// Failed to determine a variable type (element T@U!val!8)
-// Test Actions.FlatMap(block#437920) covers block 437906
-// Test Actions.FlatMap(block#437920) covers block 437907
-// Test Actions.FlatMap(block#437920) covers block 437908
-// Test Actions.FlatMap(block#437920) covers block 437909
-// Test Actions.FlatMap(block#437920) covers block 437910
-// Test Actions.FlatMap(block#437920) covers block 437911
-// Test Actions.FlatMap(block#437920) covers block 437912
-// Test Actions.FlatMap(block#437920) covers block 437916
-// Test Actions.FlatMap(block#437920) covers block 437917
-// Test Actions.FlatMap(block#437920) covers block 437918
-// Test Actions.FlatMap(block#437920) covers block 437920
-// Extracting the test for Actions.FlatMap(block#437920) from the counterexample...
-// Failed to determine a variable type (element T@U!val!8)
-// Test Actions.FlatMap(block#437919) covers block 437906
-// Test Actions.FlatMap(block#437919) covers block 437907
-// Test Actions.FlatMap(block#437919) covers block 437908
-// Test Actions.FlatMap(block#437919) covers block 437909
-// Test Actions.FlatMap(block#437919) covers block 437910
-// Test Actions.FlatMap(block#437919) covers block 437911
-// Test Actions.FlatMap(block#437919) covers block 437912
-// Test Actions.FlatMap(block#437919) covers block 437916
-// Test Actions.FlatMap(block#437919) covers block 437917
-// Test Actions.FlatMap(block#437919) covers block 437918
-// Test Actions.FlatMap(block#437919) covers block 437919
-// Extracting the test for Actions.FlatMap(block#437919) from the counterexample...
-// Failed to determine a variable type (element T@U!val!8)
-// No test can be generated for Actions.FlatMap(block#437914) because the verifier suceeded.
-// Test Actions.FlatMap(block#437913) covers block 437906
-// Test Actions.FlatMap(block#437913) covers block 437907
-// Test Actions.FlatMap(block#437913) covers block 437908
-// Test Actions.FlatMap(block#437913) covers block 437909
-// Test Actions.FlatMap(block#437913) covers block 437910
-// Test Actions.FlatMap(block#437913) covers block 437911
-// Test Actions.FlatMap(block#437913) covers block 437913
-// Extracting the test for Actions.FlatMap(block#437913) from the counterexample...
-// Failed to determine a variable type (element T@U!val!8)
-// Test Actions.FlatMapWithResult(block#441386) covers block 441361
-// Test Actions.FlatMapWithResult(block#441386) covers block 441362
-// Test Actions.FlatMapWithResult(block#441386) covers block 441363
-// Test Actions.FlatMapWithResult(block#441386) covers block 441377
-// Test Actions.FlatMapWithResult(block#441386) covers block 441378
-// Test Actions.FlatMapWithResult(block#441386) covers block 441379
-// Test Actions.FlatMapWithResult(block#441386) covers block 441386
-// Extracting the test for Actions.FlatMapWithResult(block#441386) from the counterexample...
-// Failed to determine a variable type (element T@U!val!18)
-// No test can be generated for Actions.FlatMapWithResult(block#441385) because the verifier suceeded.
-// Test Actions.FlatMapWithResult(block#441383) covers block 441361
-// Test Actions.FlatMapWithResult(block#441383) covers block 441362
-// Test Actions.FlatMapWithResult(block#441383) covers block 441363
-// Test Actions.FlatMapWithResult(block#441383) covers block 441377
-// Test Actions.FlatMapWithResult(block#441383) covers block 441378
-// Test Actions.FlatMapWithResult(block#441383) covers block 441380
-// Test Actions.FlatMapWithResult(block#441383) covers block 441383
-// Extracting the test for Actions.FlatMapWithResult(block#441383) from the counterexample...
-// Failed to determine a variable type (element T@U!val!20)
-// Test Actions.FlatMapWithResult(block#441382) covers block 441361
-// Test Actions.FlatMapWithResult(block#441382) covers block 441362
-// Test Actions.FlatMapWithResult(block#441382) covers block 441363
-// Test Actions.FlatMapWithResult(block#441382) covers block 441377
-// Test Actions.FlatMapWithResult(block#441382) covers block 441378
-// Test Actions.FlatMapWithResult(block#441382) covers block 441380
-// Test Actions.FlatMapWithResult(block#441382) covers block 441382
-// Extracting the test for Actions.FlatMapWithResult(block#441382) from the counterexample...
-// Failed to determine a variable type (element T@U!val!19)
-// No test can be generated for Actions.FlatMapWithResult(block#441376) because the verifier suceeded.
-// No test can be generated for Actions.FlatMapWithResult(block#441375) because the verifier suceeded.
-// Test Actions.FlatMapWithResult(block#441374) covers block 441361
-// Test Actions.FlatMapWithResult(block#441374) covers block 441362
-// Test Actions.FlatMapWithResult(block#441374) covers block 441363
-// Test Actions.FlatMapWithResult(block#441374) covers block 441364
-// Test Actions.FlatMapWithResult(block#441374) covers block 441365
-// Test Actions.FlatMapWithResult(block#441374) covers block 441366
-// Test Actions.FlatMapWithResult(block#441374) covers block 441367
-// Test Actions.FlatMapWithResult(block#441374) covers block 441374
-// Extracting the test for Actions.FlatMapWithResult(block#441374) from the counterexample...
-// Failed to determine a variable type (element T@U!val!18)
-// Test Actions.FlatMapWithResult(block#441373) covers block 441361
-// Test Actions.FlatMapWithResult(block#441373) covers block 441362
-// Test Actions.FlatMapWithResult(block#441373) covers block 441363
-// Test Actions.FlatMapWithResult(block#441373) covers block 441364
-// Test Actions.FlatMapWithResult(block#441373) covers block 441365
-// Test Actions.FlatMapWithResult(block#441373) covers block 441366
-// Test Actions.FlatMapWithResult(block#441373) covers block 441367
-// Test Actions.FlatMapWithResult(block#441373) covers block 441371
-// Test Actions.FlatMapWithResult(block#441373) covers block 441373
-// Extracting the test for Actions.FlatMapWithResult(block#441373) from the counterexample...
-// Failed to determine a variable type (element T@U!val!18)
-// Test Actions.FlatMapWithResult(block#441372) covers block 441361
-// Test Actions.FlatMapWithResult(block#441372) covers block 441362
-// Test Actions.FlatMapWithResult(block#441372) covers block 441363
-// Test Actions.FlatMapWithResult(block#441372) covers block 441364
-// Test Actions.FlatMapWithResult(block#441372) covers block 441365
-// Test Actions.FlatMapWithResult(block#441372) covers block 441366
-// Test Actions.FlatMapWithResult(block#441372) covers block 441367
-// Test Actions.FlatMapWithResult(block#441372) covers block 441371
-// Test Actions.FlatMapWithResult(block#441372) covers block 441372
-// Extracting the test for Actions.FlatMapWithResult(block#441372) from the counterexample...
-// Failed to determine a variable type (element T@U!val!18)
-// No test can be generated for Actions.FlatMapWithResult(block#441369) because the verifier suceeded.
-// Test Actions.FlatMapWithResult(block#441368) covers block 441361
-// Test Actions.FlatMapWithResult(block#441368) covers block 441362
-// Test Actions.FlatMapWithResult(block#441368) covers block 441363
-// Test Actions.FlatMapWithResult(block#441368) covers block 441364
-// Test Actions.FlatMapWithResult(block#441368) covers block 441365
-// Test Actions.FlatMapWithResult(block#441368) covers block 441366
-// Test Actions.FlatMapWithResult(block#441368) covers block 441368
-// Extracting the test for Actions.FlatMapWithResult(block#441368) from the counterexample...
-// Failed to determine a variable type (element T@U!val!18)
-// Test Actions.Filter(block#443515) covers block 443495
-// Test Actions.Filter(block#443515) covers block 443496
-// Test Actions.Filter(block#443515) covers block 443497
-// Test Actions.Filter(block#443515) covers block 443506
-// Test Actions.Filter(block#443515) covers block 443507
-// Test Actions.Filter(block#443515) covers block 443508
-// Test Actions.Filter(block#443515) covers block 443515
-// Extracting the test for Actions.Filter(block#443515) from the counterexample...
-// Failed to determine a variable type (element T@U!val!11)
-// No test can be generated for Actions.Filter(block#443514) because the verifier suceeded.
-// Test Actions.Filter(block#443513) covers block 443495
-// Test Actions.Filter(block#443513) covers block 443496
-// Test Actions.Filter(block#443513) covers block 443497
-// Test Actions.Filter(block#443513) covers block 443506
-// Test Actions.Filter(block#443513) covers block 443507
-// Test Actions.Filter(block#443513) covers block 443509
-// Test Actions.Filter(block#443513) covers block 443512
-// Test Actions.Filter(block#443513) covers block 443513
-// Extracting the test for Actions.Filter(block#443513) from the counterexample...
-// Failed to determine a variable type (element T@U!val!9)
-// Test Actions.Filter(block#443511) covers block 443495
-// Test Actions.Filter(block#443511) covers block 443496
-// Test Actions.Filter(block#443511) covers block 443497
-// Test Actions.Filter(block#443511) covers block 443506
-// Test Actions.Filter(block#443511) covers block 443507
-// Test Actions.Filter(block#443511) covers block 443509
-// Test Actions.Filter(block#443511) covers block 443511
-// Extracting the test for Actions.Filter(block#443511) from the counterexample...
-// Failed to determine a variable type (element T@U!val!8)
-// No test can be generated for Actions.Filter(block#443505) because the verifier suceeded.
-// Test Actions.Filter(block#443504) covers block 443495
-// Test Actions.Filter(block#443504) covers block 443496
-// Test Actions.Filter(block#443504) covers block 443497
-// Test Actions.Filter(block#443504) covers block 443498
-// Test Actions.Filter(block#443504) covers block 443504
-// Extracting the test for Actions.Filter(block#443504) from the counterexample...
-// Failed to determine a variable type (element T@U!val!11)
-// Test Actions.Filter(block#443503) covers block 443495
-// Test Actions.Filter(block#443503) covers block 443496
-// Test Actions.Filter(block#443503) covers block 443497
-// Test Actions.Filter(block#443503) covers block 443498
-// Test Actions.Filter(block#443503) covers block 443499
-// Test Actions.Filter(block#443503) covers block 443503
-// Extracting the test for Actions.Filter(block#443503) from the counterexample...
-// Failed to determine a variable type (element T@U!val!11)
-// Test Actions.Filter(block#443502) covers block 443495
-// Test Actions.Filter(block#443502) covers block 443496
-// Test Actions.Filter(block#443502) covers block 443497
-// Test Actions.Filter(block#443502) covers block 443498
-// Test Actions.Filter(block#443502) covers block 443499
-// Test Actions.Filter(block#443502) covers block 443500
-// Test Actions.Filter(block#443502) covers block 443502
-// Extracting the test for Actions.Filter(block#443502) from the counterexample...
-// Failed to determine a variable type (element T@U!val!11)
-// Test Actions.Filter(block#443501) covers block 443495
-// Test Actions.Filter(block#443501) covers block 443496
-// Test Actions.Filter(block#443501) covers block 443497
-// Test Actions.Filter(block#443501) covers block 443498
-// Test Actions.Filter(block#443501) covers block 443499
-// Test Actions.Filter(block#443501) covers block 443500
-// Test Actions.Filter(block#443501) covers block 443501
-// Extracting the test for Actions.Filter(block#443501) from the counterexample...
-// Failed to determine a variable type (element T@U!val!11)
-// Test Actions.FilterWithResult(block#446387) covers block 446364
-// Test Actions.FilterWithResult(block#446387) covers block 446365
-// Test Actions.FilterWithResult(block#446387) covers block 446366
-// Test Actions.FilterWithResult(block#446387) covers block 446375
-// Test Actions.FilterWithResult(block#446387) covers block 446376
-// Test Actions.FilterWithResult(block#446387) covers block 446377
-// Test Actions.FilterWithResult(block#446387) covers block 446387
-// Extracting the test for Actions.FilterWithResult(block#446387) from the counterexample...
-// Failed to determine a variable type (element T@U!val!23)
-// No test can be generated for Actions.FilterWithResult(block#446386) because the verifier suceeded.
-// Test Actions.FilterWithResult(block#446385) covers block 446364
-// Test Actions.FilterWithResult(block#446385) covers block 446365
-// Test Actions.FilterWithResult(block#446385) covers block 446366
-// Test Actions.FilterWithResult(block#446385) covers block 446375
-// Test Actions.FilterWithResult(block#446385) covers block 446376
-// Test Actions.FilterWithResult(block#446385) covers block 446378
-// Test Actions.FilterWithResult(block#446385) covers block 446381
-// Test Actions.FilterWithResult(block#446385) covers block 446384
-// Test Actions.FilterWithResult(block#446385) covers block 446385
-// Extracting the test for Actions.FilterWithResult(block#446385) from the counterexample...
-// Failed to determine a variable type (element T@U!val!17)
-// Test Actions.FilterWithResult(block#446383) covers block 446364
-// Test Actions.FilterWithResult(block#446383) covers block 446365
-// Test Actions.FilterWithResult(block#446383) covers block 446366
-// Test Actions.FilterWithResult(block#446383) covers block 446375
-// Test Actions.FilterWithResult(block#446383) covers block 446376
-// Test Actions.FilterWithResult(block#446383) covers block 446378
-// Test Actions.FilterWithResult(block#446383) covers block 446381
-// Test Actions.FilterWithResult(block#446383) covers block 446383
-// Extracting the test for Actions.FilterWithResult(block#446383) from the counterexample...
-// Failed to determine a variable type (element T@U!val!20)
-// Test Actions.FilterWithResult(block#446380) covers block 446364
-// Test Actions.FilterWithResult(block#446380) covers block 446365
-// Test Actions.FilterWithResult(block#446380) covers block 446366
-// Test Actions.FilterWithResult(block#446380) covers block 446375
-// Test Actions.FilterWithResult(block#446380) covers block 446376
-// Test Actions.FilterWithResult(block#446380) covers block 446378
-// Test Actions.FilterWithResult(block#446380) covers block 446380
-// Extracting the test for Actions.FilterWithResult(block#446380) from the counterexample...
-// Failed to determine a variable type (element T@U!val!23)
-// No test can be generated for Actions.FilterWithResult(block#446374) because the verifier suceeded.
-// Test Actions.FilterWithResult(block#446373) covers block 446364
-// Test Actions.FilterWithResult(block#446373) covers block 446365
-// Test Actions.FilterWithResult(block#446373) covers block 446366
-// Test Actions.FilterWithResult(block#446373) covers block 446367
-// Test Actions.FilterWithResult(block#446373) covers block 446373
-// Extracting the test for Actions.FilterWithResult(block#446373) from the counterexample...
-// Failed to determine a variable type (element T@U!val!23)
-// Test Actions.FilterWithResult(block#446372) covers block 446364
-// Test Actions.FilterWithResult(block#446372) covers block 446365
-// Test Actions.FilterWithResult(block#446372) covers block 446366
-// Test Actions.FilterWithResult(block#446372) covers block 446367
-// Test Actions.FilterWithResult(block#446372) covers block 446368
-// Test Actions.FilterWithResult(block#446372) covers block 446372
-// Extracting the test for Actions.FilterWithResult(block#446372) from the counterexample...
-// Failed to determine a variable type (element T@U!val!23)
-// Test Actions.FilterWithResult(block#446371) covers block 446364
-// Test Actions.FilterWithResult(block#446371) covers block 446365
-// Test Actions.FilterWithResult(block#446371) covers block 446366
-// Test Actions.FilterWithResult(block#446371) covers block 446367
-// Test Actions.FilterWithResult(block#446371) covers block 446368
-// Test Actions.FilterWithResult(block#446371) covers block 446369
-// Test Actions.FilterWithResult(block#446371) covers block 446371
-// Extracting the test for Actions.FilterWithResult(block#446371) from the counterexample...
-// Failed to determine a variable type (element T@U!val!23)
-// Test Actions.FilterWithResult(block#446370) covers block 446364
-// Test Actions.FilterWithResult(block#446370) covers block 446365
-// Test Actions.FilterWithResult(block#446370) covers block 446366
-// Test Actions.FilterWithResult(block#446370) covers block 446367
-// Test Actions.FilterWithResult(block#446370) covers block 446368
-// Test Actions.FilterWithResult(block#446370) covers block 446369
-// Test Actions.FilterWithResult(block#446370) covers block 446370
-// Extracting the test for Actions.FilterWithResult(block#446370) from the counterexample...
-// Failed to determine a variable type (element T@U!val!23)
-// Test Actions.ReduceToSuccess(block#448119) covers block 448106
-// Test Actions.ReduceToSuccess(block#448119) covers block 448107
-// Test Actions.ReduceToSuccess(block#448119) covers block 448108
-// Test Actions.ReduceToSuccess(block#448119) covers block 448110
-// Test Actions.ReduceToSuccess(block#448119) covers block 448111
-// Test Actions.ReduceToSuccess(block#448119) covers block 448112
-// Test Actions.ReduceToSuccess(block#448119) covers block 448119
-// Extracting the test for Actions.ReduceToSuccess(block#448119) from the counterexample...
-// Failed to determine a variable type (element T@U!val!13)
-// No test can be generated for Actions.ReduceToSuccess(block#448118) because the verifier suceeded.
-// Test Actions.ReduceToSuccess(block#448116) covers block 448106
-// Test Actions.ReduceToSuccess(block#448116) covers block 448107
-// Test Actions.ReduceToSuccess(block#448116) covers block 448108
-// Test Actions.ReduceToSuccess(block#448116) covers block 448110
-// Test Actions.ReduceToSuccess(block#448116) covers block 448111
-// Test Actions.ReduceToSuccess(block#448116) covers block 448113
-// Test Actions.ReduceToSuccess(block#448116) covers block 448116
-// Extracting the test for Actions.ReduceToSuccess(block#448116) from the counterexample...
-// Failed to determine a variable type (element T@U!val!14)
-// Test Actions.ReduceToSuccess(block#448115) covers block 448106
-// Test Actions.ReduceToSuccess(block#448115) covers block 448107
-// Test Actions.ReduceToSuccess(block#448115) covers block 448108
-// Test Actions.ReduceToSuccess(block#448115) covers block 448110
-// Test Actions.ReduceToSuccess(block#448115) covers block 448111
-// Test Actions.ReduceToSuccess(block#448115) covers block 448113
-// Test Actions.ReduceToSuccess(block#448115) covers block 448115
-// Extracting the test for Actions.ReduceToSuccess(block#448115) from the counterexample...
-// Failed to determine a variable type (element T@U!val!14)
-// No test can be generated for Actions.ReduceToSuccess(block#448109) because the verifier suceeded.
+// Test Actions.Map(block#397125) covers block 397105
+// Test Actions.Map(block#397125) covers block 397106
+// Test Actions.Map(block#397125) covers block 397107
+// Test Actions.Map(block#397125) covers block 397119
+// Test Actions.Map(block#397125) covers block 397120
+// Test Actions.Map(block#397125) covers block 397121
+// Test Actions.Map(block#397125) covers block 397125
+// Extracting the test for Actions.Map(block#397125) from the counterexample...
+method {:test} test0() {
+var v0 : Actions.Action<int, int> := getFreshActionsActionintint();
+var d1 : seq<int> := [0];
+var r0 := Actions.Map<int,int>(v0, d1);
+expect |d1| == |r0|;
+}
+// No test can be generated for Actions.Map(block#397124) because the verifier suceeded.
+// Test Actions.Map(block#397122) covers block 397105
+// Test Actions.Map(block#397122) covers block 397106
+// Test Actions.Map(block#397122) covers block 397107
+// Test Actions.Map(block#397122) covers block 397119
+// Test Actions.Map(block#397122) covers block 397120
+// Test Actions.Map(block#397122) covers block 397122
+// Extracting the test for Actions.Map(block#397122) from the counterexample...
+// Test for Actions.Map(block#397122) matches a test previously generated for Actions.Map(block#397125).
+// No test can be generated for Actions.Map(block#397118) because the verifier suceeded.
+// No test can be generated for Actions.Map(block#397117) because the verifier suceeded.
+// Test Actions.Map(block#397116) covers block 397105
+// Test Actions.Map(block#397116) covers block 397106
+// Test Actions.Map(block#397116) covers block 397107
+// Test Actions.Map(block#397116) covers block 397108
+// Test Actions.Map(block#397116) covers block 397109
+// Test Actions.Map(block#397116) covers block 397110
+// Test Actions.Map(block#397116) covers block 397111
+// Test Actions.Map(block#397116) covers block 397116
+// Extracting the test for Actions.Map(block#397116) from the counterexample...
+// Test for Actions.Map(block#397116) matches a test previously generated for Actions.Map(block#397125).
+// Test Actions.Map(block#397115) covers block 397105
+// Test Actions.Map(block#397115) covers block 397106
+// Test Actions.Map(block#397115) covers block 397107
+// Test Actions.Map(block#397115) covers block 397108
+// Test Actions.Map(block#397115) covers block 397109
+// Test Actions.Map(block#397115) covers block 397110
+// Test Actions.Map(block#397115) covers block 397111
+// Test Actions.Map(block#397115) covers block 397115
+// Extracting the test for Actions.Map(block#397115) from the counterexample...
+method {:test} test3() {
+var v0 : Actions.Action<int, int> := getFreshActionsActionintint();
+var d1 : seq<int> := [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var r0 := Actions.Map<int,int>(v0, d1);
+expect |d1| == |r0|;
+}
+// No test can be generated for Actions.Map(block#397113) because the verifier suceeded.
+// Test Actions.Map(block#397112) covers block 397105
+// Test Actions.Map(block#397112) covers block 397106
+// Test Actions.Map(block#397112) covers block 397107
+// Test Actions.Map(block#397112) covers block 397108
+// Test Actions.Map(block#397112) covers block 397109
+// Test Actions.Map(block#397112) covers block 397110
+// Test Actions.Map(block#397112) covers block 397112
+// Extracting the test for Actions.Map(block#397112) from the counterexample...
+// Test for Actions.Map(block#397112) matches a test previously generated for Actions.Map(block#397125).
+// Test Actions.MapWithResult(block#399282) covers block 399259
+// Test Actions.MapWithResult(block#399282) covers block 399260
+// Test Actions.MapWithResult(block#399282) covers block 399261
+// Test Actions.MapWithResult(block#399282) covers block 399273
+// Test Actions.MapWithResult(block#399282) covers block 399274
+// Test Actions.MapWithResult(block#399282) covers block 399275
+// Test Actions.MapWithResult(block#399282) covers block 399282
+// Extracting the test for Actions.MapWithResult(block#399282) from the counterexample...
+method {:test} test5() {
+var v0 : Actions.ActionWithResult<int, int, int> := getFreshActionsActionWithResultintintint();
+var d1 : seq<int> := [0];
+var r0 := Actions.MapWithResult<int,int,int>(v0, d1);
+expect r0.Success? ==> |d1| == |r0.value|;
+}
+// No test can be generated for Actions.MapWithResult(block#399281) because the verifier suceeded.
+// Test Actions.MapWithResult(block#399279) covers block 399259
+// Test Actions.MapWithResult(block#399279) covers block 399260
+// Test Actions.MapWithResult(block#399279) covers block 399261
+// Test Actions.MapWithResult(block#399279) covers block 399273
+// Test Actions.MapWithResult(block#399279) covers block 399274
+// Test Actions.MapWithResult(block#399279) covers block 399276
+// Test Actions.MapWithResult(block#399279) covers block 399279
+// Extracting the test for Actions.MapWithResult(block#399279) from the counterexample...
+// Test for Actions.MapWithResult(block#399279) matches a test previously generated for Actions.MapWithResult(block#399282).
+// Test Actions.MapWithResult(block#399278) covers block 399259
+// Test Actions.MapWithResult(block#399278) covers block 399260
+// Test Actions.MapWithResult(block#399278) covers block 399261
+// Test Actions.MapWithResult(block#399278) covers block 399273
+// Test Actions.MapWithResult(block#399278) covers block 399274
+// Test Actions.MapWithResult(block#399278) covers block 399276
+// Test Actions.MapWithResult(block#399278) covers block 399278
+// Extracting the test for Actions.MapWithResult(block#399278) from the counterexample...
+method {:test} test7() {
+var v0 : Actions.ActionWithResult<int, int, int> := getFreshActionsActionWithResultintintint();
+var d1 : seq<int> := [0, 0];
+var r0 := Actions.MapWithResult<int,int,int>(v0, d1);
+expect r0.Success? ==> |d1| == |r0.value|;
+}
+// No test can be generated for Actions.MapWithResult(block#399272) because the verifier suceeded.
+// No test can be generated for Actions.MapWithResult(block#399271) because the verifier suceeded.
+// Test Actions.MapWithResult(block#399270) covers block 399259
+// Test Actions.MapWithResult(block#399270) covers block 399260
+// Test Actions.MapWithResult(block#399270) covers block 399261
+// Test Actions.MapWithResult(block#399270) covers block 399262
+// Test Actions.MapWithResult(block#399270) covers block 399263
+// Test Actions.MapWithResult(block#399270) covers block 399264
+// Test Actions.MapWithResult(block#399270) covers block 399265
+// Test Actions.MapWithResult(block#399270) covers block 399270
+// Extracting the test for Actions.MapWithResult(block#399270) from the counterexample...
+// Test for Actions.MapWithResult(block#399270) matches a test previously generated for Actions.MapWithResult(block#399282).
+// Test Actions.MapWithResult(block#399269) covers block 399259
+// Test Actions.MapWithResult(block#399269) covers block 399260
+// Test Actions.MapWithResult(block#399269) covers block 399261
+// Test Actions.MapWithResult(block#399269) covers block 399262
+// Test Actions.MapWithResult(block#399269) covers block 399263
+// Test Actions.MapWithResult(block#399269) covers block 399264
+// Test Actions.MapWithResult(block#399269) covers block 399265
+// Test Actions.MapWithResult(block#399269) covers block 399269
+// Extracting the test for Actions.MapWithResult(block#399269) from the counterexample...
+method {:test} test9() {
+var v0 : Actions.ActionWithResult<int, int, int> := getFreshActionsActionWithResultintintint();
+var d1 : seq<int> := [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var r0 := Actions.MapWithResult<int,int,int>(v0, d1);
+expect r0.Success? ==> |d1| == |r0.value|;
+}
+// No test can be generated for Actions.MapWithResult(block#399267) because the verifier suceeded.
+// Test Actions.MapWithResult(block#399266) covers block 399259
+// Test Actions.MapWithResult(block#399266) covers block 399260
+// Test Actions.MapWithResult(block#399266) covers block 399261
+// Test Actions.MapWithResult(block#399266) covers block 399262
+// Test Actions.MapWithResult(block#399266) covers block 399263
+// Test Actions.MapWithResult(block#399266) covers block 399264
+// Test Actions.MapWithResult(block#399266) covers block 399266
+// Extracting the test for Actions.MapWithResult(block#399266) from the counterexample...
+// Test for Actions.MapWithResult(block#399266) matches a test previously generated for Actions.MapWithResult(block#399282).
+// Test Actions.FlatMap(block#401483) covers block 401456
+// Test Actions.FlatMap(block#401483) covers block 401457
+// Test Actions.FlatMap(block#401483) covers block 401458
+// Test Actions.FlatMap(block#401483) covers block 401477
+// Test Actions.FlatMap(block#401483) covers block 401478
+// Test Actions.FlatMap(block#401483) covers block 401479
+// Test Actions.FlatMap(block#401483) covers block 401483
+// Extracting the test for Actions.FlatMap(block#401483) from the counterexample...
+method {:test} test11() {
+var v0 : Actions.Action<int, seq<int>> := getFreshActionsActionintseqint();
+var d1 : seq<int> := [0];
+var r0 := Actions.FlatMap<int,int>(v0, d1);
+}
+// No test can be generated for Actions.FlatMap(block#401482) because the verifier suceeded.
+// Test Actions.FlatMap(block#401480) covers block 401456
+// Test Actions.FlatMap(block#401480) covers block 401457
+// Test Actions.FlatMap(block#401480) covers block 401458
+// Test Actions.FlatMap(block#401480) covers block 401477
+// Test Actions.FlatMap(block#401480) covers block 401478
+// Test Actions.FlatMap(block#401480) covers block 401480
+// Extracting the test for Actions.FlatMap(block#401480) from the counterexample...
+// Test for Actions.FlatMap(block#401480) matches a test previously generated for Actions.FlatMap(block#401483).
+// No test can be generated for Actions.FlatMap(block#401476) because the verifier suceeded.
+// No test can be generated for Actions.FlatMap(block#401475) because the verifier suceeded.
+// Test Actions.FlatMap(block#401474) covers block 401456
+// Test Actions.FlatMap(block#401474) covers block 401457
+// Test Actions.FlatMap(block#401474) covers block 401458
+// Test Actions.FlatMap(block#401474) covers block 401459
+// Test Actions.FlatMap(block#401474) covers block 401460
+// Test Actions.FlatMap(block#401474) covers block 401461
+// Test Actions.FlatMap(block#401474) covers block 401462
+// Test Actions.FlatMap(block#401474) covers block 401474
+// Extracting the test for Actions.FlatMap(block#401474) from the counterexample...
+// Test for Actions.FlatMap(block#401474) matches a test previously generated for Actions.FlatMap(block#401483).
+// Test Actions.FlatMap(block#401473) covers block 401456
+// Test Actions.FlatMap(block#401473) covers block 401457
+// Test Actions.FlatMap(block#401473) covers block 401458
+// Test Actions.FlatMap(block#401473) covers block 401459
+// Test Actions.FlatMap(block#401473) covers block 401460
+// Test Actions.FlatMap(block#401473) covers block 401461
+// Test Actions.FlatMap(block#401473) covers block 401462
+// Test Actions.FlatMap(block#401473) covers block 401466
+// Test Actions.FlatMap(block#401473) covers block 401473
+// Extracting the test for Actions.FlatMap(block#401473) from the counterexample...
+method {:test} test14() {
+var v0 : Actions.Action<int, seq<int>> := getFreshActionsActionintseqint();
+var d1 : seq<int> := [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var r0 := Actions.FlatMap<int,int>(v0, d1);
+}
+// Test Actions.FlatMap(block#401471) covers block 401456
+// Test Actions.FlatMap(block#401471) covers block 401457
+// Test Actions.FlatMap(block#401471) covers block 401458
+// Test Actions.FlatMap(block#401471) covers block 401459
+// Test Actions.FlatMap(block#401471) covers block 401460
+// Test Actions.FlatMap(block#401471) covers block 401461
+// Test Actions.FlatMap(block#401471) covers block 401462
+// Test Actions.FlatMap(block#401471) covers block 401466
+// Test Actions.FlatMap(block#401471) covers block 401467
+// Test Actions.FlatMap(block#401471) covers block 401471
+// Extracting the test for Actions.FlatMap(block#401471) from the counterexample...
+// Test for Actions.FlatMap(block#401471) matches a test previously generated for Actions.FlatMap(block#401473).
+// Test Actions.FlatMap(block#401470) covers block 401456
+// Test Actions.FlatMap(block#401470) covers block 401457
+// Test Actions.FlatMap(block#401470) covers block 401458
+// Test Actions.FlatMap(block#401470) covers block 401459
+// Test Actions.FlatMap(block#401470) covers block 401460
+// Test Actions.FlatMap(block#401470) covers block 401461
+// Test Actions.FlatMap(block#401470) covers block 401462
+// Test Actions.FlatMap(block#401470) covers block 401466
+// Test Actions.FlatMap(block#401470) covers block 401467
+// Test Actions.FlatMap(block#401470) covers block 401468
+// Test Actions.FlatMap(block#401470) covers block 401470
+// Extracting the test for Actions.FlatMap(block#401470) from the counterexample...
+// Test for Actions.FlatMap(block#401470) matches a test previously generated for Actions.FlatMap(block#401473).
+// Test Actions.FlatMap(block#401469) covers block 401456
+// Test Actions.FlatMap(block#401469) covers block 401457
+// Test Actions.FlatMap(block#401469) covers block 401458
+// Test Actions.FlatMap(block#401469) covers block 401459
+// Test Actions.FlatMap(block#401469) covers block 401460
+// Test Actions.FlatMap(block#401469) covers block 401461
+// Test Actions.FlatMap(block#401469) covers block 401462
+// Test Actions.FlatMap(block#401469) covers block 401466
+// Test Actions.FlatMap(block#401469) covers block 401467
+// Test Actions.FlatMap(block#401469) covers block 401468
+// Test Actions.FlatMap(block#401469) covers block 401469
+// Extracting the test for Actions.FlatMap(block#401469) from the counterexample...
+// Test for Actions.FlatMap(block#401469) matches a test previously generated for Actions.FlatMap(block#401473).
+// No test can be generated for Actions.FlatMap(block#401464) because the verifier suceeded.
+// Test Actions.FlatMap(block#401463) covers block 401456
+// Test Actions.FlatMap(block#401463) covers block 401457
+// Test Actions.FlatMap(block#401463) covers block 401458
+// Test Actions.FlatMap(block#401463) covers block 401459
+// Test Actions.FlatMap(block#401463) covers block 401460
+// Test Actions.FlatMap(block#401463) covers block 401461
+// Test Actions.FlatMap(block#401463) covers block 401463
+// Extracting the test for Actions.FlatMap(block#401463) from the counterexample...
+// Test for Actions.FlatMap(block#401463) matches a test previously generated for Actions.FlatMap(block#401483).
+// Test Actions.FlatMapWithResult(block#404456) covers block 404431
+// Test Actions.FlatMapWithResult(block#404456) covers block 404432
+// Test Actions.FlatMapWithResult(block#404456) covers block 404433
+// Test Actions.FlatMapWithResult(block#404456) covers block 404447
+// Test Actions.FlatMapWithResult(block#404456) covers block 404448
+// Test Actions.FlatMapWithResult(block#404456) covers block 404449
+// Test Actions.FlatMapWithResult(block#404456) covers block 404456
+// Extracting the test for Actions.FlatMapWithResult(block#404456) from the counterexample...
+method {:test} test19() {
+var v0 : Actions.ActionWithResult<int, seq<int>, int> := getFreshActionsActionWithResultintseqintint();
+var d1 : seq<int> := [0];
+var r0, r1 := Actions.FlatMapWithResult<int,int,int>(v0, d1);
+}
+// No test can be generated for Actions.FlatMapWithResult(block#404455) because the verifier suceeded.
+// Test Actions.FlatMapWithResult(block#404453) covers block 404431
+// Test Actions.FlatMapWithResult(block#404453) covers block 404432
+// Test Actions.FlatMapWithResult(block#404453) covers block 404433
+// Test Actions.FlatMapWithResult(block#404453) covers block 404447
+// Test Actions.FlatMapWithResult(block#404453) covers block 404448
+// Test Actions.FlatMapWithResult(block#404453) covers block 404450
+// Test Actions.FlatMapWithResult(block#404453) covers block 404453
+// Extracting the test for Actions.FlatMapWithResult(block#404453) from the counterexample...
+// Test for Actions.FlatMapWithResult(block#404453) matches a test previously generated for Actions.FlatMapWithResult(block#404456).
+// Test Actions.FlatMapWithResult(block#404452) covers block 404431
+// Test Actions.FlatMapWithResult(block#404452) covers block 404432
+// Test Actions.FlatMapWithResult(block#404452) covers block 404433
+// Test Actions.FlatMapWithResult(block#404452) covers block 404447
+// Test Actions.FlatMapWithResult(block#404452) covers block 404448
+// Test Actions.FlatMapWithResult(block#404452) covers block 404450
+// Test Actions.FlatMapWithResult(block#404452) covers block 404452
+// Extracting the test for Actions.FlatMapWithResult(block#404452) from the counterexample...
+method {:test} test21() {
+var v0 : Actions.ActionWithResult<int, seq<int>, int> := getFreshActionsActionWithResultintseqintint();
+var d1 : seq<int> := [0, 1];
+var r0, r1 := Actions.FlatMapWithResult<int,int,int>(v0, d1);
+}
+// No test can be generated for Actions.FlatMapWithResult(block#404446) because the verifier suceeded.
+// No test can be generated for Actions.FlatMapWithResult(block#404445) because the verifier suceeded.
+// Test Actions.FlatMapWithResult(block#404444) covers block 404431
+// Test Actions.FlatMapWithResult(block#404444) covers block 404432
+// Test Actions.FlatMapWithResult(block#404444) covers block 404433
+// Test Actions.FlatMapWithResult(block#404444) covers block 404434
+// Test Actions.FlatMapWithResult(block#404444) covers block 404435
+// Test Actions.FlatMapWithResult(block#404444) covers block 404436
+// Test Actions.FlatMapWithResult(block#404444) covers block 404437
+// Test Actions.FlatMapWithResult(block#404444) covers block 404444
+// Extracting the test for Actions.FlatMapWithResult(block#404444) from the counterexample...
+// Test for Actions.FlatMapWithResult(block#404444) matches a test previously generated for Actions.FlatMapWithResult(block#404456).
+// Test Actions.FlatMapWithResult(block#404443) covers block 404431
+// Test Actions.FlatMapWithResult(block#404443) covers block 404432
+// Test Actions.FlatMapWithResult(block#404443) covers block 404433
+// Test Actions.FlatMapWithResult(block#404443) covers block 404434
+// Test Actions.FlatMapWithResult(block#404443) covers block 404435
+// Test Actions.FlatMapWithResult(block#404443) covers block 404436
+// Test Actions.FlatMapWithResult(block#404443) covers block 404437
+// Test Actions.FlatMapWithResult(block#404443) covers block 404441
+// Test Actions.FlatMapWithResult(block#404443) covers block 404443
+// Extracting the test for Actions.FlatMapWithResult(block#404443) from the counterexample...
+method {:test} test23() {
+var v0 : Actions.ActionWithResult<int, seq<int>, int> := getFreshActionsActionWithResultintseqintint();
+var d1 : seq<int> := [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var r0, r1 := Actions.FlatMapWithResult<int,int,int>(v0, d1);
+}
+// Test Actions.FlatMapWithResult(block#404442) covers block 404431
+// Test Actions.FlatMapWithResult(block#404442) covers block 404432
+// Test Actions.FlatMapWithResult(block#404442) covers block 404433
+// Test Actions.FlatMapWithResult(block#404442) covers block 404434
+// Test Actions.FlatMapWithResult(block#404442) covers block 404435
+// Test Actions.FlatMapWithResult(block#404442) covers block 404436
+// Test Actions.FlatMapWithResult(block#404442) covers block 404437
+// Test Actions.FlatMapWithResult(block#404442) covers block 404441
+// Test Actions.FlatMapWithResult(block#404442) covers block 404442
+// Extracting the test for Actions.FlatMapWithResult(block#404442) from the counterexample...
+// Test for Actions.FlatMapWithResult(block#404442) matches a test previously generated for Actions.FlatMapWithResult(block#404443).
+// No test can be generated for Actions.FlatMapWithResult(block#404439) because the verifier suceeded.
+// Test Actions.FlatMapWithResult(block#404438) covers block 404431
+// Test Actions.FlatMapWithResult(block#404438) covers block 404432
+// Test Actions.FlatMapWithResult(block#404438) covers block 404433
+// Test Actions.FlatMapWithResult(block#404438) covers block 404434
+// Test Actions.FlatMapWithResult(block#404438) covers block 404435
+// Test Actions.FlatMapWithResult(block#404438) covers block 404436
+// Test Actions.FlatMapWithResult(block#404438) covers block 404438
+// Extracting the test for Actions.FlatMapWithResult(block#404438) from the counterexample...
+// Test for Actions.FlatMapWithResult(block#404438) matches a test previously generated for Actions.FlatMapWithResult(block#404456).
+// Test Actions.Filter(block#406105) covers block 406085
+// Test Actions.Filter(block#406105) covers block 406086
+// Test Actions.Filter(block#406105) covers block 406087
+// Test Actions.Filter(block#406105) covers block 406096
+// Test Actions.Filter(block#406105) covers block 406097
+// Test Actions.Filter(block#406105) covers block 406098
+// Test Actions.Filter(block#406105) covers block 406105
+// Extracting the test for Actions.Filter(block#406105) from the counterexample...
+method {:test} test26() {
+var v0 : Actions.Action<int, bool> := getFreshActionsActionintbool();
+var d1 : seq<int> := [0];
+var r0 := Actions.Filter<int>(v0, d1);
+expect |d1| >= |r0|;
+}
+// No test can be generated for Actions.Filter(block#406104) because the verifier suceeded.
+// Test Actions.Filter(block#406103) covers block 406085
+// Test Actions.Filter(block#406103) covers block 406086
+// Test Actions.Filter(block#406103) covers block 406087
+// Test Actions.Filter(block#406103) covers block 406096
+// Test Actions.Filter(block#406103) covers block 406097
+// Test Actions.Filter(block#406103) covers block 406099
+// Test Actions.Filter(block#406103) covers block 406102
+// Test Actions.Filter(block#406103) covers block 406103
+// Extracting the test for Actions.Filter(block#406103) from the counterexample...
+// Test for Actions.Filter(block#406103) matches a test previously generated for Actions.Filter(block#406105).
+// Test Actions.Filter(block#406101) covers block 406085
+// Test Actions.Filter(block#406101) covers block 406086
+// Test Actions.Filter(block#406101) covers block 406087
+// Test Actions.Filter(block#406101) covers block 406096
+// Test Actions.Filter(block#406101) covers block 406097
+// Test Actions.Filter(block#406101) covers block 406099
+// Test Actions.Filter(block#406101) covers block 406101
+// Extracting the test for Actions.Filter(block#406101) from the counterexample...
+method {:test} test28() {
+var v0 : Actions.Action<int, bool> := getFreshActionsActionintbool();
+var d1 : seq<int> := [0, 0];
+var r0 := Actions.Filter<int>(v0, d1);
+expect |d1| >= |r0|;
+}
+// No test can be generated for Actions.Filter(block#406095) because the verifier suceeded.
+// Test Actions.Filter(block#406094) covers block 406085
+// Test Actions.Filter(block#406094) covers block 406086
+// Test Actions.Filter(block#406094) covers block 406087
+// Test Actions.Filter(block#406094) covers block 406088
+// Test Actions.Filter(block#406094) covers block 406094
+// Extracting the test for Actions.Filter(block#406094) from the counterexample...
+// Test for Actions.Filter(block#406094) matches a test previously generated for Actions.Filter(block#406105).
+// Test Actions.Filter(block#406093) covers block 406085
+// Test Actions.Filter(block#406093) covers block 406086
+// Test Actions.Filter(block#406093) covers block 406087
+// Test Actions.Filter(block#406093) covers block 406088
+// Test Actions.Filter(block#406093) covers block 406089
+// Test Actions.Filter(block#406093) covers block 406093
+// Extracting the test for Actions.Filter(block#406093) from the counterexample...
+// Test for Actions.Filter(block#406093) matches a test previously generated for Actions.Filter(block#406105).
+// Test Actions.Filter(block#406092) covers block 406085
+// Test Actions.Filter(block#406092) covers block 406086
+// Test Actions.Filter(block#406092) covers block 406087
+// Test Actions.Filter(block#406092) covers block 406088
+// Test Actions.Filter(block#406092) covers block 406089
+// Test Actions.Filter(block#406092) covers block 406090
+// Test Actions.Filter(block#406092) covers block 406092
+// Extracting the test for Actions.Filter(block#406092) from the counterexample...
+method {:test} test31() {
+var v0 : Actions.Action<int, bool> := getFreshActionsActionintbool();
+var d1 : seq<int> := [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var r0 := Actions.Filter<int>(v0, d1);
+expect |d1| >= |r0|;
+}
+// Test Actions.Filter(block#406091) covers block 406085
+// Test Actions.Filter(block#406091) covers block 406086
+// Test Actions.Filter(block#406091) covers block 406087
+// Test Actions.Filter(block#406091) covers block 406088
+// Test Actions.Filter(block#406091) covers block 406089
+// Test Actions.Filter(block#406091) covers block 406090
+// Test Actions.Filter(block#406091) covers block 406091
+// Extracting the test for Actions.Filter(block#406091) from the counterexample...
+// Test for Actions.Filter(block#406091) matches a test previously generated for Actions.Filter(block#406092).
+// Test Actions.FilterWithResult(block#408497) covers block 408474
+// Test Actions.FilterWithResult(block#408497) covers block 408475
+// Test Actions.FilterWithResult(block#408497) covers block 408476
+// Test Actions.FilterWithResult(block#408497) covers block 408485
+// Test Actions.FilterWithResult(block#408497) covers block 408486
+// Test Actions.FilterWithResult(block#408497) covers block 408487
+// Test Actions.FilterWithResult(block#408497) covers block 408497
+// Extracting the test for Actions.FilterWithResult(block#408497) from the counterexample...
+method {:test} test33() {
+var v0 : Actions.ActionWithResult<int, bool, int> := getFreshActionsActionWithResultintboolint();
+var d1 : seq<int> := [0];
+var r0 := Actions.FilterWithResult<int,int>(v0, d1);
+}
+// No test can be generated for Actions.FilterWithResult(block#408496) because the verifier suceeded.
+// Test Actions.FilterWithResult(block#408495) covers block 408474
+// Test Actions.FilterWithResult(block#408495) covers block 408475
+// Test Actions.FilterWithResult(block#408495) covers block 408476
+// Test Actions.FilterWithResult(block#408495) covers block 408485
+// Test Actions.FilterWithResult(block#408495) covers block 408486
+// Test Actions.FilterWithResult(block#408495) covers block 408488
+// Test Actions.FilterWithResult(block#408495) covers block 408491
+// Test Actions.FilterWithResult(block#408495) covers block 408494
+// Test Actions.FilterWithResult(block#408495) covers block 408495
+// Extracting the test for Actions.FilterWithResult(block#408495) from the counterexample...
+// Test for Actions.FilterWithResult(block#408495) matches a test previously generated for Actions.FilterWithResult(block#408497).
+// Test Actions.FilterWithResult(block#408493) covers block 408474
+// Test Actions.FilterWithResult(block#408493) covers block 408475
+// Test Actions.FilterWithResult(block#408493) covers block 408476
+// Test Actions.FilterWithResult(block#408493) covers block 408485
+// Test Actions.FilterWithResult(block#408493) covers block 408486
+// Test Actions.FilterWithResult(block#408493) covers block 408488
+// Test Actions.FilterWithResult(block#408493) covers block 408491
+// Test Actions.FilterWithResult(block#408493) covers block 408493
+// Extracting the test for Actions.FilterWithResult(block#408493) from the counterexample...
+method {:test} test35() {
+var v0 : Actions.ActionWithResult<int, bool, int> := getFreshActionsActionWithResultintboolint();
+var d1 : seq<int> := [0, 0];
+var r0 := Actions.FilterWithResult<int,int>(v0, d1);
+}
+// Test Actions.FilterWithResult(block#408490) covers block 408474
+// Test Actions.FilterWithResult(block#408490) covers block 408475
+// Test Actions.FilterWithResult(block#408490) covers block 408476
+// Test Actions.FilterWithResult(block#408490) covers block 408485
+// Test Actions.FilterWithResult(block#408490) covers block 408486
+// Test Actions.FilterWithResult(block#408490) covers block 408488
+// Test Actions.FilterWithResult(block#408490) covers block 408490
+// Extracting the test for Actions.FilterWithResult(block#408490) from the counterexample...
+// Test for Actions.FilterWithResult(block#408490) matches a test previously generated for Actions.FilterWithResult(block#408493).
+// No test can be generated for Actions.FilterWithResult(block#408484) because the verifier suceeded.
+// Test Actions.FilterWithResult(block#408483) covers block 408474
+// Test Actions.FilterWithResult(block#408483) covers block 408475
+// Test Actions.FilterWithResult(block#408483) covers block 408476
+// Test Actions.FilterWithResult(block#408483) covers block 408477
+// Test Actions.FilterWithResult(block#408483) covers block 408483
+// Extracting the test for Actions.FilterWithResult(block#408483) from the counterexample...
+// Test for Actions.FilterWithResult(block#408483) matches a test previously generated for Actions.FilterWithResult(block#408497).
+// Test Actions.FilterWithResult(block#408482) covers block 408474
+// Test Actions.FilterWithResult(block#408482) covers block 408475
+// Test Actions.FilterWithResult(block#408482) covers block 408476
+// Test Actions.FilterWithResult(block#408482) covers block 408477
+// Test Actions.FilterWithResult(block#408482) covers block 408478
+// Test Actions.FilterWithResult(block#408482) covers block 408482
+// Extracting the test for Actions.FilterWithResult(block#408482) from the counterexample...
+// Test for Actions.FilterWithResult(block#408482) matches a test previously generated for Actions.FilterWithResult(block#408497).
+// Test Actions.FilterWithResult(block#408481) covers block 408474
+// Test Actions.FilterWithResult(block#408481) covers block 408475
+// Test Actions.FilterWithResult(block#408481) covers block 408476
+// Test Actions.FilterWithResult(block#408481) covers block 408477
+// Test Actions.FilterWithResult(block#408481) covers block 408478
+// Test Actions.FilterWithResult(block#408481) covers block 408479
+// Test Actions.FilterWithResult(block#408481) covers block 408481
+// Extracting the test for Actions.FilterWithResult(block#408481) from the counterexample...
+method {:test} test39() {
+var v0 : Actions.ActionWithResult<int, bool, int> := getFreshActionsActionWithResultintboolint();
+var d1 : seq<int> := [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var r0 := Actions.FilterWithResult<int,int>(v0, d1);
+}
+// Test Actions.FilterWithResult(block#408480) covers block 408474
+// Test Actions.FilterWithResult(block#408480) covers block 408475
+// Test Actions.FilterWithResult(block#408480) covers block 408476
+// Test Actions.FilterWithResult(block#408480) covers block 408477
+// Test Actions.FilterWithResult(block#408480) covers block 408478
+// Test Actions.FilterWithResult(block#408480) covers block 408479
+// Test Actions.FilterWithResult(block#408480) covers block 408480
+// Extracting the test for Actions.FilterWithResult(block#408480) from the counterexample...
+method {:test} test40() {
+var v0 : Actions.ActionWithResult<int, bool, int> := getFreshActionsActionWithResultintboolint();
+var d1 : seq<int> := [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var r0 := Actions.FilterWithResult<int,int>(v0, d1);
+}
+// Test Actions.ReduceToSuccess(block#409749) covers block 409736
+// Test Actions.ReduceToSuccess(block#409749) covers block 409737
+// Test Actions.ReduceToSuccess(block#409749) covers block 409738
+// Test Actions.ReduceToSuccess(block#409749) covers block 409740
+// Test Actions.ReduceToSuccess(block#409749) covers block 409741
+// Test Actions.ReduceToSuccess(block#409749) covers block 409742
+// Test Actions.ReduceToSuccess(block#409749) covers block 409749
+// Extracting the test for Actions.ReduceToSuccess(block#409749) from the counterexample...
+method {:test} test41() {
+var v0 : Actions.ActionWithResult<int, int, int> := getFreshActionsActionWithResultintintint();
+var d1 : seq<int> := [0];
+var r0 := Actions.ReduceToSuccess<int,int,int>(v0, d1);
+}
+// No test can be generated for Actions.ReduceToSuccess(block#409748) because the verifier suceeded.
+// Test Actions.ReduceToSuccess(block#409746) covers block 409736
+// Test Actions.ReduceToSuccess(block#409746) covers block 409737
+// Test Actions.ReduceToSuccess(block#409746) covers block 409738
+// Test Actions.ReduceToSuccess(block#409746) covers block 409740
+// Test Actions.ReduceToSuccess(block#409746) covers block 409741
+// Test Actions.ReduceToSuccess(block#409746) covers block 409743
+// Test Actions.ReduceToSuccess(block#409746) covers block 409746
+// Extracting the test for Actions.ReduceToSuccess(block#409746) from the counterexample...
+// Test for Actions.ReduceToSuccess(block#409746) matches a test previously generated for Actions.ReduceToSuccess(block#409749).
+// Test Actions.ReduceToSuccess(block#409745) covers block 409736
+// Test Actions.ReduceToSuccess(block#409745) covers block 409737
+// Test Actions.ReduceToSuccess(block#409745) covers block 409738
+// Test Actions.ReduceToSuccess(block#409745) covers block 409740
+// Test Actions.ReduceToSuccess(block#409745) covers block 409741
+// Test Actions.ReduceToSuccess(block#409745) covers block 409743
+// Test Actions.ReduceToSuccess(block#409745) covers block 409745
+// Extracting the test for Actions.ReduceToSuccess(block#409745) from the counterexample...
+method {:test} test43() {
+var v0 : Actions.ActionWithResult<int, int, int> := getFreshActionsActionWithResultintintint();
+var d1 : seq<int> := [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var r0 := Actions.ReduceToSuccess<int,int,int>(v0, d1);
+}
+// No test can be generated for Actions.ReduceToSuccess(block#409739) because the verifier suceeded.
 
+method {:synthesize} getFreshActionsActionintint()returns (o:Actions.Action<int, int>) ensures fresh(o) 
+method {:synthesize} getFreshActionsActionWithResultintintint()returns (o:Actions.ActionWithResult<int, int, int>) ensures fresh(o) 
+method {:synthesize} getFreshActionsActionintseqint()returns (o:Actions.Action<int, seq<int>>) ensures fresh(o) 
+method {:synthesize} getFreshActionsActionWithResultintseqintint()returns (o:Actions.ActionWithResult<int, seq<int>, int>) ensures fresh(o) 
+method {:synthesize} getFreshActionsActionintbool()returns (o:Actions.Action<int, bool>) ensures fresh(o) 
+method {:synthesize} getFreshActionsActionWithResultintboolint()returns (o:Actions.ActionWithResult<int, bool, int>) ensures fresh(o) 
 }

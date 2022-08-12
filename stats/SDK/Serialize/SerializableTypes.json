@@ -1,20 +1,20 @@
 [
   {
     "blocks": "8",
-    "blocksCovered": "8",
-    "failedQueries": "0",
-    "queries": "3",
-    "tests": "3",
+    "blocksCovered": "5",
+    "failedQueries": "3",
+    "queries": "4",
+    "tests": "1",
     "failedTests": "0",
     "dafnyName": "SerializableTypes.IsESDKEncryptedDataKey",
     "compiledName": "SerializableTypes_Compile.__default.IsESDKEncryptedDataKey"
   },
   {
     "blocks": "12",
-    "blocksCovered": "7",
-    "failedQueries": "5",
-    "queries": "9",
-    "tests": "4",
+    "blocksCovered": "6",
+    "failedQueries": "6",
+    "queries": "8",
+    "tests": "2",
     "failedTests": "0",
     "dafnyName": "SerializableTypes.IsESDKEncryptionContext",
     "compiledName": "SerializableTypes_Compile.__default.IsESDKEncryptionContext"

@@ -160,5 +160,5 @@ module HeaderTypes {
   type MessageId = x: seq<uint8> |
     || |x| == MESSAGE_ID_LEN_V1
     || |x| == MESSAGE_ID_LEN_V2
-  witness *
+  witness [0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8]
 }

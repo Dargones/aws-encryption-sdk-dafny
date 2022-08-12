@@ -93,10 +93,11 @@ module  AwsKmsArnParsing {
   }
 
   type AwsKmsArn = a : AwsArn | ValidAwsKmsArn(a)
-    witness *
+    witness AwsArn("arn","a","kms","a","a",AwsResource("key","a")
+  )
 
   type AwsKmsResource = r : AwsResource | ValidAwsKmsResource(r)
-    witness *
+    witness AwsResource("key","a")
 
   datatype AwsKmsIdentifier =
     | AwsKmsArnIdentifier(a: AwsKmsArn)
@@ -342,6 +343,6 @@ module  AwsKmsArnParsing {
 
   type AwsKmsIdentifierString = s: string |
     IsAwsKmsIdentifierString(s).Success?
-    witness *
+    witness "arn:::a"
 
 }

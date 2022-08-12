@@ -48,7 +48,7 @@ module {:extern "Dafny.Aws.EncryptionSdk.AwsEncryptionSdk"} AwsEncryptionSdk {
   import V1HeaderBody
   import Frames
 
-  type FrameLength = frameLength : int64 | 0 < frameLength <= 0xFFFF_FFFF witness *
+  type FrameLength = frameLength : int64 | 0 < frameLength <= 0xFFFF_FFFF witness 1
 
   const DEFAULT_COMMITMENT_POLICY : Crypto.CommitmentPolicy := Crypto.REQUIRE_ENCRYPT_REQUIRE_DECRYPT;
 

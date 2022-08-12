@@ -29,7 +29,15 @@ module V2HeaderBody {
 
   type V2HeaderBody = h: HeaderTypes.HeaderBody
   | h.V2HeaderBody?
-  witness *
+  witness HeaderTypes.HeaderBody.V2HeaderBody(
+      esdkSuiteId:=(0x0578 as uint16),
+      messageId:=[0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8],
+      encryptionContext:=[],
+      encryptedDataKeys:=[],
+      contentType:=HeaderTypes.ContentType.Framed,
+      frameLength:=0,
+      suiteData:=[]
+    )
 
   function method WriteV2HeaderBody(
     body: V2HeaderBody

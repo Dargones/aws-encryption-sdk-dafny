@@ -24,7 +24,7 @@
     "blocksCovered": "3",
     "failedQueries": "0",
     "queries": "2",
-    "tests": "2",
+    "tests": "1",
     "failedTests": "0",
     "dafnyName": "Streams.ByteReader.ReadByte",
     "compiledName": "Streams_Compile.ByteReader.ReadByte"
@@ -34,7 +34,7 @@
     "blocksCovered": "3",
     "failedQueries": "0",
     "queries": "2",
-    "tests": "2",
+    "tests": "1",
     "failedTests": "0",
     "dafnyName": "Streams.ByteReader.ReadBytes",
     "compiledName": "Streams_Compile.ByteReader.ReadBytes"
@@ -44,7 +44,7 @@
     "blocksCovered": "3",
     "failedQueries": "0",
     "queries": "2",
-    "tests": "2",
+    "tests": "1",
     "failedTests": "0",
     "dafnyName": "Streams.ByteReader.ReadUInt16",
     "compiledName": "Streams_Compile.ByteReader.ReadUInt16"
@@ -54,7 +54,7 @@
     "blocksCovered": "3",
     "failedQueries": "0",
     "queries": "2",
-    "tests": "2",
+    "tests": "1",
     "failedTests": "0",
     "dafnyName": "Streams.ByteReader.ReadUInt32",
     "compiledName": "Streams_Compile.ByteReader.ReadUInt32"
@@ -64,7 +64,7 @@
     "blocksCovered": "3",
     "failedQueries": "0",
     "queries": "2",
-    "tests": "2",
+    "tests": "1",
     "failedTests": "0",
     "dafnyName": "Streams.ByteReader.ReadUInt64",
     "compiledName": "Streams_Compile.ByteReader.ReadUInt64"

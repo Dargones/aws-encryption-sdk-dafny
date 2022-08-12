@@ -55,657 +55,680 @@ import Wrappers
 // Removing assertions...
 // Annotating blocks...
 // Generating modifications...
-// Test Base64.IsBase64Char(block#704204) covers block 704186
-// Test Base64.IsBase64Char(block#704204) covers block 704187
-// Test Base64.IsBase64Char(block#704204) covers block 704190
-// Test Base64.IsBase64Char(block#704204) covers block 704191
-// Test Base64.IsBase64Char(block#704204) covers block 704195
-// Test Base64.IsBase64Char(block#704204) covers block 704196
-// Test Base64.IsBase64Char(block#704204) covers block 704200
-// Test Base64.IsBase64Char(block#704204) covers block 704201
-// Test Base64.IsBase64Char(block#704204) covers block 704204
-// Extracting the test for Base64.IsBase64Char(block#704204) from the counterexample...
+// Test Base64.IsBase64Char(block#675111) covers block 675093
+// Test Base64.IsBase64Char(block#675111) covers block 675094
+// Test Base64.IsBase64Char(block#675111) covers block 675097
+// Test Base64.IsBase64Char(block#675111) covers block 675098
+// Test Base64.IsBase64Char(block#675111) covers block 675102
+// Test Base64.IsBase64Char(block#675111) covers block 675103
+// Test Base64.IsBase64Char(block#675111) covers block 675107
+// Test Base64.IsBase64Char(block#675111) covers block 675108
+// Test Base64.IsBase64Char(block#675111) covers block 675111
+// Extracting the test for Base64.IsBase64Char(block#675111) from the counterexample...
 method {:test} test0() {
 var r0 := Base64.IsBase64Char('{');
 }
-// Test Base64.IsBase64Char(block#704203) covers block 704186
-// Test Base64.IsBase64Char(block#704203) covers block 704187
-// Test Base64.IsBase64Char(block#704203) covers block 704190
-// Test Base64.IsBase64Char(block#704203) covers block 704191
-// Test Base64.IsBase64Char(block#704203) covers block 704195
-// Test Base64.IsBase64Char(block#704203) covers block 704196
-// Test Base64.IsBase64Char(block#704203) covers block 704203
-// Extracting the test for Base64.IsBase64Char(block#704203) from the counterexample...
+// Test Base64.IsBase64Char(block#675110) covers block 675093
+// Test Base64.IsBase64Char(block#675110) covers block 675094
+// Test Base64.IsBase64Char(block#675110) covers block 675097
+// Test Base64.IsBase64Char(block#675110) covers block 675098
+// Test Base64.IsBase64Char(block#675110) covers block 675102
+// Test Base64.IsBase64Char(block#675110) covers block 675103
+// Test Base64.IsBase64Char(block#675110) covers block 675110
+// Extracting the test for Base64.IsBase64Char(block#675110) from the counterexample...
 method {:test} test1() {
-var r0 := Base64.IsBase64Char('M');
+var r0 := Base64.IsBase64Char('N');
 }
-// Test Base64.IsBase64Char(block#704202) covers block 704186
-// Test Base64.IsBase64Char(block#704202) covers block 704187
-// Test Base64.IsBase64Char(block#704202) covers block 704190
-// Test Base64.IsBase64Char(block#704202) covers block 704191
-// Test Base64.IsBase64Char(block#704202) covers block 704195
-// Test Base64.IsBase64Char(block#704202) covers block 704196
-// Test Base64.IsBase64Char(block#704202) covers block 704200
-// Test Base64.IsBase64Char(block#704202) covers block 704202
-// Extracting the test for Base64.IsBase64Char(block#704202) from the counterexample...
+// Test Base64.IsBase64Char(block#675109) covers block 675093
+// Test Base64.IsBase64Char(block#675109) covers block 675094
+// Test Base64.IsBase64Char(block#675109) covers block 675097
+// Test Base64.IsBase64Char(block#675109) covers block 675098
+// Test Base64.IsBase64Char(block#675109) covers block 675102
+// Test Base64.IsBase64Char(block#675109) covers block 675103
+// Test Base64.IsBase64Char(block#675109) covers block 675107
+// Test Base64.IsBase64Char(block#675109) covers block 675109
+// Extracting the test for Base64.IsBase64Char(block#675109) from the counterexample...
 method {:test} test2() {
 var r0 := Base64.IsBase64Char('[');
 }
-// Test Base64.IsBase64Char(block#704198) covers block 704186
-// Test Base64.IsBase64Char(block#704198) covers block 704187
-// Test Base64.IsBase64Char(block#704198) covers block 704190
-// Test Base64.IsBase64Char(block#704198) covers block 704191
-// Test Base64.IsBase64Char(block#704198) covers block 704198
-// Extracting the test for Base64.IsBase64Char(block#704198) from the counterexample...
+// Test Base64.IsBase64Char(block#675105) covers block 675093
+// Test Base64.IsBase64Char(block#675105) covers block 675094
+// Test Base64.IsBase64Char(block#675105) covers block 675097
+// Test Base64.IsBase64Char(block#675105) covers block 675098
+// Test Base64.IsBase64Char(block#675105) covers block 675105
+// Extracting the test for Base64.IsBase64Char(block#675105) from the counterexample...
 method {:test} test3() {
-var r0 := Base64.IsBase64Char('8');
+var r0 := Base64.IsBase64Char('1');
 }
-// Test Base64.IsBase64Char(block#704197) covers block 704186
-// Test Base64.IsBase64Char(block#704197) covers block 704187
-// Test Base64.IsBase64Char(block#704197) covers block 704190
-// Test Base64.IsBase64Char(block#704197) covers block 704191
-// Test Base64.IsBase64Char(block#704197) covers block 704195
-// Test Base64.IsBase64Char(block#704197) covers block 704197
-// Extracting the test for Base64.IsBase64Char(block#704197) from the counterexample...
+// Test Base64.IsBase64Char(block#675104) covers block 675093
+// Test Base64.IsBase64Char(block#675104) covers block 675094
+// Test Base64.IsBase64Char(block#675104) covers block 675097
+// Test Base64.IsBase64Char(block#675104) covers block 675098
+// Test Base64.IsBase64Char(block#675104) covers block 675102
+// Test Base64.IsBase64Char(block#675104) covers block 675104
+// Extracting the test for Base64.IsBase64Char(block#675104) from the counterexample...
 method {:test} test4() {
 var r0 := Base64.IsBase64Char(':');
 }
-// Test Base64.IsBase64Char(block#704193) covers block 704186
-// Test Base64.IsBase64Char(block#704193) covers block 704187
-// Test Base64.IsBase64Char(block#704193) covers block 704193
-// Extracting the test for Base64.IsBase64Char(block#704193) from the counterexample...
+// Test Base64.IsBase64Char(block#675100) covers block 675093
+// Test Base64.IsBase64Char(block#675100) covers block 675094
+// Test Base64.IsBase64Char(block#675100) covers block 675100
+// Extracting the test for Base64.IsBase64Char(block#675100) from the counterexample...
 method {:test} test5() {
 var r0 := Base64.IsBase64Char('/');
 }
-// Test Base64.IsBase64Char(block#704192) covers block 704186
-// Test Base64.IsBase64Char(block#704192) covers block 704187
-// Test Base64.IsBase64Char(block#704192) covers block 704190
-// Test Base64.IsBase64Char(block#704192) covers block 704192
-// Extracting the test for Base64.IsBase64Char(block#704192) from the counterexample...
+// Test Base64.IsBase64Char(block#675099) covers block 675093
+// Test Base64.IsBase64Char(block#675099) covers block 675094
+// Test Base64.IsBase64Char(block#675099) covers block 675097
+// Test Base64.IsBase64Char(block#675099) covers block 675099
+// Extracting the test for Base64.IsBase64Char(block#675099) from the counterexample...
 method {:test} test6() {
-var r0 := Base64.IsBase64Char('\u0016');
+var r0 := Base64.IsBase64Char('\u0019');
 }
-// Test Base64.IsBase64Char(block#704188) covers block 704186
-// Test Base64.IsBase64Char(block#704188) covers block 704188
-// Extracting the test for Base64.IsBase64Char(block#704188) from the counterexample...
+// Test Base64.IsBase64Char(block#675095) covers block 675093
+// Test Base64.IsBase64Char(block#675095) covers block 675095
+// Extracting the test for Base64.IsBase64Char(block#675095) from the counterexample...
 method {:test} test7() {
 var r0 := Base64.IsBase64Char('+');
 }
-// Test Base64.IsUnpaddedBase64String(block#705179) covers block 705171
-// Test Base64.IsUnpaddedBase64String(block#705179) covers block 705172
-// Test Base64.IsUnpaddedBase64String(block#705179) covers block 705173
-// Test Base64.IsUnpaddedBase64String(block#705179) covers block 705174
-// Test Base64.IsUnpaddedBase64String(block#705179) covers block 705179
-// Extracting the test for Base64.IsUnpaddedBase64String(block#705179) from the counterexample...
+// Test Base64.IsUnpaddedBase64String(block#676086) covers block 676078
+// Test Base64.IsUnpaddedBase64String(block#676086) covers block 676079
+// Test Base64.IsUnpaddedBase64String(block#676086) covers block 676080
+// Test Base64.IsUnpaddedBase64String(block#676086) covers block 676081
+// Test Base64.IsUnpaddedBase64String(block#676086) covers block 676086
+// Extracting the test for Base64.IsUnpaddedBase64String(block#676086) from the counterexample...
 method {:test} test8() {
-var d0 : string := "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa+aaa";
+var d0 : string := "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa+aaa";
 var r0 := Base64.IsUnpaddedBase64String(d0);
 }
-// Test Base64.IsUnpaddedBase64String(block#705178) covers block 705171
-// Test Base64.IsUnpaddedBase64String(block#705178) covers block 705178
-// Extracting the test for Base64.IsUnpaddedBase64String(block#705178) from the counterexample...
+// Test Base64.IsUnpaddedBase64String(block#676085) covers block 676078
+// Test Base64.IsUnpaddedBase64String(block#676085) covers block 676085
+// Extracting the test for Base64.IsUnpaddedBase64String(block#676085) from the counterexample...
 method {:test} test9() {
 var d0 : string := "a";
 var r0 := Base64.IsUnpaddedBase64String(d0);
 }
-// No test can be generated for Base64.IsUnpaddedBase64String(block#705176) because the verifier suceeded.
-// Test Base64.IsUnpaddedBase64String(block#705175) covers block 705171
-// Test Base64.IsUnpaddedBase64String(block#705175) covers block 705172
-// Test Base64.IsUnpaddedBase64String(block#705175) covers block 705173
-// Test Base64.IsUnpaddedBase64String(block#705175) covers block 705175
-// Extracting the test for Base64.IsUnpaddedBase64String(block#705175) from the counterexample...
+// No test can be generated for Base64.IsUnpaddedBase64String(block#676083) because the verifier suceeded.
+// Test Base64.IsUnpaddedBase64String(block#676082) covers block 676078
+// Test Base64.IsUnpaddedBase64String(block#676082) covers block 676079
+// Test Base64.IsUnpaddedBase64String(block#676082) covers block 676080
+// Test Base64.IsUnpaddedBase64String(block#676082) covers block 676082
+// Extracting the test for Base64.IsUnpaddedBase64String(block#676082) from the counterexample...
 method {:test} test10() {
 var d0 : string := "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 var r0 := Base64.IsUnpaddedBase64String(d0);
 }
-// Test Base64.IndexToChar(block#706857) covers block 706842
-// Test Base64.IndexToChar(block#706857) covers block 706844
-// Test Base64.IndexToChar(block#706857) covers block 706845
-// Test Base64.IndexToChar(block#706857) covers block 706857
-// Extracting the test for Base64.IndexToChar(block#706857) from the counterexample...
+// Test Base64.IndexToChar(block#677764) covers block 677749
+// Test Base64.IndexToChar(block#677764) covers block 677751
+// Test Base64.IndexToChar(block#677764) covers block 677752
+// Test Base64.IndexToChar(block#677764) covers block 677764
+// Extracting the test for Base64.IndexToChar(block#677764) from the counterexample...
 method {:test} test11() {
 var r0 := Base64.IndexToChar((62 as Base64.index));
 expect Base64.IsBase64Char(r0);
 }
-// Test Base64.IndexToChar(block#706856) covers block 706842
-// Test Base64.IndexToChar(block#706856) covers block 706844
-// Test Base64.IndexToChar(block#706856) covers block 706846
-// Test Base64.IndexToChar(block#706856) covers block 706848
-// Test Base64.IndexToChar(block#706856) covers block 706851
-// Test Base64.IndexToChar(block#706856) covers block 706853
-// Test Base64.IndexToChar(block#706856) covers block 706856
-// Extracting the test for Base64.IndexToChar(block#706856) from the counterexample...
+// Test Base64.IndexToChar(block#677763) covers block 677749
+// Test Base64.IndexToChar(block#677763) covers block 677751
+// Test Base64.IndexToChar(block#677763) covers block 677753
+// Test Base64.IndexToChar(block#677763) covers block 677755
+// Test Base64.IndexToChar(block#677763) covers block 677758
+// Test Base64.IndexToChar(block#677763) covers block 677760
+// Test Base64.IndexToChar(block#677763) covers block 677763
+// Extracting the test for Base64.IndexToChar(block#677763) from the counterexample...
 method {:test} test12() {
 var r0 := Base64.IndexToChar((25 as Base64.index));
 expect Base64.IsBase64Char(r0);
 }
-// Test Base64.IndexToChar(block#706855) covers block 706842
-// Test Base64.IndexToChar(block#706855) covers block 706844
-// Test Base64.IndexToChar(block#706855) covers block 706846
-// Test Base64.IndexToChar(block#706855) covers block 706848
-// Test Base64.IndexToChar(block#706855) covers block 706851
-// Test Base64.IndexToChar(block#706855) covers block 706852
-// Test Base64.IndexToChar(block#706855) covers block 706855
-// Extracting the test for Base64.IndexToChar(block#706855) from the counterexample...
+// Test Base64.IndexToChar(block#677762) covers block 677749
+// Test Base64.IndexToChar(block#677762) covers block 677751
+// Test Base64.IndexToChar(block#677762) covers block 677753
+// Test Base64.IndexToChar(block#677762) covers block 677755
+// Test Base64.IndexToChar(block#677762) covers block 677758
+// Test Base64.IndexToChar(block#677762) covers block 677759
+// Test Base64.IndexToChar(block#677762) covers block 677762
+// Extracting the test for Base64.IndexToChar(block#677762) from the counterexample...
 method {:test} test13() {
 var r0 := Base64.IndexToChar((38 as Base64.index));
 expect Base64.IsBase64Char(r0);
 }
-// Test Base64.IndexToChar(block#706850) covers block 706842
-// Test Base64.IndexToChar(block#706850) covers block 706844
-// Test Base64.IndexToChar(block#706850) covers block 706846
-// Test Base64.IndexToChar(block#706850) covers block 706847
-// Test Base64.IndexToChar(block#706850) covers block 706850
-// Extracting the test for Base64.IndexToChar(block#706850) from the counterexample...
+// Test Base64.IndexToChar(block#677757) covers block 677749
+// Test Base64.IndexToChar(block#677757) covers block 677751
+// Test Base64.IndexToChar(block#677757) covers block 677753
+// Test Base64.IndexToChar(block#677757) covers block 677754
+// Test Base64.IndexToChar(block#677757) covers block 677757
+// Extracting the test for Base64.IndexToChar(block#677757) from the counterexample...
 method {:test} test14() {
 var r0 := Base64.IndexToChar((52 as Base64.index));
 expect Base64.IsBase64Char(r0);
 }
-// Test Base64.IndexToChar(block#706843) covers block 706842
-// Test Base64.IndexToChar(block#706843) covers block 706843
-// Extracting the test for Base64.IndexToChar(block#706843) from the counterexample...
+// Test Base64.IndexToChar(block#677750) covers block 677749
+// Test Base64.IndexToChar(block#677750) covers block 677750
+// Extracting the test for Base64.IndexToChar(block#677750) from the counterexample...
 method {:test} test15() {
 var r0 := Base64.IndexToChar((63 as Base64.index));
 expect Base64.IsBase64Char(r0);
 }
-// Test Base64.CharToIndex(block#708706) covers block 708691
-// Test Base64.CharToIndex(block#708706) covers block 708693
-// Test Base64.CharToIndex(block#708706) covers block 708694
-// Test Base64.CharToIndex(block#708706) covers block 708706
-// Extracting the test for Base64.CharToIndex(block#708706) from the counterexample...
+// Test Base64.CharToIndex(block#679613) covers block 679598
+// Test Base64.CharToIndex(block#679613) covers block 679600
+// Test Base64.CharToIndex(block#679613) covers block 679601
+// Test Base64.CharToIndex(block#679613) covers block 679613
+// Extracting the test for Base64.CharToIndex(block#679613) from the counterexample...
 method {:test} test16() {
+expect Base64.IsBase64Char('+'), "Test does not meet preconditions and should be removed";
 var r0 := Base64.CharToIndex('+');
 expect Base64.IndexToChar(r0) == '+';
 }
-// Test Base64.CharToIndex(block#708705) covers block 708691
-// Test Base64.CharToIndex(block#708705) covers block 708693
-// Test Base64.CharToIndex(block#708705) covers block 708695
-// Test Base64.CharToIndex(block#708705) covers block 708696
-// Test Base64.CharToIndex(block#708705) covers block 708700
-// Test Base64.CharToIndex(block#708705) covers block 708702
-// Test Base64.CharToIndex(block#708705) covers block 708705
-// Extracting the test for Base64.CharToIndex(block#708705) from the counterexample...
+// Test Base64.CharToIndex(block#679612) covers block 679598
+// Test Base64.CharToIndex(block#679612) covers block 679600
+// Test Base64.CharToIndex(block#679612) covers block 679602
+// Test Base64.CharToIndex(block#679612) covers block 679603
+// Test Base64.CharToIndex(block#679612) covers block 679607
+// Test Base64.CharToIndex(block#679612) covers block 679609
+// Test Base64.CharToIndex(block#679612) covers block 679612
+// Extracting the test for Base64.CharToIndex(block#679612) from the counterexample...
 method {:test} test17() {
-var r0 := Base64.CharToIndex('P');
-expect Base64.IndexToChar(r0) == 'P';
+expect Base64.IsBase64Char('K'), "Test does not meet preconditions and should be removed";
+var r0 := Base64.CharToIndex('K');
+expect Base64.IndexToChar(r0) == 'K';
 }
-// Test Base64.CharToIndex(block#708704) covers block 708691
-// Test Base64.CharToIndex(block#708704) covers block 708693
-// Test Base64.CharToIndex(block#708704) covers block 708695
-// Test Base64.CharToIndex(block#708704) covers block 708696
-// Test Base64.CharToIndex(block#708704) covers block 708700
-// Test Base64.CharToIndex(block#708704) covers block 708701
-// Test Base64.CharToIndex(block#708704) covers block 708704
-// Extracting the test for Base64.CharToIndex(block#708704) from the counterexample...
+// Test Base64.CharToIndex(block#679611) covers block 679598
+// Test Base64.CharToIndex(block#679611) covers block 679600
+// Test Base64.CharToIndex(block#679611) covers block 679602
+// Test Base64.CharToIndex(block#679611) covers block 679603
+// Test Base64.CharToIndex(block#679611) covers block 679607
+// Test Base64.CharToIndex(block#679611) covers block 679608
+// Test Base64.CharToIndex(block#679611) covers block 679611
+// Extracting the test for Base64.CharToIndex(block#679611) from the counterexample...
 method {:test} test18() {
-var r0 := Base64.CharToIndex('g');
-expect Base64.IndexToChar(r0) == 'g';
+expect Base64.IsBase64Char('c'), "Test does not meet preconditions and should be removed";
+var r0 := Base64.CharToIndex('c');
+expect Base64.IndexToChar(r0) == 'c';
 }
-// Test Base64.CharToIndex(block#708699) covers block 708691
-// Test Base64.CharToIndex(block#708699) covers block 708693
-// Test Base64.CharToIndex(block#708699) covers block 708695
-// Test Base64.CharToIndex(block#708699) covers block 708696
-// Test Base64.CharToIndex(block#708699) covers block 708699
-// Extracting the test for Base64.CharToIndex(block#708699) from the counterexample...
+// Test Base64.CharToIndex(block#679606) covers block 679598
+// Test Base64.CharToIndex(block#679606) covers block 679600
+// Test Base64.CharToIndex(block#679606) covers block 679602
+// Test Base64.CharToIndex(block#679606) covers block 679603
+// Test Base64.CharToIndex(block#679606) covers block 679606
+// Extracting the test for Base64.CharToIndex(block#679606) from the counterexample...
 method {:test} test19() {
+expect Base64.IsBase64Char('8'), "Test does not meet preconditions and should be removed";
 var r0 := Base64.CharToIndex('8');
 expect Base64.IndexToChar(r0) == '8';
 }
-// No test can be generated for Base64.CharToIndex(block#708697) because the verifier suceeded.
-// Test Base64.CharToIndex(block#708692) covers block 708691
-// Test Base64.CharToIndex(block#708692) covers block 708692
-// Extracting the test for Base64.CharToIndex(block#708692) from the counterexample...
+// No test can be generated for Base64.CharToIndex(block#679604) because the verifier suceeded.
+// Test Base64.CharToIndex(block#679599) covers block 679598
+// Test Base64.CharToIndex(block#679599) covers block 679599
+// Extracting the test for Base64.CharToIndex(block#679599) from the counterexample...
 method {:test} test20() {
+expect Base64.IsBase64Char('/'), "Test does not meet preconditions and should be removed";
 var r0 := Base64.CharToIndex('/');
 expect Base64.IndexToChar(r0) == '/';
 }
-// Test Base64.UInt24ToSeq(block#711704) covers block 711704
-// Extracting the test for Base64.UInt24ToSeq(block#711704) from the counterexample...
+// Test Base64.UInt24ToSeq(block#682611) covers block 682611
+// Extracting the test for Base64.UInt24ToSeq(block#682611) from the counterexample...
 method {:test} test21() {
-var r0 := Base64.UInt24ToSeq((3313152 as Base64.uint24));
+var r0 := Base64.UInt24ToSeq((9698560 as Base64.uint24));
 expect |r0| == 3;
-expect r0[0] as Base64.uint24 * 65536 + r0[1] as Base64.uint24 * 256 + r0[2] as Base64.uint24 == (3313152 as Base64.uint24);
+expect r0[0] as Base64.uint24 * 65536 + r0[1] as Base64.uint24 * 256 + r0[2] as Base64.uint24 == (9698560 as Base64.uint24);
 }
-// Test Base64.SeqToUInt24(block#713085) covers block 713085
-// Extracting the test for Base64.SeqToUInt24(block#713085) from the counterexample...
+// Test Base64.SeqToUInt24(block#683992) covers block 683992
+// Extracting the test for Base64.SeqToUInt24(block#683992) from the counterexample...
 method {:test} test22() {
-var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (38 as StandardLibrary.UInt.uint8)];
+var d0 : seq<StandardLibrary.UInt.uint8> := [(38 as StandardLibrary.UInt.uint8), (39 as StandardLibrary.UInt.uint8), (246 as StandardLibrary.UInt.uint8)];
+expect |d0| == 3, "Test does not meet preconditions and should be removed";
 var r0 := Base64.SeqToUInt24(d0);
 expect Base64.UInt24ToSeq(r0) == d0;
 }
-// Test Base64.UInt24ToIndexSeq(block#716486) covers block 716486
-// Extracting the test for Base64.UInt24ToIndexSeq(block#716486) from the counterexample...
+// Test Base64.UInt24ToIndexSeq(block#687393) covers block 687393
+// Extracting the test for Base64.UInt24ToIndexSeq(block#687393) from the counterexample...
 method {:test} test23() {
-var r0 := Base64.UInt24ToIndexSeq((16232448 as Base64.uint24));
+var r0 := Base64.UInt24ToIndexSeq((12845056 as Base64.uint24));
 expect |r0| == 4;
-expect r0[0] as Base64.uint24 * 262144 + r0[1] as Base64.uint24 * 4096 + r0[2] as Base64.uint24 * 64 + r0[3] as Base64.uint24 == (16232448 as Base64.uint24);
+expect r0[0] as Base64.uint24 * 262144 + r0[1] as Base64.uint24 * 4096 + r0[2] as Base64.uint24 * 64 + r0[3] as Base64.uint24 == (12845056 as Base64.uint24);
 }
-// Test Base64.IndexSeqToUInt24(block#718271) covers block 718271
-// Extracting the test for Base64.IndexSeqToUInt24(block#718271) from the counterexample...
+// Test Base64.IndexSeqToUInt24(block#689178) covers block 689178
+// Extracting the test for Base64.IndexSeqToUInt24(block#689178) from the counterexample...
 method {:test} test24() {
-var d0 : seq<Base64.index> := [(0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (38 as Base64.index)];
+var d0 : seq<Base64.index> := [(0 as Base64.index), (0 as Base64.index), (38 as Base64.index), (39 as Base64.index)];
+expect |d0| == 4, "Test does not meet preconditions and should be removed";
 var r0 := Base64.IndexSeqToUInt24(d0);
 expect Base64.UInt24ToIndexSeq(r0) == d0;
 }
-// Test Base64.DecodeBlock(block#719729) covers block 719729
-// Extracting the test for Base64.DecodeBlock(block#719729) from the counterexample...
+// Test Base64.DecodeBlock(block#690636) covers block 690636
+// Extracting the test for Base64.DecodeBlock(block#690636) from the counterexample...
 method {:test} test25() {
-var d0 : seq<Base64.index> := [(59 as Base64.index), (53 as Base64.index), (11 as Base64.index), (9 as Base64.index)];
+var d0 : seq<Base64.index> := [(25 as Base64.index), (43 as Base64.index), (0 as Base64.index), (0 as Base64.index)];
+expect |d0| == 4, "Test does not meet preconditions and should be removed";
 var r0 := Base64.DecodeBlock(d0);
 expect |r0| == 3;
 expect Base64.UInt24ToIndexSeq(Base64.SeqToUInt24(r0)) == d0;
 }
-// Test Base64.EncodeBlock(block#720668) covers block 720668
-// Extracting the test for Base64.EncodeBlock(block#720668) from the counterexample...
+// Test Base64.EncodeBlock(block#691575) covers block 691575
+// Extracting the test for Base64.EncodeBlock(block#691575) from the counterexample...
 method {:test} test26() {
-var d0 : seq<StandardLibrary.UInt.uint8> := [(78 as StandardLibrary.UInt.uint8), (253 as StandardLibrary.UInt.uint8), (155 as StandardLibrary.UInt.uint8)];
+var d0 : seq<StandardLibrary.UInt.uint8> := [(43 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (192 as StandardLibrary.UInt.uint8)];
+expect |d0| == 3, "Test does not meet preconditions and should be removed";
 var r0 := Base64.EncodeBlock(d0);
 expect |r0| == 4;
 expect Base64.UInt24ToSeq(Base64.IndexSeqToUInt24(r0)) == d0;
 expect Base64.DecodeBlock(r0) == d0;
 }
-// Test Base64.DecodeRecursively(block#723014) covers block 723011
-// Test Base64.DecodeRecursively(block#723014) covers block 723013
-// Test Base64.DecodeRecursively(block#723014) covers block 723014
-// Extracting the test for Base64.DecodeRecursively(block#723014) from the counterexample...
+// Test Base64.DecodeRecursively(block#693921) covers block 693918
+// Test Base64.DecodeRecursively(block#693921) covers block 693920
+// Test Base64.DecodeRecursively(block#693921) covers block 693921
+// Extracting the test for Base64.DecodeRecursively(block#693921) from the counterexample...
 method {:test} test27() {
-var d0 : seq<Base64.index> := [(13 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (63 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index)];
+var d0 : seq<Base64.index> := [(56 as Base64.index), (32 as Base64.index), (0 as Base64.index), (0 as Base64.index), (47 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index)];
+expect |d0| % 4 == 0, "Test does not meet preconditions and should be removed";
 var r0 := Base64.DecodeRecursively(d0);
 expect |r0| == |d0| / 4 * 3;
 expect |r0| % 3 == 0;
 expect |r0| == 0 ==> |d0| == 0;
 expect |r0| != 0 ==> Base64.EncodeBlock(r0[..3]) == d0[..4];
 }
-// Test Base64.DecodeRecursively(block#723012) covers block 723011
-// Test Base64.DecodeRecursively(block#723012) covers block 723012
-// Extracting the test for Base64.DecodeRecursively(block#723012) from the counterexample...
+// Test Base64.DecodeRecursively(block#693919) covers block 693918
+// Test Base64.DecodeRecursively(block#693919) covers block 693919
+// Extracting the test for Base64.DecodeRecursively(block#693919) from the counterexample...
 method {:test} test28() {
 var d0 : seq<Base64.index> := [];
+expect |d0| % 4 == 0, "Test does not meet preconditions and should be removed";
 var r0 := Base64.DecodeRecursively(d0);
 expect |r0| == |d0| / 4 * 3;
 expect |r0| % 3 == 0;
 expect |r0| == 0 ==> |d0| == 0;
 expect |r0| != 0 ==> Base64.EncodeBlock(r0[..3]) == d0[..4];
 }
-// Test Base64.EncodeRecursively(block#724500) covers block 724497
-// Test Base64.EncodeRecursively(block#724500) covers block 724499
-// Test Base64.EncodeRecursively(block#724500) covers block 724500
-// Extracting the test for Base64.EncodeRecursively(block#724500) from the counterexample...
+// Test Base64.EncodeRecursively(block#695407) covers block 695404
+// Test Base64.EncodeRecursively(block#695407) covers block 695406
+// Test Base64.EncodeRecursively(block#695407) covers block 695407
+// Extracting the test for Base64.EncodeRecursively(block#695407) from the counterexample...
 method {:test} test29() {
-var d0 : seq<StandardLibrary.UInt.uint8> := [(144 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (80 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
+var d0 : seq<StandardLibrary.UInt.uint8> := [(124 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (36 as StandardLibrary.UInt.uint8)];
+expect |d0| % 3 == 0, "Test does not meet preconditions and should be removed";
 var r0 := Base64.EncodeRecursively(d0);
 expect |r0| == |d0| / 3 * 4;
 expect |r0| % 4 == 0;
 expect Base64.DecodeRecursively(r0) == d0;
 }
-// Test Base64.EncodeRecursively(block#724498) covers block 724497
-// Test Base64.EncodeRecursively(block#724498) covers block 724498
-// Extracting the test for Base64.EncodeRecursively(block#724498) from the counterexample...
+// Test Base64.EncodeRecursively(block#695405) covers block 695404
+// Test Base64.EncodeRecursively(block#695405) covers block 695405
+// Extracting the test for Base64.EncodeRecursively(block#695405) from the counterexample...
 method {:test} test30() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [];
+expect |d0| % 3 == 0, "Test does not meet preconditions and should be removed";
 var r0 := Base64.EncodeRecursively(d0);
 expect |r0| == |d0| / 3 * 4;
 expect |r0| % 4 == 0;
 expect Base64.DecodeRecursively(r0) == d0;
 }
-// Test Base64.FromCharsToIndices(block#728029) covers block 728018
-// Test Base64.FromCharsToIndices(block#728029) covers block 728029
-// Extracting the test for Base64.FromCharsToIndices(block#728029) from the counterexample...
+// Test Base64.FromCharsToIndices(block#698936) covers block 698925
+// Test Base64.FromCharsToIndices(block#698936) covers block 698936
+// Extracting the test for Base64.FromCharsToIndices(block#698936) from the counterexample...
 method {:test} test31() {
 var d0 : seq<char> := "a";
 var r0 := Base64.FromCharsToIndices(d0);
 expect |r0| == |d0|;
 }
-// No test can be generated for Base64.FromCharsToIndices(block#728027) because the verifier suceeded.
-// No test can be generated for Base64.FromCharsToIndices(block#728026) because the verifier suceeded.
-// Test Base64.FromCharsToIndices(block#728025) covers block 728018
-// Test Base64.FromCharsToIndices(block#728025) covers block 728019
-// Test Base64.FromCharsToIndices(block#728025) covers block 728020
-// Test Base64.FromCharsToIndices(block#728025) covers block 728021
-// Test Base64.FromCharsToIndices(block#728025) covers block 728025
-// Extracting the test for Base64.FromCharsToIndices(block#728025) from the counterexample...
-// Test for Base64.FromCharsToIndices(block#728025) matches a test previously generated for Base64.FromCharsToIndices(block#728029).
-// Test Base64.FromCharsToIndices(block#728024) covers block 728018
-// Test Base64.FromCharsToIndices(block#728024) covers block 728019
-// Test Base64.FromCharsToIndices(block#728024) covers block 728020
-// Test Base64.FromCharsToIndices(block#728024) covers block 728021
-// Test Base64.FromCharsToIndices(block#728024) covers block 728024
-// Extracting the test for Base64.FromCharsToIndices(block#728024) from the counterexample...
+// No test can be generated for Base64.FromCharsToIndices(block#698934) because the verifier suceeded.
+// No test can be generated for Base64.FromCharsToIndices(block#698933) because the verifier suceeded.
+// Test Base64.FromCharsToIndices(block#698932) covers block 698925
+// Test Base64.FromCharsToIndices(block#698932) covers block 698926
+// Test Base64.FromCharsToIndices(block#698932) covers block 698927
+// Test Base64.FromCharsToIndices(block#698932) covers block 698928
+// Test Base64.FromCharsToIndices(block#698932) covers block 698932
+// Extracting the test for Base64.FromCharsToIndices(block#698932) from the counterexample...
+// Test for Base64.FromCharsToIndices(block#698932) matches a test previously generated for Base64.FromCharsToIndices(block#698936).
+// Test Base64.FromCharsToIndices(block#698931) covers block 698925
+// Test Base64.FromCharsToIndices(block#698931) covers block 698926
+// Test Base64.FromCharsToIndices(block#698931) covers block 698927
+// Test Base64.FromCharsToIndices(block#698931) covers block 698928
+// Test Base64.FromCharsToIndices(block#698931) covers block 698931
+// Extracting the test for Base64.FromCharsToIndices(block#698931) from the counterexample...
 method {:test} test33() {
 var d0 : seq<char> := "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa7";
 var r0 := Base64.FromCharsToIndices(d0);
 expect |r0| == |d0|;
 }
-// Test Base64.FromCharsToIndices(block#728022) covers block 728018
-// Test Base64.FromCharsToIndices(block#728022) covers block 728019
-// Test Base64.FromCharsToIndices(block#728022) covers block 728020
-// Test Base64.FromCharsToIndices(block#728022) covers block 728022
-// Extracting the test for Base64.FromCharsToIndices(block#728022) from the counterexample...
-// Test for Base64.FromCharsToIndices(block#728022) matches a test previously generated for Base64.FromCharsToIndices(block#728029).
-// Test Base64.FromIndicesToChars(block#730489) covers block 730478
-// Test Base64.FromIndicesToChars(block#730489) covers block 730489
-// Extracting the test for Base64.FromIndicesToChars(block#730489) from the counterexample...
+// Test Base64.FromCharsToIndices(block#698929) covers block 698925
+// Test Base64.FromCharsToIndices(block#698929) covers block 698926
+// Test Base64.FromCharsToIndices(block#698929) covers block 698927
+// Test Base64.FromCharsToIndices(block#698929) covers block 698929
+// Extracting the test for Base64.FromCharsToIndices(block#698929) from the counterexample...
+// Test for Base64.FromCharsToIndices(block#698929) matches a test previously generated for Base64.FromCharsToIndices(block#698936).
+// Test Base64.FromIndicesToChars(block#701396) covers block 701385
+// Test Base64.FromIndicesToChars(block#701396) covers block 701396
+// Extracting the test for Base64.FromIndicesToChars(block#701396) from the counterexample...
 method {:test} test35() {
 var d0 : seq<Base64.index> := [(0 as Base64.index)];
 var r0 := Base64.FromIndicesToChars(d0);
 expect |r0| == |d0|;
 expect Base64.FromCharsToIndices(r0) == d0;
 }
-// No test can be generated for Base64.FromIndicesToChars(block#730487) because the verifier suceeded.
-// No test can be generated for Base64.FromIndicesToChars(block#730486) because the verifier suceeded.
-// Test Base64.FromIndicesToChars(block#730485) covers block 730478
-// Test Base64.FromIndicesToChars(block#730485) covers block 730479
-// Test Base64.FromIndicesToChars(block#730485) covers block 730480
-// Test Base64.FromIndicesToChars(block#730485) covers block 730481
-// Test Base64.FromIndicesToChars(block#730485) covers block 730485
-// Extracting the test for Base64.FromIndicesToChars(block#730485) from the counterexample...
-// Test for Base64.FromIndicesToChars(block#730485) matches a test previously generated for Base64.FromIndicesToChars(block#730489).
-// Test Base64.FromIndicesToChars(block#730484) covers block 730478
-// Test Base64.FromIndicesToChars(block#730484) covers block 730479
-// Test Base64.FromIndicesToChars(block#730484) covers block 730480
-// Test Base64.FromIndicesToChars(block#730484) covers block 730481
-// Test Base64.FromIndicesToChars(block#730484) covers block 730484
-// Extracting the test for Base64.FromIndicesToChars(block#730484) from the counterexample...
+// No test can be generated for Base64.FromIndicesToChars(block#701394) because the verifier suceeded.
+// No test can be generated for Base64.FromIndicesToChars(block#701393) because the verifier suceeded.
+// Test Base64.FromIndicesToChars(block#701392) covers block 701385
+// Test Base64.FromIndicesToChars(block#701392) covers block 701386
+// Test Base64.FromIndicesToChars(block#701392) covers block 701387
+// Test Base64.FromIndicesToChars(block#701392) covers block 701388
+// Test Base64.FromIndicesToChars(block#701392) covers block 701392
+// Extracting the test for Base64.FromIndicesToChars(block#701392) from the counterexample...
+// Test for Base64.FromIndicesToChars(block#701392) matches a test previously generated for Base64.FromIndicesToChars(block#701396).
+// Test Base64.FromIndicesToChars(block#701391) covers block 701385
+// Test Base64.FromIndicesToChars(block#701391) covers block 701386
+// Test Base64.FromIndicesToChars(block#701391) covers block 701387
+// Test Base64.FromIndicesToChars(block#701391) covers block 701388
+// Test Base64.FromIndicesToChars(block#701391) covers block 701391
+// Extracting the test for Base64.FromIndicesToChars(block#701391) from the counterexample...
 method {:test} test37() {
-var d0 : seq<Base64.index> := [(0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (62 as Base64.index)];
+var d0 : seq<Base64.index> := [(0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (0 as Base64.index), (62 as Base64.index)];
 var r0 := Base64.FromIndicesToChars(d0);
 expect |r0| == |d0|;
 expect Base64.FromCharsToIndices(r0) == d0;
 }
-// Test Base64.FromIndicesToChars(block#730482) covers block 730478
-// Test Base64.FromIndicesToChars(block#730482) covers block 730479
-// Test Base64.FromIndicesToChars(block#730482) covers block 730480
-// Test Base64.FromIndicesToChars(block#730482) covers block 730482
-// Extracting the test for Base64.FromIndicesToChars(block#730482) from the counterexample...
-// Test for Base64.FromIndicesToChars(block#730482) matches a test previously generated for Base64.FromIndicesToChars(block#730489).
-// Test Base64.DecodeUnpadded(block#732386) covers block 732386
-// Extracting the test for Base64.DecodeUnpadded(block#732386) from the counterexample...
+// Test Base64.FromIndicesToChars(block#701389) covers block 701385
+// Test Base64.FromIndicesToChars(block#701389) covers block 701386
+// Test Base64.FromIndicesToChars(block#701389) covers block 701387
+// Test Base64.FromIndicesToChars(block#701389) covers block 701389
+// Extracting the test for Base64.FromIndicesToChars(block#701389) from the counterexample...
+// Test for Base64.FromIndicesToChars(block#701389) matches a test previously generated for Base64.FromIndicesToChars(block#701396).
+// Test Base64.DecodeUnpadded(block#703293) covers block 703293
+// Extracting the test for Base64.DecodeUnpadded(block#703293) from the counterexample...
 method {:test} test39() {
 var d0 : seq<char> := "aaaaaaaaaaaaaaaaaaaaaaaa";
+expect Base64.IsUnpaddedBase64String(d0), "Test does not meet preconditions and should be removed";
 var r0 := Base64.DecodeUnpadded(d0);
 expect |r0| == |d0| / 4 * 3;
 expect |r0| % 3 == 0;
 }
-// Test Base64.EncodeUnpadded(block#733543) covers block 733543
-// Extracting the test for Base64.EncodeUnpadded(block#733543) from the counterexample...
+// Test Base64.EncodeUnpadded(block#704450) covers block 704450
+// Extracting the test for Base64.EncodeUnpadded(block#704450) from the counterexample...
 method {:test} test40() {
-var d0 : seq<StandardLibrary.UInt.uint8> := [(196 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
+var d0 : seq<StandardLibrary.UInt.uint8> := [(0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8), (0 as StandardLibrary.UInt.uint8)];
+expect |d0| % 3 == 0, "Test does not meet preconditions and should be removed";
 var r0 := Base64.EncodeUnpadded(d0);
 expect Base64.IsUnpaddedBase64String(r0);
 expect |r0| == |d0| / 3 * 4;
 expect Base64.DecodeUnpadded(r0) == d0;
 expect |r0| % 4 == 0;
 }
-// Test Base64.Is1Padding(block#739177) covers block 739162
-// Test Base64.Is1Padding(block#739177) covers block 739163
-// Test Base64.Is1Padding(block#739177) covers block 739166
-// Test Base64.Is1Padding(block#739177) covers block 739169
-// Test Base64.Is1Padding(block#739177) covers block 739172
-// Test Base64.Is1Padding(block#739177) covers block 739175
-// Test Base64.Is1Padding(block#739177) covers block 739177
-// Extracting the test for Base64.Is1Padding(block#739177) from the counterexample...
+// Test Base64.Is1Padding(block#710084) covers block 710069
+// Test Base64.Is1Padding(block#710084) covers block 710070
+// Test Base64.Is1Padding(block#710084) covers block 710073
+// Test Base64.Is1Padding(block#710084) covers block 710076
+// Test Base64.Is1Padding(block#710084) covers block 710079
+// Test Base64.Is1Padding(block#710084) covers block 710082
+// Test Base64.Is1Padding(block#710084) covers block 710084
+// Extracting the test for Base64.Is1Padding(block#710084) from the counterexample...
 method {:test} test41() {
 var d0 : seq<char> := "++4=";
 var r0 := Base64.Is1Padding(d0);
 }
-// Test Base64.Is1Padding(block#739176) covers block 739162
-// Test Base64.Is1Padding(block#739176) covers block 739163
-// Test Base64.Is1Padding(block#739176) covers block 739166
-// Test Base64.Is1Padding(block#739176) covers block 739169
-// Test Base64.Is1Padding(block#739176) covers block 739172
-// Test Base64.Is1Padding(block#739176) covers block 739176
-// Extracting the test for Base64.Is1Padding(block#739176) from the counterexample...
+// Test Base64.Is1Padding(block#710083) covers block 710069
+// Test Base64.Is1Padding(block#710083) covers block 710070
+// Test Base64.Is1Padding(block#710083) covers block 710073
+// Test Base64.Is1Padding(block#710083) covers block 710076
+// Test Base64.Is1Padding(block#710083) covers block 710079
+// Test Base64.Is1Padding(block#710083) covers block 710083
+// Extracting the test for Base64.Is1Padding(block#710083) from the counterexample...
 method {:test} test42() {
 var d0 : seq<char> := "++1a";
 var r0 := Base64.Is1Padding(d0);
 }
-// Test Base64.Is1Padding(block#739173) covers block 739162
-// Test Base64.Is1Padding(block#739173) covers block 739163
-// Test Base64.Is1Padding(block#739173) covers block 739166
-// Test Base64.Is1Padding(block#739173) covers block 739169
-// Test Base64.Is1Padding(block#739173) covers block 739173
-// Extracting the test for Base64.Is1Padding(block#739173) from the counterexample...
+// Test Base64.Is1Padding(block#710080) covers block 710069
+// Test Base64.Is1Padding(block#710080) covers block 710070
+// Test Base64.Is1Padding(block#710080) covers block 710073
+// Test Base64.Is1Padding(block#710080) covers block 710076
+// Test Base64.Is1Padding(block#710080) covers block 710080
+// Extracting the test for Base64.Is1Padding(block#710080) from the counterexample...
 method {:test} test43() {
 var d0 : seq<char> := "++&a";
 var r0 := Base64.Is1Padding(d0);
 }
-// Test Base64.Is1Padding(block#739170) covers block 739162
-// Test Base64.Is1Padding(block#739170) covers block 739163
-// Test Base64.Is1Padding(block#739170) covers block 739166
-// Test Base64.Is1Padding(block#739170) covers block 739170
-// Extracting the test for Base64.Is1Padding(block#739170) from the counterexample...
+// Test Base64.Is1Padding(block#710077) covers block 710069
+// Test Base64.Is1Padding(block#710077) covers block 710070
+// Test Base64.Is1Padding(block#710077) covers block 710073
+// Test Base64.Is1Padding(block#710077) covers block 710077
+// Extracting the test for Base64.Is1Padding(block#710077) from the counterexample...
 method {:test} test44() {
 var d0 : seq<char> := "+&aa";
 var r0 := Base64.Is1Padding(d0);
 }
-// Test Base64.Is1Padding(block#739167) covers block 739162
-// Test Base64.Is1Padding(block#739167) covers block 739163
-// Test Base64.Is1Padding(block#739167) covers block 739167
-// Extracting the test for Base64.Is1Padding(block#739167) from the counterexample...
+// Test Base64.Is1Padding(block#710074) covers block 710069
+// Test Base64.Is1Padding(block#710074) covers block 710070
+// Test Base64.Is1Padding(block#710074) covers block 710074
+// Extracting the test for Base64.Is1Padding(block#710074) from the counterexample...
 method {:test} test45() {
 var d0 : seq<char> := "&aaa";
 var r0 := Base64.Is1Padding(d0);
 }
-// Test Base64.Is1Padding(block#739164) covers block 739162
-// Test Base64.Is1Padding(block#739164) covers block 739164
-// Extracting the test for Base64.Is1Padding(block#739164) from the counterexample...
+// Test Base64.Is1Padding(block#710071) covers block 710069
+// Test Base64.Is1Padding(block#710071) covers block 710071
+// Extracting the test for Base64.Is1Padding(block#710071) from the counterexample...
 method {:test} test46() {
 var d0 : seq<char> := "aaaaa";
 var r0 := Base64.Is1Padding(d0);
 }
-// Test Base64.Decode1Padding(block#742144) covers block 742144
-// Extracting the test for Base64.Decode1Padding(block#742144) from the counterexample...
+// Test Base64.Decode1Padding(block#713051) covers block 713051
+// Extracting the test for Base64.Decode1Padding(block#713051) from the counterexample...
 method {:test} test47() {
-var d0 : seq<char> := "++0=";
+var d0 : seq<char> := "++8=";
+expect Base64.Is1Padding(d0), "Test does not meet preconditions and should be removed";
 var r0 := Base64.Decode1Padding(d0);
 expect |r0| == 2;
 }
-// Test Base64.Encode1Padding(block#745723) covers block 745723
-// Extracting the test for Base64.Encode1Padding(block#745723) from the counterexample...
+// Test Base64.Encode1Padding(block#716630) covers block 716630
+// Extracting the test for Base64.Encode1Padding(block#716630) from the counterexample...
 method {:test} test48() {
-var d0 : seq<StandardLibrary.UInt.uint8> := [(251 as StandardLibrary.UInt.uint8), (238 as StandardLibrary.UInt.uint8)];
+var d0 : seq<StandardLibrary.UInt.uint8> := [(251 as StandardLibrary.UInt.uint8), (239 as StandardLibrary.UInt.uint8)];
+expect |d0| == 2, "Test does not meet preconditions and should be removed";
 var r0 := Base64.Encode1Padding(d0);
 expect Base64.Is1Padding(r0);
 expect Base64.Decode1Padding(r0) == d0;
 expect |r0| % 4 == 0;
 }
-// Test Base64.Is2Padding(block#751120) covers block 751105
-// Test Base64.Is2Padding(block#751120) covers block 751106
-// Test Base64.Is2Padding(block#751120) covers block 751109
-// Test Base64.Is2Padding(block#751120) covers block 751112
-// Test Base64.Is2Padding(block#751120) covers block 751115
-// Test Base64.Is2Padding(block#751120) covers block 751118
-// Test Base64.Is2Padding(block#751120) covers block 751120
-// Extracting the test for Base64.Is2Padding(block#751120) from the counterexample...
+// Test Base64.Is2Padding(block#722027) covers block 722012
+// Test Base64.Is2Padding(block#722027) covers block 722013
+// Test Base64.Is2Padding(block#722027) covers block 722016
+// Test Base64.Is2Padding(block#722027) covers block 722019
+// Test Base64.Is2Padding(block#722027) covers block 722022
+// Test Base64.Is2Padding(block#722027) covers block 722025
+// Test Base64.Is2Padding(block#722027) covers block 722027
+// Extracting the test for Base64.Is2Padding(block#722027) from the counterexample...
 method {:test} test49() {
 var d0 : seq<char> := "+Q==";
 var r0 := Base64.Is2Padding(d0);
 }
-// Test Base64.Is2Padding(block#751119) covers block 751105
-// Test Base64.Is2Padding(block#751119) covers block 751106
-// Test Base64.Is2Padding(block#751119) covers block 751109
-// Test Base64.Is2Padding(block#751119) covers block 751112
-// Test Base64.Is2Padding(block#751119) covers block 751115
-// Test Base64.Is2Padding(block#751119) covers block 751119
-// Extracting the test for Base64.Is2Padding(block#751119) from the counterexample...
+// Test Base64.Is2Padding(block#722026) covers block 722012
+// Test Base64.Is2Padding(block#722026) covers block 722013
+// Test Base64.Is2Padding(block#722026) covers block 722016
+// Test Base64.Is2Padding(block#722026) covers block 722019
+// Test Base64.Is2Padding(block#722026) covers block 722022
+// Test Base64.Is2Padding(block#722026) covers block 722026
+// Extracting the test for Base64.Is2Padding(block#722026) from the counterexample...
 method {:test} test50() {
-var d0 : seq<char> := "+QBa";
+var d0 : seq<char> := "+ABa";
 var r0 := Base64.Is2Padding(d0);
 }
-// Test Base64.Is2Padding(block#751116) covers block 751105
-// Test Base64.Is2Padding(block#751116) covers block 751106
-// Test Base64.Is2Padding(block#751116) covers block 751109
-// Test Base64.Is2Padding(block#751116) covers block 751112
-// Test Base64.Is2Padding(block#751116) covers block 751116
-// Extracting the test for Base64.Is2Padding(block#751116) from the counterexample...
+// Test Base64.Is2Padding(block#722023) covers block 722012
+// Test Base64.Is2Padding(block#722023) covers block 722013
+// Test Base64.Is2Padding(block#722023) covers block 722016
+// Test Base64.Is2Padding(block#722023) covers block 722019
+// Test Base64.Is2Padding(block#722023) covers block 722023
+// Extracting the test for Base64.Is2Padding(block#722023) from the counterexample...
 method {:test} test51() {
 var d0 : seq<char> := "+5aa";
 var r0 := Base64.Is2Padding(d0);
 }
-// Test Base64.Is2Padding(block#751113) covers block 751105
-// Test Base64.Is2Padding(block#751113) covers block 751106
-// Test Base64.Is2Padding(block#751113) covers block 751109
-// Test Base64.Is2Padding(block#751113) covers block 751113
-// Extracting the test for Base64.Is2Padding(block#751113) from the counterexample...
+// Test Base64.Is2Padding(block#722020) covers block 722012
+// Test Base64.Is2Padding(block#722020) covers block 722013
+// Test Base64.Is2Padding(block#722020) covers block 722016
+// Test Base64.Is2Padding(block#722020) covers block 722020
+// Extracting the test for Base64.Is2Padding(block#722020) from the counterexample...
 method {:test} test52() {
 var d0 : seq<char> := "+&aa";
 var r0 := Base64.Is2Padding(d0);
 }
-// Test Base64.Is2Padding(block#751110) covers block 751105
-// Test Base64.Is2Padding(block#751110) covers block 751106
-// Test Base64.Is2Padding(block#751110) covers block 751110
-// Extracting the test for Base64.Is2Padding(block#751110) from the counterexample...
+// Test Base64.Is2Padding(block#722017) covers block 722012
+// Test Base64.Is2Padding(block#722017) covers block 722013
+// Test Base64.Is2Padding(block#722017) covers block 722017
+// Extracting the test for Base64.Is2Padding(block#722017) from the counterexample...
 method {:test} test53() {
 var d0 : seq<char> := "&aaa";
 var r0 := Base64.Is2Padding(d0);
 }
-// Test Base64.Is2Padding(block#751107) covers block 751105
-// Test Base64.Is2Padding(block#751107) covers block 751107
-// Extracting the test for Base64.Is2Padding(block#751107) from the counterexample...
+// Test Base64.Is2Padding(block#722014) covers block 722012
+// Test Base64.Is2Padding(block#722014) covers block 722014
+// Extracting the test for Base64.Is2Padding(block#722014) from the counterexample...
 method {:test} test54() {
 var d0 : seq<char> := "aaaaa";
 var r0 := Base64.Is2Padding(d0);
 }
-// Test Base64.Decode2Padding(block#753573) covers block 753573
-// Extracting the test for Base64.Decode2Padding(block#753573) from the counterexample...
+// Test Base64.Decode2Padding(block#724480) covers block 724480
+// Extracting the test for Base64.Decode2Padding(block#724480) from the counterexample...
 method {:test} test55() {
-var d0 : seq<char> := "+A==";
+var d0 : seq<char> := "+Q==";
+expect Base64.Is2Padding(d0), "Test does not meet preconditions and should be removed";
 var r0 := Base64.Decode2Padding(d0);
 expect |r0| == 1;
 }
-// Test Base64.Encode2Padding(block#756598) covers block 756598
-// Extracting the test for Base64.Encode2Padding(block#756598) from the counterexample...
+// Test Base64.Encode2Padding(block#727505) covers block 727505
+// Extracting the test for Base64.Encode2Padding(block#727505) from the counterexample...
 method {:test} test56() {
-var d0 : seq<StandardLibrary.UInt.uint8> := [(249 as StandardLibrary.UInt.uint8)];
+var d0 : seq<StandardLibrary.UInt.uint8> := [(248 as StandardLibrary.UInt.uint8)];
+expect |d0| == 1, "Test does not meet preconditions and should be removed";
 var r0 := Base64.Encode2Padding(d0);
 expect Base64.Is2Padding(r0);
 expect Base64.Decode2Padding(r0) == d0;
 expect |r0| % 4 == 0;
 }
-// Test Base64.IsBase64String(block#760263) covers block 760254
-// Test Base64.IsBase64String(block#760263) covers block 760255
-// Test Base64.IsBase64String(block#760263) covers block 760256
-// Test Base64.IsBase64String(block#760263) covers block 760257
-// Test Base64.IsBase64String(block#760263) covers block 760258
-// Test Base64.IsBase64String(block#760263) covers block 760263
-// Extracting the test for Base64.IsBase64String(block#760263) from the counterexample...
+// Test Base64.IsBase64String(block#731170) covers block 731161
+// Test Base64.IsBase64String(block#731170) covers block 731162
+// Test Base64.IsBase64String(block#731170) covers block 731163
+// Test Base64.IsBase64String(block#731170) covers block 731164
+// Test Base64.IsBase64String(block#731170) covers block 731165
+// Test Base64.IsBase64String(block#731170) covers block 731170
+// Extracting the test for Base64.IsBase64String(block#731170) from the counterexample...
 method {:test} test57() {
-var d0 : string := "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\u0014aa\r";
+var d0 : string := "aaaaaaaa\u0014aaa";
 var r0 := Base64.IsBase64String(d0);
 }
-// Test Base64.IsBase64String(block#760262) covers block 760254
-// Test Base64.IsBase64String(block#760262) covers block 760262
-// Extracting the test for Base64.IsBase64String(block#760262) from the counterexample...
+// Test Base64.IsBase64String(block#731169) covers block 731161
+// Test Base64.IsBase64String(block#731169) covers block 731169
+// Extracting the test for Base64.IsBase64String(block#731169) from the counterexample...
 method {:test} test58() {
 var d0 : string := "a";
 var r0 := Base64.IsBase64String(d0);
 }
-// Test Base64.IsBase64String(block#760261) covers block 760254
-// Test Base64.IsBase64String(block#760261) covers block 760255
-// Test Base64.IsBase64String(block#760261) covers block 760261
-// Extracting the test for Base64.IsBase64String(block#760261) from the counterexample...
+// Test Base64.IsBase64String(block#731168) covers block 731161
+// Test Base64.IsBase64String(block#731168) covers block 731162
+// Test Base64.IsBase64String(block#731168) covers block 731168
+// Extracting the test for Base64.IsBase64String(block#731168) from the counterexample...
 method {:test} test59() {
-var d0 : string := "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+var d0 : string := "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 var r0 := Base64.IsBase64String(d0);
 }
-// Test Base64.IsBase64String(block#760260) covers block 760254
-// Test Base64.IsBase64String(block#760260) covers block 760255
-// Test Base64.IsBase64String(block#760260) covers block 760256
-// Test Base64.IsBase64String(block#760260) covers block 760260
-// Extracting the test for Base64.IsBase64String(block#760260) from the counterexample...
+// Test Base64.IsBase64String(block#731167) covers block 731161
+// Test Base64.IsBase64String(block#731167) covers block 731162
+// Test Base64.IsBase64String(block#731167) covers block 731163
+// Test Base64.IsBase64String(block#731167) covers block 731167
+// Extracting the test for Base64.IsBase64String(block#731167) from the counterexample...
 method {:test} test60() {
-var d0 : string := "a!aaa!aaa&aa";
+var d0 : string := "\u001Daaaa\u001Daaa\u0016aa";
 var r0 := Base64.IsBase64String(d0);
 }
-// Test Base64.IsBase64String(block#760259) covers block 760254
-// Test Base64.IsBase64String(block#760259) covers block 760255
-// Test Base64.IsBase64String(block#760259) covers block 760256
-// Test Base64.IsBase64String(block#760259) covers block 760257
-// Test Base64.IsBase64String(block#760259) covers block 760259
-// Extracting the test for Base64.IsBase64String(block#760259) from the counterexample...
+// Test Base64.IsBase64String(block#731166) covers block 731161
+// Test Base64.IsBase64String(block#731166) covers block 731162
+// Test Base64.IsBase64String(block#731166) covers block 731163
+// Test Base64.IsBase64String(block#731166) covers block 731164
+// Test Base64.IsBase64String(block#731166) covers block 731166
+// Extracting the test for Base64.IsBase64String(block#731166) from the counterexample...
 method {:test} test61() {
-var d0 : string := "aaaaaaaaaaaaaaaa++4=";
+var d0 : string := "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa++8=";
 var r0 := Base64.IsBase64String(d0);
 }
-// Test Base64.DecodeValid(block#764922) covers block 764915
-// Test Base64.DecodeValid(block#764922) covers block 764916
-// Test Base64.DecodeValid(block#764922) covers block 764922
-// Extracting the test for Base64.DecodeValid(block#764922) from the counterexample...
+// Test Base64.DecodeValid(block#735829) covers block 735822
+// Test Base64.DecodeValid(block#735829) covers block 735823
+// Test Base64.DecodeValid(block#735829) covers block 735829
+// Extracting the test for Base64.DecodeValid(block#735829) from the counterexample...
 method {:test} test62() {
 var d0 : seq<char> := "";
+expect Base64.IsBase64String(d0), "Test does not meet preconditions and should be removed";
 var r0 := Base64.DecodeValid(d0);
 }
-// Test Base64.DecodeValid(block#764921) covers block 764915
-// Test Base64.DecodeValid(block#764921) covers block 764917
-// Test Base64.DecodeValid(block#764921) covers block 764919
-// Test Base64.DecodeValid(block#764921) covers block 764921
-// Extracting the test for Base64.DecodeValid(block#764921) from the counterexample...
+// Test Base64.DecodeValid(block#735828) covers block 735822
+// Test Base64.DecodeValid(block#735828) covers block 735824
+// Test Base64.DecodeValid(block#735828) covers block 735826
+// Test Base64.DecodeValid(block#735828) covers block 735828
+// Extracting the test for Base64.DecodeValid(block#735828) from the counterexample...
 method {:test} test63() {
-var d0 : seq<char> := "++++++++aaaaaaaaaaaaaaaaaaaaaaaa+++a";
+var d0 : seq<char> := "++++++++aaaaaaaaaaaaaaaa+++a";
+expect Base64.IsBase64String(d0), "Test does not meet preconditions and should be removed";
 var r0 := Base64.DecodeValid(d0);
 }
-// Test Base64.DecodeValid(block#764920) covers block 764915
-// Test Base64.DecodeValid(block#764920) covers block 764917
-// Test Base64.DecodeValid(block#764920) covers block 764919
-// Test Base64.DecodeValid(block#764920) covers block 764920
-// Extracting the test for Base64.DecodeValid(block#764920) from the counterexample...
+// Test Base64.DecodeValid(block#735827) covers block 735822
+// Test Base64.DecodeValid(block#735827) covers block 735824
+// Test Base64.DecodeValid(block#735827) covers block 735826
+// Test Base64.DecodeValid(block#735827) covers block 735827
+// Extracting the test for Base64.DecodeValid(block#735827) from the counterexample...
 method {:test} test64() {
-var d0 : seq<char> := "+++++Q==";
+var d0 : seq<char> := "+++++A==";
+expect Base64.IsBase64String(d0), "Test does not meet preconditions and should be removed";
 var r0 := Base64.DecodeValid(d0);
 }
-// Test Base64.DecodeValid(block#764918) covers block 764915
-// Test Base64.DecodeValid(block#764918) covers block 764917
-// Test Base64.DecodeValid(block#764918) covers block 764918
-// Extracting the test for Base64.DecodeValid(block#764918) from the counterexample...
+// Test Base64.DecodeValid(block#735825) covers block 735822
+// Test Base64.DecodeValid(block#735825) covers block 735824
+// Test Base64.DecodeValid(block#735825) covers block 735825
+// Extracting the test for Base64.DecodeValid(block#735825) from the counterexample...
 method {:test} test65() {
-var d0 : seq<char> := "++++++8=";
+var d0 : seq<char> := "++++++0=";
+expect Base64.IsBase64String(d0), "Test does not meet preconditions and should be removed";
 var r0 := Base64.DecodeValid(d0);
 }
-// Test Base64.Decode(block#771057) covers block 771054
-// Test Base64.Decode(block#771057) covers block 771056
-// Test Base64.Decode(block#771057) covers block 771057
-// Extracting the test for Base64.Decode(block#771057) from the counterexample...
+// Test Base64.Decode(block#741964) covers block 741961
+// Test Base64.Decode(block#741964) covers block 741963
+// Test Base64.Decode(block#741964) covers block 741964
+// Extracting the test for Base64.Decode(block#741964) from the counterexample...
 method {:test} test66() {
 var d0 : seq<char> := "a";
 var r0 := Base64.Decode(d0);
 expect Base64.IsBase64String(d0) ==> r0.Success?;
 expect !Base64.IsBase64String(d0) ==> r0.Failure?;
 }
-// Test Base64.Decode(block#771055) covers block 771054
-// Test Base64.Decode(block#771055) covers block 771055
-// Extracting the test for Base64.Decode(block#771055) from the counterexample...
+// Test Base64.Decode(block#741962) covers block 741961
+// Test Base64.Decode(block#741962) covers block 741962
+// Extracting the test for Base64.Decode(block#741962) from the counterexample...
 method {:test} test67() {
 var d0 : seq<char> := "";
 var r0 := Base64.Decode(d0);
 expect Base64.IsBase64String(d0) ==> r0.Success?;
 expect !Base64.IsBase64String(d0) ==> r0.Failure?;
 }
-// Test Base64.Encode(block#775489) covers block 775484
-// Test Base64.Encode(block#775489) covers block 775485
-// Test Base64.Encode(block#775489) covers block 775489
-// Extracting the test for Base64.Encode(block#775489) from the counterexample...
+// Test Base64.Encode(block#746396) covers block 746391
+// Test Base64.Encode(block#746396) covers block 746392
+// Test Base64.Encode(block#746396) covers block 746396
+// Extracting the test for Base64.Encode(block#746396) from the counterexample...
 method {:test} test68() {
 var d0 : seq<StandardLibrary.UInt.uint8> := [(251 as StandardLibrary.UInt.uint8), (239 as StandardLibrary.UInt.uint8), (190 as StandardLibrary.UInt.uint8)];
 var r0 := Base64.Encode(d0);
 expect |r0| % 4 == 0;
 expect Base64.IsBase64String(r0);
 }
-// Test Base64.Encode(block#775488) covers block 775484
-// Test Base64.Encode(block#775488) covers block 775486
-// Test Base64.Encode(block#775488) covers block 775488
-// Extracting the test for Base64.Encode(block#775488) from the counterexample...
+// Test Base64.Encode(block#746395) covers block 746391
+// Test Base64.Encode(block#746395) covers block 746393
+// Test Base64.Encode(block#746395) covers block 746395
+// Extracting the test for Base64.Encode(block#746395) from the counterexample...
 method {:test} test69() {
-var d0 : seq<StandardLibrary.UInt.uint8> := [(251 as StandardLibrary.UInt.uint8), (239 as StandardLibrary.UInt.uint8), (190 as StandardLibrary.UInt.uint8), (251 as StandardLibrary.UInt.uint8), (239 as StandardLibrary.UInt.uint8), (190 as StandardLibrary.UInt.uint8), (251 as StandardLibrary.UInt.uint8), (239 as StandardLibrary.UInt.uint8)];
+var d0 : seq<StandardLibrary.UInt.uint8> := [(251 as StandardLibrary.UInt.uint8), (239 as StandardLibrary.UInt.uint8), (190 as StandardLibrary.UInt.uint8), (251 as StandardLibrary.UInt.uint8), (238 as StandardLibrary.UInt.uint8)];
 var r0 := Base64.Encode(d0);
 expect |r0| % 4 == 0;
 expect Base64.IsBase64String(r0);
 }
-// Test Base64.Encode(block#775487) covers block 775484
-// Test Base64.Encode(block#775487) covers block 775486
-// Test Base64.Encode(block#775487) covers block 775487
-// Extracting the test for Base64.Encode(block#775487) from the counterexample...
+// Test Base64.Encode(block#746394) covers block 746391
+// Test Base64.Encode(block#746394) covers block 746393
+// Test Base64.Encode(block#746394) covers block 746394
+// Extracting the test for Base64.Encode(block#746394) from the counterexample...
 method {:test} test70() {
-var d0 : seq<StandardLibrary.UInt.uint8> := [(251 as StandardLibrary.UInt.uint8), (239 as StandardLibrary.UInt.uint8), (190 as StandardLibrary.UInt.uint8), (251 as StandardLibrary.UInt.uint8), (239 as StandardLibrary.UInt.uint8), (190 as StandardLibrary.UInt.uint8), (248 as StandardLibrary.UInt.uint8)];
+var d0 : seq<StandardLibrary.UInt.uint8> := [(251 as StandardLibrary.UInt.uint8), (239 as StandardLibrary.UInt.uint8), (190 as StandardLibrary.UInt.uint8), (9 as StandardLibrary.UInt.uint8)];
 var r0 := Base64.Encode(d0);
 expect |r0| % 4 == 0;
 expect Base64.IsBase64String(r0);

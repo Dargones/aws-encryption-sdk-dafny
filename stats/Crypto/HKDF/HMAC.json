@@ -4,7 +4,7 @@
     "blocksCovered": "7",
     "failedQueries": "1",
     "queries": "4",
-    "tests": "2",
+    "tests": "3",
     "failedTests": "0",
     "dafnyName": "HMAC.GetHashLength",
     "compiledName": "HMAC.__default.GetHashLength"

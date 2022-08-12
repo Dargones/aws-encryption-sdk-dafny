@@ -49,25 +49,28 @@ import Wrappers
 // Removing assertions...
 // Annotating blocks...
 // Generating modifications...
-// Test HMAC.GetHashLength(block#345836) covers block 345829
-// Test HMAC.GetHashLength(block#345836) covers block 345830
-// Test HMAC.GetHashLength(block#345836) covers block 345836
-// Extracting the test for HMAC.GetHashLength(block#345836) from the counterexample...
+// Test HMAC.GetHashLength(block#332604) covers block 332597
+// Test HMAC.GetHashLength(block#332604) covers block 332598
+// Test HMAC.GetHashLength(block#332604) covers block 332604
+// Extracting the test for HMAC.GetHashLength(block#332604) from the counterexample...
 method {:test} test0() {
+var d0 : HMAC.Digests := HMAC.Digests.SHA_256;
+var r0 := HMAC.GetHashLength(d0);
+}
+// No test can be generated for HMAC.GetHashLength(block#332603) because the verifier suceeded.
+// Test HMAC.GetHashLength(block#332602) covers block 332597
+// Test HMAC.GetHashLength(block#332602) covers block 332599
+// Test HMAC.GetHashLength(block#332602) covers block 332601
+// Test HMAC.GetHashLength(block#332602) covers block 332602
+// Extracting the test for HMAC.GetHashLength(block#332602) from the counterexample...
+method {:test} test1() {
 var d0 : HMAC.Digests := HMAC.Digests.SHA_512;
 var r0 := HMAC.GetHashLength(d0);
 }
-// No test can be generated for HMAC.GetHashLength(block#345835) because the verifier suceeded.
-// Test HMAC.GetHashLength(block#345834) covers block 345829
-// Test HMAC.GetHashLength(block#345834) covers block 345831
-// Test HMAC.GetHashLength(block#345834) covers block 345833
-// Test HMAC.GetHashLength(block#345834) covers block 345834
-// Extracting the test for HMAC.GetHashLength(block#345834) from the counterexample...
-// Test for HMAC.GetHashLength(block#345834) matches a test previously generated for HMAC.GetHashLength(block#345836).
-// Test HMAC.GetHashLength(block#345832) covers block 345829
-// Test HMAC.GetHashLength(block#345832) covers block 345831
-// Test HMAC.GetHashLength(block#345832) covers block 345832
-// Extracting the test for HMAC.GetHashLength(block#345832) from the counterexample...
+// Test HMAC.GetHashLength(block#332600) covers block 332597
+// Test HMAC.GetHashLength(block#332600) covers block 332599
+// Test HMAC.GetHashLength(block#332600) covers block 332600
+// Extracting the test for HMAC.GetHashLength(block#332600) from the counterexample...
 method {:test} test2() {
 var d0 : HMAC.Digests := HMAC.Digests.SHA_384;
 var r0 := HMAC.GetHashLength(d0);

@@ -29,7 +29,16 @@ module V1HeaderBody {
 
   type V1HeaderBody = h: HeaderTypes.HeaderBody
   | h.V1HeaderBody?
-  witness *
+  witness HeaderTypes.HeaderBody.V1HeaderBody(
+      messageType:=HeaderTypes.MessageType.TYPE_CUSTOMER_AED,
+      esdkSuiteId:=(0x0578 as uint16),
+      messageId:=[0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8, 0 as uint8],
+      encryptionContext:=[],
+      encryptedDataKeys:=[],
+      contentType:=HeaderTypes.ContentType.Framed,
+      frameLength:=0,
+      headerIvLength:=0
+    )
 
   //= compliance/data-format/message-header.txt#2.5.2.1
   //= type=implication

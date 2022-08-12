@@ -1,20 +1,20 @@
 [
   {
     "blocks": "4",
-    "blocksCovered": "3",
-    "failedQueries": "1",
-    "queries": "2",
-    "tests": "1",
+    "blocksCovered": "0",
+    "failedQueries": "4",
+    "queries": "4",
+    "tests": "0",
     "failedTests": "0",
     "dafnyName": "EncryptDecryptHelpers.SerializeMessageWithSignature",
     "compiledName": "EncryptDecryptHelpers.__default.SerializeMessageWithSignature"
   },
   {
     "blocks": "4",
-    "blocksCovered": "4",
-    "failedQueries": "0",
-    "queries": "2",
-    "tests": "2",
+    "blocksCovered": "0",
+    "failedQueries": "4",
+    "queries": "4",
+    "tests": "0",
     "failedTests": "0",
     "dafnyName": "EncryptDecryptHelpers.SerializeMessageWithoutSignature",
     "compiledName": "EncryptDecryptHelpers.__default.SerializeMessageWithoutSignature"
@@ -25,7 +25,7 @@
     "failedQueries": "0",
     "queries": "5",
     "tests": "5",
-    "failedTests": "0",
+    "failedTests": "1",
     "dafnyName": "EncryptDecryptHelpers.VerifySignature",
     "compiledName": "EncryptDecryptHelpers.__default.VerifySignature"
   },

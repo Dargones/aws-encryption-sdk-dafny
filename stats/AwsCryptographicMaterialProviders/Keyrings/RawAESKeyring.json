@@ -1,30 +1,30 @@
 [
   {
     "blocks": "25",
-    "blocksCovered": "23",
-    "failedQueries": "2",
+    "blocksCovered": "19",
+    "failedQueries": "6",
     "queries": "11",
-    "tests": "9",
+    "tests": "5",
     "failedTests": "0",
     "dafnyName": "MaterialProviders.RawAESKeyring.RawAESKeyring.OnEncrypt",
     "compiledName": "Dafny.Aws.EncryptionSdk.Core.RawAESKeyring.RawAESKeyring.OnEncrypt"
   },
   {
     "blocks": "25",
-    "blocksCovered": "20",
-    "failedQueries": "5",
-    "queries": "12",
-    "tests": "7",
+    "blocksCovered": "6",
+    "failedQueries": "19",
+    "queries": "22",
+    "tests": "3",
     "failedTests": "0",
     "dafnyName": "MaterialProviders.RawAESKeyring.RawAESKeyring.OnDecrypt",
     "compiledName": "Dafny.Aws.EncryptionSdk.Core.RawAESKeyring.RawAESKeyring.OnDecrypt"
   },
   {
     "blocks": "7",
-    "blocksCovered": "7",
-    "failedQueries": "0",
-    "queries": "4",
-    "tests": "3",
+    "blocksCovered": "4",
+    "failedQueries": "3",
+    "queries": "5",
+    "tests": "2",
     "failedTests": "0",
     "dafnyName": "MaterialProviders.RawAESKeyring.RawAESKeyring.Decrypt",
     "compiledName": "Dafny.Aws.EncryptionSdk.Core.RawAESKeyring.RawAESKeyring.Decrypt"
