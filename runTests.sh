@@ -18,6 +18,7 @@ python3 FilterCoverage.py ../stats Test/TestResults/coverage.cobertura.xml
 
 dotnet tool install dotnet-reportgenerator-globaltool
 cd Source/
-dotnet reportgenerator "-reports:../Test/TestResults/coverage.cobertura.xml" "-targetdir:../Test/TestResults" "-reporttypes:TextSummary;HtmlSummary"
+dotnet reportgenerator "-reports:../Test/TestResults/coverage.cobertura.xml" "-targetdir:../Test/TestResults" "-reporttypes:TextSummary;HtmlSummary;JsonSummary"
 cd ..
 python3 GetCodeCoverage.py
+python3 FormatTable.py ../stats Test/TestResults/Summary.json
